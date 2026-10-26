@@ -1,0 +1,137 @@
+name: biOF
+
+# biOF → Rasathane Telegram kartları. BIOF_RASATHANE_GONDERIM değişkeni "acik" olmadıkça her koşu kurudur.
+# Asıl tetikleyici vesaire (workflow_dispatch, kuru=false); aşağıdaki cron satırları yedek.
+on:
+  schedule:
+    - cron: "0 6 * * 2-6"    # sabah özeti, İstanbul 09:00 (Salı–Cumartesi)
+    - cron: "0 6 * * 1"      # haftalık "önümüzdeki 60 gün", Pazartesi İstanbul 09:00
+    - cron: "0 13-22 * * 1-5" # gün içi büyük olay kontrolü, ABD seansı boyunca saatte bir
+    - cron: "0 1 1 * *"      # şirket listesini (evren) ayda bir yenile; sabah koşusundan önce bitsin
+  workflow_dispatch:
+    inputs:
+      is:
+        description: "Çalıştırılacak iş"
+        type: choice
+        options: [sabah, haftalik, gun-ici, evren, ilk-kurulum]
+        default: sabah
+      kuru:
+        description: "Kuru çalıştır (Telegram'a gönderme, kartları çıktı olarak yükle)"
+        type: boolean
+        default: true
+      tarih:
+        description: "Yalnız sabah işi için ABD işlem günü (YYYY-AA-GG), boşsa otomatik"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: biof
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: biOF
+
+jobs:
+  calistir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      # Koşu oluşturulduğu andaki SHA değil, sıra geldiğinde main'in son hâli alınır; yoksa bekleyen bir koşu
+      # bir önceki koşunun gönderim kaydını görmez ve aynı albümü yeniden gönderir.
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Bağımlılıkları kur
+        run: pip install -e ../ortak -e .
+
+      - name: İşi belirle
+        id: is
+        env:
+          OLAY: ${{ github.event_name }}
+          ZAMAN: ${{ github.event.schedule }}
+          GIRDI_IS: ${{ inputs.is }}
+          GIRDI_KURU: ${{ inputs.kuru }}
+          GIRDI_TARIH: ${{ inputs.tarih }}
+        run: |
+          if [ "$OLAY" = "workflow_dispatch" ]; then
+            IS="$GIRDI_IS"
+            BAYRAK=""
+            [ "$GIRDI_KURU" = "true" ] && BAYRAK="--kuru"
+            if [ -n "$GIRDI_TARIH" ]; then
+              echo "$GIRDI_TARIH" | grep -Eq '^[0-9]{4}-[0-9]{2}-[0-9]{2}$' || { echo "Tarih YYYY-AA-GG olmalı"; exit 1; }
+              BAYRAK="$BAYRAK --tarih $GIRDI_TARIH"
+            fi
+          else
+            case "$ZAMAN" in
+              "0 6 * * 2-6") IS=sabah ;;
+              "0 6 * * 1") IS=haftalik ;;
+              "0 13-22 * * 1-5") IS=gun-ici ;;
+              "0 1 1 * *") IS=evren ;;
+              *) echo "Bilinmeyen zamanlama: $ZAMAN"; exit 1 ;;
+            esac
+            BAYRAK=""
+          fi
+          echo "is=$IS" >> "$GITHUB_OUTPUT"
+          echo "bayrak=$BAYRAK" >> "$GITHUB_OUTPUT"
+
+      - name: Rasathane işini çalıştır
+        id: calistir
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_SAHIP_ID: ${{ secrets.TELEGRAM_SAHIP_ID }}
+          TELEGRAM_HEDEF: ${{ vars.BIOF_TELEGRAM_HEDEF }}
+          RASATHANE_GONDERIM: ${{ vars.BIOF_RASATHANE_GONDERIM }}
+          SEC_ILETISIM: ${{ vars.SEC_ILETISIM }}
+        run: python -m bioseeder.rasathane ${{ steps.is.outputs.is }} ${{ steps.is.outputs.bayrak }}
+
+      - name: Kartları çıktı olarak yükle
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: biof-kartlar-${{ steps.is.outputs.is }}-${{ github.run_id }}
+          path: biOF/cikti/
+          if-no-files-found: ignore
+          retention-days: 14
+
+      # İş yarıda düşse bile (ör. ikinci gün içi mesajı) o ana kadar gönderilenlerin kaydı korunmalı.
+      # Python durum dosyalarını yalnız başarılı gönderimden sonra yazdığı için bu adım her zaman güvenli.
+      - name: Durum dosyalarını kaydet
+        id: kaydet
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain rasathane/veri)" ]; then
+            git config user.name "biOF Rasathane"
+            git config user.email "119886960+senoldak@users.noreply.github.com"
+            git add rasathane/veri
+            git commit -m "biOF: rasathane durumu güncellendi (${{ steps.is.outputs.is }}) [skip ci]"
+            for i in 1 2 3; do
+              git pull --rebase && git push && exit 0
+              sleep 10
+            done
+            exit 1
+          fi
+
+      # Python hataları sahibine zaten bildiriliyor; burada yalnız diğer adımların (kurulum, kayıt, push) hataları.
+      - name: Sahibine hata bildir
+        if: failure() && steps.calistir.outcome != 'failure'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_SAHIP_ID: ${{ secrets.TELEGRAM_SAHIP_ID }}
+          IS: ${{ steps.is.outputs.is }}
+          KOSU: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_SAHIP_ID" ]; then
+            curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+              --data-urlencode "chat_id=${TELEGRAM_SAHIP_ID}" \
+              --data-urlencode "text=biOF Rasathane iş akışı hatası (${IS}): ${KOSU}" > /dev/null
+          fi

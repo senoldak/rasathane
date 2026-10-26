@@ -1,0 +1,701 @@
+# olusturma: 2026-10-25
+ticker,cik,ad,borsa,sic,piyasa_degeri_m
+AAPG,2023311,ASCENTAGE PHARMA GROUP INTERNATIONAL,Nasdaq,2834,1441.93
+AARD,1774857,"Aardvark Therapeutics, Inc.",Nasdaq,2834,30.42
+ABBV,1551152,AbbVie Inc.,NYSE,2834,504759.41
+ABCL,1703057,AbCellera Biologics Inc.,Nasdaq,2834,3830.24
+ABEO,318306,ABEONA THERAPEUTICS INC.,Nasdaq,2834,251.61
+ABOS,1576885,"Acumen Pharmaceuticals, Inc.",Nasdaq,2836,143.19
+ABT,1800,ABBOTT LABORATORIES,NYSE,2834,179440.74
+ABUS,1447028,Arbutus Biopharma Corp,Nasdaq,2834,643.76
+ABVC,1173313,"ABVC BIOPHARMA, INC.",Nasdaq,2834,27.76
+ABVX,1956827,Abivax S.A.,Nasdaq,2834,7680.77
+ACAD,1070494,ACADIA PHARMACEUTICALS INC,Nasdaq,2834,3399.59
+ACET,1720580,"Adicet Bio, Inc.",Nasdaq,2834,37.35
+ACIU,1651625,AC Immune SA,Nasdaq,2834,240.61
+ACOG,1655923,Alpha Cognition Inc.,Nasdaq,2836,181.63
+ACRS,1557746,"Aclaris Therapeutics, Inc.",Nasdaq,2834,552.00
+ACRV,1781174,"Acrivon Therapeutics, Inc.",Nasdaq,2834,74.14
+ACTU,1652935,"ACTUATE THERAPEUTICS, INC.",Nasdaq,2834,11.41
+ACXP,1736243,"Acurx Pharmaceuticals, Inc.",Nasdaq,2834,6.31
+ADAG,1818838,Adagene Inc.,Nasdaq,2834,161.82
+ADCT,1771910,ADC Therapeutics SA,NYSE,2834,183.84
+ADIL,1513525,"ADIAL PHARMACEUTICALS, INC.",Nasdaq,2834,10.29
+ADMA,1368514,"ADMA BIOLOGICS, INC.",Nasdaq,2836,2392.16
+ADPT,1478320,Adaptive Biotechnologies Corp,Nasdaq,2836,4071.29
+ADRX,1802369,"ADARx Pharmaceuticals, Inc.",Nasdaq,2834,1882.91
+ADXN,1574232,Addex Therapeutics Ltd.,Nasdaq,2834,5.20
+AEON,1837607,"AEON Biopharma, Inc.",NYSE,2834,11.97
+AGEN,1098972,AGENUS INC,Nasdaq,2836,285.87
+AGIO,1439222,"AGIOS PHARMACEUTICALS, INC.",Nasdaq,2834,2208.97
+AGMB,2020932,AgomAb Therapeutics NV,Nasdaq,2836,445.69
+AIM,946644,AIM ImmunoTech Inc.,NYSE,2836,6.38
+AKBA,1517022,"Akebia Therapeutics, Inc.",Nasdaq,2834,157.12
+AKTS,2035832,"Aktis Oncology, Inc.",Nasdaq,2834,874.89
+AKTX,1541157,Akari Therapeutics Plc,Nasdaq,2834,18.80
+ALDX,1341235,"Aldeyra Therapeutics, Inc.",Nasdaq,2834,39.21
+ALEC,1653087,"Alector, Inc.",Nasdaq,2836,204.33
+ALGS,1799448,"Aligos Therapeutics, Inc.",Nasdaq,2836,29.85
+ALKS,1520262,Alkermes plc.,Nasdaq,2834,7319.51
+ALLO,1737287,"Allogene Therapeutics, Inc.",Nasdaq,2836,431.86
+ALLR,1860657,"Allarity Therapeutics, Inc.",Nasdaq,2834,13.76
+ALMS,1847367,ALUMIS INC.,Nasdaq,2834,877.57
+ALNY,1178670,"ALNYLAM PHARMACEUTICALS, INC.",Nasdaq,2834,29977.26
+ALT,1326190,"Altimmune, Inc.",Nasdaq,2834,412.38
+ALVO,1898416,Alvotech,Nasdaq,2836,1634.22
+ALVOW,1898416,Alvotech,Nasdaq,2836,
+ALXO,1810182,ALX ONCOLOGY HOLDINGS INC,Nasdaq,2834,161.78
+ALZN,1677077,"Alzamend Neuro, Inc.",Nasdaq,2834,5.45
+AMGN,318154,AMGEN INC,Nasdaq,2836,237478.02
+AMLX,1658551,"Amylyx Pharmaceuticals, Inc.",Nasdaq,2834,3413.96
+AMPH,1297184,"Amphastar Pharmaceuticals, Inc.",Nasdaq,2834,1069.40
+AMRN,897448,AMARIN CORP PLC\UK,Nasdaq,2834,247.23
+AMRX,1723128,"Amneal Pharmaceuticals, Inc.",Nasdaq,2834,7098.27
+ANAB,1370053,"ANAPTYSBIO, INC",Nasdaq,2834,1456.80
+ANIP,1023024,ANI PHARMACEUTICALS INC,Nasdaq,2834,1667.88
+ANIX,715446,Anixa Biosciences Inc,Nasdaq,2834,103.94
+ANL,1944552,Adlai Nortye Group Ltd.,Nasdaq,2834,681.33
+ANNX,1528115,"Annexon, Inc.",Nasdaq,2834,710.92
+ANRO,1999480,"Alto Neuroscience, Inc.",NYSE,2834,862.15
+ANTX,1880438,"AN2 Therapeutics, Inc.",Nasdaq,2834,133.96
+ANVS,1477845,"Annovis Bio, Inc.",NYSE,2834,42.68
+APLM,1944885,Apollomics Inc.,Nasdaq,2834,63.66
+APLMW,1944885,Apollomics Inc.,Nasdaq,2834,31.22
+APMD,1745648,"Apnimed, Inc.",Nasdaq,2834,790.57
+APRE,1781983,"Aprea Therapeutics, Inc.",Nasdaq,2834,6.52
+APUS,1894525,"Apimeds Pharmaceuticals US, Inc.",NYSE,2834,4.36
+APVO,1671584,Aptevo Therapeutics Inc.,Nasdaq,2834,2.90
+AQST,1398733,"Aquestive Therapeutics, Inc.",Nasdaq,2834,501.87
+ARCT,1768224,Arcturus Therapeutics Holdings Inc.,Nasdaq,2834,279.68
+ARDX,1437402,"ARDELYX, INC.",Nasdaq,2834,795.22
+ARGX,1697862,ARGENX SE,Nasdaq,2836,54943.88
+ARMP,921114,"Armata Pharmaceuticals, Inc.",NYSE,2836,135.34
+ARQT,1787306,"Arcutis Biotherapeutics, Inc.",Nasdaq,2834,3921.59
+ARTL,1621221,"ARTELO BIOSCIENCES, INC.",Nasdaq,2834,1.40
+ARTV,1817241,"Artiva Biotherapeutics, Inc.",Nasdaq,2836,300.67
+ARVN,1655759,"ARVINAS, INC.",Nasdaq,2834,471.00
+ARWR,879407,"ARROWHEAD PHARMACEUTICALS, INC.",Nasdaq,2834,8195.58
+ASBP,1847345,"Aspire-Lakewood Holdings, Inc.",Nasdaq,2834,12.34
+ASBPW,1847345,"Aspire-Lakewood Holdings, Inc.",Nasdaq,2834,
+ASMB,1426800,"ASSEMBLY BIOSCIENCES, INC.",Nasdaq,2834,403.95
+ASND,1612042,Ascendis Pharma A/S,Nasdaq,2834,16014.63
+ATHE,1131343,ALTERITY THERAPEUTICS LTD,Nasdaq,2834,37.88
+ATNM,1388320,"Actinium Pharmaceuticals, Inc.",NYSE,2834,47.79
+ATOS,1488039,"ATOSSA THERAPEUTICS, INC.",Nasdaq,2834,25.95
+ATRA,1604464,"Atara Biotherapeutics, Inc.",Nasdaq,2836,86.22
+ATTO,2058707,"Attovia Therapeutics, Inc.",Nasdaq,2836,631.36
+ATYR,1339970,aTYR PHARMA INC,Nasdaq,2836,16.18
+AUPH,1600620,Aurinia Pharmaceuticals Inc.,Nasdaq,2834,2243.24
+AURA,1501796,"Aura Biosciences, Inc.",Nasdaq,2836,653.34
+AUTL,1730463,Autolus Therapeutics plc,Nasdaq,2836,409.89
+AVBP,1868279,"ArriVent BioPharma, Inc.",Nasdaq,2834,1035.46
+AVIR,1593899,"Atea Pharmaceuticals, Inc.",Nasdaq,2834,324.03
+AVLN,1540171,Avalyn Pharma Inc.,Nasdaq,2834,1154.43
+AVTX,1534120,"Avalo Therapeutics, Inc.",Nasdaq,2834,371.66
+AVXL,1314052,ANAVEX LIFE SCIENCES CORP.,Nasdaq,2836,123.29
+AXSM,1579428,"Axsome Therapeutics, Inc.",Nasdaq,2834,7597.31
+AYTU,1385818,"AYTU BIOPHARMA, INC",Nasdaq,2834,20.65
+AZN,901832,ASTRAZENECA PLC,NYSE,2834,265964.83
+AZTR,1701478,"Azitra, Inc.",NYSE,2834,0.44
+BBIO,1743881,"BridgeBio Pharma, Inc.",Nasdaq,2834,13403.00
+BBOT,1869105,"BridgeBio Oncology Therapeutics, Inc.",Nasdaq,2834,213.08
+BCAX,2023658,Bicara Therapeutics Inc.,Nasdaq,2834,1121.56
+BCDA,925741,"BioCardia, Inc.",Nasdaq,2836,13.93
+BCRX,882796,BIOCRYST PHARMACEUTICALS INC,Nasdaq,2836,1954.84
+BCTX,1610820,BriaCell Therapeutics Corp.,Nasdaq,2834,29.93
+BCTXL,1610820,BriaCell Therapeutics Corp.,Nasdaq,2834,
+BCTXZ,1610820,BriaCell Therapeutics Corp.,Nasdaq,2834,
+BCYC,1761612,BICYCLE THERAPEUTICS PLC,Nasdaq,2834,248.47
+BDRX,1643918,Biodexa Pharmaceuticals Plc,Nasdaq,2834,0.93
+BDTX,1701541,"Black Diamond Therapeutics, Inc.",Nasdaq,2836,108.01
+BEAM,1745999,Beam Therapeutics Inc.,Nasdaq,2836,2484.07
+BFRG,1829247,"BullFrog AI Holdings, Inc.",Nasdaq,2834,9.16
+BFRGW,1829247,"BullFrog AI Holdings, Inc.",Nasdaq,2834,
+BFRI,1858685,Biofrontera Inc.,Nasdaq,2834,11.72
+BFRIW,1858685,Biofrontera Inc.,Nasdaq,2834,
+BGM,1779578,BGM Group Ltd.,Nasdaq,2834,104.83
+BHC,885590,Bausch Health Companies Inc.,NYSE,2834,2408.50
+BHST,1723464,BIOHARVEST SCIENCES INC.,Nasdaq,2834,38.99
+BHVN,1935979,Biohaven Ltd.,NYSE,2834,2096.49
+BIIB,875045,BIOGEN INC.,Nasdaq,2836,37040.45
+BIOA,1709941,"BioAge Labs, Inc.",Nasdaq,2834,234.07
+BIVI,1580149,BIOVIE INC.,Nasdaq,2834,10.77
+BIVIW,1580149,BIOVIE INC.,Nasdaq,2834,
+BKHA,2000775,Black Hawk Acquisition Corp,Nasdaq,2836,22.43
+BKHAR,2000775,Black Hawk Acquisition Corp,Nasdaq,2836,
+BKHAU,2000775,Black Hawk Acquisition Corp,Nasdaq,2836,
+BLRX,1498403,BioLineRx Ltd.,Nasdaq,2834,10.16
+BLSM,1839970,"BlossomHill Therapeutics, Inc.",Nasdaq,2834,465.01
+BLTE,1889109,"BELITE BIO, INC",Nasdaq,2834,5933.30
+BMEA,1840439,"Biomea Fusion, Inc.",Nasdaq,2834,43.38
+BMRN,1048477,BIOMARIN PHARMACEUTICAL INC,Nasdaq,2834,10830.45
+BMY,14272,BRISTOL MYERS SQUIBB CO,NYSE,2834,125586.10
+BNTC,1808898,Benitec Biopharma Inc.,Nasdaq,2834,301.79
+BNTX,1776985,BioNTech SE,Nasdaq,2836,22134.87
+BOLD,1782303,"Boundless Bio, Inc.",Nasdaq,2834,54.54
+BOLT,1641281,"Bolt Biotherapeutics, Inc.",Nasdaq,2834,14.78
+BRVE,2131524,"Braveheart Bio, Inc.",Nasdaq,2834,1930.44
+BSEM,1658678,"BioStem Technologies, Inc.",Nasdaq,2836,29.32
+BYSI,1677940,BeyondSpring Inc.,Nasdaq,2834,17.72
+CABA,1759138,"Cabaletta Bio, Inc.",Nasdaq,2836,249.23
+CADL,1841387,"Candel Therapeutics, Inc.",Nasdaq,2836,588.36
+CALC,1534133,"CalciMedica, Inc.",Nasdaq,2834,8.40
+CAMP,1736730,Camp4 Therapeutics Corp,Nasdaq,2834,207.09
+CANF,1536196,Can-Fite BioPharma Ltd.,NYSE,2834,5.40
+CAPR,1133869,"CAPRICOR THERAPEUTICS, INC.",Nasdaq,2834,344.76
+CATX,728387,"Perspective Therapeutics, Inc.",NYSE,2834,183.78
+CBIO,1253689,"CRESCENT BIOPHARMA, INC.",Nasdaq,2834,476.22
+CCCC,1662579,"C4 Therapeutics, Inc.",Nasdaq,2836,376.46
+CDT,1896212,CDT Equity Inc.,Nasdaq,2834,0.15
+CDTTW,1896212,CDT Equity Inc.,Nasdaq,2834,
+CELG-RI,14272,BRISTOL MYERS SQUIBB CO,NYSE,2834,
+CELU,1752828,Celularity Inc,Nasdaq,2834,31.74
+CELZ,1187953,"CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",Nasdaq,2836,5.62
+CGEM,1789972,"Cullinan Therapeutics, Inc.",Nasdaq,2836,883.15
+CGEN,1119774,COMPUGEN LTD,Nasdaq,2836,183.77
+CGON,1991792,"CG Oncology, Inc.",Nasdaq,2836,5470.00
+CGTX,1455365,COGNITION THERAPEUTICS INC,Nasdaq,2836,68.37
+CHRS,1512762,"Coherus Oncology, Inc.",Nasdaq,2836,156.05
+CING,1862150,Cingulate Inc.,Nasdaq,2834,72.42
+CINGW,1862150,Cingulate Inc.,Nasdaq,2834,
+CLDI,1855485,"Calidi Biotherapeutics, Inc.",NYSE,2836,2.37
+CLLS,1627281,Cellectis S.A.,Nasdaq,2836,98.72
+CLNN,1822791,Clene Inc.,Nasdaq,2834,55.15
+CLRB,1279704,"Cellectar Biosciences, Inc.",Nasdaq,2834,11.53
+CLYM,1768446,"Climb Bio, Inc.",Nasdaq,2834,585.28
+CMMB,1534248,Chemomab Therapeutics Ltd.,Nasdaq,2834,7.55
+CMND,1892500,Clearmind Medicine Inc.,Nasdaq,2834,2.98
+CMPS,1816590,COMPASS Pathways plc,Nasdaq,2834,1548.17
+CMPX,1738021,"Compass Therapeutics, Inc.",Nasdaq,2836,137.05
+CNSP,1729427,"CNS Pharmaceuticals, Inc.",Nasdaq,2834,7.26
+CNTB,1835268,Connect Biopharma Holdings Ltd,Nasdaq,2834,48.30
+CNTX,1842952,Context Therapeutics Inc.,Nasdaq,2834,21.96
+COAG,2114044,"Hemab Therapeutics Holdings, Inc.",Nasdaq,2836,1606.90
+COCP,1412486,"Cocrystal Pharma, Inc.",Nasdaq,2834,18.30
+COGT,1622229,"Cogent Biosciences, Inc.",Nasdaq,2834,5415.71
+COLL,1267565,"COLLEGIUM PHARMACEUTICAL, INC",Nasdaq,2834,747.48
+CORT,1088856,CORCEPT THERAPEUTICS INC,Nasdaq,2834,9281.33
+COYA,1835022,"Coya Therapeutics, Inc.",Nasdaq,2834,92.42
+CPHI,1106644,"CHINA PHARMA HOLDINGS, INC.",NYSE,2834,28.39
+CPIX,1087294,CUMBERLAND PHARMACEUTICALS INC,Nasdaq,2834,127.21
+CRBP,1595097,"Corbus Pharmaceuticals Holdings, Inc.",Nasdaq,2834,78.33
+CRBU,1619856,"Caribou Biosciences, Inc.",Nasdaq,2836,57.14
+CRDF,1213037,"Cardiff Oncology, Inc.",Nasdaq,2836,70.79
+CRDL,1702123,Cardiol Therapeutics Inc.,Nasdaq,2836,136.09
+CRIS,1108205,CURIS INC,Nasdaq,2836,0.95
+CRMD,1410098,CorMedix Inc.,Nasdaq,2834,611.86
+CRSP,1674416,CRISPR Therapeutics AG,Nasdaq,2836,4775.65
+CRVO,1053691,CervoMed Inc.,Nasdaq,2834,34.93
+CRVS,1626971,"Corvus Pharmaceuticals, Inc.",Nasdaq,2834,885.79
+CSBR,771856,"CHAMPIONS ONCOLOGY, INC.",Nasdaq,2836,65.70
+CTMX,1501989,"CytomX Therapeutics, Inc.",Nasdaq,2834,505.53
+CTNM,1855175,"Contineum Therapeutics, Inc.",Nasdaq,2834,312.63
+CTOR,1851484,"CITIUS ONCOLOGY, INC.",Nasdaq,2834,61.34
+CTXR,1506251,"Citius Pharmaceuticals, Inc.",Nasdaq,2834,11.06
+CTY,2143850,"CITY THERAPEUTICS, INC.",Nasdaq,2834,1045.40
+CUE,1645460,"Cue Biopharma, Inc.",Nasdaq,2834,135.55
+CURX,2025942,Curanex Pharmaceuticals Inc,Nasdaq,2834,7.28
+CVKD,1937993,"Cadrenal Therapeutics, Inc.",Nasdaq,2834,3.42
+CVM,725363,CEL SCI CORP,NYSE,2836,28.85
+CYPH,1509745,CYPHERPUNK TECHNOLOGIES INC.,Nasdaq,2834,300.23
+CYRX,1124524,"Cryoport, Inc.",Nasdaq,2834,910.67
+CYTK,1061983,CYTOKINETICS INC,Nasdaq,2834,8512.40
+DARE,1401914,"Dare Bioscience, Inc.",Nasdaq,2834,12.71
+DBVT,1613780,DBV Technologies S.A.,Nasdaq,2836,612.77
+DCOY,1615219,Decoy Therapeutics Inc.,Nasdaq,2834,2.31
+DERM,1867066,Journey Medical Corp,Nasdaq,2834,141.69
+DMAC,1401040,DiaMedica Therapeutics Inc.,Nasdaq,2834,470.23
+DMRA,1800315,"Damora Therapeutics, Inc.",Nasdaq,2834,1302.00
+DNA,1830214,"Ginkgo Bioworks Holdings, Inc.",NYSE,2836,672.73
+DNLI,1714899,Denali Therapeutics Inc.,Nasdaq,2836,2942.79
+DNTH,1690585,"Dianthus Therapeutics, Inc. /DE/",Nasdaq,2834,4197.27
+DRMA,1853816,"Dermata Therapeutics, Inc.",Nasdaq,2834,3.87
+DRUG,1827401,BRIGHT MINDS BIOSCIENCES INC.,Nasdaq,2834,517.67
+DSGN,1807120,"Design Therapeutics, Inc.",Nasdaq,2834,640.84
+DTIL,1357874,PRECISION BIOSCIENCES INC,Nasdaq,2836,183.27
+DWTX,1818844,"Dogwood Therapeutics, Inc.",Nasdaq,2834,38.07
+DYAI,1213809,DYADIC INTERNATIONAL INC,Nasdaq,2836,16.03
+DYN,1818794,"Dyne Therapeutics, Inc.",Nasdaq,2834,2916.98
+EBS,1367644,Emergent BioSolutions Inc.,NYSE,2834,319.43
+EDIT,1650664,"Editas Medicine, Inc.",Nasdaq,2836,368.59
+EDSA,1540159,"Edesa Biotech, Inc.",Nasdaq,2834,37.43
+EIKN,1861123,"Eikon Therapeutics, Inc.",Nasdaq,2836,393.24
+ELAB,1840563,PMGC Holdings Inc.,Nasdaq,2834,2.19
+ELAN,1739104,Elanco Animal Health Inc,NYSE,2834,11247.60
+ELDN,1404281,"Eledon Pharmaceuticals, Inc.",Nasdaq,2834,186.90
+ELOX,1035354,"Eloxx Pharmaceuticals, Inc.",Nasdaq,2836,51.67
+ELTX,1601485,"Elicio Therapeutics, Inc.",Nasdaq,2834,51.47
+ELUT,1708527,ELUTIA INC.,Nasdaq,2836,37.11
+ELVN,1672619,"Enliven Therapeutics, Inc.",Nasdaq,2834,3042.20
+ENGN,1980845,enGene Therapeutics Inc.,Nasdaq,2836,104.55
+ENGNW,1980845,enGene Therapeutics Inc.,Nasdaq,2836,
+ENSC,1716947,"Ensysce Biosciences, Inc.",Nasdaq,2834,9.16
+ENTA,1177648,ENANTA PHARMACEUTICALS INC,Nasdaq,2834,338.47
+ENTX,1638097,Entera Bio Ltd.,Nasdaq,2836,507.60
+ENVB,890821,"Enveric Biosciences, Inc.",Nasdaq,2834,6.27
+EOCN,1595353,Galmed Pharmaceuticals Ltd.,Nasdaq,2834,3.24
+EOLS,1570562,"Evolus, Inc.",Nasdaq,2834,463.01
+EPRX,1581178,EUPRAXIA PHARMACEUTICALS INC.,Nasdaq,2834,453.92
+EQ,1746466,"Equillium, Inc.",Nasdaq,2834,77.99
+ERAS,1761918,"Erasca, Inc.",Nasdaq,2834,5033.08
+ERNA,748592,Ernexa Therapeutics Inc.,Nasdaq,2834,3.38
+ERNAW,748592,Ernexa Therapeutics Inc.,Nasdaq,2834,
+ESLA,1844417,"Estrella Immunopharma, Inc.",Nasdaq,2836,42.85
+ESLAW,1844417,"Estrella Immunopharma, Inc.",Nasdaq,2836,
+ETON,1710340,"Eton Pharmaceuticals, Inc.",Nasdaq,2834,1429.16
+ETRA,2088082,"Electra Therapeutics, Inc.",Nasdaq,2836,546.70
+EVAX,1828253,Evaxion A/S,Nasdaq,2836,33.92
+EVMN,2044725,"Evommune, Inc.",NYSE,2834,185.09
+EVO,1412558,Evotec SE,Nasdaq,2834,533.08
+EWTX,1710072,"Edgewise Therapeutics, Inc.",Nasdaq,2834,4269.23
+EXEL,939767,"EXELIXIS, INC.",Nasdaq,2836,15989.35
+EXOZ,2010788,EXOZYMES INC.,Nasdaq,2836,37.22
+FATE,1434316,FATE THERAPEUTICS INC,Nasdaq,2836,252.82
+FBIO,1429260,"Fortress Biotech, Inc.",Nasdaq,2834,64.37
+FBIOP,1429260,"Fortress Biotech, Inc.",Nasdaq,2834,
+FBLG,1958777,"FibroBiologics, Inc.",Nasdaq,2834,6.73
+FDMT,1650648,"4D Molecular Therapeutics, Inc.",Nasdaq,2836,596.64
+FENC,1211583,FENNEC PHARMACEUTICALS INC.,Nasdaq,2836,353.48
+FHTX,1822462,Foghorn Therapeutics Inc.,Nasdaq,2834,118.77
+FLNA,1069530,"FILANA THERAPEUTICS, INC.",Nasdaq,2834,30.92
+FTH,1829802,"Faeth Therapeutics, Inc.",Nasdaq,2834,440.30
+FULC,1680581,"Fulcrum Therapeutics, Inc.",Nasdaq,2834,281.09
+GALT,1133416,GALECTIN THERAPEUTICS INC,Nasdaq,2834,321.71
+GANX,1819411,"Gain Therapeutics, Inc.",Nasdaq,2834,54.99
+GDTC,1873093,CytoMed Therapeutics Ltd,Nasdaq,2834,10.97
+GELS,1920092,Gelteq Ltd,Nasdaq,2834,4.61
+GENB,2100782,"Generate Biomedicines, Inc.",Nasdaq,2834,1592.85
+GERN,886744,GERON CORP,Nasdaq,2834,719.57
+GHRS,1855129,GH Research PLC,Nasdaq,2834,1240.37
+GILD,882095,"GILEAD SCIENCES, INC.",Nasdaq,2836,193482.59
+GLSI,1799788,"Greenwich LifeSciences, Inc.",Nasdaq,2834,235.29
+GLUE,1826457,"Monte Rosa Therapeutics, Inc.",Nasdaq,2836,924.80
+GMAB,1434265,GENMAB A/S,Nasdaq,2834,26926.58
+GNLX,1231457,GENELUX Corp,Nasdaq,2834,90.49
+GNPX,1595248,"Genprex, Inc.",Nasdaq,2834,1.48
+GNTA,1838716,Genenta Science S.p.A.,Nasdaq,2836,30.38
+GOSS,1728117,"Gossamer Bio, Inc.",Nasdaq,2834,58.75
+GOVX,832489,"GeoVax Labs, Inc.",Nasdaq,2834,2.08
+GPCR,1888886,Structure Therapeutics Inc.,Nasdaq,2834,1511.06
+GRCE,1444192,"Grace Therapeutics, Inc.",Nasdaq,2834,40.60
+GRFS,1438569,Grifols SA,Nasdaq,2834,5145.18
+GRI,1824293,"GRI Bio, Inc.",Nasdaq,2834,3.17
+GRML,1907223,Greenland Mines Ltd,Nasdaq,2836,77.15
+GRMLW,1907223,Greenland Mines Ltd,Nasdaq,2836,
+GSK,1131399,GSK plc,NYSE,2834,101678.40
+GTBP,109657,"GT Biopharma, Inc.",Nasdaq,2834,11.25
+GYRE,1124105,"GYRE THERAPEUTICS, INC.",Nasdaq,2834,620.30
+HALO,1159036,"HALOZYME THERAPEUTICS, INC.",Nasdaq,2836,14258.75
+HCM,1648257,HUTCHMED (China) Ltd,Nasdaq,2834,2495.97
+HCWB,1828673,HCW Biologics Inc.,Nasdaq,2834,2.62
+HELP,1833141,Helus Pharma Inc.,Nasdaq,2834,744.58
+HIND,1427570,"Vyome Holdings, Inc",Nasdaq,2834,12.56
+HOWL,1785530,"Werewolf Therapeutics, Inc.",Nasdaq,2834,47.63
+HRMY,1802665,"Harmony Biosciences Holdings, Inc.",Nasdaq,2834,2104.08
+HROW,1360214,"HARROW, INC.",Nasdaq,2834,1066.15
+HRTX,818033,"HERON THERAPEUTICS, INC. /DE/",Nasdaq,2834,56.96
+HUMA,1818382,"Humacyte, Inc.",Nasdaq,2836,120.84
+HURA,1498382,"TuHURA Biosciences, Inc./NV",Nasdaq,2834,138.92
+HYFT,1715925,MindWalk Holdings Corp.,Nasdaq,2834,54.65
+IAM,1997038,"Iambic Therapeutics, Inc.",Nasdaq,2836,675.94
+IBIO,1420720,"iBio, Inc.",Nasdaq,2834,35.77
+IBO,1834105,IMPACT BIOMEDICAL INC.,NYSE,2834,30.76
+IBRX,1326110,"ImmunityBio, Inc.",Nasdaq,2836,8711.85
+IDYA,1676725,"IDEAYA Biosciences, Inc.",Nasdaq,2834,3349.15
+IFRX,1708688,InflaRx N.V.,Nasdaq,2834,229.89
+IGC,1326205,"IGC Pharma, Inc.",NYSE,2834,26.09
+IKT,1750149,"Inhibikase Therapeutics, Inc.",Nasdaq,2836,221.86
+IMA,1835579,"ImageneBio, Inc.",Nasdaq,2836,48.00
+IMCR,1671927,Immunocore Holdings plc,Nasdaq,2836,1595.43
+IMMP,1506184,IMMUTEP Ltd,Nasdaq,2834,23.58
+IMMX,1873835,"Immix Biopharma, Inc.",Nasdaq,2834,675.66
+IMNM,1472012,Immunome Inc.,Nasdaq,2834,2122.88
+IMNN,749647,"Imunon, Inc.",Nasdaq,2834,6.96
+IMRN,1660046,Immuron Ltd,Nasdaq,2834,7.70
+IMRX,1790340,Immuneering Corp,Nasdaq,2834,241.32
+IMTX,1809196,Immatics N.V.,Nasdaq,2836,1112.77
+IMUX,1280776,"IMMUNIC, INC.",Nasdaq,2834,101.11
+IMVT,1764013,"Immunovant, Inc.",Nasdaq,2836,5868.16
+INAB,1740279,"IN8BIO, INC.",Nasdaq,2836,10.35
+INBX,2007919,"Inhibrx Biosciences, Inc.",Nasdaq,2836,1374.34
+INCR,1857030,Intercure Ltd.,Nasdaq,2834,67.97
+INDP,1857044,"Indaptus Therapeutics, Inc.",Nasdaq,2834,421.05
+INDV,1625297,"Indivior Pharmaceuticals, Inc.",Nasdaq,2834,4068.56
+INKT,1840229,"MiNK Therapeutics, Inc.",Nasdaq,2836,54.65
+INM,1728328,InMed Pharmaceuticals Inc.,Nasdaq,2834,7.91
+INMB,1711754,"Inmune Bio, Inc.",Nasdaq,2836,40.52
+INO,1055726,"INOVIO PHARMACEUTICALS, INC.",Nasdaq,2834,93.06
+INSM,1104506,INSMED Inc,Nasdaq,2834,20394.65
+INTS,1567264,"INTENSITY THERAPEUTICS, INC.",Nasdaq,2836,10.61
+INVA,1080014,"Innoviva, Inc.",Nasdaq,2834,1492.59
+IONS,874015,IONIS PHARMACEUTICALS INC,Nasdaq,2834,7134.29
+IOVA,1425205,"IOVANCE BIOTHERAPEUTICS, INC.",Nasdaq,2836,6382.37
+IPHA,1598599,Innate Pharma SA,Nasdaq,2836,167.55
+IPSC,1850119,"Century Therapeutics, Inc.",Nasdaq,2836,263.32
+IRD,1228627,"Opus Genetics, Inc.",Nasdaq,2834,288.69
+IRLA,1662774,IRulya Therapeutics Inc.,Nasdaq,2836,33.64
+IRON,1816736,"Disc Medicine, Inc.",Nasdaq,2834,3307.71
+IRWD,1446847,IRONWOOD PHARMACEUTICALS INC,Nasdaq,2834,571.73
+IVA,1756594,Inventiva S.A.,Nasdaq,2834,876.38
+IVVD,1832038,"Invivyd, Inc.",Nasdaq,2836,180.69
+IXHL,1873875,Incannex Healthcare Inc.,Nasdaq,2834,33.12
+JAGX,1585608,"Jaguar Health, Inc.",Nasdaq,2834,4.74
+JANX,1817713,"Janux Therapeutics, Inc.",Nasdaq,2834,1018.54
+JAZZ,1232524,Jazz Pharmaceuticals plc,Nasdaq,2834,13891.72
+JBIO,1798749,"Jade Biosciences, Inc.",Nasdaq,2834,927.89
+JNJ,200406,JOHNSON & JOHNSON,NYSE,2834,635072.52
+JSPR,1788028,"Jasper Therapeutics, Inc.",Nasdaq,2836,16.97
+JUNS,1679628,"JUPITER NEUROSCIENCES, INC.",Nasdaq,2834,3.93
+KALA,1479419,"KALA BIO, Inc.",Nasdaq,2834,3.67
+KAPA,1962011,"Kairos Pharma, LTD.",NYSE,2834,1.89
+KARD,2123613,"Kardigan, Inc.",Nasdaq,2834,1196.85
+KLRA,2096997,"Kailera Therapeutics, Inc.",Nasdaq,2834,1665.92
+KLRS,1754068,"Kalaris Therapeutics, Inc.",Nasdaq,2836,44.52
+KMDA,1567529,KAMADA LTD,Nasdaq,2834,448.41
+KNSA,1730430,"Kiniksa Pharmaceuticals International, plc",Nasdaq,2834,5986.78
+KOD,1468748,Kodiak Sciences Inc.,Nasdaq,2836,5507.50
+KPRX,1372514,KIORA PHARMACEUTICALS INC,Nasdaq,2834,10.15
+KPTI,1503802,Karyopharm Therapeutics Inc.,Nasdaq,2834,11.75
+KROS,1664710,"Keros Therapeutics, Inc.",Nasdaq,2834,223.65
+KRRO,1703647,"Korro Bio, Inc.",Nasdaq,2834,176.41
+KRSA,1755237,"Korsana Biosciences, Inc.",Nasdaq,2834,1425.90
+KRYS,1711279,"Krystal Biotech, Inc.",Nasdaq,2836,9220.04
+KTTA,1841330,Pasithea Therapeutics Corp.,Nasdaq,2834,13.53
+KURA,1422143,"Kura Oncology, Inc.",Nasdaq,2834,854.91
+KYMR,1815442,"Kymera Therapeutics, Inc.",Nasdaq,2836,9110.85
+KYNB,921299,"KYNTRA BIO, INC.",Nasdaq,2834,18.54
+KYTX,1994702,"Kyverna Therapeutics, Inc.",Nasdaq,2836,333.34
+KZIA,1075880,KAZIA THERAPEUTICS LTD,Nasdaq,2834,89.24
+LAB,1162194,STANDARD BIOTOOLS INC.,Nasdaq,2834,240.77
+LABT,2079272,Lakewood-Amedex Biotherapeutics Inc.,Nasdaq,2834,0.73
+LBRX,1691082,LB PHARMACEUTICALS INC,Nasdaq,2834,1249.40
+LCTX,876343,"Lineage Cell Therapeutics, Inc.",NYSE,2836,252.91
+LEGN,1801198,Legend Biotech Corp,Nasdaq,2834,3747.79
+LENZ,1815776,"LENZ Therapeutics, Inc.",Nasdaq,2836,99.29
+LEXX,1348362,Lexaria Bioscience Corp.,Nasdaq,2834,6.49
+LFCR,1005286,"LIFECORE BIOMEDICAL, INC. DE",Nasdaq,2834,242.60
+LFVN,849146,Lifevantage Corp,Nasdaq,2834,73.77
+LGND,886163,LIGAND PHARMACEUTICALS INC,Nasdaq,2834,6051.06
+LGVN,1721484,Longeveron Inc.,Nasdaq,2834,5.10
+LIMN,1971387,"Liminatus Pharma, Inc.",Nasdaq,2836,3.95
+LIMNW,1971387,"Liminatus Pharma, Inc.",Nasdaq,2836,
+LITS,1262104,"Lite Strategy, Inc.",Nasdaq,2834,35.27
+LKFT,1421876,Lakefront Biotherapeutics NV,Nasdaq,2834,2085.64
+LLY,59478,ELI LILLY & Co,NYSE,2834,1135596.98
+LNAI,1527728,Lunai Bioworks Inc.,Nasdaq,2834,1.34
+LONA,1620463,"LeonaBio, Inc.",Nasdaq,2836,45.60
+LPCN,1535955,Lipocine Inc.,Nasdaq,2834,11.87
+LQDA,1819576,Liquidia Corp,Nasdaq,2834,3792.78
+LRMR,1374690,"Larimar Therapeutics, Inc.",Nasdaq,2834,244.12
+LSTA,320017,"LISATA THERAPEUTICS, INC.",Nasdaq,2834,10.80
+LTGO,2056611,"Latigo Biotherapeutics, Inc.",Nasdaq,2834,995.82
+LTRN,1763950,Lantern Pharma Inc.,Nasdaq,2834,9.48
+LXEO,1907108,"Lexeo Therapeutics, Inc.",Nasdaq,2836,229.85
+LXRX,1062822,"LEXICON PHARMACEUTICALS, INC.",Nasdaq,2834,631.84
+LYEL,1806952,"Lyell Immunopharma, Inc.",Nasdaq,2834,230.10
+MAIA,1878313,"MAIA Biotechnology, Inc.",NYSE,2834,71.00
+MANE,1827635,"Veradermics, Inc",NYSE,2834,5798.05
+MAZE,1842295,"Maze Therapeutics, Inc.",Nasdaq,2836,1722.58
+MBIO,1680048,"MUSTANG BIO, INC.",Nasdaq,2834,2.80
+MBRX,1659617,"Moleculin Biotech, Inc.",Nasdaq,2834,6.63
+MBX,1776111,"MBX Biosciences, Inc.",Nasdaq,2834,2335.76
+MCRB,1609809,"Seres Therapeutics, Inc.",Nasdaq,2834,20.99
+MDCX,1997296,Medicus Pharma Ltd.,Nasdaq,2834,3.59
+MDCXW,1997296,Medicus Pharma Ltd.,Nasdaq,2834,
+MDGL,1157601,"MADRIGAL PHARMACEUTICALS, INC.",Nasdaq,2834,10032.74
+MENS,1954488,Jyong Biotech Ltd.,Nasdaq,2834,134.57
+MESO,1345099,MESOBLAST LTD,Nasdaq,2836,1592.67
+MGNX,1125345,MACROGENICS INC,Nasdaq,2834,143.33
+MGTX,1735438,MeiraGTx Holdings plc,Nasdaq,2836,884.56
+MGX,1785279,"Metagenomi Therapeutics, Inc.",Nasdaq,2836,30.45
+MIRA,1904286,"MIRA PHARMACEUTICALS, INC.",Nasdaq,2834,26.05
+MIRM,1759425,"Mirum Pharmaceuticals, Inc.",Nasdaq,2834,5219.90
+MIST,1408443,Milestone Pharmaceuticals Inc.,Nasdaq,2834,80.67
+MLTX,1821586,MoonLake Immunotherapeutics,Nasdaq,2834,1008.51
+MLYS,1933414,"Mineralys Therapeutics, Inc.",Nasdaq,2834,1816.76
+MNKD,899460,MANNKIND CORP,Nasdaq,2834,1025.73
+MNOV,1226616,MEDICINOVA INC,Nasdaq,2834,68.42
+MNPR,1645469,Monopar Therapeutics,Nasdaq,2834,474.21
+MOLN,1745114,MOLECULAR PARTNERS AG,Nasdaq,2836,140.58
+MPLT,1770069,"MapLight Therapeutics, Inc.",Nasdaq,2834,442.94
+MREO,1719714,Mereo BioPharma Group plc,Nasdaq,2834,45.03
+MRK,310158,"Merck & Co., Inc.",NYSE,2834,358406.03
+MRKR,1094038,"Marker Therapeutics, Inc.",Nasdaq,2834,16.01
+MRNA,1682852,"Moderna, Inc.",Nasdaq,2836,79887.10
+MRVI,1823239,"MARAVAI LIFESCIENCES HOLDINGS, INC.",Nasdaq,2834,1090.60
+MSLE,1421642,Satellos Bioscience Inc.,Nasdaq,2834,136.21
+MTNB,1582554,"Matinas BioPharma Holdings, Inc.",NYSE,2834,1.67
+MTVA,1638287,MetaVia Inc.,Nasdaq,2834,9.09
+NAMS,1936258,NewAmsterdam Pharma Co N.V.,Nasdaq,2834,2304.18
+NAMSW,1936258,NewAmsterdam Pharma Co N.V.,Nasdaq,2834,
+NATR,275053,NATURES SUNSHINE PRODUCTS INC,Nasdaq,2834,213.79
+NBIX,914475,NEUROCRINE BIOSCIENCES INC,Nasdaq,2836,14505.34
+NBP,1778016,NovaBridge Biosciences,Nasdaq,2834,158.92
+NBTX,1760854,Nanobiotix S.A.,Nasdaq,2834,1495.76
+NCEL,1783036,NewcelX Ltd.,Nasdaq,2834,15.36
+NCNA,1709626,NuCana plc,Nasdaq,2834,4.10
+NERV,1598646,"Minerva Neurosciences, Inc.",Nasdaq,2834,109.82
+NEUP,1191070,Neuphoria Therapeutics Inc.,Nasdaq,2834,18.61
+NGEN,1751912,NERVGEN PHARMA CORP.,Nasdaq,2834,153.76
+NGNE,1404644,Neurogene Inc.,Nasdaq,2834,471.27
+NKTR,906709,NEKTAR THERAPEUTICS,Nasdaq,2834,1270.80
+NKTX,1787400,"Nkarta, Inc.",Nasdaq,2834,128.21
+NMAD,1335105,"NOMAD POWER SOLUTIONS, INC.",Nasdaq,2834,61.35
+NMRA,1885522,"Neumora Therapeutics, Inc.",Nasdaq,2836,71.21
+NNVC,1379006,"NANOVIRICIDES, INC.",NYSE,2834,35.76
+NRIX,1549595,"Nurix Therapeutics, Inc.",Nasdaq,2834,2768.39
+NRSN,1875091,NeuroSense Therapeutics Ltd.,Nasdaq,2834,4.67
+NRSNW,1875091,NeuroSense Therapeutics Ltd.,Nasdaq,2834,
+NRXP,1719406,"NRX Pharmaceuticals, Inc.",Nasdaq,2834,107.81
+NSRX,2029039,Nasus Pharma Ltd,NYSE,2834,40.88
+NTHI,1979414,"NEONC TECHNOLOGIES HOLDINGS, INC.",Nasdaq,2834,94.19
+NUVB,1811063,Nuvation Bio Inc.,NYSE,2834,1604.63
+NVAX,1000694,NOVAVAX INC,Nasdaq,2836,1599.97
+NVCT,1875558,"Nuvectis Pharma, Inc.",Nasdaq,2834,654.51
+NVO,353278,NOVO NORDISK A S,NYSE,2834,172284.11
+NVS,1114448,NOVARTIS AG,NYSE,2834,287236.02
+NXTC,1661059,"NextCure, Inc.",Nasdaq,2834,22.80
+NXTS,1789192,Nexentis Technologies Inc.,Nasdaq,2834,0.76
+OBX,2130606,"Obsidian Therapeutics, Inc.",Nasdaq,2834,863.58
+OCGN,1372299,"Ocugen, Inc.",Nasdaq,2836,250.94
+OCS,1953530,Oculis Holding AG,Nasdaq,2834,486.55
+OCSAW,1953530,Oculis Holding AG,Nasdaq,2834,
+OCUL,1393434,"OCULAR THERAPEUTIX, INC",Nasdaq,2834,1427.50
+ODTX,1882782,"Odyssey Therapeutics, Inc.",Nasdaq,2836,941.95
+OGEN,1174940,ORAGENICS INC,NYSE,2834,1.82
+OGI,1620737,ORGANIGRAM GLOBAL INC.,Nasdaq,2834,133.49
+OGN,1821825,Organon & Co.,NYSE,2834,3610.88
+OKUR,1637715,"OnKure Therapeutics, Inc.",Nasdaq,2834,101.80
+OKYO,1849296,OKYO Pharma Ltd,Nasdaq,2836,73.47
+OLMA,1750284,"Olema Pharmaceuticals, Inc.",Nasdaq,2834,560.86
+OMER,1285819,OMEROS CORP,Nasdaq,2834,1199.47
+ONC,1651308,BeOne Medicines Ltd.,Nasdaq,2834,42962.40
+ONCO,1782107,"Onconetix, Inc.",Nasdaq,2834,2.19
+ONCY,1129928,ONCOLYTICS BIOTECH INC,Nasdaq,2834,65.56
+OPK,944809,"OPKO HEALTH, INC.",Nasdaq,2834,1216.52
+OPTH,2027329,Optimi Health Corp.,Nasdaq,2834,18.61
+ORGO,1661181,Organogenesis Holdings Inc.,Nasdaq,2834,127.77
+ORIC,1796280,"Oric Pharmaceuticals, Inc.",Nasdaq,2834,1365.11
+ORKA,907654,"Oruka Therapeutics, Inc.",Nasdaq,2834,5306.71
+ORMP,1176309,ORAMED PHARMACEUTICALS INC.,Nasdaq,2834,171.80
+OSTX,1795091,OS Therapies Inc,NYSE,2834,58.51
+OTLK,1649989,"Outlook Therapeutics, Inc.",Nasdaq,2836,126.35
+OVID,1636651,Ovid Therapeutics Inc.,Nasdaq,2834,421.84
+PAHC,1069899,PHIBRO ANIMAL HEALTH CORP,Nasdaq,2834,1575.34
+PALI,1357459,"PALISADE BIO, INC.",Nasdaq,2836,231.78
+PASG,1787297,"Passage BIO, Inc.",Nasdaq,2836,10.84
+PBH,1295947,Prestige Consumer Healthcare Inc.,NYSE,2834,2264.50
+PBLS,1657677,"Parabilis Medicines, Inc.",Nasdaq,2834,3019.15
+PBM,1985062,PSYENCE BIOMEDICAL LTD.,Nasdaq,2834,15.89
+PBMWW,1985062,PSYENCE BIOMEDICAL LTD.,Nasdaq,2834,
+PBYI,1401667,"PUMA BIOTECHNOLOGY, INC.",Nasdaq,2834,568.85
+PCRX,1396814,"Pacira BioSciences, Inc.",Nasdaq,2834,1453.60
+PCSA,1533743,"Processa Pharmaceuticals, Inc.",Nasdaq,2834,5.06
+PCVX,1649094,"Vaxcyte, Inc.",Nasdaq,2836,9511.06
+PDSB,1472091,PDS Biotechnology Corp,Nasdaq,2834,80.45
+PEPG,1835597,PepGen Inc.,Nasdaq,2834,174.53
+PFE,78003,PFIZER INC,NYSE,2834,171161.20
+PGEN,1356090,"PRECIGEN, INC.",Nasdaq,2834,2216.24
+PHAR,1828316,Pharming Group N.V.,Nasdaq,2834,792.71
+PHAT,1783183,"Phathom Pharmaceuticals, Inc.",Nasdaq,2834,464.37
+PHIO,1533040,Phio Pharmaceuticals Corp.,Nasdaq,2834,9.90
+PHVS,1830487,Pharvaris N.V.,Nasdaq,2834,2205.12
+PLRX,1746473,"PLIANT THERAPEUTICS, INC.",Nasdaq,2834,53.50
+PLUR,1158780,Pluri Inc.,Nasdaq,2836,12.49
+PLX,1006281,"Protalix BioTherapeutics, Inc.",NYSE,2836,205.46
+PLYX,2075320,"Polaryx Therapeutics, Inc.",Nasdaq,2834,87.59
+PMCB,1157075,"PharmaCyte Biotech, Inc.",Nasdaq,2836,3.81
+PMN,1374339,ProMIS Neurosciences Inc.,Nasdaq,2834,74.79
+PMVP,1699382,"PMV Pharmaceuticals, Inc.",Nasdaq,2834,95.90
+PPBT,1614744,PURPLE BIOTECH LTD.,Nasdaq,2834,1.76
+PPCB,1517681,"Propanc Biopharma, Inc.",Nasdaq,2834,2.89
+PRAX,1689548,"Praxis Precision Medicines, Inc.",Nasdaq,2834,7062.64
+PRE,1876431,Prenetics Global Ltd,Nasdaq,2834,338.57
+PRENW,1876431,Prenetics Global Ltd,Nasdaq,2834,
+PRFX,1801834,PRF Technologies Ltd.,Nasdaq,2834,2.59
+PRGO,1585364,PERRIGO Co plc,NYSE,2834,2214.76
+PRLD,1678660,Prelude Therapeutics Inc,Nasdaq,2834,289.11
+PRME,1894562,"Prime Medicine, Inc.",Nasdaq,2836,665.65
+PROK,1850270,PROKIDNEY CORP.,Nasdaq,2836,289.33
+PRQR,1612940,ProQR Therapeutics N.V.,Nasdaq,2834,182.04
+PRTA,1559053,PROTHENA CORP PUBLIC LTD CO,Nasdaq,2834,420.96
+PTCT,1070081,"PTC THERAPEUTICS, INC.",Nasdaq,2834,5056.89
+PTGX,1377121,"Protagonist Therapeutics, Inc",Nasdaq,2834,8957.57
+PTHS,1919246,Pelthos Therapeutics Inc.,NYSE,2836,65.08
+PTN,911216,PALATIN TECHNOLOGIES INC,Nasdaq,2834,9.10
+PULM,1574235,"Pulmatrix, Inc.",Nasdaq,2834,5.41
+PVLA,1583648,"PALVELLA THERAPEUTICS, INC.",Nasdaq,2834,1802.49
+PYXS,1782223,"Pyxis Oncology, Inc.",Nasdaq,2834,200.69
+QGEN,1015820,QIAGEN N.V.,NYSE,2836,10405.36
+QNCX,1662774,IRulya Therapeutics Inc.,Nasdaq,2836,33.64
+QNRX,1671502,Quoin Pharmaceuticals Ltd.,Nasdaq,2834,19.31
+QNTM,1771885,Quantum Biopharma Ltd.,Nasdaq,2834,14.40
+QTTB,1661998,Q32 Bio Inc.,Nasdaq,2834,257.51
+QUCY,1874252,Quantum Cyber N.V.,Nasdaq,2834,88.09
+QURE,1590560,uniQure N.V.,Nasdaq,2834,1555.89
+RACC,2118032,Research Alliance Corp III,Nasdaq,2834,92.17
+RADX,1949257,Radiopharm Theranostics Ltd,Nasdaq,2834,14.74
+RANI,1856725,"Rani Therapeutics Holdings, Inc.",Nasdaq,2834,69.95
+RAPP,2012593,"Rapport Therapeutics, Inc.",Nasdaq,2834,1244.08
+RARE,1515673,Ultragenyx Pharmaceutical Inc.,Nasdaq,2834,1542.92
+RCKT,1281895,"ROCKET PHARMACEUTICALS, INC.",Nasdaq,2834,251.38
+RCUS,1724521,"Arcus Biosciences, Inc.",NYSE,2834,2331.83
+RDHL,1553846,RedHill Biopharma Ltd.,Nasdaq,2834,3.76
+RDY,1135951,DR REDDYS LABORATORIES LTD,NYSE,2834,11004.89
+REGN,872589,"REGENERON PHARMACEUTICALS, INC.",Nasdaq,2834,82880.83
+REPL,1737953,"Replimune Group, Inc.",Nasdaq,2836,1079.76
+REVB,1810560,"REVELATION BIOSCIENCES, INC.",Nasdaq,2834,2.16
+REVBW,1810560,"REVELATION BIOSCIENCES, INC.",Nasdaq,2834,
+RFL,1713863,"Rafael Holdings, Inc.",NYSE,2834,68.12
+RGEN,730272,REPLIGEN CORP,Nasdaq,2836,11233.35
+RGNX,1590877,REGENXBIO Inc.,Nasdaq,2836,440.97
+RIGL,1034842,RIGEL PHARMACEUTICALS INC,Nasdaq,2834,890.51
+RKTO,1711786,Rocket One Inc.,Nasdaq,2834,13.64
+RLAY,1812364,"Relay Therapeutics, Inc.",Nasdaq,2836,3983.99
+RLMD,1553643,"RELMADA THERAPEUTICS, INC.",Nasdaq,2834,348.81
+RLYB,1739410,Rallybio Corp,Nasdaq,2834,88.40
+RMTI,1041024,"ROCKWELL MEDICAL, INC.",Nasdaq,2834,27.97
+RNA,2093101,"Atrium Therapeutics, Inc.",Nasdaq,2834,140.27
+RNAC,1453687,"Cartesian Therapeutics, Inc.",Nasdaq,2834,186.98
+RNAZ,1829635,"Transcode Therapeutics, Inc.",Nasdaq,2834,29.97
+RNTX,1420565,"Rein Therapeutics, Inc.",Nasdaq,2834,50.21
+ROIV,1635088,Roivant Sciences Ltd.,Nasdaq,2834,26357.57
+RPRX,1802768,Royalty Pharma plc,Nasdaq,2834,28435.41
+RTSN,2002988,"Retension Pharmaceuticals, Inc.",Nasdaq,2834,127.06
+RVMD,1628171,"Revolution Medicines, Inc.",Nasdaq,2836,40078.77
+RVMDW,1628171,"Revolution Medicines, Inc.",Nasdaq,2836,
+RXRX,1601830,"RECURSION PHARMACEUTICALS, INC.",Nasdaq,2836,1984.20
+RYTM,1649904,"RHYTHM PHARMACEUTICALS, INC.",Nasdaq,2834,6146.43
+RZLT,1509261,"Rezolute, Inc.",Nasdaq,2834,372.86
+SABS,1833214,"SAB Biotherapeutics, Inc.",Nasdaq,2836,258.40
+SABSW,1833214,"SAB Biotherapeutics, Inc.",Nasdaq,2836,
+SANA,1770121,"Sana Biotechnology, Inc.",Nasdaq,2836,697.51
+SBFM,1402328,Sunshine Biopharma Inc.,Nasdaq,2834,2.22
+SBFMW,1402328,Sunshine Biopharma Inc.,Nasdaq,2834,
+SCLX,1820190,Scilex Holding Co,Nasdaq,2836,16.53
+SCLXW,1820190,Scilex Holding Co,Nasdaq,2836,
+SCNI,1611747,Scinai Immunotherapeutics Ltd.,Nasdaq,2836,0.76
+SCNX,1382574,"Scienture Holdings, Inc.",Nasdaq,2834,4.73
+SCTX,1853921,"Scribe Therapeutics, Inc.",Nasdaq,2836,291.74
+SCYX,1178253,SCYNEXIS INC,Nasdaq,2834,37.66
+SDGR,1490978,"Schrodinger, Inc.",Nasdaq,2834,1780.37
+SEPN,1984086,"Septerna, Inc.",Nasdaq,2834,1886.22
+SER,1708599,"Serina Therapeutics, Inc.",NYSE,2834,41.91
+SGMT,1400118,Sagimet Biosciences Inc.,Nasdaq,2834,679.30
+SHPH,1757499,"Shuttle Pharmaceuticals Holdings, Inc.",Nasdaq,2834,23.16
+SIGA,1010086,SIGA TECHNOLOGIES INC,Nasdaq,2834,224.17
+SILO,1514183,"Silo Pharma, Inc.",Nasdaq,2834,2.42
+SION,2036042,"Sionna Therapeutics, Inc.",Nasdaq,2834,162.54
+SKYE,1516551,"Skye Bioscience, Inc.",Nasdaq,2834,6.82
+SLBT,2070534,SL Science Holding Ltd,Nasdaq,2836,644.87
+SLDB,1707502,Solid Biosciences Inc.,Nasdaq,2836,634.77
+SLGL,1684693,Sol-Gel Technologies Ltd.,Nasdaq,2834,227.38
+SLN,1479615,Silence Therapeutics plc,Nasdaq,2834,1223.53
+SLS,1390478,"SELLAS Life Sciences Group, Inc.",Nasdaq,2834,2269.14
+SLXN,2022416,Silexion Therapeutics Corp,Nasdaq,2836,2.74
+SLXNW,2022416,Silexion Therapeutics Corp,Nasdaq,2836,
+SMMT,1599298,Summit Therapeutics Inc.,Nasdaq,2834,12341.19
+SNDX,1395937,Syndax Pharmaceuticals Inc,Nasdaq,2834,1187.37
+SNGX,812796,"SOLIGENIX, INC.",Nasdaq,2834,5.48
+SNTI,1854270,"Senti Biosciences Holdings, Inc.",Nasdaq,2836,5.86
+SNY,1121404,Sanofi,Nasdaq,2834,101013.04
+SPRB,1683553,"SPRUCE BIOSCIENCES, INC.",Nasdaq,2834,129.76
+SPRC,1611746,SciSparc Ltd.,Nasdaq,2834,25.15
+SPRO,1701108,"Spero Therapeutics, Inc.",Nasdaq,2834,64.64
+SPRY,1671858,"ARS Pharmaceuticals, Inc.",Nasdaq,2834,400.77
+SPTX,2042347,"Seaport Therapeutics, Inc.",Nasdaq,2834,1103.26
+SRPT,873303,"Sarepta Therapeutics, Inc.",Nasdaq,2834,1872.77
+SRRK,1727196,Scholar Rock Holding Corp,Nasdaq,2836,5052.87
+SRZN,1824893,"Surrozen, Inc./DE",Nasdaq,2836,445.78
+STOK,1623526,"Stoke Therapeutics, Inc.",Nasdaq,2834,1615.74
+STRO,1382101,"SUTRO BIOPHARMA, INC.",Nasdaq,2836,154.60
+STTK,1680367,"Shattuck Labs, Inc.",Nasdaq,2834,550.99
+SUPN,1356576,"SUPERNUS PHARMACEUTICALS, INC.",Nasdaq,2834,2369.72
+SVA,1084201,SINOVAC BIOTECH LTD,Nasdaq,2834,
+SVRA,1160308,Savara Inc,Nasdaq,2834,864.79
+SXTC,1723980,"China SXT Pharmaceuticals, Inc.",Nasdaq,2834,0.42
+SXTP,1946563,"60 DEGREES PHARMACEUTICALS, INC.",Nasdaq,2834,3.06
+SXTPW,1946563,"60 DEGREES PHARMACEUTICALS, INC.",Nasdaq,2834,
+SYRE,1636282,"Spyre Therapeutics, Inc.",Nasdaq,2834,8441.52
+TAK,1395064,TAKEDA PHARMACEUTICAL CO LTD,NYSE,2834,64658.14
+TARA,1359931,"Protara Therapeutics, Inc.",Nasdaq,2836,130.96
+TARS,1819790,"Tarsus Pharmaceuticals, Inc.",Nasdaq,2836,3191.19
+TCRT,1107421,"Alaunos Therapeutics, Inc.",Nasdaq,2834,6.67
+TCRX,1783328,"TScan Therapeutics, Inc.",Nasdaq,2836,13.76
+TECH,842023,BIO-TECHNE Corp,Nasdaq,2836,11377.16
+TECX,1681087,"Tectonic Therapeutic, Inc.",Nasdaq,2836,392.36
+TELO,1971532,"Telomir Pharmaceuticals, Inc.",Nasdaq,2834,71.78
+TENX,34956,"TENAX THERAPEUTICS, INC.",Nasdaq,2834,64.37
+TEVA,818686,TEVA PHARMACEUTICAL INDUSTRIES LTD,NYSE,2834,45963.59
+TGTX,1001316,"TG THERAPEUTICS, INC.",Nasdaq,2834,8291.75
+TIL,1789769,"Instil Bio, Inc.",Nasdaq,2836,39.61
+TLPH,1427925,"TALPHERA, INC.",Nasdaq,2834,56.06
+TLSA,1723069,Tiziana Life Sciences Ltd,Nasdaq,2834,120.90
+TLX,2007191,Telix Pharmaceuticals Ltd,Nasdaq,2834,3109.03
+TNGX,1819133,"Tango Therapeutics, Inc.",Nasdaq,2834,3935.37
+TNXP,1430306,Tonix Pharmaceuticals Holding Corp.,Nasdaq,2834,88.67
+TNYA,1858848,"Tenaya Therapeutics, Inc.",Nasdaq,2836,87.23
+TOVX,894158,"Theriva Biologics, Inc.",NYSE,2834,9.18
+TPST,1544227,"Tempest Therapeutics, Inc.",Nasdaq,2834,8.63
+TRAW,1130598,"Traws Pharma, Inc.",Nasdaq,2834,5.23
+TRAX,2091349,"First Tracks Biotherapeutics, Inc.",Nasdaq,2834,1573.94
+TRDA,1689375,"Entrada Therapeutics, Inc.",Nasdaq,2834,171.71
+TRVI,1563880,"Trevi Therapeutics, Inc.",Nasdaq,2834,1796.62
+TRXB,2139097,"TRex Bio, Inc.",Nasdaq,2836,379.02
+TSHA,1806310,"Taysha Gene Therapies, Inc.",Nasdaq,2836,1290.30
+TTRX,2023016,Turn Therapeutics Inc.,Nasdaq,2834,312.18
+TVGN,1860871,Tevogen Inc.,Nasdaq,2836,102.76
+TVGNW,1860871,Tevogen Inc.,Nasdaq,2836,
+TVRD,1346830,"Tvardi Therapeutics, Inc.",Nasdaq,2834,12.54
+TVTX,1438533,"Travere Therapeutics, Inc.",Nasdaq,2834,4720.60
+TWST,1581280,Twist Bioscience Corp,Nasdaq,2836,9276.86
+TXMD,25743,"TherapeuticsMD, Inc.",Nasdaq,2834,20.83
+TYRA,1863127,"Tyra Biosciences, Inc.",Nasdaq,2834,1406.06
+UNCY,1766140,"Unicycive Therapeutics, Inc.",Nasdaq,2834,108.36
+UPB,2022626,"Upstream Bio, Inc.",Nasdaq,2834,150.07
+UPC,1809616,Universe Pharmaceuticals INC,Nasdaq,2834,21.81
+URGN,1668243,UroGen Pharma Ltd.,Nasdaq,2834,1685.89
+UTHR,1082554,UNITED THERAPEUTICS Corp,Nasdaq,2834,25198.28
+VALN,1836564,Valneva SE,Nasdaq,2836,498.77
+VBIO,1787740,"Valion Bio, Inc.",Nasdaq,2834,1.97
+VCEL,887359,Vericel Corp,Nasdaq,2836,2177.82
+VCRE,2124403,Vicore Pharma Holding AB,Nasdaq,2834,264.18
+VERA,1831828,"Vera Therapeutics, Inc.",Nasdaq,2834,2017.05
+VERU,863894,VERU INC.,Nasdaq,2834,38.19
+VIR,1706431,"Vir Biotechnology, Inc.",Nasdaq,2836,1788.61
+VIVS,1497253,"VivoSim Labs, INC.",Nasdaq,2836,2.49
+VKTX,1607678,"Viking Therapeutics, Inc.",Nasdaq,2834,3102.83
+VNDA,1347178,Vanda Pharmaceuticals Inc.,Nasdaq,2834,242.46
+VOGX,1903784,"Vogenx, Inc.",Nasdaq,2834,259.22
+VOR,1817229,Vor Biopharma Inc.,Nasdaq,2836,1080.30
+VRCA,1660334,Verrica Pharmaceuticals Inc.,Nasdaq,2834,60.64
+VRDN,1590750,"Viridian Therapeutics, Inc.\DE",Nasdaq,2834,2534.35
+VRTX,875320,VERTEX PHARMACEUTICALS INC / MA,Nasdaq,2834,132795.78
+VRXA,2079109,Veraxa Biotech AG - Post de-SPAC,Nasdaq,2834,141.41
+VRXAW,2079109,Veraxa Biotech AG - Post de-SPAC,Nasdaq,2834,
+VSTM,1526119,"Verastem, Inc.",Nasdaq,2834,909.26
+VTGN,1411685,"Vistagen Therapeutics, Inc.",Nasdaq,2834,7.99
+VTRS,1792044,Viatris Inc,Nasdaq,2834,20674.64
+VTVT,1641489,vTv Therapeutics Inc.,Nasdaq,2834,101.02
+VYGR,1640266,"Voyager Therapeutics, Inc.",Nasdaq,2836,107.22
+WHWK,1422142,"Whitehawk Therapeutics, Inc.",Nasdaq,2834,183.00
+WVE,1631574,"Wave Life Sciences, Inc.",Nasdaq,2834,626.61
+XBIO,1534525,"Xenetic Biosciences, Inc.",Nasdaq,2834,4.03
+XBIT,1626878,XBiotech Inc.,Nasdaq,2834,58.84
+XCUR,1698530,"EXICURE, INC.",Nasdaq,2834,6.87
+XENE,1582313,Xenon Pharmaceuticals Inc.,Nasdaq,2834,3422.34
+XERS,1867096,"Xeris Biopharma Holdings, Inc.",Nasdaq,2834,1859.67
+XFOR,1501697,"X4 Pharmaceuticals, Inc",Nasdaq,2836,321.24
+XLO,1840233,"Xilio Therapeutics, Inc.",Nasdaq,2834,49.81
+XNCR,1326732,Xencor Inc,Nasdaq,2834,1872.22
+XRTX,1729214,XORTX Therapeutics Inc.,Nasdaq,2834,1.67
+XTLB,1023549,XTL BIOPHARMACEUTICALS LTD,Nasdaq,2834,4.96
+YARW,1566044,"Yarrow Bioscience, Inc.",Nasdaq,2834,179.30
+ZBIO,1953926,"Zenas BioPharma, Inc.",Nasdaq,2834,1751.30
+ZLAB,1704292,Zai Lab Ltd,Nasdaq,2834,2697.76
+ZNTL,1725160,"Zentalis Pharmaceuticals, Inc.",Nasdaq,2834,216.85
+ZTS,1555280,Zoetis Inc.,NYSE,2834,33483.51
+ZURA,1855644,Zura Bio Ltd,Nasdaq,2836,321.99
+ZVRA,1434647,"ZEVRA THERAPEUTICS, INC.",Nasdaq,2834,582.55
+ZYBT,1975641,Zhengye Biotechnology Holding Ltd,Nasdaq,2834,71.09
+ZYME,1937653,Zymeworks Inc.,Nasdaq,2834,2024.78

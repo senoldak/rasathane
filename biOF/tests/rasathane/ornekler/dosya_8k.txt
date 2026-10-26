@@ -1,0 +1,27 @@
+<SEC-DOCUMENT>0001607678-26-000045.txt : 20261023
+<SEC-HEADER>
+CONFORMED SUBMISSION TYPE:	8-K
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>8-K
+<SEQUENCE>1
+<TEXT>
+<html><body><p>Item 8.01 Other Events. Phase 3 results are attached as Exhibit 99.1.</p></body></html>
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-99.1
+<SEQUENCE>2
+<TEXT>
+<html><body><p><b>Viking Therapeutics Announces Topline Results from Phase 3 VENTURE Trial</b></p>
+<p>SAN DIEGO &amp; NEW YORK &#8211; Viking&nbsp;Therapeutics (NCT06000001) reported data.</p></body></html>
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>GRAPHIC
+<SEQUENCE>3
+<TEXT>
+begin 644 logo.jpg
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>

@@ -1,0 +1,37 @@
+# pyproject.toml
+[project]
+name = "opsi"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["rasathane-ortak","yfinance","pandas","numpy","scipy","fastapi","uvicorn","pillow","requests"]
+
+[project.optional-dependencies]
+dev = ["mypy","black","ruff","pytest","httpx"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+# Ortak paket düzenlenebilir kurulur; mypy onu kaynak klasöründen okur.
+mypy_path = "../ortak"
+
+[[tool.mypy.overrides]]
+module = ["yfinance.*", "pandas.*", "scipy.*", "requests.*"]
+ignore_missing_imports = true
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+# BLE001/S112: broad excepts are a design decision (one bad symbol/expiry never stops a scan)
+# B008: FastAPI requires Query() defaults in signatures
+# S110: startup best-effort blocks (missing DB on first boot must not crash import)
+ignore = ["BLE001", "S112", "B008", "S110"]
+
+[tool.black]
+line-length = 100
+target-version = ["py313"]

@@ -1,0 +1,77 @@
+/* ==========================================================================
+   biOF INSTITUTIONAL CYBER-BIOTECH DESIGN TOKENS
+   Calibrated for high-density financial terminal environments
+   ========================================================================== */
+
+:root {
+  /* Depth & Surface Hierarchy */
+  --bg-void: #05080f;
+  --bg-base: #080c14;
+  --bg-surface: #0d1320;
+  --bg-surface-raised: #121929;
+  --bg-surface-overlay: #172033;
+  --bg-hover: rgba(0, 229, 255, 0.04);
+  --bg-hover-row: rgba(0, 229, 255, 0.03);
+  --bg-active: rgba(0, 229, 255, 0.08);
+
+  /* Precise Structural Borders */
+  --border-subtle: #141c2c;
+  --border-medium: #1f2b40;
+  --border-strong: #2c3c58;
+  --border-active: #00e5ff;
+  --border-focus: rgba(0, 229, 255, 0.4);
+
+  /* Deterministic Financial & Regulatory Semantics */
+  --accent-emerald: #00f59b;
+  --accent-emerald-dim: rgba(0, 245, 155, 0.12);
+  --accent-emerald-border: rgba(0, 245, 155, 0.35);
+  
+  --accent-crimson: #ff3366;
+  --accent-crimson-dim: rgba(255, 51, 102, 0.12);
+  --accent-crimson-border: rgba(255, 51, 102, 0.35);
+
+  --accent-amber: #ffb800;
+  --accent-amber-dim: rgba(255, 184, 0, 0.12);
+  --accent-amber-border: rgba(255, 184, 0, 0.35);
+
+  --accent-cyan: #00e5ff;
+  --accent-cyan-dim: rgba(0, 229, 255, 0.10);
+  --accent-cyan-border: rgba(0, 229, 255, 0.30);
+  --accent-cyan-glow: rgba(0, 229, 255, 0.25);
+
+  --accent-purple: #a855f7;
+  --accent-purple-dim: rgba(168, 85, 247, 0.12);
+
+  /* Typography & Contrast Calibrations (WCAG AA Compliant) */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #5e718d;
+  --text-dim: #3b495d;
+  --text-cyan: #00e5ff;
+  --text-emerald: #00f59b;
+  --text-crimson: #ff3366;
+  --text-amber: #ffb800;
+  --text-inverse: #05080f;
+
+  /* Typographic Stacks */
+  --font-ui: 'Chivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Strict Geometry & Radii */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  /* Shadows (Calibrated with soft ambient blur, no raw block shadows) */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.7);
+  --shadow-glow-cyan: 0 0 12px rgba(0, 229, 255, 0.2);
+  --shadow-glow-emerald: 0 0 12px rgba(0, 245, 155, 0.25);
+
+  /* Layout Density */
+  --header-height: 44px;
+  --ticker-height: 32px;
+  --filter-height: 46px;
+}

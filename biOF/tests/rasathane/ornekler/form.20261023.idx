@@ -1,0 +1,15 @@
+Description:           Daily Index of EDGAR Dissemination Feed by Form Type
+Last Data Received:    October 23, 2026
+Comments:              webmaster@sec.gov
+Anonymous FTP:         ftp://ftp.sec.gov/edgar/
+
+
+
+
+Form Type   Company Name                                                  CIK         Date Filed  File Name
+---------------------------------------------------------------------------------------------------------------------------------------------
+10-Q        ACME CORP                                                     1000001     20261023    edgar/data/1000001/0001000001-26-000010.txt
+8-K         VIKING THERAPEUTICS INC                                       1607678     20261023    edgar/data/1607678/0001607678-26-000045.txt
+8-K         SAREPTA THERAPEUTICS, INC.                                    873303      20261023    edgar/data/873303/0000873303-26-000101.txt
+8-K/A       VERTEX PHARMACEUTICALS INC / MA                               875320      20261023    edgar/data/875320/0000875320-26-000077.txt
+SC 13G      SOME FUND LP                                                  1000009     20261023    edgar/data/1000009/0001000009-26-000002.txt

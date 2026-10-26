@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>biOF — Dark Cyber-Biotech Intelligence Terminal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/tokens.css">
+  <link rel="stylesheet" href="/static/css/terminal.css">
+</head>
+<body>
+
+  <!-- Top Bloomberg-Style Live Regulatory Ticker Tape -->
+  <header class="ticker-tape-container" id="ticker-tape">
+    <div class="ticker-marquee" id="ticker-content">
+      <span class="ticker-item"><span class="ticker-tag tag-approval">FDA APPROVAL</span> Connecting to real-time regulatory stream...</span>
+    </div>
+  </header>
+
+  <!-- Terminal Header -->
+  <header class="terminal-header">
+    <div class="brand-section">
+      <div class="brand-logo">
+        bi<span>OF</span>
+      </div>
+      <div class="terminal-badge">biOF CYBER-BIOTECH TERMINAL v0.1.0</div>
+    </div>
+    <div class="header-status-cluster">
+      <div class="terminal-clock" id="terminal-clock">
+        --:--:-- UTC
+      </div>
+      <button id="btn-seed" class="btn btn-primary">
+        ⚡ Refresh / Seed Pipeline
+      </button>
+    </div>
+  </header>
+
+  <!-- KPI Metrics Ribbon -->
+  <section class="kpi-ribbon">
+    <div class="kpi-card">
+      <div class="kpi-title">Tracked Biotech Equities</div>
+      <div class="kpi-value" id="kpi-tracked-count">--</div>
+      <div class="kpi-meta">US Exchanges (NASDAQ / NYSE)</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">PDUFA Decisions (Next 30d)</div>
+      <div class="kpi-value" style="color: var(--accent-amber);" id="kpi-pdufa-count">--</div>
+      <div class="kpi-meta">Binary FDA Target Action Dates</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">High Bio-Alpha Catalysts</div>
+      <div class="kpi-value" style="color: var(--accent-emerald);" id="kpi-high-alpha-count">--</div>
+      <div class="kpi-meta">Composite Score ≥ 75.0</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Dilution Hazard Alerts</div>
+      <div class="kpi-value" style="color: var(--accent-crimson);" id="kpi-dilution-count">--</div>
+      <div class="kpi-meta">Cash Runway &lt; 6 Months</div>
+    </div>
+  </section>
+
+  <!-- Navigation Tabs -->
+  <nav class="nav-tabs">
+    <button class="tab-btn active" data-tab="calendar">Interactive Catalyst Calendar</button>
+    <button class="tab-btn" data-tab="screener">Bio-Alpha Quantitative Screener</button>
+    <button class="tab-btn" data-tab="tradingview">TradingView Terminal Chart</button>
+    <button class="tab-btn" data-tab="live-feed">Regulatory Live Feed (FDA & 8-K)</button>
+  </nav>
+
+  <!-- Filter Controls -->
+  <section class="filter-bar" id="filter-bar">
+    <input type="text" class="search-box" id="search-input" placeholder="Search Ticker, Drug, or Indication (e.g. VRTX, Pain)...">
+    <select class="filter-select" id="phase-filter">
+      <option value="">All Clinical Phases</option>
+      <option value="Phase 1">Phase 1</option>
+      <option value="Phase 2">Phase 2</option>
+      <option value="Phase 3">Phase 3</option>
+      <option value="NDA/BLA">NDA / BLA (PDUFA)</option>
+      <option value="Approved">Approved</option>
+    </select>
+    <select class="filter-select" id="type-filter">
+      <option value="">All Catalyst Types</option>
+      <option value="PDUFA">PDUFA Target Dates</option>
+      <option value="Phase 3 Readout">Phase 3 Readouts</option>
+      <option value="Phase 2 Readout">Phase 2 Readouts</option>
+      <option value="AdCom Meeting">AdCom Meetings</option>
+    </select>
+    <select class="filter-select" id="days-filter">
+      <option value="">Any Timeframe</option>
+      <option value="14">Next 14 Days</option>
+      <option value="30">Next 30 Days</option>
+      <option value="90">Next 90 Days</option>
+      <option value="180">Next 180 Days</option>
+      <option value="past">Completed Catalysts</option>
+    </select>
+    <select class="filter-select" id="mcap-filter">
+      <option value="">All Market Caps</option>
+      <option value="micro">Micro Cap (&lt; $300M)</option>
+      <option value="small">Small Cap ($300M - $2B)</option>
+      <option value="mid">Mid Cap ($2B - $10B)</option>
+      <option value="large">Large/Mega (&gt; $10B)</option>
+    </select>
+    <select class="filter-select" id="score-filter">
+      <option value="">All Composite / Alpha Scores</option>
+      <option value="high">High Alpha (≥ 75.0)</option>
+      <option value="med">Medium Alpha (50.0 - 74.9)</option>
+      <option value="low">Low Alpha (&lt; 50.0)</option>
+    </select>
+    <select class="filter-select" id="health-filter">
+      <option value="">All Financial / Dilution</option>
+      <option value="dilution">⚠️ Dilution Hazard (Runway &lt; 6m)</option>
+      <option value="safe">✓ Safe (Runway ≥ 6m)</option>
+    </select>
+    <button type="button" class="btn btn-secondary" id="btn-reset-filters" style="padding: 6px 12px; font-size: 11px; height: 31px;">Reset Filters</button>
+  </section>
+
+  <!-- Workspace Container -->
+  <main class="workspace-container">
+    <!-- View 1: Catalyst Calendar -->
+    <div class="tab-content" id="view-calendar">
+      <div class="terminal-table-wrapper">
+        <table class="terminal-table">
+          <thead>
+            <tr>
+              <th class="sortable-th" data-sort="ticker">Ticker <span class="sort-icon">⇅</span></th>
+              <th class="sortable-th" data-sort="company_asset">Company & Asset <span class="sort-icon">⇅</span></th>
+              <th class="sortable-th" data-sort="indication">Indication <span class="sort-icon">⇅</span></th>
+              <th class="sortable-th" data-sort="phase">Phase <span class="sort-icon">⇅</span></th>
+              <th class="sortable-th" data-sort="catalyst_type">Catalyst Type <span class="sort-icon">⇅</span></th>
+              <th class="sortable-th" data-sort="target_date">Target Date <span class="sort-icon">⇅</span></th>
+              <th class="sortable-th" data-sort="countdown">Countdown <span class="sort-icon">⇅</span></th>
+              <th class="sortable-th" data-sort="score">Bio-Alpha Score <span class="sort-icon">⇅</span></th>
+              <th class="sortable-th" data-sort="runway">Financial Health <span class="sort-icon">⇅</span></th>
+            </tr>
+          </thead>
+          <tbody id="catalysts-table-body">
+            <tr>
+              <td colspan="9" style="text-align: center; color: var(--text-muted); padding: 30px;">
+                Loading catalysts from biOF engine...
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- View 2: Screener -->
+    <div class="tab-content" id="view-screener" style="display: none;">
+      <div class="terminal-table-wrapper">
+        <table class="terminal-table">
+          <thead>
+            <tr>
+              <th class="sortable-screener-th" data-sort="rank">Rank <span class="sort-icon">⇅</span></th>
+              <th class="sortable-screener-th" data-sort="ticker">Ticker <span class="sort-icon">⇅</span></th>
+              <th class="sortable-screener-th" data-sort="asset_indication">Asset / Indication <span class="sort-icon">⇅</span></th>
+              <th class="sortable-screener-th" data-sort="phase">Phase <span class="sort-icon">⇅</span></th>
+              <th class="sortable-screener-th" data-sort="target_date">Target Date <span class="sort-icon">⇅</span></th>
+              <th class="sortable-screener-th" data-sort="market_cap">Market Cap <span class="sort-icon">⇅</span></th>
+              <th class="sortable-screener-th" data-sort="runway">Runway <span class="sort-icon">⇅</span></th>
+              <th class="sortable-screener-th" data-sort="composite_score">Composite Alpha <span class="sort-icon">⇅</span></th>
+              <th class="sortable-screener-th" data-sort="proximity">Proximity <span class="sort-icon">⇅</span></th>
+              <th class="sortable-screener-th" data-sort="pos">PoS <span class="sort-icon">⇅</span></th>
+              <th class="sortable-screener-th" data-sort="asymmetry">Asymmetry <span class="sort-icon">⇅</span></th>
+              <th class="sortable-screener-th" data-sort="dilution">Dilution <span class="sort-icon">⇅</span></th>
+            </tr>
+          </thead>
+          <tbody id="screener-table-body">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- View 3: TradingView Advanced Chart -->
+    <div class="tab-content" id="view-tradingview" style="display: none;">
+      <div class="terminal-table-wrapper" style="padding: 16px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--accent-cyan);">ACTIVE INSTRUMENT:</span>
+            <span id="tv-active-ticker" style="font-family: var(--font-mono); font-size: 14px; font-weight: 800; color: var(--text-primary); background: var(--bg-surface-raised); padding: 3px 8px; border-radius: var(--radius-xs); border: 1px solid var(--border-medium);">VRTX</span>
+            <span style="font-size: 11px; color: var(--text-muted);" id="tv-active-name">Vertex Pharmaceuticals (NASDAQ)</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <div style="display: flex; align-items: center; gap: 4px;">
+              <span style="font-size: 11px; color: var(--text-muted);">Select Equity:</span>
+              <select class="filter-select" id="tv-select-ticker" style="padding: 4px 8px; font-family: var(--font-mono); font-weight: 700; color: var(--accent-cyan);">
+                <option value="VRTX">VRTX - Vertex Pharmaceuticals</option>
+                <option value="REGN">REGN - Regeneron</option>
+                <option value="GILD">GILD - Gilead Sciences</option>
+                <option value="BIIB">BIIB - Biogen</option>
+                <option value="MRNA">MRNA - Moderna</option>
+                <option value="BNTX">BNTX - BioNTech</option>
+                <option value="ALNY">ALNY - Alnylam Pharmaceuticals</option>
+                <option value="ARGX">ARGX - Argenx SE</option>
+                <option value="SRPT">SRPT - Sarepta Therapeutics</option>
+                <option value="VKTX">VKTX - Viking Therapeutics</option>
+                <option value="CRSP">CRSP - CRISPR Therapeutics</option>
+                <option value="MDGL">MDGL - Madrigal Pharmaceuticals</option>
+                <option value="CYTK">CYTK - Cytokinetics</option>
+                <option value="INSM">INSM - Insmed</option>
+                <option value="BBIO">BBIO - BridgeBio Pharma</option>
+                <option value="ARWR">ARWR - Arrowhead Pharmaceuticals</option>
+                <option value="IOVA">IOVA - Iovance Biotherapeutics</option>
+                <option value="NTLA">NTLA - Intellia Therapeutics</option>
+                <option value="BEAM">BEAM - Beam Therapeutics</option>
+                <option value="AXSM">AXSM - Axsome Therapeutics</option>
+                <option value="DNLI">DNLI - Denali Therapeutics</option>
+                <option value="RXRX">RXRX - Recursion Pharmaceuticals</option>
+                <option value="KYMR">KYMR - Kymera Therapeutics</option>
+                <option value="BCRX">BCRX - BioCryst Pharmaceuticals</option>
+                <option value="SLS">SLS - SELLAS Life Sciences</option>
+                <option value="APTO">APTO - Aptose Biosciences</option>
+                <option value="NANO">NANO - Nanovest Therapeutics</option>
+                <option value="XBI">XBI - SPDR S&P Biotech ETF</option>
+                <option value="IBB">IBB - iShares Biotechnology ETF</option>
+              </select>
+            </div>
+            <span style="font-size: 11px; color: var(--text-muted); margin-left: 4px;">Quick:</span>
+            <button class="btn btn-secondary btn-tv-quick" data-ticker="VRTX">VRTX</button>
+            <button class="btn btn-secondary btn-tv-quick" data-ticker="SRPT">SRPT</button>
+            <button class="btn btn-secondary btn-tv-quick" data-ticker="VKTX">VKTX</button>
+            <button class="btn btn-secondary btn-tv-quick" data-ticker="ALNY">ALNY</button>
+            <button class="btn btn-secondary btn-tv-quick" data-ticker="CRSP">CRSP</button>
+            <button class="btn btn-secondary btn-tv-quick" data-ticker="XBI">XBI (Biotech ETF)</button>
+            <button class="btn btn-secondary btn-tv-quick" data-ticker="IBB">IBB</button>
+          </div>
+        </div>
+        <div id="tradingview-widget-container" style="height: 600px; width: 100%; border: 1px solid var(--border-subtle); border-radius: var(--radius-xs); overflow: hidden; background: #000;">
+          <!-- TradingView Widget injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- View 4: Live Feed -->
+    <div class="tab-content" id="view-live-feed" style="display: none;">
+      <div id="live-feed-cards" style="display: flex; flex-direction: column; gap: 12px;">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Company Dossier Modal -->
+  <div class="modal-overlay" id="dossier-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <h2 style="font-family: var(--font-mono); font-size: 22px; color: var(--accent-cyan);" id="modal-ticker">
+            TICKER
+          </h2>
+          <div style="font-size: 12px; color: var(--text-secondary);" id="modal-company-name">
+            Company Name
+          </div>
+        </div>
+        <button class="close-btn" id="modal-close">&times;</button>
+      </div>
+
+      <!-- Financial & Valuation Bar -->
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px;">
+        <div class="kpi-card">
+          <div class="kpi-title">Market Cap</div>
+          <div class="kpi-value" id="modal-market-cap">--</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-title">Cash & Equivalents</div>
+          <div class="kpi-value" id="modal-cash">--</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-title">Quarterly Burn</div>
+          <div class="kpi-value" id="modal-burn">--</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-title">Cash Runway</div>
+          <div class="kpi-value" id="modal-runway">--</div>
+        </div>
+      </div>
+
+      <!-- TradingView Technical Chart Inside Dossier -->
+      <div style="margin-bottom: 24px;">
+        <h3 style="font-size: 14px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px; letter-spacing: 0.5px;">
+          TradingView Live Technical Telemetry
+        </h3>
+        <div id="modal-tv-widget-container" style="height: 380px; width: 100%; border: 1px solid var(--border-medium); border-radius: var(--radius-xs); overflow: hidden; background: #000;">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+
+      <!-- Drug Pipeline Section -->
+      <div style="margin-bottom: 24px;">
+        <h3 style="font-size: 14px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px; letter-spacing: 0.5px;">
+          Clinical Drug Pipeline
+        </h3>
+        <div id="modal-pipeline-list" style="display: flex; flex-direction: column; gap: 12px;">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Upcoming Catalysts Section -->
+      <div>
+        <h3 style="font-size: 14px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px; letter-spacing: 0.5px;">
+          Upcoming Regulatory & Clinical Catalysts
+        </h3>
+        <div id="modal-catalysts-list">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/static/js/ticker.js"></script>
+  <script src="/static/js/calendar.js"></script>
+  <script src="/static/js/dossier.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

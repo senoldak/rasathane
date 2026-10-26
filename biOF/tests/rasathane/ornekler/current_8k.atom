@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Latest Filings - Thu, 23 Oct 2026 16:10:00 EDT</title>
+<entry>
+<title>8-K - VIKING THERAPEUTICS INC (0001607678) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1607678/000160767826000046/0001607678-26-000046-index.htm"/>
+<updated>2026-10-23T16:05:12-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001607678-26-000046</id>
+</entry>
+<entry>
+<title>8-K - SAREPTA THERAPEUTICS, INC. (0000873303) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/873303/000087330326000102/0000873303-26-000102-index.htm"/>
+<updated>2026-10-23T15:40:00-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0000873303-26-000102</id>
+</entry>
+<entry>
+<title>8-K - ACME CORP (0001000001) (Filer)</title>
+<link rel="alternate" type="text/html" href="https://www.sec.gov/Archives/edgar/data/1000001/000100000126000011/0001000001-26-000011-index.htm"/>
+<updated>2026-10-23T15:00:00-04:00</updated>
+<category scheme="https://www.sec.gov/" label="form type" term="8-K"/>
+<id>urn:tag:sec.gov,2008:accession-number=0001000001-26-000011</id>
+</entry>
+</feed>

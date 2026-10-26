@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Araç önbellekleri
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Gizli ayarlar
+.env
+.env.*
+!.env.example
+
+# Yerel veritabanları
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Kart çıktıları (Actions'ta yapıt olarak yüklenir)
+cikti/
+kanal_cikti/
+CAPitAL/kanal/cikti/
+onizleme/
+
+# Yerel veri ve günlükler
+OPsi/data/
+OPsi/logs/
+
+# Araç ve editör klasörleri
+.superpowers/
+.impeccable/
+.claude/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

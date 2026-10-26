@@ -1,0 +1,66 @@
+[
+  {
+    "bioguide_id": "P000197",
+    "committee_code": "HSCF",
+    "committee_name": "House Democratic Leadership",
+    "subcommittee_name": null,
+    "role": "Member",
+    "jurisdiction_keywords": ["technology", "semiconductors", "appropriations", "artificial intelligence", "infrastructure"]
+  },
+  {
+    "bioguide_id": "M001157",
+    "committee_code": "HFA",
+    "committee_name": "Foreign Affairs",
+    "subcommittee_name": null,
+    "role": "Chair",
+    "jurisdiction_keywords": ["defense", "weapons", "taiwan", "china", "export controls", "sanctions", "semiconductors"]
+  },
+  {
+    "bioguide_id": "M001157",
+    "committee_code": "HHS",
+    "committee_name": "Homeland Security",
+    "subcommittee_name": "Cybersecurity",
+    "role": "Member",
+    "jurisdiction_keywords": ["cybersecurity", "surveillance", "cloud", "intelligence"]
+  },
+  {
+    "bioguide_id": "T000278",
+    "committee_code": "SASC",
+    "committee_name": "Armed Services",
+    "subcommittee_name": "Strategic Forces",
+    "role": "Member",
+    "jurisdiction_keywords": ["defense", "aerospace", "munitions", "missiles", "procurement", "navy", "air force"]
+  },
+  {
+    "bioguide_id": "T000278",
+    "committee_code": "SAG",
+    "committee_name": "Agriculture, Nutrition, and Forestry",
+    "subcommittee_name": "Commodities",
+    "role": "Member",
+    "jurisdiction_keywords": ["agriculture", "fertilizer", "commodities", "livestock", "biofuels"]
+  },
+  {
+    "bioguide_id": "C001120",
+    "committee_code": "HEC",
+    "committee_name": "Energy and Commerce",
+    "subcommittee_name": "Energy, Climate, & Grid Security",
+    "role": "Member",
+    "jurisdiction_keywords": ["oil", "gas", "energy", "lng", "pipelines", "utilities", "renewables", "grid"]
+  },
+  {
+    "bioguide_id": "K000389",
+    "committee_code": "HASC",
+    "committee_name": "Armed Services",
+    "subcommittee_name": "Cyber, Information Technologies, & Innovation",
+    "role": "Ranking Member",
+    "jurisdiction_keywords": ["cybersecurity", "software", "artificial intelligence", "quantum", "drones", "defense tech"]
+  },
+  {
+    "bioguide_id": "M001190",
+    "committee_code": "SASC",
+    "committee_name": "Armed Services",
+    "subcommittee_name": "Readiness and Management Support",
+    "role": "Member",
+    "jurisdiction_keywords": ["defense", "military construction", "logistics", "procurement"]
+  }
+]

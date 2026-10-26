@@ -1,0 +1,11 @@
+Rasathane işareti (yazısız). Takımyıldız: yıldızlar yükselen bir çizgiyle bağlı; hem gökyüzü hem piyasa.
+
+Dosyalar:
+- rasathane-isaret.svg              Saydam zemin, açık zeminde kullanılır (öncelik SVG'de)
+- rasathane-isaret-koyu-zemin.svg   Koyu zemin: siyah yıldızlar kâğıt rengine döner, mavi aynı kalır
+- rasathane-isaret-*.png            1000x1000
+- rasathane-telegram-profil.png     640x640, kâğıt zemin; Telegram grup fotoğrafı (daireye kırpılır)
+
+Renkler: mürekkep #151515, kâğıt #f6f5f0, soluk #bdb9ad, vurgu (gece mavisi) #2d4fd6.
+Kurallar: döndürme, renk değiştirme, gölge, kontur, yıldız ekleme/çıkarma yapılmaz.
+Yeniden üretmek: uretici/ klasöründeki betikler (Pillow).

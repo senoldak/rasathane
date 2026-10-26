@@ -1,0 +1,186 @@
+sembol,ad,etf
+AAPL,Apple Inc.,0
+ADBE,Adobe Inc.,0
+AEP,American Electric Power Company,0
+AES,The AES Corporation,0
+AKAM,"Akamai Technologies, Inc.",0
+ALL,Allstate Corporation (The),0
+AMAT,"Applied Materials, Inc.",0
+AMD,"Advanced Micro Devices, Inc.",0
+AMT,American Tower Corporation (REI,0
+AMZN,"Amazon.com, Inc.",0
+ANET,"Arista Networks, Inc.",0
+APH,Amphenol Corporation,0
+APP,Applovin Corporation,0
+APTV,Aptiv PLC,0
+ARE,Alexandria Real Estate Equities,0
+ARM,Arm Holdings plc,0
+AVGO,Broadcom Inc.,0
+BA,Boeing Company (The),0
+BAC,Bank of America Corporation,0
+BE,Bloom Energy Corporation,0
+BMY,Bristol-Myers Squibb Company,0
+BSX,Boston Scientific Corporation,0
+BX,Blackstone Inc.,0
+C,"Citigroup, Inc.",0
+CARR,Carrier Global Corporation,0
+CAT,"Caterpillar, Inc.",0
+CB,Chubb Limited,0
+CBRE,CBRE Group Inc,0
+CCL,Carnival Corporation Ltd.,0
+CEG,Constellation Energy Corporatio,0
+CLX,Clorox Company (The),0
+CMCSA,Comcast Corporation,0
+CMG,"Chipotle Mexican Grill, Inc.",0
+COHR,Coherent Corp.,0
+COIN,"Coinbase Global, Inc.",0
+COP,ConocoPhillips,0
+COST,Costco Wholesale Corporation,0
+CPRT,"Copart, Inc.",0
+CRM,"Salesforce, Inc.",0
+CRWD,"CrowdStrike Holdings, Inc.",0
+CSCO,"Cisco Systems, Inc.",0
+CVNA,Carvana Co.,0
+CVS,CVS Health Corporation,0
+CVX,Chevron Corporation,0
+DAL,"Delta Air Lines, Inc.",0
+DELL,Dell Technologies Inc.,0
+DIA,State Street SPDR Dow Jones Ind,1
+ECHO,EchoStar Corporation,0
+ED,"Consolidated Edison, Inc.",0
+EIX,Edison International,0
+EQIX,"Equinix, Inc.",0
+EQT,EQT Corporation,0
+ETN,"Eaton Corporation, PLC",0
+EW,Edwards Lifesciences Corporatio,0
+F,Ford Motor Company,0
+FAST,Fastenal Company,0
+FCX,"Freeport-McMoRan, Inc.",0
+FDXF,"FedEx Freight Holding Company, ",0
+FICO,Fair Isaac Corporation,0
+FISV,"Fiserv, Inc.",0
+FLEX,Flex Ltd.,0
+FTNT,"Fortinet, Inc.",0
+GE,GE Aerospace,0
+GEV,GE Vernova Inc.,0
+GIS,"General Mills, Inc.",0
+GLD,SPDR Gold Shares,1
+GLW,Corning Incorporated,0
+GM,General Motors Company,0
+GOOG,Alphabet Inc.,0
+GOOGL,Alphabet Inc.,0
+GPN,Global Payments Inc.,0
+GS,"Goldman Sachs Group, Inc. (The)",0
+HAL,Halliburton Company,0
+HAS,"Hasbro, Inc.",0
+HBAN,Huntington Bancshares Incorpora,0
+HCA,"HCA Healthcare, Inc.",0
+HD,"Home Depot, Inc. (The)",0
+HONA,Honeywell Aerospace Inc.,0
+HOOD,"Robinhood Markets, Inc.",0
+HPE,Hewlett Packard Enterprise Comp,0
+HYG,iShares iBoxx $ High Yield Corp,1
+IBKR,"Interactive Brokers Group, Inc.",0
+IBM,International Business Machines,0
+INTC,Intel Corporation,0
+INTU,Intuit Inc.,0
+IWM,iShares Russell 2000 Index Fund,1
+JCI,Johnson Controls International ,0
+JNJ,Johnson & Johnson,0
+JPM,JP Morgan Chase & Co.,0
+KEY,KeyCorp,0
+KEYS,Keysight Technologies Inc.,0
+KHC,The Kraft Heinz Company,0
+KMI,"Kinder Morgan, Inc.",0
+KO,Coca-Cola Company (The),0
+LIN,Linde plc,0
+LITE,Lumentum Holdings Inc.,0
+LLY,Eli Lilly and Company,0
+LRCX,Lam Research Corporation,0
+LULU,lululemon athletica inc.,0
+MCD,McDonald's Corporation,0
+MCHP,Microchip Technology Incorporat,0
+MDB,"MongoDB, Inc.",0
+MDT,Medtronic plc.,0
+META,"Meta Platforms, Inc.",0
+MGM,MGM Resorts International,0
+MO,"Altria Group, Inc.",0
+MPC,Marathon Petroleum Corporation,0
+MRK,"Merck & Company, Inc.",0
+MRNA,"Moderna, Inc.",0
+MRVL,"Marvell Technology, Inc.",0
+MS,Morgan Stanley,0
+MSFT,Microsoft Corporation,0
+MSTR,Strategy Inc,0
+MU,"Micron Technology, Inc.",0
+NFLX,"Netflix, Inc.",0
+NKE,"Nike, Inc.",0
+NOC,Northrop Grumman Corporation,0
+NOW,"ServiceNow, Inc.",0
+NTAP,"NetApp, Inc.",0
+NVDA,NVIDIA Corporation,0
+O,Realty Income Corporation,0
+OKE,"ONEOK, Inc.",0
+OMC,Omnicom Group Inc.,0
+ON,ON Semiconductor Corporation,0
+ORCL,Oracle Corporation,0
+ORLY,"O'Reilly Automotive, Inc.",0
+OXY,Occidental Petroleum Corporatio,0
+P,"Everpure, Inc.",0
+PANW,"Palo Alto Networks, Inc.",0
+PAYX,"Paychex, Inc.",0
+PDD,PDD Holdings Inc.,0
+PEP,"Pepsico, Inc.",0
+PFE,"Pfizer, Inc.",0
+PG,Procter & Gamble Company (The),0
+PLD,"Prologis, Inc.",0
+PLTR,Palantir Technologies Inc.,0
+PTC,PTC Inc.,0
+PWR,"Quanta Services, Inc.",0
+PYPL,"PayPal Holdings, Inc.",0
+Q,"Qnity Electronics, Inc.",0
+QCOM,QUALCOMM Incorporated,0
+QQQ,"Invesco QQQ Trust, Series 1",1
+RDDT,"Reddit, Inc.",0
+RF,Regions Financial Corporation,0
+ROL,"Rollins, Inc.",0
+SBUX,Starbucks Corporation,0
+SCHW,Charles Schwab Corporation (The,0
+SKYD,Skydance Corporation,0
+SLV,iShares Silver Trust,1
+SMCI,"Super Micro Computer, Inc.",0
+SMH,VanEck Semiconductor ETF,1
+SNDK,Sandisk Corporation,0
+SPY,State Street SPDR S&P 500 ETF T,1
+STX,Seagate Technology Holdings PLC,0
+SWKS,"Skyworks Solutions, Inc.",0
+T,AT&T Inc.,0
+TER,"Teradyne, Inc.",0
+TFC,Truist Financial Corporation,0
+TLT,iShares 20+ Year Treasury Bond ,1
+TSLA,"Tesla, Inc.",0
+TTD,"The Trade Desk, Inc.",0
+TTWO,"Take-Two Interactive Software, ",0
+UBER,"Uber Technologies, Inc.",0
+UNH,UnitedHealth Group Incorporated,0
+UPS,"United Parcel Service, Inc.",0
+V,Visa Inc.,0
+VICI,VICI Properties Inc.,0
+VRSN,"VeriSign, Inc.",0
+VRT,"Vertiv Holdings, LLC",0
+VST,Vistra Corp.,0
+VZ,Verizon Communications Inc.,0
+WDC,Western Digital Corporation,0
+WFC,Wells Fargo & Company,0
+WMB,"Williams Companies, Inc. (The)",0
+WMT,Walmart Inc.,0
+XBI,State Street SPDR S&P Biotech E,1
+XEL,Xcel Energy Inc.,0
+XLE,State Street Energy Select Sect,1
+XLF,State Street Financial Select S,1
+XLK,State Street Technology Select ,1
+XOM,ExxonMobil Holdings Corporation,0
+XYL,Xylem Inc.,0
+XYZ,"Block, Inc.",0
+ZS,"Zscaler, Inc.",0
+ZTS,Zoetis Inc.,0

@@ -1,0 +1,93 @@
+name: CAPitAL
+
+# Hafta içi İstanbul 23:30 (UTC 20:30): yeni Kongre beyanlarından kart üretir,
+# CAPITAL_KANAL_GONDER=1 ise Rasathane'nin CAPitAL konusuna gönderir, arşivi depoya yazar.
+# Asıl tetikleyici vesaire (workflow_dispatch, kuru=false); cron satırı yedek.
+on:
+  schedule:
+    - cron: "30 20 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      kuru:
+        description: "Kuru çalıştır (gönderme, üç kartın önizlemesini üret)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: capital
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: CAPitAL
+
+jobs:
+  kanal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Bağımlılıklar (yalnız kanal)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ../ortak
+          pip install --no-deps -e .
+          pip install "httpx>=0.27.0" "pillow>=10.2.0" "yfinance>=0.2.40"
+
+      - name: Kartları üret / gönder
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_SAHIP_ID: ${{ secrets.TELEGRAM_SAHIP_ID }}
+          TELEGRAM_HEDEF: ${{ vars.CAPITAL_TELEGRAM_HEDEF }}
+          KANAL_GONDER: ${{ (github.event_name == 'workflow_dispatch' && inputs.kuru) && '0' || vars.CAPITAL_KANAL_GONDER }}
+          KURU_ARG: ${{ (github.event_name == 'workflow_dispatch' && inputs.kuru) && '--kuru --hepsi' || '' }}
+        run: python -m capitolseeder.kanal $KURU_ARG
+
+      - name: Kartları Actions çıktısı olarak sakla
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: capital-kartlar
+          path: CAPitAL/kanal/cikti/
+          if-no-files-found: ignore
+
+      - name: Arşivi depoya yaz
+        if: always()
+        run: |
+          git config user.name "Rasathane"
+          git config user.email "119886960+senoldak@users.noreply.github.com"
+          git add kanal/veri
+          if git diff --cached --quiet; then
+            echo "Arşivde değişiklik yok."
+          else
+            git commit -m "CAPitAL: veri $(date -u +%F)"
+            # Koşu sırasında main'e başka commit gelmiş olabilir: üstüne alıp birkaç kez dene.
+            for i in 1 2 3; do
+              git pull --rebase && git push && exit 0
+              sleep 10
+            done
+            echo "Arşiv depoya yazılamadı." >&2
+            exit 1
+          fi
+
+      - name: Hata olursa sahibine bildir
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_SAHIP_ID: ${{ secrets.TELEGRAM_SAHIP_ID }}
+          KOSU: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_SAHIP_ID" ] || exit 0
+          curl -s -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_SAHIP_ID}" \
+            --data-urlencode "text=CAPitAL Rasathane iş akışı başarısız: ${KOSU} — Gönderilmeyen kartlar aynı gün yeniden çalıştırınca gider. \"Arşivi depoya yaz\" adımı da başarısızsa önce konuya bakın: gönderim kaydı yazılamadığı için giden kartlar tekrar gidebilir."

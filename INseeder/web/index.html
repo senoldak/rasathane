@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INseeder | US Equities Insider Radar & Copy-Trade Terminal</title>
+    <meta name="description" content="Real-time US equities insider trading detection, quantitative conviction scoring (0-100), automated alerting, and copy-trading terminal.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navigation Bar -->
+        <header class="top-nav">
+            <div class="nav-left">
+                <div class="brand">
+                    <div class="logo-icon">
+                        <span class="radar-ping"></span>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+                            <path d="M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6zm0 10a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"/>
+                            <circle cx="12" cy="12" r="2"/>
+                            <path d="M12 2v4m0 12v4M2 12h4m12 0h4"/>
+                        </svg>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-title">IN<span class="accent-text">seeder</span></span>
+                        <span class="brand-tag">US INSIDER RADAR</span>
+                    </div>
+                </div>
+                <div class="live-status-badge">
+                    <span class="status-pulse"></span>
+                    <span id="connection-status-text">SEC FEED CONNECTED</span>
+                </div>
+            </div>
+
+            <!-- Global Ticker Metrics -->
+            <div class="nav-metrics">
+                <div class="metric-card">
+                    <span class="metric-label">TRADES INGESTED</span>
+                    <span class="metric-value" id="stat-total-trades">0</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">ACTIVE SIGNALS</span>
+                    <span class="metric-value accent-green" id="stat-total-signals">0</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">PAPER EQUITY</span>
+                    <span class="metric-value" id="stat-portfolio-value">$100,000.00</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">UNREALIZED P&L</span>
+                    <span class="metric-value" id="stat-unrealized-pnl">$0.00</span>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <button id="btn-manual-order" class="btn btn-primary btn-sm">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+                    New Order
+                </button>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="tab-bar">
+            <button class="tab-btn active" data-tab="tab-stream" id="tab-btn-stream">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l3 9 4-18 3 9h4"/></svg>
+                Live SEC Stream
+                <span class="badge" id="badge-stream-count">0</span>
+            </button>
+            <button class="tab-btn" data-tab="tab-signals" id="tab-btn-signals">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+                High Conviction Signals
+                <span class="badge badge-accent" id="badge-signal-count">0</span>
+            </button>
+            <button class="tab-btn" data-tab="tab-hyperliquid" id="tab-btn-hyperliquid">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                Hyperliquid Hub
+                <span class="badge" style="background: rgba(0, 245, 155, 0.15); color: var(--accent-emerald);" id="badge-hl-count">230+</span>
+            </button>
+            <button class="tab-btn" data-tab="tab-rules" id="tab-btn-rules">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                Rule Engine
+            </button>
+            <button class="tab-btn" data-tab="tab-portfolio" id="tab-btn-portfolio">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                Paper Portfolio & PnL
+            </button>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- TAB 1: LIVE STREAM -->
+            <section id="tab-stream" class="tab-content active">
+                <div class="content-header">
+                    <div class="search-filter-row">
+                        <div class="search-box">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                            <input type="text" id="stream-search-ticker" placeholder="Filter by Ticker (e.g. NVDA, AAPL)...">
+                        </div>
+                        <div class="filter-pills">
+                            <button class="pill active" data-filter="all">All Filings</button>
+                            <button class="pill pill-hl" data-filter="hyperliquid" title="Equities/Assets listed or tradable on Hyperliquid L1">⚡ Hyperliquid</button>
+                            <button class="pill pill-index" data-filter="sp500" title="S&P 500 Index Equities">S&P 500</button>
+                            <button class="pill pill-index" data-filter="nasdaq100" title="Nasdaq 100 Index Equities">Nasdaq 100</button>
+                            <button class="pill pill-index" data-filter="dow30" title="Dow Jones Industrial Average">Dow 30</button>
+                            <button class="pill" data-filter="P">Purchases (P)</button>
+                            <button class="pill" data-filter="S">Sales (S)</button>
+                            <button class="pill" data-filter="large">$100K+</button>
+                            <button class="pill" data-filter="exec">CEO / CFO Only</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table" id="trades-table">
+                        <thead>
+                            <tr>
+                                <th>TIME / DATE</th>
+                                <th>TICKER & COMPANY</th>
+                                <th>INSIDER & TITLE</th>
+                                <th>TYPE</th>
+                                <th>SHARES</th>
+                                <th>PRICE</th>
+                                <th>TOTAL VALUE</th>
+                                <th>POST HOLDINGS</th>
+                                <th>PLAN</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trades-tbody">
+                            <!-- Populated dynamically via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- TAB 2: SIGNALS -->
+            <section id="tab-signals" class="tab-content">
+                <div class="content-header">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <h2>High Conviction Signals (0–100 Score)</h2>
+                            <p class="subtitle">Multi-factor quantitative scoring: Executive seniority, transaction value, % holding expansion, and cluster buying patterns.</p>
+                        </div>
+                        <div class="filter-pills" id="signal-filter-pills">
+                            <button class="pill active" data-signal-filter="all">All Signals</button>
+                            <button class="pill pill-hl" data-signal-filter="hyperliquid">⚡ Hyperliquid</button>
+                            <button class="pill pill-index" data-signal-filter="sp500">S&P 500</button>
+                            <button class="pill pill-index" data-signal-filter="nasdaq100">Nasdaq 100</button>
+                            <button class="pill pill-index" data-signal-filter="dow30">Dow 30</button>
+                            <button class="pill" data-signal-filter="cluster">🔥 Cluster Buys</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="signals-grid" id="signals-container">
+                    <!-- Populated dynamically via JS -->
+                </div>
+            </section>
+
+            <!-- TAB: HYPERLIQUID HUB -->
+            <section id="tab-hyperliquid" class="tab-content">
+                <div class="content-header">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <h2>⚡ Hyperliquid Insider Alpha Radar</h2>
+                            <p class="subtitle">Assets tradable on Hyperliquid L1 with SEC Form 4 insider transaction activity by corporate officers (CEO/CFO/Directors) and live derivative metrics.</p>
+                        </div>
+                        <div class="filter-pills">
+                            <button class="pill active" id="hl-filter-all">All SEC Matches</button>
+                            <button class="pill" id="hl-filter-buys">🟢 Purchases Only (P)</button>
+                            <button class="pill" id="hl-filter-sells">🔴 Sales Only (S)</button>
+                            <button class="pill" id="hl-refresh-btn">🔄 Refresh</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table" id="hl-table">
+                        <thead>
+                            <tr>
+                                <th>ASSET & COMPANY</th>
+                                <th>HL MARK PRICE</th>
+                                <th>FUNDING (1H)</th>
+                                <th>24H VOLUME (HL)</th>
+                                <th>OPEN INTEREST (OI)</th>
+                                <th>INSIDER ACTIVITY SUMMARY</th>
+                                <th>LATEST SEC FILING</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody id="hl-tbody">
+                            <tr>
+                                <td colspan="8" style="text-align: center; padding: 36px; color: var(--text-muted);">
+                                    Scanning cross-intelligence data for Hyperliquid & SEC Form 4...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="tab-rules" class="tab-content">
+                <div class="grid-two-columns">
+                    <!-- Rule Creator Card -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Create Dynamic Filter Rule</h3>
+                        </div>
+                        <form id="rule-form" class="rule-form">
+                            <div class="form-group">
+                                <label for="rule-name">Rule Name</label>
+                                <input type="text" id="rule-name" placeholder="e.g. CEO Mega Buys over $500K" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="rule-min-score">Min Conviction Score (0-100)</label>
+                                    <input type="number" id="rule-min-score" min="0" max="100" value="70">
+                                </div>
+                                <div class="form-group">
+                                    <label for="rule-min-value">Min Dollar Value ($)</label>
+                                    <input type="number" id="rule-min-value" min="0" step="10000" value="100000">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Target Roles</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="role" value="CEO" checked> CEO</label>
+                                    <label><input type="checkbox" name="role" value="CFO" checked> CFO</label>
+                                    <label><input type="checkbox" name="role" value="Director" checked> Director</label>
+                                    <label><input type="checkbox" name="role" value="10% Owner"> 10%+ Owner</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Transaction Types</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="type" value="P" checked> Open Market Purchase (P)</label>
+                                    <label><input type="checkbox" name="type" value="S"> Sale (S)</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="rule-position-size">Position Size ($ USD)</label>
+                                    <input type="number" id="rule-position-size" min="100" step="500" value="5000">
+                                </div>
+                                <div class="form-group">
+                                    <label for="rule-broker">Target Execution Broker</label>
+                                    <select id="rule-broker">
+                                        <option value="paper">Paper Broker (Simulation)</option>
+                                        <option value="alpaca">Alpaca Markets</option>
+                                        <option value="ibkr">Interactive Brokers</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="toggle-label">
+                                    <input type="checkbox" id="rule-auto-execute">
+                                    <span>Enable Automated Copy-Trade Execution</span>
+                                </label>
+                            </div>
+                            <button type="submit" id="btn-save-rule" class="btn btn-primary btn-block">Save & Activate Rule</button>
+                        </form>
+                    </div>
+
+                    <!-- Active Rules List -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Active Rules</h3>
+                        </div>
+                        <div class="rules-list" id="rules-container">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 4: PORTFOLIO -->
+            <section id="tab-portfolio" class="tab-content">
+                <div class="portfolio-summary-grid">
+                    <div class="stat-card">
+                        <span class="stat-card-title">TOTAL EQUITY</span>
+                        <span class="stat-card-number" id="portfolio-total-equity">$100,000.00</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-card-title">CASH AVAILABLE</span>
+                        <span class="stat-card-number" id="portfolio-cash">$100,000.00</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-card-title">POSITIONS VALUE</span>
+                        <span class="stat-card-number" id="portfolio-positions-val">$0.00</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-card-title">UNREALIZED P&L</span>
+                        <span class="stat-card-number" id="portfolio-pnl">$0.00</span>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h3 class="card-title">Active Open Positions</h3>
+                    </div>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>SYMBOL</th>
+                                    <th>SHARES</th>
+                                    <th>AVG ENTRY PRICE</th>
+                                    <th>CURRENT PRICE</th>
+                                    <th>UNREALIZED P&L</th>
+                                    <th>ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody id="positions-tbody">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <h3 class="card-title">Recent Order Executions</h3>
+                    </div>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>TIME</th>
+                                    <th>SYMBOL</th>
+                                    <th>SIDE</th>
+                                    <th>SHARES</th>
+                                    <th>FILL PRICE</th>
+                                    <th>TOTAL</th>
+                                    <th>STATUS</th>
+                                </tr>
+                            </thead>
+                            <tbody id="orders-tbody">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Manual Order Modal -->
+    <div id="order-modal" class="modal-overlay hidden">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Place Manual Order</h3>
+                <button id="btn-close-modal" class="btn-close">&times;</button>
+            </div>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="order-symbol">Symbol</label>
+                    <input type="text" id="order-symbol" placeholder="e.g. NVDA" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="order-qty">Shares Quantity</label>
+                        <input type="number" id="order-qty" min="0.1" step="0.1" value="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-price">Price ($)</label>
+                        <input type="number" id="order-price" min="0.01" step="0.01" value="100.00" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="order-side">Side</label>
+                    <select id="order-side">
+                        <option value="buy">BUY</option>
+                        <option value="sell">SELL</option>
+                    </select>
+                </div>
+                <button type="submit" id="btn-submit-order" class="btn btn-primary btn-block">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

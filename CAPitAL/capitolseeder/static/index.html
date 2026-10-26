@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPitAL // Congressional Trading Intelligence Terminal</title>
+  <meta name="description" content="Autonomous institutional congressional financial intelligence, conflict matrix, STOCK Act compliance audit, and shadow portfolio backtester.">
+  <link rel="stylesheet" href="/static/css/terminal.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Top Terminal Header -->
+  <header class="terminal-header">
+    <div class="brand-badge">
+      <div class="brand-logo">
+        <span class="seal-icon">🏛️</span>
+        <span>CAP<span style="color: var(--alpha-gold);">it</span>AL</span>
+        <span style="font-size: 11px; color: var(--text-muted); margin-left: 6px;">[v0.1.0-ALPHA]</span>
+      </div>
+      <div class="status-pill" id="live-stream-status-pill">
+        <div class="status-dot"></div>
+        <span id="live-stream-status-text">STREAM: CONNECTING...</span>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="nav-tab active" data-view="trades">⚡ Live Disclosures</button>
+      <button class="nav-tab" data-view="conflicts">🎯 Conflict Matrix</button>
+      <button class="nav-tab" data-view="simulator">📈 Shadow Portfolio</button>
+      <button class="nav-tab" data-view="leaderboard">🏆 Member Leaderboard</button>
+      <button class="nav-tab" data-view="violations">⚠️ STOCK Act Audit</button>
+    </nav>
+  </header>
+
+  <!-- Live PTR Marquee Ticker -->
+  <div class="ticker-strip" id="ptr-ticker">
+    <div class="ticker-label">LIVE PTR FEED</div>
+    <div class="ticker-marquee" id="ticker-marquee-inner">
+      <!-- Injected dynamically by app.js -->
+      <div class="ticker-item">Loading live PTR disclosures...</div>
+    </div>
+  </div>
+
+  <!-- Main Terminal Layout -->
+  <div class="terminal-container">
+    
+    <!-- Sidebar Filter Controls -->
+    <aside class="terminal-sidebar">
+      <div class="filter-panel">
+        <h3>
+          <span>FILTERS</span>
+          <button class="btn-terminal" id="btn-reset-filters" style="padding: 2px 6px; font-size: 10px;">RESET</button>
+        </h3>
+
+        <div class="form-group">
+          <label for="filter-chamber">CHAMBER</label>
+          <select id="filter-chamber" class="form-control">
+            <option value="">All Chambers</option>
+            <option value="House">House of Representatives</option>
+            <option value="Senate">Senate</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="filter-party">POLITICAL PARTY</label>
+          <select id="filter-party" class="form-control">
+            <option value="">All Parties</option>
+            <option value="Democrat">Democrat (D)</option>
+            <option value="Republican">Republican (R)</option>
+            <option value="Independent">Independent (I)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="filter-owner">OWNERSHIP TYPE</label>
+          <select id="filter-owner" class="form-control">
+            <option value="">All Ownership</option>
+            <option value="Spouse">Spouse (Key Alpha)</option>
+            <option value="Self">Self</option>
+            <option value="Joint">Joint</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="filter-min-score">MIN ALPHA SCORE</label>
+          <input type="range" id="filter-min-score" min="0" max="100" value="0" class="form-control" style="padding: 0;">
+          <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 11px; margin-top: 4px; color: var(--text-muted);">
+            <span>0</span>
+            <span id="label-min-score" style="color: var(--alpha-gold); font-weight: bold;">0+</span>
+            <span>100</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="filter-ticker">TICKER SEARCH</label>
+          <input type="text" id="filter-ticker" class="form-control" placeholder="e.g. NVDA, LMT, MSFT">
+        </div>
+
+        <div class="form-group">
+          <label for="filter-violations-only">STOCK ACT VIOLATIONS</label>
+          <select id="filter-violations-only" class="form-control">
+            <option value="">All Filings</option>
+            <option value="true">Violations Only (>45 Days)</option>
+            <option value="false">Compliant Filings Only</option>
+          </select>
+        </div>
+
+        <button class="btn-terminal gold" id="btn-apply-filters" style="width: 100%; margin-top: 6px; padding: 8px;">APPLY FILTERS</button>
+      </div>
+
+      <!-- Quick Status Box -->
+      <div class="filter-panel" style="background: #080c14;">
+        <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-secondary); margin-bottom: 6px;">COMPLIANCE MONITOR</div>
+        <div style="font-size: 12px; color: var(--text-muted);">
+          STOCK Act of 2012 statutory deadline: <strong style="color: var(--text-primary);">45 Days</strong> post-transaction.<br>
+          Penalties tracked: <span style="color: var(--violation-red); font-family: var(--font-mono);">$200+</span>.
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="terminal-main">
+
+      <!-- Metric Counter Cards -->
+      <div class="metrics-grid">
+        <div class="metric-card gold">
+          <div class="metric-label">Tracked Disclosures</div>
+          <div class="metric-value" id="stat-total-trades">--</div>
+          <div class="metric-sub">PTR periodic filings captured</div>
+        </div>
+        <div class="metric-card purple">
+          <div class="metric-label">High-Conflict Trades</div>
+          <div class="metric-value" id="stat-high-conflicts">--</div>
+          <div class="metric-sub">Committee jurisdiction overlap</div>
+        </div>
+        <div class="metric-card blue">
+          <div class="metric-label">Bipartisan Clusters</div>
+          <div class="metric-value" id="stat-clusters">--</div>
+          <div class="metric-sub">Coordinated rolling 14d trades</div>
+        </div>
+        <div class="metric-card red">
+          <div class="metric-label">STOCK Act Violations</div>
+          <div class="metric-value" id="stat-violations">--</div>
+          <div class="metric-sub" id="stat-fines">Overdue disclosures</div>
+        </div>
+      </div>
+
+      <!-- VIEW 1: Live Trades Stream -->
+      <div class="workspace-card" id="view-trades">
+        <div class="card-header">
+          <div class="card-title">
+            <span>⚡ REAL-TIME DISCLOSURE STREAM</span>
+            <span class="chip chip-alpha" id="trades-count-badge">0 Trades</span>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button class="btn-terminal gold" id="btn-sync-feed">⚡ SYNC FEED NOW</button>
+            <button class="btn-terminal" id="btn-refresh-trades">↻ REFRESH</button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="terminal-table">
+            <thead>
+              <tr>
+                <th>Filing Date</th>
+                <th>Member (Party/State)</th>
+                <th>Ticker / Asset</th>
+                <th>Type</th>
+                <th>Statutory Amount</th>
+                <th>Owner</th>
+                <th>Alpha Score</th>
+                <th>Contract Match</th>
+                <th>Lag (Days)</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="trades-table-body">
+              <tr>
+                <td colspan="10" style="text-align: center; color: var(--text-muted); padding: 40px;">Loading congressional trade stream...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- VIEW 2: Committee Conflict Matrix Heatmap -->
+      <div class="workspace-card" id="view-conflicts" style="display: none;">
+        <div class="card-header">
+          <div class="card-title">
+            <span>🎯 COMMITTEE CONFLICT MATRIX</span>
+            <span class="chip chip-conflict">Jurisdiction & Procurement Cross-Reference</span>
+          </div>
+        </div>
+        <div id="conflict-matrix" class="matrix-grid">
+          <!-- Injected dynamically by app.js -->
+        </div>
+      </div>
+
+      <!-- VIEW 3: Shadow Portfolio Simulator -->
+      <div class="workspace-card" id="view-simulator" style="display: none;">
+        <div class="card-header">
+          <div class="card-title">
+            <span>📈 SHADOW PORTFOLIO BACKTEST SIMULATOR</span>
+            <span class="chip chip-alpha">Mirroring Trades on Disclosure Date vs S&P 500</span>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: center;">
+            <label style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted);">MEMBER:</label>
+            <select id="sim-member-select" class="form-control" style="width: 180px; padding: 4px 8px;">
+              <option value="">All Congressional Traders</option>
+              <option value="P000197">Nancy Pelosi (House D-CA)</option>
+              <option value="T000278">Tommy Tuberville (Senate R-AL)</option>
+              <option value="M001157">Michael McCaul (House R-TX)</option>
+            </select>
+            <button class="btn-terminal gold" id="btn-run-sim">RUN BACKTEST</button>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px;">
+            <div style="background: #080c14; padding: 12px; border-radius: 6px; border: 1px solid var(--border-color);">
+              <div style="font-size: 11px; color: var(--text-muted); font-family: var(--font-mono);">CUMULATIVE RETURN</div>
+              <div id="sim-stat-return" style="font-size: 20px; font-weight: 700; color: var(--alpha-green); font-family: var(--font-mono);">--</div>
+            </div>
+            <div style="background: #080c14; padding: 12px; border-radius: 6px; border: 1px solid var(--border-color);">
+              <div style="font-size: 11px; color: var(--text-muted); font-family: var(--font-mono);">CUMULATIVE ALPHA (VS SPY)</div>
+              <div id="sim-stat-alpha" style="font-size: 20px; font-weight: 700; color: var(--alpha-gold); font-family: var(--font-mono);">--</div>
+            </div>
+            <div style="background: #080c14; padding: 12px; border-radius: 6px; border: 1px solid var(--border-color);">
+              <div style="font-size: 11px; color: var(--text-muted); font-family: var(--font-mono);">WIN RATE VS SPY</div>
+              <div id="sim-stat-winrate" style="font-size: 20px; font-weight: 700; color: var(--text-primary); font-family: var(--font-mono);">--</div>
+            </div>
+            <div style="background: #080c14; padding: 12px; border-radius: 6px; border: 1px solid var(--border-color);">
+              <div style="font-size: 11px; color: var(--text-muted); font-family: var(--font-mono);">SHARPE RATIO</div>
+              <div id="sim-stat-sharpe" style="font-size: 20px; font-weight: 700; color: #38bdf8; font-family: var(--font-mono);">--</div>
+            </div>
+          </div>
+
+          <div style="height: 380px; position: relative;">
+            <canvas id="portfolio-chart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIEW 4: Politician Leaderboard -->
+      <div class="workspace-card" id="view-leaderboard" style="display: none;">
+        <div class="card-header">
+          <div class="card-title">
+            <span>🏆 CONGRESSIONAL TRADER LEADERBOARD</span>
+            <span class="chip chip-alpha">Ranked by 90d Alpha & Win Rate</span>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="terminal-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Member</th>
+                <th>Chamber</th>
+                <th>Party / State</th>
+                <th>Committee Role</th>
+                <th>90d Win Rate</th>
+                <th>Total Traded Volume</th>
+                <th>Composite Alpha</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboard-table-body">
+              <!-- Injected by app.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- VIEW 5: STOCK Act Violations Audit -->
+      <div class="workspace-card" id="view-violations" style="display: none;">
+        <div class="card-header">
+          <div class="card-title">
+            <span>⚠️ STOCK ACT NON-COMPLIANCE AUDIT</span>
+            <span class="chip chip-violation" id="violations-count-badge">Overdue Filings</span>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="terminal-table">
+            <thead>
+              <tr>
+                <th>Member</th>
+                <th>Chamber</th>
+                <th>Party</th>
+                <th>Ticker</th>
+                <th>Transaction Date</th>
+                <th>Disclosure Date</th>
+                <th>Lag Days</th>
+                <th>Days Overdue</th>
+                <th>Severity</th>
+                <th>Statutory Fine</th>
+                <th>Original Filing</th>
+              </tr>
+            </thead>
+            <tbody id="violations-table-body">
+              <!-- Injected by app.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- OCR & Filing Inspection Modal -->
+  <div class="modal-backdrop" id="ocr-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div style="font-family: var(--font-mono); font-weight: 700; font-size: 14px; display: flex; align-items: center; gap: 8px;">
+          <span>🔍 MULTI-TIER OCR INSPECTION & VERIFICATION</span>
+          <span class="chip chip-alpha" id="ocr-modal-ticker">DOC_VIEWER</span>
+        </div>
+        <button class="btn-close" id="btn-close-ocr-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="ocr-split">
+          <!-- Document Render / Preview Pane -->
+          <div>
+            <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-bottom: 8px;">DOCUMENT ARTIFACT (PTR DISCLOSURE)</div>
+            <div class="ocr-pane" style="display: flex; align-items: center; justify-content: center; background: #1a2333;">
+              <img id="ocr-doc-img" src="/static/sample_ptr_scanned.png" alt="PTR Document" style="max-width: 100%; height: auto; border: 1px solid var(--border-color); border-radius: 4px;">
+            </div>
+          </div>
+
+          <!-- OCR Extracted Structured Data Pane -->
+          <div>
+            <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-bottom: 8px;">STRUCTURED PARSER & RAW OCR STREAM</div>
+            <div class="ocr-pane">
+              <div id="ocr-structured-fields" style="margin-bottom: 14px; font-size: 12px; line-height: 1.8;">
+                <!-- Injected by ocr_viewer.js -->
+              </div>
+              <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 4px; font-family: var(--font-mono);">RAW OCR TEXT STREAM:</div>
+              <pre id="ocr-raw-output">Parsing document stream...</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Politician Dossier Modal -->
+  <div class="modal-backdrop" id="dossier-modal">
+    <div class="modal-container" style="max-width: 800px;">
+      <div class="modal-header">
+        <div style="font-family: var(--font-mono); font-weight: 700; font-size: 14px;" id="dossier-modal-title">
+          MEMBER FINANCIAL DOSSIER
+        </div>
+        <button class="btn-close" id="btn-close-dossier-modal">&times;</button>
+      </div>
+      <div class="modal-body" id="dossier-modal-content">
+        <!-- Injected by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/static/js/charts.js"></script>
+  <script src="/static/js/ocr_viewer.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
