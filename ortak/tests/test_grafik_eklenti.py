@@ -100,8 +100,9 @@ def _olcek(degerler, n, y0=kagit._G_Y0, y1=kagit._G_Y1):
 
 @pytest.mark.parametrize("ad", sorted(_eski_ornekler()))
 def test_eski_grafik_ayni_png(ad):
-    beklenen = (VERI / f"eski_{ad}.png").read_bytes()
-    assert kagit.grafik_ciz(_eski_ornekler()[ad]) == beklenen
+    # PNG baytları zlib sürümüne göre değişir (Windows ile Linux farklı sıkıştırır); pikseller karşılaştırılır.
+    beklenen = _resim((VERI / f"eski_{ad}.png").read_bytes())
+    assert _resim(kagit.grafik_ciz(_eski_ornekler()[ad])).tobytes() == beklenen.tobytes()
 
 
 def test_egik_cizgi_mavi():
