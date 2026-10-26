@@ -80,12 +80,13 @@ jobs:
       - name: Kayıtları depoya yaz
         if: always() && !(github.event_name == 'workflow_dispatch' && inputs.kuru)
         run: |
-          if git diff --quiet -- kanal_veri && [ -z "$(git ls-files --others --exclude-standard kanal_veri)" ]; then
+          # Python csv CRLF yazar, git LF'ye çevirir: eklenmiş farka bakılır.
+          git add kanal_veri
+          if git diff --cached --quiet; then
             echo "Kayıtta değişiklik yok."; exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add kanal_veri
           git commit -m "INseeder: kayıt güncellemesi"
           for i in 1 2 3; do
             git pull --rebase && git push && exit 0

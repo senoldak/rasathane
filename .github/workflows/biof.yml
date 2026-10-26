@@ -109,10 +109,11 @@ jobs:
         id: kaydet
         if: always()
         run: |
-          if [ -n "$(git status --porcelain rasathane/veri)" ]; then
+          # Python csv CRLF yazar, git LF'ye çevirir: durum yerine eklenmiş farka bakılır.
+          git add rasathane/veri
+          if ! git diff --cached --quiet; then
             git config user.name "biOF Rasathane"
             git config user.email "119886960+senoldak@users.noreply.github.com"
-            git add rasathane/veri
             git commit -m "biOF: rasathane durumu güncellendi (${{ steps.is.outputs.is }}) [skip ci]"
             for i in 1 2 3; do
               git pull --rebase && git push && exit 0
