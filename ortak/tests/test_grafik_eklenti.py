@@ -11,7 +11,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 import pytest
-from PIL import Image
+from PIL import Image, ImageChops
 
 
 from rasathane_ortak import kagit  # noqa: E402
@@ -100,9 +100,14 @@ def _olcek(degerler, n, y0=kagit._G_Y0, y1=kagit._G_Y1):
 
 @pytest.mark.parametrize("ad", sorted(_eski_ornekler()))
 def test_eski_grafik_ayni_png(ad):
-    # PNG baytları zlib sürümüne göre değişir (Windows ile Linux farklı sıkıştırır); pikseller karşılaştırılır.
+    # Örnekler Windows'ta üretildi. Linux'ta zlib ve FreeType sürümü farklı: baytlar ve yazıların kenar
+    # yumuşatması değişir. Yerleşim aynı kalmalı: farklı piksel oranı küçük olmalı.
     beklenen = _resim((VERI / f"eski_{ad}.png").read_bytes())
-    assert _resim(kagit.grafik_ciz(_eski_ornekler()[ad])).tobytes() == beklenen.tobytes()
+    cizilen = _resim(kagit.grafik_ciz(_eski_ornekler()[ad]))
+    assert cizilen.size == beklenen.size
+    fark = ImageChops.difference(cizilen, beklenen).convert("L").point(lambda v: 255 if v > 48 else 0)
+    oran = fark.histogram()[255] / (fark.width * fark.height)
+    assert oran < 0.005, f"farklı piksel oranı {oran:.4f}"
 
 
 def test_egik_cizgi_mavi():
