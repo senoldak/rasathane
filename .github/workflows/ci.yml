@@ -1,13 +1,12 @@
 name: CI
 
-# Ortak paket ve beş fikrin testleri. Kayıt commit'leri (veri klasörleri) CI'ı tetiklemez.
+# Ortak paket ve dört fikrin testleri. Kayıt commit'leri (veri klasörleri) CI'ı tetiklemez.
 on:
   push:
     branches: [main]
     paths-ignore:
       - "biOF/rasathane/veri/**"
       - "CAPitAL/kanal/veri/**"
-      - "graFIX/veri/**"
       - "INseeder/kanal_veri/**"
       - "OPsi/kanal_veri/**"
       - "docs/**"
@@ -39,10 +38,6 @@ jobs:
               python -m compileall -q capitolseeder tests
               pytest -q --cov=capitolseeder
               python -m capitolseeder.cli seed
-          - proje: graFIX
-            python: "3.12"
-            kur: pip install -r requirements.txt
-            test: pytest -q
           - proje: INseeder
             python: "3.12"
             kur: pip install -r requirements.txt
