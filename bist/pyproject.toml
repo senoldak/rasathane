@@ -7,7 +7,7 @@ dependencies = []
 
 [project.optional-dependencies]
 yahoo = ["yfinance>=1.7,<2"]
-dev = ["pytest>=8.0"]
+dev = ["pytest>=8.0", "yfinance>=1.7,<2"]  # testler pandas kullanır; mypy yfinance kurulu ister
 
 [tool.setuptools.packages.find]
 include = ["rasathane_bist*"]
