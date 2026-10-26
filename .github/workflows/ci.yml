@@ -50,6 +50,14 @@ jobs:
               python -m black --check src tests
               python -m mypy src/opsi
               python -m pytest -q
+          - proje: bist
+            python: "3.12"
+            kur: pip install -e ".[dev]" ruff black mypy
+            test: |
+              python -m ruff check rasathane_bist tests
+              python -m black -l 100 --check rasathane_bist tests
+              python -m mypy --strict rasathane_bist
+              python -m pytest -q
     defaults:
       run:
         working-directory: ${{ matrix.proje }}

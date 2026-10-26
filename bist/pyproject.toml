@@ -1,0 +1,23 @@
+[project]
+name = "rasathane-bist"
+version = "0.1.0"
+description = "Rasathane BIST yardımcıları: pay bülteni indirme ve ayrıştırma, Black-Scholes, Yahoo"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+yahoo = ["yfinance>=1.7,<2"]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+include = ["rasathane_bist*"]
+
+[tool.setuptools.package-data]
+rasathane_bist = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
