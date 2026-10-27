@@ -45,7 +45,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_SAHIP_ID: ${{ secrets.TELEGRAM_SAHIP_ID }}
-          TELEGRAM_HEDEF: ${{ vars.OPSI_TELEGRAM_HEDEF }}
+          TELEGRAM_HEDEF: ${{ vars.OPSI_ETF_TELEGRAM_HEDEF }}
           # Gerçek gönderim yalnız OPSI_KANAL_GONDER=1 iken ve elle kuru seçilmemişken.
           KURU: ${{ (vars.OPSI_KANAL_GONDER != '1' || inputs.kuru == true) && '1' || '0' }}
           TARIH: ${{ inputs.tarih }}

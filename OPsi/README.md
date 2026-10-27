@@ -231,7 +231,7 @@ git pull && python -m opsi.cli kanal && git add kanal_veri && git commit -m "ver
 
 Opsiyon evreninden ayrı bir tarama. Nasdaq'ın listelediği bütün ABD ETF'leri (~4.000) her işlem
 günü Yahoo'dan iki yıllık günlük veriyle indirilir. Son 20 günde günlük ortalama işlem tutarı
-$1 milyonun altında kalanlar taranmaz. Kartlar OPsi konusuna gider (`opsi-etf.yml`, İstanbul 02:00).
+$1 milyonun altında kalanlar taranmaz. Kartlar ETF konusuna gider (`@rasathane:220`, değişken `OPSI_ETF_TELEGRAM_HEDEF`; `opsi-etf.yml`, İstanbul 02:00).
 
 | Kart | Ne zaman | İçerik |
 |---|---|---|
