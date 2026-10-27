@@ -1,6 +1,6 @@
 name: CI
 
-# Ortak paket ve dört fikrin testleri. Kayıt commit'leri (veri klasörleri) CI'ı tetiklemez.
+# Ortak paket ve fikirlerin testleri. Kayıt commit'leri (veri klasörleri) CI'ı tetiklemez.
 on:
   push:
     branches: [main]
@@ -9,6 +9,7 @@ on:
       - "CAPitAL/kanal/veri/**"
       - "INseeder/kanal_veri/**"
       - "OPsi/kanal_veri/**"
+      - "emtia/veri/**"
       - "docs/**"
       - "**.md"
   pull_request:
@@ -49,6 +50,14 @@ jobs:
               python -m ruff check src tests
               python -m black --check src tests
               python -m mypy src/opsi
+              python -m pytest -q
+          - proje: emtia
+            python: "3.12"
+            kur: pip install -e ../ortak -e ".[dev]"
+            test: |
+              python -m ruff check rasathane_emtia tests
+              python -m black --check rasathane_emtia tests
+              python -m mypy rasathane_emtia
               python -m pytest -q
           - proje: bist
             python: "3.12"

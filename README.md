@@ -1,6 +1,6 @@
 # Rasathane
 
-ABD piyasası için dört veri projesi ve bunların ortak kart kodu. Projeler her gün kamuya açık kaynaklardan veri toplar, sonuçları kart olarak Rasathane Telegram grubunun (`t.me/rasathane`) ilgili konusuna gönderir. Kartlar yatırım tavsiyesi değildir.
+Piyasalar için veri projeleri ve bunların ortak kart kodu. Projeler her gün kamuya açık kaynaklardan veri toplar, sonuçları kart olarak Rasathane Telegram grubunun (`t.me/rasathane`) ilgili konusuna gönderir. Kartlar yatırım tavsiyesi değildir.
 
 | Klasör | Ne yapar | Kaynak | Gönderim (İstanbul) |
 |---|---|---|---|
@@ -8,6 +8,7 @@ ABD piyasası için dört veri projesi ve bunların ortak kart kodu. Projeler he
 | `CAPitAL/` | Kongre üyelerinin hisse, opsiyon ve tahvil işlem beyanları | Senato ve Temsilciler Meclisi beyanları | Hafta içi 23:30 |
 | `INseeder/` | Şirket yöneticilerinin açık piyasa alımları (Form 4) | SEC EDGAR | Salı–Cumartesi 07:00 |
 | `OPsi/` | Opsiyon piyasası taraması ve oynaklık | Yahoo Finance | Hafta içi 01:30 |
+| `emtia/` | Emtia vadelileri: pano, oranlar, gram altın, sert hareket ve 52 hafta zirve/dip, EIA stokları, CFTC fon pozisyonları | Yahoo Finance, EIA, CFTC | Hafta içi New York 18:15 (İstanbul 01:15; kışın 02:15) |
 | `ortak/` | Kâğıt kart çizimi ve Telegram'a tek tek gönderim (`rasathane_ortak` paketi) | | |
 
 Her projenin kendi README'si ayrıntıyı anlatır.
@@ -31,7 +32,7 @@ pip install -r requirements.txt
 
 ## Testler
 
-Her klasörde `pytest`. CI (`.github/workflows/ci.yml`) altısını ayrı işler olarak koşar.
+Her klasörde `pytest`. CI (`.github/workflows/ci.yml`) yedisini ayrı işler olarak koşar.
 
 ## Zamanlanmış işler
 
