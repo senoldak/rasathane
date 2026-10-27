@@ -8,15 +8,18 @@ import datetime
 import logging
 import time
 from collections.abc import Callable
-from concurrent.futures import ThreadPoolExecutor
+from functools import partial
 from typing import Any, TypeVar
 
 import pandas as pd
 import yfinance as yf
 
+from ..fetch import _throttle
+
 VADE_GUN = 45
+VADE_EN_YAKIN = 2  # bugün ve yarın biten vadeler hacmi şişirir (0DTE), sayılmaz
 VADE_SAYISI = 3
-_ISCI = 4  # Yahoo 8 eşzamanlı istekte hız sınırına takılıyor
+# İstekler sırayla gider: GitHub sunucularında paralel istekler Yahoo oturumunu (crumb) bozuyor.
 
 _DENEME = 4
 _BEKLEME = 30.0  # hız sınırında ilk bekleme (sn); her denemede iki katı
@@ -44,11 +47,14 @@ def opsiyon_zinciri(sembol: str, bugun: datetime.date) -> pd.DataFrame:
     try:
         t = yf.Ticker(sembol)
         vadeler = [
-            v for v in t.options if (datetime.date.fromisoformat(v) - bugun).days <= VADE_GUN
+            v
+            for v in _sinirli(lambda: t.options)
+            if VADE_EN_YAKIN <= (datetime.date.fromisoformat(v) - bugun).days <= VADE_GUN
         ][:VADE_SAYISI]
         parcalar = []
         for v in vadeler:
-            z = t.option_chain(v)
+            _throttle()
+            z = _sinirli(partial(t.option_chain, v))
             for tur, df in (("C", z.calls), ("P", z.puts)):
                 d = df[["strike", "volume", "openInterest"]].copy()
                 d["tur"], d["vade"] = tur, v
@@ -60,8 +66,12 @@ def opsiyon_zinciri(sembol: str, bugun: datetime.date) -> pd.DataFrame:
 
 
 def zincirler(semboller: list[str], bugun: datetime.date) -> dict[str, pd.DataFrame]:
-    with ThreadPoolExecutor(_ISCI) as h:
-        return dict(zip(semboller, h.map(lambda s: opsiyon_zinciri(s, bugun), semboller)))
+    out = {}
+    for s in semboller:
+        _throttle()
+        out[s] = opsiyon_zinciri(s, bugun)
+    log.info("opsiyon zinciri: %d / %d ETF", sum(not z.empty for z in out.values()), len(out))
+    return out
 
 
 def ilk_hisseler(sembol: str) -> list[tuple[str, str, float]]:
@@ -84,8 +94,11 @@ def _varlik(sembol: str) -> float | None:
 
 
 def varliklar(semboller: list[str]) -> dict[str, float]:
-    with ThreadPoolExecutor(_ISCI) as h:
-        sonuc = dict(zip(semboller, h.map(_varlik, semboller)))
-    out = {s: v for s, v in sonuc.items() if v is not None}
+    out: dict[str, float] = {}
+    for s in semboller:
+        _throttle()
+        v = _varlik(s)
+        if v is not None:
+            out[s] = v
     log.info("toplam varlık: %d / %d ETF", len(out), len(semboller))
     return out
