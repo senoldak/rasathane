@@ -65,6 +65,7 @@ jobs:
       - name: Kaydı depoya yaz
         if: always()
         run: |
+          [ -d veri ] || exit 0  # kuru koşuda kayıt yazılmaz
           git config user.name "senoldak"
           git config user.email "119886960+senoldak@users.noreply.github.com"
           git add veri
