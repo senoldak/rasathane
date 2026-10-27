@@ -284,3 +284,19 @@ def test_ek_kartlar_cizilir() -> None:
         ),
     ):
         assert kagit.ciz(k, sayfa_basina=10)[0].png[:4] == b"\x89PNG"
+
+
+def test_hiz_sinirinda_yeniden_dener() -> None:
+    from opsi.etf import ag
+
+    sayac = {"n": 0}
+
+    def is_() -> int:
+        sayac["n"] += 1
+        if sayac["n"] < 3:
+            raise RuntimeError("Too Many Requests. Rate limited.")
+        return 7
+
+    assert ag._sinirli(is_, uyku=lambda _s: None) == 7 and sayac["n"] == 3
+    with pytest.raises(ValueError):
+        ag._sinirli(lambda: (_ for _ in ()).throw(ValueError("x")), uyku=lambda _s: None)
