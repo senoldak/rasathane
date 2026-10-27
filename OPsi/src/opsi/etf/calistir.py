@@ -13,6 +13,7 @@ import csv
 import datetime
 import logging
 import os
+import re
 from collections.abc import Callable
 from pathlib import Path
 from typing import Literal, TypedDict
@@ -61,6 +62,7 @@ _ARA = 3.2  # Telegram grup sınırı ~20 mesaj/dk
 _HISSE_TEMA = 5  # Cuma: hisseleri gösterilen tema sayısı
 _AKIS_SATIRI = 10
 _VARLIK_EN_AZ_DOLAR = 20_000_000.0
+_NAKIT = re.compile(r"money market|treasury|t-bill|cash|gov&agcy|government", re.IGNORECASE)
 
 log = logging.getLogger("opsi.etf")
 
@@ -261,8 +263,13 @@ def calistir(
             )
         for s in secilen[:_HISSE_TEMA]:
             try:
-                ilk = hisse_kaynagi(s)
-                if not ilk:
+                # Vadeli işlemle çalışan fonlar (BWET gibi) hisse yerine nakit fonu tutar.
+                ilk = [
+                    h
+                    for h in hisse_kaynagi(s)
+                    if not h[0].endswith("XX") and not _NAKIT.search(h[1])
+                ]
+                if len(ilk) < 3:
                     continue
                 h_tablolar = indir([h for h, _, _ in ilk])
                 hisseler: list[Hisse] = [
