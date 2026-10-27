@@ -241,6 +241,16 @@ $1 milyonun altında kalanlar taranmaz. Kartlar ETF konusuna gider (`@rasathane:
 | Altın Kesişim | Her gün | SMA 50, SMA 200'ü bugün yukarı kesti |
 | SMA 200'ü Yukarı Kesenler | Her gün | Önceki 20 kapanışı SMA 200'ün altındaydı, bugün üstünde |
 | Hacim Patlaması | Her gün | Hacim 50 günlük ortalamanın en az 3 katı, fiyat en az %2 yukarı |
+| SPY'ye Göre Güçte Zirve | Her gün | ETF/SPY oranı 52 haftanın zirvesini bugün ilk kez aştı, fiyat henüz zirvede değil |
+| 52 Haftanın Dibi | Her gün | Kapanış önceki 252 günün en düşüğünü bugün ilk kez kırdı |
+| Ölüm Kesişimi | Her gün | SMA 50, SMA 200'ü bugün aşağı kesti |
+| SMA 200'ün Altına Düşenler | Her gün | Önceki 20 kapanışı SMA 200'ün üstündeydi, bugün altında |
+| Piyasa Rejimi | Her gün | XLY/XLP, HYG/IEF, CPER/GLD, IWM/SPY, SMH/SPY, EEM/SPY oranlarının 1 aylık değişimi ve SMA 50'ye göre yeri |
+| Olağandışı Opsiyon Hareketi | Her gün | Günlük işlem tutarı $20 milyonu aşan ETF'lerde, 45 güne kadar vadelerde çağrı ya da put hacmi açık pozisyonun yarısını aştı (en az 2.000 kontrat) |
+| Yeni ETF'lerin Seyri | Haftanın ilk işlem günü | Son 45 günde listelenenlerin getirisi ve işlem tutarı büyümesi |
+| Temanın Hisseleri | Cuma | Yükselen Temalar'ın ilk 5 ETF'si için en büyük 10 hisse, ağırlık ve getiri; 52 hafta zirvesindekiler etiketli |
+| Tema Haritası | Cuma | ETF'ler adlarına göre temalara (uranyum, denizcilik, altın madencileri, savunma…) toplanır; tema başına ortanca 1 hafta, 1 ay, 3 ay getirisi |
+| Fon Akışı | Cuma | Son 5 işlem gününde en çok para giren ve çıkan 10'ar ETF |
 
 Her sinyal için bir fiyat grafiği kartı gider. Bir türde 4 ve üstü sinyal varsa önce liste kartı
 gelir. Aynı ETF ve aynı tür son 20 işlem gününde gönderildiyse tekrarlanmaz.
@@ -251,11 +261,16 @@ korelasyonu 0,95'i aşan ETF'lerden yalnız en likidi gösterilir.
 Kaldıraçlı ve ters ETF'ler adlarından tanınır (2X, 3X, Ultra, Bull, Bear, Short, Inverse) ve
 kartlarda "kaldıraçlı" etiketiyle görünür. Yükselen Temalar sıralamasına girmezler.
 
+Fon akışı Yahoo'nun bildirdiği toplam varlıktan tahmin edilir: varlık değişiminden fiyat etkisi
+çıkarılır. Yahoo varlığı her gün güncellemediği için değişmeyen ETF'ler atlanır. Varlıklar her gün
+`kanal_veri/etf/varliklar.csv` dosyasına yazılır; kart, beş işlem günlük kayıt biriktikten sonra çıkar.
+
 İlk koşu yalnız ETF listesini kaydeder; "yeni" sayılan ETF'ler ikinci koşudan sonra listeye
-girenlerdir. Durum `kanal_veri/etf/` klasöründedir (ETF listesi, sinyal kaydı, gönderilenler).
+girenlerdir. Durum `kanal_veri/etf/` klasöründedir (ETF listesi, sinyal kaydı, varlıklar, gönderilenler).
 
 ```bash
-python -m opsi.cli etf --kuru    # kartları cikti/etf/ klasörüne yazar, göndermez (~6 dk)
+python -m opsi.cli etf --kuru    # kartları cikti/etf/ klasörüne yazar, göndermez (~15 dk)
+python -m opsi.cli etf --kuru --hepsi  # haftalık kartları da bugün üretir (önizleme)
 python -m opsi.cli etf           # gönderir
 ```
 

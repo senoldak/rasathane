@@ -9,8 +9,18 @@ import pytest
 from rasathane_ortak import kagit
 
 from opsi.etf import calistir as etf_calistir
-from opsi.etf import liste
-from opsi.etf.cizim import sinyal_grafigi, temalar_ciz, yeni_ciz
+from opsi.etf import ekler, liste
+from opsi.etf.cizim import (
+    akis_ciz,
+    hisseler_ciz,
+    opsiyon_ciz,
+    rejim_ciz,
+    sinyal_grafigi,
+    tema_haritasi_ciz,
+    temalar_ciz,
+    yeni_ciz,
+    yeni_seyir_ciz,
+)
 from opsi.etf.tarama import Olcum, kopyalari_ayikla, olc, sinyaller
 
 
@@ -108,7 +118,7 @@ def test_kopyalar_ayiklanir() -> None:
 
 
 def _olcum(s: str, g3a: float) -> Olcum:
-    return Olcum(s, 20.0, 0.01, 2e6, 0.1, g3a, 0.5)
+    return Olcum(s, 20.0, 0.01, 2e6, 0.02, 0.1, g3a, 0.5)
 
 
 def test_kartlar_cizilir() -> None:
@@ -157,6 +167,9 @@ def test_akis_kuru(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
         veri=tmp_path / "v",
         indir=lambda _s: tablolar,
         liste_kaynagi=lambda: guncel,
+        zincir_kaynagi=lambda _s, _b: {},
+        hisse_kaynagi=lambda _s: [],
+        varlik_kaynagi=lambda _s: {},
     )
     assert sonuc["durum"] == "kuru" and sonuc["sinyal_sayisi"] >= 1
     assert len(list((tmp_path / "c").glob("*.png"))) == sonuc["kart_sayisi"]
@@ -172,3 +185,102 @@ def test_susturma(tmp_path: Path) -> None:
     s = etf_calistir._susturulanlar(yol, "2026-10-23", gunler)
     assert s == {("zirve_52", "BWET")}
     assert datetime.date(2026, 10, 23).weekday() == 4
+
+
+def test_asagi_yonlu_sinyaller() -> None:
+    c = list(np.linspace(60, 50, 299)) + [48.0]
+    df = _df(c)
+    o = olc("X", df)
+    assert o is not None
+    assert "dip_52" in {s.tur for s in sinyaller("X", df, o)}
+    c = list(np.linspace(80, 100, 280)) + [85.0]
+    df = _df(c)
+    o = olc("X", df)
+    assert o is not None
+    assert "sma200_asagi" in {s.tur for s in sinyaller("X", df, o)}
+
+
+def test_rs_zirve_fiyat_zirvesinden_once() -> None:
+    """ETF düz gidiyor, SPY düşüyor: oran zirvede, fiyat zirvenin altında."""
+    n = 300
+    c = np.r_[np.linspace(50, 60, 100), np.linspace(60, 55, n - 101), [56.0]]
+    spy_c = np.r_[np.full(100, 400.0), np.linspace(400, 300, n - 101), [290.0]]
+    df = _df(c)
+    spy = pd.Series(spy_c, index=df.index)
+    o = olc("X", df)
+    assert o is not None
+    rs = [s for s in sinyaller("X", df, o, spy) if s.tur == "rs_zirve"]
+    assert rs and rs[0].seviye < 0
+
+
+def test_tema_bul() -> None:
+    assert ekler.tema_bul("Breakwave Tanker Shipping ETF") == "Denizcilik ve tanker"
+    assert ekler.tema_bul("Global X Uranium ETF") == "Uranyum ve nükleer"
+    assert ekler.tema_bul("Invesco Solar Energy ETF") == "Temiz enerji"
+    assert ekler.tema_bul("Energy Select Sector SPDR") == "Petrol ve gaz"
+    assert ekler.tema_bul("Netherlands Index Fund") is None
+
+
+def test_opsiyon_ozeti() -> None:
+    z = pd.DataFrame(
+        {
+            "tur": ["C", "C", "P"],
+            "strike": [45.0, 50.0, 40.0],
+            "vade": ["2026-11-20"] * 3,
+            "volume": [4000, 1000, 500],
+            "openInterest": [3000, 2000, 9000],
+        }
+    )
+    r = ekler.opsiyon_ozeti("URA", z)
+    assert len(r) == 1 and r[0].yon == "çağrı" and r[0].en_aktif == "45 C 20.11"
+    assert r[0].oran == pytest.approx(1.0)
+
+
+def test_fon_akisi_fiyat_etkisini_cikarir() -> None:
+    gunler = [d.date().isoformat() for d in pd.bdate_range(end="2026-10-23", periods=6)]
+    df = _df([10.0, 10, 10, 10, 10, 11.0], son="2026-10-23")
+    v = pd.DataFrame({"tarih": gunler, "sembol": "X", "varlik": [100e6] * 5 + [120e6]})
+    a = ekler.fon_akisi(v, {"X": df}, {"X": "X Fund"}, "2026-10-23")
+    assert len(a) == 1 and a[0].akis == pytest.approx(10e6)
+
+
+def test_yeni_seyir() -> None:
+    df = _df([10.0] * 10 + [11.0] * 10, hacim=1e5, son="2026-10-23")
+    df.iloc[-5:, df.columns.get_loc("Volume")] = 5e5
+    kayit: dict[str, liste.Etf] = {
+        "NEW": {"sembol": "NEW", "ad": "New Fund", "kaldirac": False, "ilk_gorulme": "2026-09-28"}
+    }
+    r = ekler.yeni_seyir(kayit, {"NEW": df}, "2026-10-26", "2026-10-19")
+    assert len(r) == 1 and r[0].son_hacim > r[0].ilk_hacim
+
+
+def test_ek_kartlar_cizilir() -> None:
+    o = _olcum("URA", 0.3)
+    tablolar = {s: _df(list(np.linspace(10, 12, 100))) for s in ("XLY", "XLP", "HYG", "IEF")}
+    for k in (
+        tema_haritasi_ciz(
+            [ekler.TemaSatiri("Uranyum ve nükleer", 5, 0.02, 0.1, 0.3, "URA")], "2026-10-23"
+        ),
+        rejim_ciz(ekler.rejim(tablolar), "2026-10-23"),
+        yeni_seyir_ciz(
+            [ekler.YeniSeyir("NEW", "New Fund", "2026-10-01", 0.1, 1e6, 3e7)], "2026-10-26"
+        ),
+        opsiyon_ciz(
+            [ekler.OpsiyonSatiri("URA", "çağrı", 12000, 8000, 1.5, 0.4, "45 C 20.11")],
+            {},
+            "2026-10-23",
+            300,
+        ),
+        akis_ciz(
+            [ekler.AkisSatiri("URA", "Uranium", 2.5e8, 0.05)],
+            [ekler.AkisSatiri("XLE", "Energy", -1e9, -0.03)],
+            "2026-10-23",
+        ),
+        hisseler_ciz(
+            "URA",
+            "Global X Uranium ETF",
+            [("CCJ", "Cameco", 0.22, o, True), ("NXE", "NexGen", 0.06, None, False)],
+            "2026-10-23",
+        ),
+    ):
+        assert kagit.ciz(k, sayfa_basina=10)[0].png[:4] == b"\x89PNG"

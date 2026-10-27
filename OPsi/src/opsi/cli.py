@@ -130,7 +130,7 @@ def cmd_kanal(kuru: bool = False, tarih: str | None = None) -> int:
     return 1 if sonuc["durum"] in ("spy_yok", "eksik_veri") else 0
 
 
-def cmd_etf(kuru: bool = False, tarih: str | None = None) -> int:
+def cmd_etf(kuru: bool = False, tarih: str | None = None, hepsi: bool = False) -> int:
     """ETF Radarı kartları: yeni ETF'ler, yükselen temalar, günlük sinyaller (kuru: üret, gönderme)."""
     if not kuru and not (os.environ.get("TELEGRAM_BOT_TOKEN") and os.environ.get("TELEGRAM_HEDEF")):
         print("TELEGRAM_BOT_TOKEN ve TELEGRAM_HEDEF gerekli (ya da --kuru)", file=sys.stderr)
@@ -139,7 +139,7 @@ def cmd_etf(kuru: bool = False, tarih: str | None = None) -> int:
     from .etf import calistir as etf
 
     try:
-        sonuc = etf.calistir(kuru=kuru, tarih=tarih)
+        sonuc = etf.calistir(kuru=kuru, tarih=tarih, hepsi=hepsi)
     except ValueError as e:
         print(str(e), file=sys.stderr)
         return 2
@@ -185,6 +185,9 @@ def main(argv: list[str] | None = None) -> int:
     p_etf.add_argument(
         "--tarih", default=None, help="YYYY-AA-GG (son seans; işlem günü kontrolünü atlar)"
     )
+    p_etf.add_argument(
+        "--hepsi", action="store_true", help="haftalık kartları da bugün üret (önizleme)"
+    )
     args = parser.parse_args(argv)
     if args.cmd == "nightly":
         return cmd_nightly(
@@ -197,7 +200,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "kanal":
         return cmd_kanal(args.kuru, args.tarih)
     if args.cmd == "etf":
-        return cmd_etf(args.kuru, args.tarih)
+        return cmd_etf(args.kuru, args.tarih, args.hepsi)
     if args.cmd == "universes":
         return cmd_universes(refresh=args.refresh)
     if args.cmd == "backtest":

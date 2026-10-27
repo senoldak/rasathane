@@ -21,7 +21,12 @@ TURLER: dict[str, str] = {
     "altin": "Altın Kesişim",
     "sma200_yukari": "SMA 200'ü Yukarı Kesenler",
     "hacim": "Hacim Patlaması",
+    "rs_zirve": "SPY'ye Göre Güçte Zirve",
+    "dip_52": "52 Haftanın Dibi",
+    "olum": "Ölüm Kesişimi",
+    "sma200_asagi": "SMA 200'ün Altına Düşenler",
 }
+ASAGI = {"dip_52", "olum", "sma200_asagi"}
 
 
 @dataclass(frozen=True)
@@ -30,6 +35,7 @@ class Olcum:
     kapanis: float
     degisim: float
     dolar_hacim: float
+    g1h: float | None  # 5 işlem günü
     g1a: float | None
     g3a: float | None
     gyb: float | None  # yılbaşından beri
@@ -41,7 +47,7 @@ class Sinyal:
     sembol: str
     kapanis: float
     degisim: float
-    seviye: float  # önceki zirve / SMA 200 / hacim katı
+    seviye: float  # önceki zirve-dip / SMA 200 / hacim katı / zirveye uzaklık
     dolar_hacim: float
 
 
@@ -73,19 +79,24 @@ def olc(sembol: str, df: pd.DataFrame) -> Olcum | None:
         kapanis=float(c[-1]),
         degisim=float(c[-1] / c[-2] - 1),
         dolar_hacim=dolar,
+        g1h=_getiri(c, 5),
         g1a=_getiri(c, 21),
         g3a=_getiri(c, 63),
         gyb=_yilbasi(df),
     )
 
 
-def _zirve(c: np.ndarray) -> float | None:
-    """Kapanış önceki 252 günün en yükseğini bugün ilk kez (binde 2 payla) aştıysa o seviye."""
+def _zirve(c: np.ndarray, yon: int = 1) -> float | None:
+    """Kapanış önceki 252 günün en yükseğini (yon=-1: en düşüğünü) bugün ilk kez (binde 2
+    payla) aştıysa o seviye."""
     if len(c) < DONEM + 2:
         return None
-    seviye = float(np.max(c[-1 - DONEM : -1]))
-    dunku = float(np.max(c[-2 - DONEM : -2]))
-    if c[-1] > seviye * (1 + ASIM_PAYI) and not c[-2] > dunku * (1 + ASIM_PAYI):
+    sec = np.max if yon > 0 else np.min
+    seviye = float(sec(c[-1 - DONEM : -1]))
+    dunku = float(sec(c[-2 - DONEM : -2]))
+    if yon * (c[-1] - seviye * (1 + yon * ASIM_PAYI)) > 0 and not (
+        yon * (c[-2] - dunku * (1 + yon * ASIM_PAYI)) > 0
+    ):
         return seviye
     return None
 
@@ -95,21 +106,35 @@ def _sma(c: np.ndarray, n: int) -> np.ndarray:
     return s
 
 
-def _sma200_yukari(c: np.ndarray, s200: np.ndarray) -> float | None:
+def _sma200_kesis(c: np.ndarray, s200: np.ndarray, yon: int = 1) -> float | None:
+    """Önceki 20 kapanış SMA 200'ün öbür yanındaydı, bugün bu yanında."""
     if len(c) < 200 + ALTINDA_GUN + 1:
         return None
     once_c, once_s = c[-1 - ALTINDA_GUN : -1], s200[-1 - ALTINDA_GUN : -1]
-    if c[-1] > s200[-1] and bool(np.all(once_c < once_s)):
+    if yon * (c[-1] - s200[-1]) > 0 and bool(np.all(yon * (once_c - once_s) < 0)):
         return float(s200[-1])
     return None
 
 
-def _altin(s50: np.ndarray, s200: np.ndarray) -> float | None:
+def _kesisim(s50: np.ndarray, s200: np.ndarray, yon: int = 1) -> float | None:
     if len(s200) < 202 or np.isnan(s200[-2]):
         return None
-    if s50[-1] > s200[-1] and s50[-2] <= s200[-2]:
+    if yon * (s50[-1] - s200[-1]) > 0 and yon * (s50[-2] - s200[-2]) <= 0:
         return float(s200[-1])
     return None
+
+
+def _rs_zirve(c: np.ndarray, spy: np.ndarray | None) -> float | None:
+    """ETF/SPY oranı önceki 252 günün en yükseğini bugün ilk kez aştı, fiyat ise henüz 52 hafta
+    zirvesinde değil: göreli güç fiyattan önce dönüyor. Değer: fiyatın zirveye uzaklığı (oran)."""
+    if spy is None or len(spy) != len(c) or len(c) < DONEM + 2 or np.any(spy[-DONEM - 2 :] <= 0):
+        return None
+    if _zirve(c / spy) is None:
+        return None
+    zirve = float(np.max(c[-1 - DONEM : -1]))
+    if c[-1] >= zirve:
+        return None
+    return float(c[-1] / zirve - 1)
 
 
 def _hacim(c: np.ndarray, v: np.ndarray) -> float | None:
@@ -122,15 +147,26 @@ def _hacim(c: np.ndarray, v: np.ndarray) -> float | None:
     return kat if kat >= HACIM_KAT else None
 
 
-def sinyaller(sembol: str, df: pd.DataFrame, olcum: Olcum) -> list[Sinyal]:
+def sinyaller(
+    sembol: str, df: pd.DataFrame, olcum: Olcum, spy: pd.Series | None = None
+) -> list[Sinyal]:
     c = df["Close"].to_numpy(dtype=float)
     v = df["Volume"].to_numpy(dtype=float)
-    s200 = _sma(c, 200)
+    s50, s200 = _sma(c, 50), _sma(c, 200)
+    spy_c = None
+    if spy is not None:
+        hizali = spy.reindex(df.index)
+        if hizali.notna().all():
+            spy_c = hizali.to_numpy(dtype=float)
     bulunan = {
         "zirve_52": _zirve(c),
-        "altin": _altin(_sma(c, 50), s200),
-        "sma200_yukari": _sma200_yukari(c, s200),
+        "altin": _kesisim(s50, s200),
+        "sma200_yukari": _sma200_kesis(c, s200),
         "hacim": _hacim(c, v),
+        "rs_zirve": _rs_zirve(c, spy_c),
+        "dip_52": _zirve(c, -1),
+        "olum": _kesisim(s50, s200, -1),
+        "sma200_asagi": _sma200_kesis(c, s200, -1),
     }
     return [
         Sinyal(tur, sembol, olcum.kapanis, olcum.degisim, seviye, olcum.dolar_hacim)

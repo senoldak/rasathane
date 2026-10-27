@@ -16,6 +16,10 @@ on:
         description: "YYYY-AA-GG (boş: bugün; işlem günü kontrolünü atlar)"
         type: string
         default: ""
+      hepsi:
+        description: "Haftalık kartları da bugün üret (Pazartesi ve Cuma kartları)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -49,10 +53,12 @@ jobs:
           # Gerçek gönderim yalnız OPSI_KANAL_GONDER=1 iken ve elle kuru seçilmemişken.
           KURU: ${{ (vars.OPSI_KANAL_GONDER != '1' || inputs.kuru == true) && '1' || '0' }}
           TARIH: ${{ inputs.tarih }}
+          HEPSI: ${{ inputs.hepsi == true && '1' || '0' }}
         run: |
           ARGS=()
           if [ "$KURU" = "1" ]; then ARGS+=(--kuru); fi
           if [ -n "$TARIH" ]; then ARGS+=(--tarih "$TARIH"); fi
+          if [ "$HEPSI" = "1" ]; then ARGS+=(--hepsi); fi
           python -m opsi.cli etf "${ARGS[@]}"
       - name: Kartları yapıt olarak sakla
         if: always()

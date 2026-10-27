@@ -34,8 +34,21 @@ class Guncel(TypedDict):
     fiyat: float | None
 
 
+# Tek hisseye bağlı gelir fonları ve vade/tampon yapıları tema değildir.
+_TEMA_DISI = re.compile(
+    r"weeklypay|yieldmax|option income|covered call|buywrite|premium income|income strategy"
+    r"|buffer|defined outcome|target \d{4}|\bmax\b.*\boption",
+    re.IGNORECASE,
+)
+
+
 def kaldiracli_mi(ad: str) -> bool:
     return bool(_KALDIRAC.search(ad))
+
+
+def tema_disi_mi(e: Etf) -> bool:
+    """Kaldıraçlı, ters ya da tek hisse gelir fonu: tema sıralamalarına girmez."""
+    return e["kaldirac"] or bool(_TEMA_DISI.search(e["ad"]))
 
 
 def _fiyat(metin: str) -> float | None:

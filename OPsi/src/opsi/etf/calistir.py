@@ -1,9 +1,10 @@
 # src/opsi/etf/calistir.py
 """ETF Radarı günlük akışı: ETF listesi → toplu fiyat → sinyaller → kartlar → gönderim.
 
-Kartlar: Yeni ETF'ler (haftanın ilk işlem günü), Yükselen Temalar (Cuma), her gün sinyal türü
-başına liste (4 ve üstünde) ve her sinyal için fiyat grafiği. Aynı ETF ve tür 20 işlem günü
-içinde tekrarlanmaz.
+Her gün: Piyasa Rejimi, Olağandışı Opsiyon Hareketi, sinyal türü başına liste (4 ve üstünde)
+ve her sinyal için fiyat grafiği. Haftanın ilk işlem günü: Yeni ETF'ler, Yeni ETF'lerin Seyri.
+Cuma: Yükselen Temalar, en güçlü 5 temanın hisseleri, Tema Haritası, Fon Akışı.
+Aynı ETF ve tür 20 işlem günü içinde tekrarlanmaz.
 
 Ayarlar ortamdan: TELEGRAM_BOT_TOKEN, TELEGRAM_HEDEF (@grup:konu), TELEGRAM_SAHIP_ID.
 """
@@ -24,16 +25,42 @@ from ..kanal.calistir import _spy_gunleri, haftanin_ilki, islem_gunu
 from ..kanal.cizim import FIKIR, SAYFA_SATIRI
 from ..kanal.gecmis import gonderildi_isaretle, gonderildi_mi
 from ..kanal.telegram import requests_istek, sahibe_yaz
+from . import ag
 from . import liste as etf_liste
 from . import veri as etf_veri
-from .cizim import etiket, sinyal_grafigi, sinyal_listesi_ciz, temalar_ciz, yeni_ciz
-from .tarama import TURLER, Olcum, Sinyal, kopyalari_ayikla, olc, sinyaller
+from .cizim import (
+    Hisse,
+    akis_ciz,
+    etiket,
+    hisseler_ciz,
+    opsiyon_ciz,
+    rejim_ciz,
+    sinyal_grafigi,
+    sinyal_listesi_ciz,
+    tema_haritasi_ciz,
+    temalar_ciz,
+    yeni_ciz,
+    yeni_seyir_ciz,
+)
+from .ekler import (
+    OPSIYON_EN_AZ_DOLAR,
+    OpsiyonSatiri,
+    fon_akisi,
+    opsiyon_ozeti,
+    rejim,
+    tema_haritasi,
+    yeni_seyir,
+)
+from .tarama import DONEM, TURLER, Olcum, Sinyal, kopyalari_ayikla, olc, sinyaller
 
 _MIN_ORAN = 0.80  # listedeki ETF'lerin bu kadarının verisi gelmezse gönderim yok
 _TEMA_SATIRI = 20
 _LISTE_ESIGI = 4  # bir türde bu kadar ve üstü sinyal varsa önce liste kartı
 _SUSTURMA_GUN = 20
 _ARA = 3.2  # Telegram grup sınırı ~20 mesaj/dk
+_HISSE_TEMA = 5  # Cuma: hisseleri gösterilen tema sayısı
+_AKIS_SATIRI = 10
+_VARLIK_EN_AZ_DOLAR = 20_000_000.0
 
 log = logging.getLogger("opsi.etf")
 
@@ -48,6 +75,9 @@ class Sonuc(TypedDict):
 
 Indirici = Callable[[list[str]], dict[str, pd.DataFrame]]
 ListeKaynagi = Callable[[], dict[str, etf_liste.Guncel]]
+ZincirKaynagi = Callable[[list[str], datetime.date], dict[str, pd.DataFrame]]
+HisseKaynagi = Callable[[str], list[tuple[str, str, float]]]
+VarlikKaynagi = Callable[[list[str]], dict[str, float]]
 
 
 def _sahibe(metin: str) -> None:
@@ -86,6 +116,27 @@ def _yeni_baslangici(tarih: str, gunler: list[str]) -> str:
     return next((g for g in gunler if gecen_pzt <= g), gecen_pzt)
 
 
+def _varlik_oku(yol: Path) -> pd.DataFrame:
+    if not yol.exists():
+        return pd.DataFrame(columns=["tarih", "sembol", "varlik"])
+    return pd.read_csv(yol, dtype={"tarih": str, "sembol": str, "varlik": float})
+
+
+def _varlik_yaz(yol: Path, tarih: str, bugun: dict[str, float]) -> None:
+    eski = _varlik_oku(yol)
+    eski = eski[eski["tarih"] != tarih]
+    yeni = pd.DataFrame({"tarih": tarih, "sembol": list(bugun), "varlik": list(bugun.values())})
+    yol.parent.mkdir(parents=True, exist_ok=True)
+    pd.concat([eski, yeni]).sort_values(["tarih", "sembol"]).to_csv(
+        yol, index=False, lineterminator="\n", float_format="%.0f"
+    )
+
+
+def _zirvede(df: pd.DataFrame) -> bool:
+    c = df["Close"].to_numpy(dtype=float)
+    return len(c) > DONEM and c[-1] >= c[-1 - DONEM :].max()
+
+
 def calistir(
     kuru: bool,
     tarih: str | None = None,
@@ -94,7 +145,12 @@ def calistir(
     veri: Path = Path("kanal_veri/etf"),
     indir: Indirici = etf_veri.indir,
     liste_kaynagi: ListeKaynagi = etf_liste.nasdaq_listesi,
+    zincir_kaynagi: ZincirKaynagi = ag.zincirler,
+    hisse_kaynagi: HisseKaynagi = ag.ilk_hisseler,
+    varlik_kaynagi: VarlikKaynagi = ag.varliklar,
+    hepsi: bool = False,
 ) -> Sonuc:
+    """hepsi: haftalık kartları da (Pazartesi ve Cuma) bugün üret; önizleme için."""
     simdi = simdi or datetime.datetime.now(datetime.UTC)
     gunler = _spy_gunleri()
     if not gunler:
@@ -127,6 +183,7 @@ def calistir(
 
     olcumler: dict[str, Olcum] = {}
     bulunan: list[Sinyal] = []
+    spy = tablolar["SPY"]["Close"] if "SPY" in tablolar else None
     for sembol, df in tablolar.items():
         try:
             o = olc(sembol, df)
@@ -134,14 +191,42 @@ def calistir(
                 continue
             olcumler[sembol] = o
             if sembol in guncel:
-                bulunan.extend(sinyaller(sembol, df, o))
+                bulunan.extend(sinyaller(sembol, df, o, spy))
         except Exception as e:
             log.warning("%s ölçülemedi: %s", sembol, e)
 
     kartlar: list[tuple[str, kagit.Kart]] = []
     gun_tarihi = kagit.tarih_metni(datetime.date.fromisoformat(tarih))
+    cuma = hepsi or datetime.date.fromisoformat(tarih).weekday() == 4
+    adlar = {s: e["ad"] for s, e in kayit.items()}
 
-    if haftanin_ilki(tarih, gunler):
+    rejim_satirlari = rejim(tablolar)
+    if rejim_satirlari:
+        kartlar.append(("rejim", rejim_ciz(rejim_satirlari, tarih)))
+
+    opsiyonlu = sorted(
+        (s for s, o in olcumler.items() if s in guncel and o.dolar_hacim >= OPSIYON_EN_AZ_DOLAR),
+        key=lambda s: -olcumler[s].dolar_hacim,
+    )
+    opsiyon_satirlari: list[OpsiyonSatiri] = []
+    for s, z in zincir_kaynagi(opsiyonlu, datetime.date.fromisoformat(tarih)).items():
+        try:
+            opsiyon_satirlari.extend(opsiyon_ozeti(s, z))
+        except Exception as e:
+            log.warning("%s opsiyon özeti çıkarılamadı: %s", s, e)
+    if opsiyon_satirlari:
+        opsiyon_satirlari.sort(key=lambda r: -r.oran)
+        kartlar.append(("opsiyon", opsiyon_ciz(opsiyon_satirlari, adlar, tarih, len(opsiyonlu))))
+
+    varlikli = [
+        s
+        for s, o in olcumler.items()
+        if s in guncel and o.dolar_hacim >= _VARLIK_EN_AZ_DOLAR and not kayit[s]["kaldirac"]
+    ]
+    bugun_varlik = varlik_kaynagi(varlikli) if varlikli else {}
+    varlik_yolu = veri / "varliklar.csv"
+
+    if hepsi or haftanin_ilki(tarih, gunler):
         bas = _yeni_baslangici(tarih, gunler)
         yeniler = sorted(
             (e for e in kayit.values() if e["ilk_gorulme"] and bas <= e["ilk_gorulme"] < tarih),
@@ -149,13 +234,16 @@ def calistir(
         )
         if yeniler:
             kartlar.append(("yeni", yeni_ciz(yeniler, guncel, tarih, bas)))
+        seyir = yeni_seyir(kayit, tablolar, tarih, bas)
+        if seyir:
+            kartlar.append(("seyir", yeni_seyir_ciz(seyir, tarih)))
 
-    if datetime.date.fromisoformat(tarih).weekday() == 4:
+    if cuma:
         duz = sorted(
             (
                 o
                 for s, o in olcumler.items()
-                if s in guncel and o.g3a is not None and not kayit[s]["kaldirac"]
+                if s in guncel and o.g3a is not None and not etf_liste.tema_disi_mi(kayit[s])
             ),
             key=lambda o: -(o.g3a or 0.0),
         )
@@ -163,7 +251,6 @@ def calistir(
             :_TEMA_SATIRI
         ]
         if secilen:
-            adlar = {s: kayit[s]["ad"] for s in secilen}
             kartlar.append(
                 (
                     "temalar",
@@ -172,6 +259,40 @@ def calistir(
                     ),
                 )
             )
+        for s in secilen[:_HISSE_TEMA]:
+            try:
+                ilk = hisse_kaynagi(s)
+                if not ilk:
+                    continue
+                h_tablolar = indir([h for h, _, _ in ilk])
+                hisseler: list[Hisse] = [
+                    (
+                        h,
+                        ad,
+                        agirlik,
+                        olc(h, h_tablolar[h]) if h in h_tablolar else None,
+                        h in h_tablolar and _zirvede(h_tablolar[h]),
+                    )
+                    for h, ad, agirlik in ilk
+                ]
+                kartlar.append((f"hisseler:{s}", hisseler_ciz(s, kayit[s]["ad"], hisseler, tarih)))
+            except Exception as e:
+                log.warning("%s hisse kartı atlandı: %s", s, e)
+
+        harita = tema_haritasi({s: o for s, o in olcumler.items() if s in guncel}, kayit)
+        if harita:
+            kartlar.append(("harita", tema_haritasi_ciz(harita, tarih)))
+
+        gecmis_varlik = _varlik_oku(varlik_yolu)
+        gecmis_varlik = gecmis_varlik[gecmis_varlik["tarih"] != tarih]
+        bugunku = pd.DataFrame(
+            {"tarih": tarih, "sembol": list(bugun_varlik), "varlik": list(bugun_varlik.values())}
+        )
+        akis = fon_akisi(pd.concat([gecmis_varlik, bugunku]), tablolar, adlar, tarih)
+        girenler = sorted((a for a in akis if a.akis > 0), key=lambda a: -a.akis)[:_AKIS_SATIRI]
+        cikanlar = sorted((a for a in akis if a.akis < 0), key=lambda a: a.akis)[:_AKIS_SATIRI]
+        if girenler or cikanlar:
+            kartlar.append(("akis", akis_ciz(girenler, cikanlar, tarih)))
 
     susturulan = _susturulanlar(veri / "sinyal_kaydi.csv", tarih, gunler)
     giden_sinyaller: list[Sinyal] = []
@@ -239,6 +360,8 @@ def calistir(
             _sahibe(f"OPsi ETF {tarih}: gönderim başarısız (giden kartlar kaydedildi): {e}")
             raise
     etf_liste.yaz(kayit, liste_yolu)
+    if bugun_varlik:
+        _varlik_yaz(varlik_yolu, tarih, bugun_varlik)
     _kaydet(veri / "sinyal_kaydi.csv", tarih, giden_sinyaller)
     gonderildi_isaretle(tarih, gonderilen_yolu)
     durum2: Literal["gonderildi", "kart_yok"] = "gonderildi" if gidenler else "kart_yok"

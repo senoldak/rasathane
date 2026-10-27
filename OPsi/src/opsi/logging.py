@@ -17,9 +17,19 @@ class ScanAdapter(logging.LoggerAdapter[logging.Logger]):
         return msg, kwargs
 
 
+class _VarsayilanScan(logging.Filter):
+    """scan_id taşımayan kayıtlar (kanal, ETF) "-" ile yazılır; biçim hatası vermez."""
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        if not hasattr(record, "scan_id"):
+            record.scan_id = "-"
+        return True
+
+
 def setup_logging(level: int = logging.INFO) -> None:
     """Attaches the root logger to a single scan_id format (idempotent)."""
     handler = logging.StreamHandler(sys.stdout)
+    handler.addFilter(_VarsayilanScan())
     handler.setFormatter(
         logging.Formatter("%(asctime)s scan=%(scan_id)s %(levelname)s %(name)s: %(message)s")
     )
