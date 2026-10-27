@@ -227,6 +227,38 @@ Zamanlayıcı'da hafta içi 01:45'te çalıştırılabilir. **Önce GitHub'daki 
 git pull && python -m opsi.cli kanal && git add kanal_veri && git commit -m "veri(kanal)" && git push
 ```
 
+### ETF Radarı
+
+Opsiyon evreninden ayrı bir tarama. Nasdaq'ın listelediği bütün ABD ETF'leri (~4.000) her işlem
+günü Yahoo'dan iki yıllık günlük veriyle indirilir. Son 20 günde günlük ortalama işlem tutarı
+$1 milyonun altında kalanlar taranmaz. Kartlar OPsi konusuna gider (`opsi-etf.yml`, İstanbul 02:00).
+
+| Kart | Ne zaman | İçerik |
+|---|---|---|
+| Yeni ETF'ler | Haftanın ilk işlem günü | Geçen haftanın başından beri listeye ilk kez giren ETF'ler |
+| Yükselen Temalar | Cuma | 3 aylık getiride önde gelen 20 ETF; 1 ay ve yılbaşı getirisiyle |
+| 52 Haftanın Zirvesi | Her gün | Kapanış önceki 252 günün en yükseğini bugün ilk kez aştı |
+| Altın Kesişim | Her gün | SMA 50, SMA 200'ü bugün yukarı kesti |
+| SMA 200'ü Yukarı Kesenler | Her gün | Önceki 20 kapanışı SMA 200'ün altındaydı, bugün üstünde |
+| Hacim Patlaması | Her gün | Hacim 50 günlük ortalamanın en az 3 katı, fiyat en az %2 yukarı |
+
+Her sinyal için bir fiyat grafiği kartı gider. Bir türde 4 ve üstü sinyal varsa önce liste kartı
+gelir. Aynı ETF ve aynı tür son 20 işlem gününde gönderildiyse tekrarlanmaz.
+
+Aynı endeksi izleyen fonlar (SPY, IVV, VOO gibi) aynı gün aynı sinyali verir. Son 126 günlük getiri
+korelasyonu 0,95'i aşan ETF'lerden yalnız en likidi gösterilir.
+
+Kaldıraçlı ve ters ETF'ler adlarından tanınır (2X, 3X, Ultra, Bull, Bear, Short, Inverse) ve
+kartlarda "kaldıraçlı" etiketiyle görünür. Yükselen Temalar sıralamasına girmezler.
+
+İlk koşu yalnız ETF listesini kaydeder; "yeni" sayılan ETF'ler ikinci koşudan sonra listeye
+girenlerdir. Durum `kanal_veri/etf/` klasöründedir (ETF listesi, sinyal kaydı, gönderilenler).
+
+```bash
+python -m opsi.cli etf --kuru    # kartları cikti/etf/ klasörüne yazar, göndermez (~6 dk)
+python -m opsi.cli etf           # gönderir
+```
+
 ## Security
 
 - No credentials are stored in code, config, or history; the Alpaca provider is an

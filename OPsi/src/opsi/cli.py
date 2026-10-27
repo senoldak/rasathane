@@ -130,6 +130,23 @@ def cmd_kanal(kuru: bool = False, tarih: str | None = None) -> int:
     return 1 if sonuc["durum"] in ("spy_yok", "eksik_veri") else 0
 
 
+def cmd_etf(kuru: bool = False, tarih: str | None = None) -> int:
+    """ETF Radarı kartları: yeni ETF'ler, yükselen temalar, günlük sinyaller (kuru: üret, gönderme)."""
+    if not kuru and not (os.environ.get("TELEGRAM_BOT_TOKEN") and os.environ.get("TELEGRAM_HEDEF")):
+        print("TELEGRAM_BOT_TOKEN ve TELEGRAM_HEDEF gerekli (ya da --kuru)", file=sys.stderr)
+        return 2
+    setup_logging()
+    from .etf import calistir as etf
+
+    try:
+        sonuc = etf.calistir(kuru=kuru, tarih=tarih)
+    except ValueError as e:
+        print(str(e), file=sys.stderr)
+        return 2
+    print(json.dumps(sonuc, ensure_ascii=False))
+    return 1 if sonuc["durum"] in ("spy_yok", "eksik_veri") else 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="opsi", description="OPsi options scanner")
     sub = parser.add_subparsers(dest="cmd", required=True)
@@ -163,6 +180,11 @@ def main(argv: list[str] | None = None) -> int:
     p_kanal = sub.add_parser("kanal", help="Rasathane Telegram kartları (günlük)")
     p_kanal.add_argument("--kuru", action="store_true", help="kartları üret, gönderme")
     p_kanal.add_argument("--tarih", default=None, help="YYYY-AA-GG (işlem günü kontrolünü atlar)")
+    p_etf = sub.add_parser("etf", help="ETF Radarı kartları (günlük)")
+    p_etf.add_argument("--kuru", action="store_true", help="kartları üret, gönderme")
+    p_etf.add_argument(
+        "--tarih", default=None, help="YYYY-AA-GG (son seans; işlem günü kontrolünü atlar)"
+    )
     args = parser.parse_args(argv)
     if args.cmd == "nightly":
         return cmd_nightly(
@@ -174,6 +196,8 @@ def main(argv: list[str] | None = None) -> int:
         )
     if args.cmd == "kanal":
         return cmd_kanal(args.kuru, args.tarih)
+    if args.cmd == "etf":
+        return cmd_etf(args.kuru, args.tarih)
     if args.cmd == "universes":
         return cmd_universes(refresh=args.refresh)
     if args.cmd == "backtest":
