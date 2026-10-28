@@ -12,6 +12,7 @@ _OYNAKLIK_GUN = 60
 BUYUK_Z = 2.5  # günlük getiri / 60 günlük std
 BUYUK_EN_AZ = 0.0075  # ve en az %0,75 (kurlar emtiadan sakin)
 SUPHELI_Z = 8.0  # bunun üstü çoğu zaman Yahoo'nun hatalı kotasyonu: sinyal verilmez
+SUPHELI_EN_AZ = 0.03  # ve en az %3 (çok sakin kurlarda küçük hareket büyük z verir)
 OYN_GUN = 21
 OYN_UC = 0.95  # 1 aylık oynaklık son 5 yılın üst %5'inde
 YILLIK = float(np.sqrt(252))
@@ -93,7 +94,7 @@ def yuzdelik(s: pd.Series) -> float:
 
 def sinyaller(sembol: str, df: pd.DataFrame, o: Olcum) -> list[Sinyal]:
     out: list[Sinyal] = []
-    if o.z is not None and abs(o.z) >= SUPHELI_Z:
+    if o.z is not None and abs(o.z) >= SUPHELI_Z and abs(o.gunluk) >= SUPHELI_EN_AZ:
         return []
     if o.z is not None and abs(o.z) >= BUYUK_Z and abs(o.gunluk) >= BUYUK_EN_AZ:
         tur = "yukselis" if o.gunluk > 0 else "dusus"
