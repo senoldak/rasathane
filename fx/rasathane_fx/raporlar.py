@@ -179,14 +179,14 @@ REZERVLER = (("TP.AB.C1", "Altın"), ("TP.AB.C2", "Döviz"), ("TP.AB.TOPLAM", "T
 AKIMLAR = (
     ("TP.MKNETHAR.M7", "Hisse senedi"),
     ("TP.MKNETHAR.M8", "DİBS"),
-    ("TP.MKNETHAR.M12", "Özel sektör borçlanma senetleri"),
+    ("TP.MKNETHAR.M12", "Özel sektör tahvili"),
     ("TP.MKNETHAR.M22", "Yurt dışı ihraçlar"),
     ("TP.MKNETHAR.M20", "Toplam"),
 )
 REEL_KURLAR = (
     ("TP.RK.T1.Y", "TÜFE bazlı"),
-    ("TP.RK.T2.Y", "TÜFE · gelişmekte olan ülkeler"),
-    ("TP.RK.T3.Y", "TÜFE · gelişmiş ülkeler"),
+    ("TP.RK.T2.Y", "Gelişmekte olanlara göre"),
+    ("TP.RK.T3.Y", "Gelişmişlere göre"),
     ("TP.RK.U01.Y", "Yİ-ÜFE bazlı"),
 )
 
@@ -203,7 +203,7 @@ def evds(
     kodlar: list[str], bas: datetime.date, anahtar: str, al: EvdsAl = evds_json_al
 ) -> pd.DataFrame:
     """EVDS serileri; satır dizini dönem başı ya da hafta tarihi, sütunlar seri kodu."""
-    bit = bas + datetime.timedelta(days=366 * 8)
+    bit = datetime.datetime.now(datetime.timezone.utc).date() + datetime.timedelta(days=31)
     yol = f"series={'-'.join(kodlar)}&startDate={bas:%d-%m-%Y}&endDate={bit:%d-%m-%Y}&type=json"
     ogeler = al(yol, {"key": anahtar})["items"]
     satirlar = {}

@@ -25,7 +25,8 @@ def _yuruyus(tohum: int, son_adim: float = 0.0) -> np.ndarray:
 
 def test_sert_hareket_ve_zirve() -> None:
     seri = _yuruyus(1)
-    seri[-1] = seri[:-1].max() * 1.03
+    seri[-2] = seri[:-2].max()
+    seri[-1] = seri[-2] * 1.025
     df = _df(seri)
     o = olc("EURUSD=X", df)
     assert o is not None and o.z is not None and o.z > 2.5
