@@ -9,6 +9,7 @@ Piyasalar için veri projeleri ve bunların ortak kart kodu. Projeler her gün k
 | `INseeder/` | Şirket yöneticilerinin açık piyasa alımları (Form 4) | SEC EDGAR | Salı–Cumartesi 07:00 |
 | `OPsi/` | Opsiyon piyasası taraması ve oynaklık | Yahoo Finance | Hafta içi 01:30 |
 | `emtia/` | Emtia vadelileri: pano, oranlar, gram altın, sert hareket ve 52 hafta zirve/dip, EIA stokları, CFTC fon pozisyonları | Yahoo Finance, EIA, CFTC | Hafta içi New York 18:15 (İstanbul 01:15; kışın 02:15) |
+| `fx/` | Kurlar: pano, risk iştahı, carry, faiz farkları, Fed beklentisi, kur bağları, oynaklık, seanslar, CFTC, sinyal karnesi, kura duyarlı hisseler | Yahoo Finance, BIS, FRED, ECB, Japonya Maliye Bakanlığı, CFTC, Borsa İstanbul | Hafta içi New York 17:45 (İstanbul 00:45; kışın 01:45) |
 | `ortak/` | Kâğıt kart çizimi ve Telegram'a tek tek gönderim (`rasathane_ortak` paketi) | | |
 
 Her projenin kendi README'si ayrıntıyı anlatır.

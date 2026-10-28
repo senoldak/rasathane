@@ -10,6 +10,7 @@ on:
       - "INseeder/kanal_veri/**"
       - "OPsi/kanal_veri/**"
       - "emtia/veri/**"
+      - "fx/veri/**"
       - "docs/**"
       - "**.md"
   pull_request:
@@ -58,6 +59,14 @@ jobs:
               python -m ruff check rasathane_emtia tests
               python -m black --check rasathane_emtia tests
               python -m mypy rasathane_emtia
+              python -m pytest -q
+          - proje: fx
+            python: "3.12"
+            kur: pip install -e ../ortak -e ../bist -e ".[dev]"
+            test: |
+              python -m ruff check rasathane_fx tests
+              python -m black --check rasathane_fx tests
+              python -m mypy rasathane_fx
               python -m pytest -q
           - proje: bist
             python: "3.12"

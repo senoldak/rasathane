@@ -1,0 +1,77 @@
+name: FX
+
+# FX kartları: her işlem günü New York kapanışından sonra (New York 17:30).
+# Tatil ve hafta sonu koşuları komutun kendisi tarafından sessizce atlanır.
+# Asıl tetikleyici vesaire (workflow_dispatch, kuru=false); cron satırı yedek.
+on:
+  schedule:
+    - cron: "45 22 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      kuru:
+        description: "Kuru koşu (kartları üret, gönderme)"
+        type: boolean
+        default: true
+      tarih:
+        description: "YYYY-AA-GG (boş: bugün; yalnız son seans)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fx
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: fx
+
+jobs:
+  kanal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Kur
+        run: pip install -e ../ortak -e ../bist -e .
+      - name: Kartları üret ve gönder
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_SAHIP_ID: ${{ secrets.TELEGRAM_SAHIP_ID }}
+          TELEGRAM_HEDEF: ${{ vars.FX_TELEGRAM_HEDEF }}
+          # Gerçek gönderim yalnız FX_GONDER=1 iken ve elle kuru seçilmemişken.
+          KURU: ${{ (vars.FX_GONDER != '1' || inputs.kuru == true) && '1' || '0' }}
+          TARIH: ${{ inputs.tarih }}
+        run: |
+          ARGS=()
+          if [ "$KURU" = "1" ]; then ARGS+=(--kuru); fi
+          if [ -n "$TARIH" ]; then ARGS+=(--tarih "$TARIH"); fi
+          python -m rasathane_fx "${ARGS[@]}"
+      - name: Kartları yapıt olarak sakla
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: fx-kartlar
+          path: fx/cikti/
+          if-no-files-found: ignore
+      - name: Kaydı depoya yaz
+        if: always()
+        run: |
+          [ -d veri ] || exit 0  # kuru koşuda kayıt yazılmaz
+          git config user.name "senoldak"
+          git config user.email "119886960+senoldak@users.noreply.github.com"
+          git add veri
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "FX: kayıt $(date -u +%F)"
+          for i in 1 2 3; do
+            git pull --rebase --autostash && git push && exit 0
+            sleep 10
+          done
+          exit 1
