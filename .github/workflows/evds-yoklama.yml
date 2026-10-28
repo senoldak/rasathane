@@ -14,10 +14,13 @@ jobs:
           H = {"key": os.environ["EVDS_API_KEY"]}
           def al(yol):
               r = requests.get(B + yol, headers=H, timeout=60); print("##", yol[:60], r.status_code); return r.json() if r.ok else []
-          for k in (4003, 450301, 3002, 4502, 2001):
-              for g in al(f"datagroups/mode=2&code={k}&type=json"):
-                  print("GRUP", k, g.get("DATAGROUP_CODE"), g.get("FREQUENCY_STR"), g.get("DATAGROUP_NAME"))
-                  if k == 4502:
-                      continue
-                  for s in al(f"serieList/type=json&code={g['DATAGROUP_CODE']}")[:30]:
-                      print("   SERI", s.get("SERIE_CODE"), "|", s.get("SERIE_NAME"), "|", s.get("END_DATE"))
+          import re
+          for k in al("categories/type=json"):
+              kod = int(float(k["CATEGORY_ID"]))
+              for g in al(f"datagroups/mode=2&code={kod}&type=json"):
+                  if re.search(r"reel efektif|efektif döviz kuru", g.get("DATAGROUP_NAME", ""), re.I):
+                      print("GRUP", kod, g.get("DATAGROUP_CODE"), g.get("FREQUENCY_STR"), g.get("DATAGROUP_NAME"))
+                      for s in al(f"serieList/type=json&code={g['DATAGROUP_CODE']}")[:12]:
+                          print("   SERI", s.get("SERIE_CODE"), "|", s.get("SERIE_NAME"), "|", s.get("END_DATE"))
+          r = requests.get(B + "series=TP.AB.TOPLAM-TP.MKNETHAR.M7-TP.MKNETHAR.M8&startDate=01-09-2026&endDate=31-12-2026&type=json", headers=H, timeout=60)
+          print("VERI", r.status_code, r.text[:900])
