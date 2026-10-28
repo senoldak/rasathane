@@ -1,0 +1,26 @@
+name: EVDS yoklama (geçici)
+on: workflow_dispatch
+jobs:
+  yokla:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pip install requests
+      - env:
+          EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
+        shell: python
+        run: |
+          import os, re, requests
+          B = "https://evds3.tcmb.gov.tr/igmevdsms-dis/"
+          H = {"key": os.environ["EVDS_API_KEY"]}
+          def al(yol):
+              r = requests.get(B + yol, headers=H, timeout=60); print("##", yol[:60], r.status_code); return r.json() if r.ok else []
+          kat = al("categories/type=json")
+          for k in kat: print("KAT", k.get("CATEGORY_ID"), k.get("TOPIC_TITLE_TR"))
+          aranan = re.compile(r"rezerv|reel efektif|menkul|portföy|uluslararası rezerv", re.I)
+          for k in kat:
+              for g in al(f"datagroups/mode=2&code={k['CATEGORY_ID']}&type=json"):
+                  ad = g.get("DATAGROUP_NAME", "")
+                  if aranan.search(ad):
+                      print("GRUP", g.get("DATAGROUP_CODE"), g.get("FREQUENCY_STR"), ad)
+                      for s in al(f"serieList/type=json&code={g['DATAGROUP_CODE']}")[:40]:
+                          print("   SERI", s.get("SERIE_CODE"), "|", s.get("SERIE_NAME"), "|", s.get("END_DATE"))
