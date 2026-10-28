@@ -199,7 +199,13 @@ def calistir(
     simdi = simdi or datetime.datetime.now(datetime.timezone.utc)
     bugun_ny = simdi.astimezone(_NY).date()
     zq = analiz.zq_sembolleri(bugun_ny)
-    tablolar = k.indir([*TUM_SEMBOLLER, *(s for s, _ in zq)])
+    # Yahoo ertesi günün kur satırını 00:00 UTC'de açar; New York'ta henüz gelmemiş günler atılır
+    yarin = pd.Timestamp(bugun_ny + datetime.timedelta(days=1))
+    tablolar = {
+        s: df[pd.DatetimeIndex(df.index).tz_localize(None) < yarin]
+        for s, df in k.indir([*TUM_SEMBOLLER, *(s for s, _ in zq)]).items()
+    }
+    tablolar = {s: df for s, df in tablolar.items() if len(df)}
     if _ANA not in tablolar:
         _sahibe("FX: Yahoo'dan EUR/USD verisi alınamadı, gönderim yok.")
         return {"durum": "eksik_veri", "kart_sayisi": 0}
