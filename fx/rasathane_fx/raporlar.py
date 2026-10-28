@@ -185,8 +185,8 @@ AKIMLAR = (
 )
 REEL_KURLAR = (
     ("TP.RK.T1.Y", "TÜFE bazlı"),
-    ("TP.RK.T2.Y", "Gelişmekte olanlara göre"),
-    ("TP.RK.T3.Y", "Gelişmişlere göre"),
+    ("TP.RK.T2.Y", "Gelişmekte olanlar"),
+    ("TP.RK.T3.Y", "Gelişmişler"),
     ("TP.RK.U01.Y", "Yİ-ÜFE bazlı"),
 )
 

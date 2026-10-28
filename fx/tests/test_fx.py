@@ -25,13 +25,22 @@ def _yuruyus(tohum: int, son_adim: float = 0.0) -> np.ndarray:
 
 def test_sert_hareket_ve_zirve() -> None:
     seri = _yuruyus(1)
-    seri[-2] = seri[:-2].max()
     seri[-1] = seri[-2] * 1.025
     df = _df(seri)
     o = olc("EURUSD=X", df)
-    assert o is not None and o.z is not None and o.z > 2.5
-    turler = {s.tur for s in sinyaller("EURUSD=X", df, o)}
-    assert {"yukselis", "zirve_52"} <= turler
+    assert o is not None and o.z is not None and 2.5 < o.z < 8
+    assert "yukselis" in {s.tur for s in sinyaller("EURUSD=X", df, o)}
+    artan = _df(np.linspace(100, 110, len(GUN)))
+    o2 = olc("EURUSD=X", artan)
+    assert o2 is not None and "zirve_52" in {s.tur for s in sinyaller("EURUSD=X", artan, o2)}
+
+
+def test_supheli_sicrama_sinyalsiz() -> None:
+    seri = _yuruyus(3)
+    seri[-1] = seri[-2] * 1.08
+    df = _df(seri)
+    o = olc("BRL=X", df)
+    assert o is not None and sinyaller("BRL=X", df, o) == []
 
 
 def test_tek_gunluk_sivri_atilir() -> None:
