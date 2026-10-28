@@ -31,6 +31,7 @@ from . import analiz, raporlar, veri
 from .cizim import (
     FIKIR,
     SAYFA_SATIRI,
+    akim_ciz,
     bag_grafigi,
     baglar_ciz,
     carry_ciz,
@@ -43,6 +44,10 @@ from .cizim import (
     karne_ciz,
     oynaklik_ciz,
     pano_ciz,
+    reel_kur_ciz,
+    reel_kur_grafigi,
+    rezerv_ciz,
+    rezerv_grafigi,
     risk_ciz,
     seans_ciz,
     sinyal_grafigi,
@@ -84,6 +89,27 @@ def _tahviller() -> dict[str, pd.Series]:
     return {"ABD": raporlar.abd_2y(), "EUR": raporlar.euro_2y(), "JPY": raporlar.japonya_2y()}
 
 
+def _evds() -> dict[str, pd.DataFrame]:
+    """Anahtar yoksa boş; bir seri grubu düşerse ötekiler yine gelir."""
+    anahtar = os.environ.get("EVDS_API_KEY")
+    if not anahtar:
+        return {}
+    bugun = datetime.datetime.now(datetime.timezone.utc).date()
+    out: dict[str, pd.DataFrame] = {}
+    for ad_, liste, yil in (
+        ("rezerv", raporlar.REZERVLER, 4),
+        ("akim", raporlar.AKIMLAR, 2),
+        ("reel", raporlar.REEL_KURLAR, 11),
+    ):
+        try:
+            out[ad_] = raporlar.evds(
+                [k for k, _ in liste], bugun - datetime.timedelta(days=366 * yil), anahtar
+            )
+        except Exception as e:
+            log.warning("EVDS %s alınamadı: %s", ad_, e)
+    return out
+
+
 def _cot() -> list[raporlar.Pozisyon]:
     pozisyonlar = []
     for kod, para in raporlar.COT_KODLARI:
@@ -105,6 +131,7 @@ class Kaynaklar:
     faizler: Callable[[], dict[str, float]] = raporlar.politika_faizleri
     tahviller: Callable[[], dict[str, pd.Series]] = _tahviller
     cot: Callable[[], list[raporlar.Pozisyon]] = _cot
+    evds: Callable[[], dict[str, pd.DataFrame]] = _evds
     hatalar: list[str] = field(default_factory=list)
 
     def dene(self, ad_: str, f: Callable[[], Any]) -> Any:
@@ -355,11 +382,30 @@ def calistir(
             grafikler.append((f"grafik:{tur}:{sy.sembol}", gr, aciklama))
             kaydedilecek.append((tur, sy.sembol))
 
-    son_cot = dict(durum.get("raporlar", {})).get("cot", "")
+    son_raporlar: dict[str, str] = dict(durum.get("raporlar", {}))
+    son_cot = son_raporlar.get("cot", "")
     pozisyonlar: list[raporlar.Pozisyon] = k.dene("CFTC", k.cot) or []
     if pozisyonlar and pozisyonlar[0].donem > son_cot:
         kartlar.append((f"cot:{pozisyonlar[0].donem}", cot_ciz(pozisyonlar)))
-        yeni_durum["raporlar"] = {"cot": pozisyonlar[0].donem}
+        yeni_durum.setdefault("raporlar", {})["cot"] = pozisyonlar[0].donem
+
+    tl: dict[str, pd.DataFrame] = k.dene("EVDS", k.evds) or {}
+    for anahtar, liste, kart_ciz, grafik, grafik_kodu in (
+        ("rezerv", raporlar.REZERVLER, rezerv_ciz, rezerv_grafigi, "TP.AB.TOPLAM"),
+        ("akim", raporlar.AKIMLAR, akim_ciz, None, ""),
+        ("reel", raporlar.REEL_KURLAR, reel_kur_ciz, reel_kur_grafigi, "TP.RK.T1.Y"),
+    ):
+        df_tl = tl.get(anahtar)
+        if df_tl is None or df_tl.empty:
+            continue
+        donem = pd.Timestamp(df_tl.index[-1]).date().isoformat()
+        if donem <= son_raporlar.get(anahtar, ""):
+            continue
+        kartlar.append((f"{anahtar}:{donem}", kart_ciz(df_tl, liste)))
+        if grafik is not None and grafik_kodu in df_tl:
+            gr = grafik(df_tl, grafik_kodu)
+            grafikler.append((f"grafik:{anahtar}:{donem}", gr, f"{gr.baslik} | {gr.tarih}"))
+        yeni_durum.setdefault("raporlar", {})[anahtar] = donem
 
     gidenler: list[Giden] = []
     for anahtar, kart in kartlar:
@@ -397,7 +443,9 @@ def calistir(
         _sahibe(f"FX {tarih}: gönderim başarısız (giden kartlar kaydedildi): {e}")
         raise
     _kaydet(sinyal_yolu, tarih, kaydedilecek)
+    son_raporlar.update(yeni_durum.pop("raporlar", {}))
     durum.update(yeni_durum)
+    durum["raporlar"] = son_raporlar
     durum["gunler"] = sorted({*durum.get("gunler", []), tarih})[-60:]
     _json_yaz(durum_yolu, durum)
     return {"durum": "gonderildi", "kart_sayisi": len(gidenler)}

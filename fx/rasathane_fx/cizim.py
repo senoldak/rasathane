@@ -523,3 +523,151 @@ def duyarlilik_ciz(satirlar: list[Duyarlilik], tarih: str, adet: int = 15) -> Ka
             *(satir(d) for d in reversed(satirlar[-adet:])),
         ),
     )
+
+
+def _milyar(x: float, isaret: bool = False) -> str:
+    on = ("+" if x >= 0 else "−") if isaret else ("−" if x < 0 else "")
+    return on + _sayi(abs(x) / 1000, 1)
+
+
+def _fark_hucresi(df: pd.DataFrame, kod: str, gun: int, vurgu: bool = False) -> Hucre:
+    s = df[kod].dropna()
+    if len(s) <= gun:
+        return Hucre("—", ikincil=True)
+    return Hucre(_milyar(float(s.iloc[-1] - s.iloc[-1 - gun]), True), kalin=vurgu, vurgu=vurgu)
+
+
+def rezerv_ciz(df: pd.DataFrame, adlar: tuple[tuple[str, str], ...]) -> Kart:
+    donem = df.index[-1].date().isoformat()
+    return Kart(
+        fikir=FIKIR,
+        ad="TCMB Rezervleri",
+        tarih=_tarih(donem),
+        kaynak="TCMB EVDS",
+        alt_baslik=f"{_tarih(donem)} haftası · brüt rezervler, milyar $",
+        sutunlar=("Kalem", "Rezerv", "Haftalık", "4 hafta", "1 yıl"),
+        satirlar=tuple(
+            Satir(
+                ust=ad_,
+                sag=(
+                    Hucre(_milyar(float(df[kod].dropna().iloc[-1])), kalin=ad_ == "Toplam"),
+                    _fark_hucresi(df, kod, 1, vurgu=True),
+                    _fark_hucresi(df, kod, 4),
+                    _fark_hucresi(df, kod, 52),
+                ),
+            )
+            for kod, ad_ in adlar
+            if kod in df and df[kod].notna().any()
+        ),
+        not_="Brüt rezerv swap ve zorunlu karşılıkları içerir; değişime altın fiyatı da yansır.",
+    )
+
+
+def rezerv_grafigi(df: pd.DataFrame, kod: str) -> Grafik:
+    s = df[kod].dropna().iloc[-156:] / 1000
+    gunler, seri = tuple(g.date() for g in s.index), tuple(float(v) for v in s)
+    return Grafik(
+        fikir=FIKIR,
+        tarih=_tarih(gunler[-1].isoformat()),
+        baslik="TCMB Brüt Rezervleri",
+        alt_baslik="Haftalık · milyar $ · 3 yıl",
+        ozet=(
+            ("Toplam", Hucre(_sayi(seri[-1], 1), kalin=True)),
+            ("Haftalık", Hucre(_puan(seri[-1] - seri[-2], True), kalin=True, vurgu=True)),
+        ),
+        gunler=gunler,
+        seri=seri,
+        kaynak="TCMB EVDS",
+        isaretler=(Isaret(gunler[-1], ""),),
+    )
+
+
+def _milyon(x: float) -> str:
+    return ("+" if x >= 0 else "−") + _sayi(abs(x), 0)
+
+
+def akim_ciz(df: pd.DataFrame, adlar: tuple[tuple[str, str], ...]) -> Kart:
+    donem = df.index[-1]
+    yil = df[pd.DatetimeIndex(df.index).year == donem.year]
+
+    def toplam(kod: str, son: int | None) -> Hucre:
+        s = (df if son else yil)[kod].dropna()
+        return Hucre(_milyon(float(s.iloc[-son:].sum() if son else s.sum())))
+
+    hafta = _tarih(donem.date().isoformat())
+    return Kart(
+        fikir=FIKIR,
+        ad="Yabancı Akımı",
+        tarih=hafta,
+        kaynak="TCMB EVDS · menkul kıymet istatistikleri",
+        alt_baslik=f"{hafta} haftası · yurt dışı yerleşiklerin net alımı, milyon $",
+        sutunlar=("Varlık", "Hafta", "4 hafta", "13 hafta", "Yılbaşı"),
+        satirlar=tuple(
+            Satir(
+                ust=ad_,
+                sag=(
+                    Hucre(_milyon(float(df[kod].dropna().iloc[-1])), kalin=True, vurgu=True),
+                    toplam(kod, 4),
+                    toplam(kod, 13),
+                    toplam(kod, None),
+                ),
+            )
+            for kod, ad_ in adlar
+            if kod in df and df[kod].notna().any()
+        ),
+        not_="Net değişim fiyat ve kur etkisinden arındırılmıştır; artı yabancı girişi demektir.",
+    )
+
+
+def _ay(t: pd.Timestamp) -> str:
+    return f"{_AYLAR[t.month - 1]} {t.year}"
+
+
+def reel_kur_ciz(df: pd.DataFrame, adlar: tuple[tuple[str, str], ...]) -> Kart:
+    satirlar = []
+    for kod, ad_ in adlar:
+        s = df[kod].dropna() if kod in df else pd.Series(dtype=float)
+        if len(s) < 13:
+            continue
+        son = float(s.iloc[-1])
+        satirlar.append(
+            Satir(
+                ust=ad_,
+                sag=(
+                    Hucre(_sayi(son, 1), kalin=True),
+                    _getiri(son / float(s.iloc[-2]) - 1, vurgu=True),
+                    _getiri(son / float(s.iloc[-13]) - 1),
+                    Hucre(_yuzde(float((s.iloc[-61:-1] < son).mean()), 0)),
+                ),
+            )
+        )
+    return Kart(
+        fikir=FIKIR,
+        ad="TL Reel Kur",
+        tarih=_ay(df.index[-1]),
+        kaynak="TCMB EVDS",
+        alt_baslik="Reel efektif döviz kuru (2025=100) · yüzdelik son 5 yıla göre",
+        sutunlar=("Endeks", "Değer", "Ay", "Yıl", "5 yıl yüzdelik"),
+        satirlar=tuple(satirlar),
+        not_="Endeks yükselince TL reel olarak değer kazanır.",
+    )
+
+
+def reel_kur_grafigi(df: pd.DataFrame, kod: str) -> Grafik:
+    s = df[kod].dropna().iloc[-120:]
+    gunler, seri = tuple(g.date() for g in s.index), tuple(float(v) for v in s)
+    return Grafik(
+        fikir=FIKIR,
+        tarih=_ay(s.index[-1]),
+        baslik="TL Reel Efektif Kur",
+        alt_baslik="TÜFE bazlı · 2025=100 · aylık · 10 yıl",
+        ozet=(
+            ("Endeks", Hucre(_sayi(seri[-1], 1), kalin=True)),
+            ("Ay", Hucre(_yuzde(seri[-1] / seri[-2] - 1, 1, True), kalin=True, vurgu=True)),
+        ),
+        gunler=gunler,
+        seri=seri,
+        kaynak="TCMB EVDS",
+        isaretler=(Isaret(gunler[-1], ""),),
+        yataylar=((100.0, "2025 ortalaması"),),
+    )

@@ -46,6 +46,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_SAHIP_ID: ${{ secrets.TELEGRAM_SAHIP_ID }}
           TELEGRAM_HEDEF: ${{ vars.FX_TELEGRAM_HEDEF }}
+          EVDS_API_KEY: ${{ secrets.EVDS_API_KEY }}
           # Gerçek gönderim yalnız FX_GONDER=1 iken ve elle kuru seçilmemişken.
           KURU: ${{ (vars.FX_GONDER != '1' || inputs.kuru == true) && '1' || '0' }}
           TARIH: ${{ inputs.tarih }}

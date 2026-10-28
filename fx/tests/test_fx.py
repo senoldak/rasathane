@@ -124,3 +124,35 @@ def test_faiz_karari_ve_tekrar_yok(tmp_path: Path, monkeypatch: Any) -> None:
     assert s1["durum"] == "gonderildi" and "faiz_karari:2026-10-27" in gidenler
     s2 = c.calistir(False, kaynaklar=_kaynaklar(), **ortak)
     assert s2["durum"] == "zaten_gonderildi"
+
+
+def test_evds_ve_tl_kartlari() -> None:
+    from rasathane_fx import cizim
+
+    haftalar = pd.date_range("2025-01-03", periods=70, freq="W-FRI")
+    ogeler = [
+        {
+            "Tarih": f"{t:%d-%m-%Y}",
+            "TP_AB_C1": "60000",
+            "TP_AB_C2": "100000",
+            "TP_AB_TOPLAM": "160000",
+        }
+        for t in haftalar
+    ]
+    df = raporlar.evds(
+        ["TP.AB.C1", "TP.AB.C2", "TP.AB.TOPLAM"],
+        datetime.date(2025, 1, 1),
+        "x",
+        al=lambda y, b: {"items": ogeler},
+    )
+    assert len(df) == 70 and float(df["TP.AB.TOPLAM"].iloc[-1]) == 160000
+    assert cizim.rezerv_ciz(df, raporlar.REZERVLER).satirlar
+    aylar = [
+        {"Tarih": f"{2020 + i // 12}-{i % 12 + 1}", "TP_RK_T1_Y": str(90 + i / 10)}
+        for i in range(80)
+    ]
+    reel = raporlar.evds(
+        ["TP.RK.T1.Y"], datetime.date(2020, 1, 1), "x", al=lambda y, b: {"items": aylar}
+    )
+    assert reel.index[-1] == pd.Timestamp("2026-08-01")
+    assert cizim.reel_kur_ciz(reel, raporlar.REEL_KURLAR).satirlar

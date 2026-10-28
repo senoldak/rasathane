@@ -172,3 +172,46 @@ def bist_evreni(bugun: datetime.date, adet: int = 100) -> list[str]:
         )
         return [f"{s.kod.removesuffix('.E')}.IS" for s in paylar[:adet]]
     raise ValueError("pay bülteni bulunamadı")
+
+
+EVDS_URL = "https://evds3.tcmb.gov.tr/igmevdsms-dis/"
+REZERVLER = (("TP.AB.C1", "Altın"), ("TP.AB.C2", "Döviz"), ("TP.AB.TOPLAM", "Toplam"))
+AKIMLAR = (
+    ("TP.MKNETHAR.M7", "Hisse senedi"),
+    ("TP.MKNETHAR.M8", "DİBS"),
+    ("TP.MKNETHAR.M12", "Özel sektör borçlanma senetleri"),
+    ("TP.MKNETHAR.M22", "Yurt dışı ihraçlar"),
+    ("TP.MKNETHAR.M20", "Toplam"),
+)
+REEL_KURLAR = (
+    ("TP.RK.T1.Y", "TÜFE bazlı"),
+    ("TP.RK.T2.Y", "TÜFE · gelişmekte olan ülkeler"),
+    ("TP.RK.T3.Y", "TÜFE · gelişmiş ülkeler"),
+    ("TP.RK.U01.Y", "Yİ-ÜFE bazlı"),
+)
+
+EvdsAl = Callable[[str, dict[str, str]], Any]
+
+
+def evds_json_al(yol: str, baslik: dict[str, str]) -> Any:
+    y = requests.get(EVDS_URL + yol, headers=baslik, timeout=_ZAMAN_ASIMI)
+    y.raise_for_status()
+    return y.json()
+
+
+def evds(
+    kodlar: list[str], bas: datetime.date, anahtar: str, al: EvdsAl = evds_json_al
+) -> pd.DataFrame:
+    """EVDS serileri; satır dizini dönem başı ya da hafta tarihi, sütunlar seri kodu."""
+    bit = bas + datetime.timedelta(days=366 * 8)
+    yol = f"series={'-'.join(kodlar)}&startDate={bas:%d-%m-%Y}&endDate={bit:%d-%m-%Y}&type=json"
+    ogeler = al(yol, {"key": anahtar})["items"]
+    satirlar = {}
+    for o in ogeler:
+        t = str(o["Tarih"])
+        tarih = pd.to_datetime(t, format="%d-%m-%Y" if t.count("-") == 2 else "%Y-%m")
+        satirlar[tarih] = {
+            k: pd.to_numeric(o.get(k.replace(".", "_")), errors="coerce") for k in kodlar
+        }
+    df = pd.DataFrame.from_dict(satirlar, orient="index").sort_index()
+    return df.dropna(how="all")
