@@ -53,11 +53,14 @@ jobs:
           # Gerçek gönderim yalnız OPSI_KANAL_GONDER=1 iken ve elle kuru seçilmemişken.
           KURU: ${{ (vars.OPSI_KANAL_GONDER != '1' || inputs.kuru == true) && '1' || '0' }}
           TARIH: ${{ inputs.tarih }}
+          # Site verisi Telegram gönderiminden bağımsız; elle başlatılan kuru koşu siteye yazmaz.
+          SITE: ${{ inputs.kuru == true && '0' || '1' }}
           HEPSI: ${{ inputs.hepsi == true && '1' || '0' }}
         run: |
           ARGS=()
           if [ "$KURU" = "1" ]; then ARGS+=(--kuru); fi
           if [ -n "$TARIH" ]; then ARGS+=(--tarih "$TARIH"); fi
+          if [ "$SITE" = "1" ]; then ARGS+=(--site ../site-veri); fi
           if [ "$HEPSI" = "1" ]; then ARGS+=(--hepsi); fi
           python -m opsi.cli etf "${ARGS[@]}"
       - name: Kartları yapıt olarak sakla
@@ -73,6 +76,8 @@ jobs:
           git config user.name "senoldak"
           git config user.email "119886960+senoldak@users.noreply.github.com"
           git add kanal_veri
+          # Yol yoksa git add çağrılmaz (kuru koşuda site verisi yazılmaz).
+          if [ -e ../site-veri/opsi ]; then git add ../site-veri/opsi; fi
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "OPsi ETF: veri $(date -u +%F)"
           # Koşu sırasında depoya başka commit gelmiş olabilir: gönderim kaydı kaybolmasın.

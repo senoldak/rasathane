@@ -274,6 +274,19 @@ python -m opsi.cli etf --kuru --hepsi  # haftalık kartları da bugün üretir (
 python -m opsi.cli etf           # gönderir
 ```
 
+### Site verisi (finfolis.com/rasathane)
+
+`--site ../site-veri` verilen koşular (zamanlanmış koşular; elle kuru koşu değil) Telegram
+kartlarından bağımsız olarak `site-veri/opsi/` altına sayfa ve seri JSON'ları yazar:
+opsiyon taraması, IV durumu, IV sarsıntısı, aşağı yön primi; ETF Radarı için rejim,
+opsiyon, hareketler, yeni ETF'ler, tema haritası, temalar ve fon akışı. finfolis derlemede
+bu klasörü çeker; Actions commit adımı `site-veri/opsi` yolunu ekler.
+
+```bash
+python -m opsi.cli kanal --kuru --site ../site-veri
+python -m opsi.cli etf --kuru --site ../site-veri
+```
+
 ## Security
 
 - No credentials are stored in code, config, or history; the Alpaca provider is an
