@@ -22,6 +22,7 @@ import pandas as pd
 from rasathane_ortak import kagit
 from rasathane_ortak.tek_gonderim import Giden, GonderimKaydi, sirayla_gonder
 
+from .. import site_aktar
 from ..kanal.calistir import _spy_gunleri, haftanin_ilki, islem_gunu
 from ..kanal.cizim import FIKIR, SAYFA_SATIRI
 from ..kanal.gecmis import gonderildi_isaretle, gonderildi_mi
@@ -151,6 +152,7 @@ def calistir(
     hisse_kaynagi: HisseKaynagi = ag.ilk_hisseler,
     varlik_kaynagi: VarlikKaynagi = ag.varliklar,
     hepsi: bool = False,
+    site_dizini: Path | None = None,
 ) -> Sonuc:
     """hepsi: haftalık kartları da (Pazartesi ve Cuma) bugün üret; önizleme için."""
     simdi = simdi or datetime.datetime.now(datetime.UTC)
@@ -240,6 +242,13 @@ def calistir(
         if seyir:
             kartlar.append(("seyir", yeni_seyir_ciz(seyir, tarih)))
 
+    gecmis_varlik = _varlik_oku(varlik_yolu)
+    gecmis_varlik = gecmis_varlik[gecmis_varlik["tarih"] != tarih]
+    bugunku = pd.DataFrame(
+        {"tarih": tarih, "sembol": list(bugun_varlik), "varlik": list(bugun_varlik.values())}
+    )
+    akis = fon_akisi(pd.concat([gecmis_varlik, bugunku]), tablolar, adlar, tarih)
+
     if cuma:
         duz = sorted(
             (
@@ -290,12 +299,6 @@ def calistir(
         if harita:
             kartlar.append(("harita", tema_haritasi_ciz(harita, tarih)))
 
-        gecmis_varlik = _varlik_oku(varlik_yolu)
-        gecmis_varlik = gecmis_varlik[gecmis_varlik["tarih"] != tarih]
-        bugunku = pd.DataFrame(
-            {"tarih": tarih, "sembol": list(bugun_varlik), "varlik": list(bugun_varlik.values())}
-        )
-        akis = fon_akisi(pd.concat([gecmis_varlik, bugunku]), tablolar, adlar, tarih)
         girenler = sorted((a for a in akis if a.akis > 0), key=lambda a: -a.akis)[:_AKIS_SATIRI]
         cikanlar = sorted((a for a in akis if a.akis < 0), key=lambda a: a.akis)[:_AKIS_SATIRI]
         if girenler or cikanlar:
@@ -329,6 +332,25 @@ def calistir(
                 giden_sinyaller.append(sy)
             except Exception as ex:
                 log.warning("%s grafiği çizilemedi: %s", sy.sembol, ex)
+
+    if site_dizini:
+        try:
+            site_aktar.etf_aktar(
+                site_dizini,
+                simdi,
+                tarih,
+                tablolar,
+                {s: o for s, o in olcumler.items() if s in guncel},
+                kayit,
+                adlar,
+                rejim_satirlari,
+                opsiyon_satirlari,
+                akis,
+                giden_sinyaller,
+                veri / "sinyal_kaydi.csv",
+            )
+        except Exception as e:  # site verisi Telegram akışını durdurmaz
+            log.warning("OPsi ETF site verisi yazılamadı: %s", e)
 
     gidenler: list[Giden] = []
     for anahtar, k in kartlar:

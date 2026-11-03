@@ -5,6 +5,7 @@ import argparse
 import json
 import os
 import sys
+from pathlib import Path
 
 from .backtest import run_attribution, simulate_strategy
 from .config import DB_PATH, UNIVERSES
@@ -113,7 +114,7 @@ def cmd_backtest(
     return 0
 
 
-def cmd_kanal(kuru: bool = False, tarih: str | None = None) -> int:
+def cmd_kanal(kuru: bool = False, tarih: str | None = None, site: Path | None = None) -> int:
     """Rasathane Telegram kartları: günlük akış (kuru: üret, gönderme)."""
     if not kuru and not (os.environ.get("TELEGRAM_BOT_TOKEN") and os.environ.get("TELEGRAM_HEDEF")):
         print("TELEGRAM_BOT_TOKEN ve TELEGRAM_HEDEF gerekli (ya da --kuru)", file=sys.stderr)
@@ -122,7 +123,7 @@ def cmd_kanal(kuru: bool = False, tarih: str | None = None) -> int:
     from .kanal import calistir as kanal
 
     try:
-        sonuc = kanal.calistir(kuru=kuru, tarih=tarih, grafik_fiyat=get_history)
+        sonuc = kanal.calistir(kuru=kuru, tarih=tarih, grafik_fiyat=get_history, site_dizini=site)
     except ValueError as e:
         print(str(e), file=sys.stderr)
         return 2
@@ -130,7 +131,12 @@ def cmd_kanal(kuru: bool = False, tarih: str | None = None) -> int:
     return 1 if sonuc["durum"] in ("spy_yok", "eksik_veri") else 0
 
 
-def cmd_etf(kuru: bool = False, tarih: str | None = None, hepsi: bool = False) -> int:
+def cmd_etf(
+    kuru: bool = False,
+    tarih: str | None = None,
+    hepsi: bool = False,
+    site: Path | None = None,
+) -> int:
     """ETF Radarı kartları: yeni ETF'ler, yükselen temalar, günlük sinyaller (kuru: üret, gönderme)."""
     if not kuru and not (os.environ.get("TELEGRAM_BOT_TOKEN") and os.environ.get("TELEGRAM_HEDEF")):
         print("TELEGRAM_BOT_TOKEN ve TELEGRAM_HEDEF gerekli (ya da --kuru)", file=sys.stderr)
@@ -139,7 +145,7 @@ def cmd_etf(kuru: bool = False, tarih: str | None = None, hepsi: bool = False) -
     from .etf import calistir as etf
 
     try:
-        sonuc = etf.calistir(kuru=kuru, tarih=tarih, hepsi=hepsi)
+        sonuc = etf.calistir(kuru=kuru, tarih=tarih, hepsi=hepsi, site_dizini=site)
     except ValueError as e:
         print(str(e), file=sys.stderr)
         return 2
@@ -180,6 +186,7 @@ def main(argv: list[str] | None = None) -> int:
     p_kanal = sub.add_parser("kanal", help="Rasathane Telegram kartları (günlük)")
     p_kanal.add_argument("--kuru", action="store_true", help="kartları üret, gönderme")
     p_kanal.add_argument("--tarih", default=None, help="YYYY-AA-GG (işlem günü kontrolünü atlar)")
+    p_kanal.add_argument("--site", type=Path, default=None, help="site verisi klasörü (site-veri)")
     p_etf = sub.add_parser("etf", help="ETF Radarı kartları (günlük)")
     p_etf.add_argument("--kuru", action="store_true", help="kartları üret, gönderme")
     p_etf.add_argument(
@@ -188,6 +195,7 @@ def main(argv: list[str] | None = None) -> int:
     p_etf.add_argument(
         "--hepsi", action="store_true", help="haftalık kartları da bugün üret (önizleme)"
     )
+    p_etf.add_argument("--site", type=Path, default=None, help="site verisi klasörü (site-veri)")
     args = parser.parse_args(argv)
     if args.cmd == "nightly":
         return cmd_nightly(
@@ -198,9 +206,9 @@ def main(argv: list[str] | None = None) -> int:
             params_file=args.params_file,
         )
     if args.cmd == "kanal":
-        return cmd_kanal(args.kuru, args.tarih)
+        return cmd_kanal(args.kuru, args.tarih, args.site)
     if args.cmd == "etf":
-        return cmd_etf(args.kuru, args.tarih, args.hepsi)
+        return cmd_etf(args.kuru, args.tarih, args.hepsi, args.site)
     if args.cmd == "universes":
         return cmd_universes(refresh=args.refresh)
     if args.cmd == "backtest":

@@ -15,7 +15,7 @@ import numpy as np
 from rasathane_ortak import kagit
 from rasathane_ortak.tek_gonderim import Giden, GonderimKaydi
 
-from .. import fetch
+from .. import fetch, site_aktar
 from .cizim import _AYLAR, FIKIR, SAYFA_SATIRI, csp_ciz, prim_ciz, sarsinti_ciz
 from .evren import evren_oku
 from .gecmis import (
@@ -98,6 +98,7 @@ def calistir(
     simdi: datetime.datetime | None = None,
     veri: Path = Path("kanal_veri"),
     grafik_fiyat: FiyatGecmisi | None = None,
+    site_dizini: Path | None = None,
 ) -> Sonuc:
     simdi = simdi or datetime.datetime.now(datetime.UTC)
     if tarih is not None:
@@ -140,6 +141,11 @@ def calistir(
         _sahibe(f"OPsi kanal {tarih}: evrenin yalnız %{oran * 100:.0f}'i okunabildi, gönderim yok.")
         return {"durum": "eksik_veri", "kart_sayisi": 0, "okunan_oran": oran}
     gun_yaz(bugun, gecmis_yolu)
+    if site_dizini:
+        try:
+            site_aktar.kanal_aktar(site_dizini, simdi, gecmis, bugun, adaylar, adlar)
+        except Exception as e:  # site verisi Telegram akışını durdurmaz
+            log.warning("OPsi kanal site verisi yazılamadı: %s", e)
 
     kartlar: list[tuple[str, kagit.Kart]] = []
     sarsinti_satirlari: list[SarsintiSatiri] | None = None

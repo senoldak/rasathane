@@ -215,7 +215,9 @@ def test_cli_kanal_kuru_calistirir(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setattr(c, "calistir", sahte)
     monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
     assert cli.main(["kanal", "--kuru", "--tarih", "2026-10-23"]) == 0
-    assert cagri == [{"kuru": True, "tarih": "2026-10-23", "grafik_fiyat": cli.get_history}]
+    assert cagri == [
+        {"kuru": True, "tarih": "2026-10-23", "grafik_fiyat": cli.get_history, "site_dizini": None}
+    ]
 
 
 def test_spy_verisi_yoksa_sahibe_yazar_ve_hata(
