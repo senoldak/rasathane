@@ -124,3 +124,39 @@ def seri_yaz(
         "isaretler": [[g.isoformat(), m] for g, m in isaretler],
     }
     return _yaz(Path(kok) / bolum / "seri" / f"{anahtar}.json", veri)
+
+
+_SUTUN = re.compile(r"^[a-z0-9_]{1,30}$")
+
+
+def seri_cok_yaz(
+    kok: Path,
+    bolum: str,
+    anahtar: str,
+    tarihler: Sequence[date],
+    sutunlar: Mapping[str, Sequence[float | None]],
+    *,
+    ad: str,
+    birim: str,
+    isaretler: Sequence[tuple[date, str]] = (),
+) -> Path:
+    """Aynı tarihler üzerinde birden çok sütunlu seri (ör. fiyat ve göstergeler)."""
+    _ad_denetle(bolum, "bölüm")
+    if anahtar == ".." or not _SERI.fullmatch(anahtar):
+        raise ValueError(f"Geçersiz seri anahtarı: {anahtar!r}")
+    for sutun, degerler in sutunlar.items():
+        if not _SUTUN.fullmatch(sutun):
+            raise ValueError(f"Geçersiz sütun adı: {sutun!r}")
+        if len(degerler) != len(tarihler):
+            raise ValueError(f"{sutun}: {len(degerler)} değer, {len(tarihler)} tarih")
+    veri = {
+        "sema": SEMA,
+        "ad": ad,
+        "birim": birim,
+        "tarihler": [g.isoformat() for g in tarihler],
+        "sutunlar": {
+            s: [_temiz(d) for d in degerler] for s, degerler in sorted(sutunlar.items())
+        },
+        "isaretler": [[g.isoformat(), m] for g, m in isaretler],
+    }
+    return _yaz(Path(kok) / bolum / "seri" / f"{anahtar}.json", veri)

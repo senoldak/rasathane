@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from rasathane_ortak.site import Kaynak, Sutun, sayfa_yaz, seri_yaz
+from rasathane_ortak.site import Kaynak, Sutun, sayfa_yaz, seri_cok_yaz, seri_yaz
 
 ZAMAN = datetime(2026, 11, 3, 23, 30, tzinfo=timezone.utc)
 KAYNAKLAR = [Kaynak("Yahoo Finance", "https://finance.yahoo.com/")]
@@ -92,3 +92,50 @@ def test_gecersiz_seri_anahtari(tmp_path: Path) -> None:
     for kotu in ("..", "../x", "a/b", "", "a b", "a" * 41):
         with pytest.raises(ValueError):
             seri_yaz(tmp_path, "emtia", kotu, [], ad="x", birim="y")
+
+
+def test_seri_cok_yaz_bicim(tmp_path: Path) -> None:
+    tarihler = [date(2026, 11, 2), date(2026, 11, 3)]
+    yol = seri_cok_yaz(
+        tmp_path,
+        "grafix",
+        "AAPL",
+        tarihler,
+        {"kapanis": [201.5, float("nan")], "ema233": [None, 199.25]},
+        ad="Apple",
+        birim="$",
+        isaretler=[(date(2026, 11, 3), "Düşen Trend Kırılımı")],
+    )
+    assert yol == tmp_path / "grafix" / "seri" / "AAPL.json"
+    d = json.loads(yol.read_text("utf-8"))
+    assert d["tarihler"] == ["2026-11-02", "2026-11-03"]
+    assert d["sutunlar"]["kapanis"] == [201.5, None]
+    assert d["sutunlar"]["ema233"] == [None, 199.25]
+    assert d["isaretler"] == [["2026-11-03", "Düşen Trend Kırılımı"]]
+    assert "NaN" not in yol.read_text("utf-8")
+
+
+def test_seri_cok_uzunluk_uyusmazligi(tmp_path: Path) -> None:
+    with pytest.raises(ValueError):
+        seri_cok_yaz(
+            tmp_path,
+            "grafix",
+            "AAPL",
+            [date(2026, 11, 3)],
+            {"kapanis": [1.0, 2.0]},
+            ad="x",
+            birim="$",
+        )
+
+
+def test_seri_cok_gecersiz_sutun_adi(tmp_path: Path) -> None:
+    with pytest.raises(ValueError):
+        seri_cok_yaz(
+            tmp_path,
+            "grafix",
+            "AAPL",
+            [date(2026, 11, 3)],
+            {"EMA 233": [1.0]},
+            ad="x",
+            birim="$",
+        )
