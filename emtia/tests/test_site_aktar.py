@@ -63,7 +63,7 @@ def _oku(yol: Path) -> Any:
 def test_aktar_sayfa_ve_seriler(tmp_path: Path) -> None:
     _calis(tmp_path)
     e = tmp_path / "emtia"
-    for ad in ("pano", "oranlar", "hareketler"):
+    for ad in ("pano", "hareketler"):
         assert (e / f"{ad}.json").exists()
     pano = _oku(e / "pano.json")
     assert len(pano["satirlar"]) == 23
@@ -75,8 +75,6 @@ def test_aktar_sayfa_ve_seriler(tmp_path: Path) -> None:
     assert len(haftalik["tarihler"]) <= 104
     assert {"kapanis", "ema144", "ema233", "rsi14"} <= set(haftalik["sutunlar"])
     assert len(_oku(e / "seri" / "gram.json")["tarihler"]) == 252
-    assert len(_oku(e / "oranlar.json")["satirlar"]) == 4
-    assert (e / "seri" / "oran-altin-gumus.json").exists()
 
 
 def test_rapor_yoksa_stok_ve_fon_yazilmaz(tmp_path: Path) -> None:

@@ -12,7 +12,7 @@ from rasathane_ortak.site import Kaynak, Sutun, sayfa_yaz, seri_cok_yaz, seri_ya
 
 from .evren import ADLAR, DOLAR_ENDEKSI, EMTIALAR, USDTRY
 from .raporlar import Pozisyon, Stok
-from .tarama import TURLER, Olcum, OranOlcum, Sinyal
+from .tarama import TURLER, Olcum, OranOlcum, Sinyal, olc, sinyaller
 
 log = logging.getLogger("emtia")
 
@@ -183,66 +183,56 @@ def _pano(
     )
 
 
-def _oranlar(kok: Path, simdi: datetime.datetime, oran_olcumleri: list[OranOlcum]) -> Path:
-    satirlar: list[dict[str, object]] = []
-    for r in oran_olcumleri:
-        anahtar = _seri_anahtari("oran", r.oran.anahtar)
-        satirlar.append(
-            {
-                "ad": r.oran.ad,
-                "deger": r.deger,
-                "yuzdelik": r.yuzdelik,
-                "g1a": r.g1a,
-                "anlam": r.oran.anlam,
-                "seri": anahtar,
-            }
-        )
-        seri_yaz(kok, BOLUM, anahtar, _noktalar(r.seri), ad=r.oran.ad, birim="oran")
-    return _sayfa(
-        kok,
-        BOLUM,
-        "oranlar",
-        baslik="Emtia oranları",
-        aciklama="Dört oranın bugünkü değeri ve son 5 yıldaki yüzdelik dilimi.",
-        guncellendi=simdi,
-        kaynaklar=[_YAHOO],
-        sutunlar=[
-            Sutun("ad", "Oran", "metin"),
-            Sutun("deger", "Değer", "sayi", 3),
-            Sutun("yuzdelik", "5 yıllık dilim", "yuzde", 0),
-            Sutun("g1a", "1 ay", "yuzde", 1),
-            Sutun("anlam", "Anlamı", "metin"),
-        ],
-        satirlar=satirlar,
-    )
+GECMIS_GUN = 90
+
+
+def _gecmis_hareketler(bugunku: dict[str, pd.DataFrame]) -> list[dict[str, object]]:
+    """Son GECMIS_GUN işlem gününün hareketlerini, her koşuda 5 yıllık veriden yeniden hesaplar.
+
+    Geçmiş birikmez; her koşu aynı kuralla baştan üretir, böylece tutarsızlık birikmez.
+    Aynı gün ve emtiadaki birden çok hareket tek satırda, türleri "·" ile ayrılmış olur.
+    """
+    kayit: dict[tuple[str, str], dict[str, object]] = {}
+    for e in EMTIALAR:
+        df = bugunku.get(e.sembol)
+        if df is None or len(df) < 2:
+            continue
+        for k in range(max(1, len(df) - GECMIS_GUN), len(df)):
+            alt = df.iloc[: k + 1]
+            o = olc(e.sembol, alt)
+            if o is None:
+                continue
+            gun = _gun(alt.index[-1]).isoformat()
+            for sy in sinyaller(e.sembol, alt, o):
+                tur_ad = TURLER[sy.tur]
+                anahtar = (gun, e.sembol)
+                if anahtar in kayit:
+                    kayit[anahtar]["tur"] = f"{kayit[anahtar]['tur']} · {tur_ad}"
+                else:
+                    kayit[anahtar] = {
+                        "tarih": gun,
+                        "ad": e.ad,
+                        "tur": tur_ad,
+                        "kapanis": sy.kapanis,
+                        "gunluk": sy.gunluk,
+                        "seri": e.sembol,
+                    }
+    return sorted(kayit.values(), key=lambda r: (str(r["tarih"]), str(r["ad"])), reverse=True)
 
 
 def _hareketler(
     kok: Path,
     simdi: datetime.datetime,
-    tarih: str,
     bugunku: dict[str, pd.DataFrame],
-    hareketler: list[Sinyal],
 ) -> Path:
-    gun = datetime.date.fromisoformat(tarih)
-    satirlar: list[dict[str, object]] = []
-    etiketler: dict[str, list[str]] = {}
-    for h in sorted(hareketler, key=lambda s: -abs(s.gunluk)):
-        e = ADLAR.get(h.sembol)
-        olcek = h.tur in ("yukselis", "dusus")
-        satirlar.append(
-            {
-                "ad": e.ad if e else h.sembol,
-                "tur": TURLER[h.tur],
-                "kapanis": h.kapanis,
-                "gunluk": h.gunluk,
-                "z": h.seviye if olcek else None,
-                "onceki": None if olcek else h.seviye,
-                "seri": h.sembol,
-            }
+    satirlar = _gecmis_hareketler(bugunku)
+    # Her emtianın seri grafiğinde son 90 günün hareket işaretleri.
+    isaretler: dict[str, list[tuple[datetime.date, str]]] = {}
+    for r in satirlar:
+        isaretler.setdefault(str(r["seri"]), []).append(
+            (datetime.date.fromisoformat(str(r["tarih"])), str(r["tur"]))
         )
-        etiketler.setdefault(h.sembol, []).append(TURLER[h.tur])
-    for sembol, liste in etiketler.items():
+    for sembol, liste in isaretler.items():
         if sembol not in bugunku:
             continue
         e = ADLAR.get(sembol)
@@ -252,28 +242,26 @@ def _hareketler(
             e.ad if e else sembol,
             e.birim if e else "",
             bugunku[sembol]["Close"],
-            [(gun, " · ".join(liste))],
+            liste,
             df=bugunku[sembol],
         )
     return _sayfa(
         kok,
         BOLUM,
         "hareketler",
-        baslik="Günün hareketleri",
-        aciklama="Günlük getirisi 60 günlük oynaklığın 2,5 katını aşan emtialar ve "
-        "52 hafta zirve ya da dibini aşanlar.",
+        baslik="Hareketler",
+        aciklama="Son 90 işlem gününde günlük getirisi 60 günlük oynaklığın 2,5 katını aşan "
+        "emtialar ve 52 hafta zirve ya da dibini aşanlar.",
         guncellendi=simdi,
         kaynaklar=[_YAHOO],
         sutunlar=[
+            Sutun("tarih", "Tarih", "tarih"),
             Sutun("ad", "Emtia", "metin"),
-            Sutun("tur", "Tür", "metin"),
+            Sutun("tur", "Hareket", "metin"),
             Sutun("kapanis", "Kapanış", "sayi", 2),
             Sutun("gunluk", "Günlük", "yuzde", 1),
-            Sutun("z", "Oynaklık katı", "sayi", 1),
-            Sutun("onceki", "Önceki 52 hafta seviyesi", "sayi", 2),
         ],
         satirlar=satirlar,
-        suzgecler=["tur"],
     )
 
 
@@ -376,8 +364,7 @@ def aktar(
     """`kok / "emtia"` altına sayfaları ve serileri yazar; yazılan sayfa yollarını döndürür."""
     yollar = [
         _pano(kok, simdi, bugunku, olcumler, gram, gram_olcum),
-        _oranlar(kok, simdi, oran_olcumleri),
-        _hareketler(kok, simdi, tarih, bugunku, hareketler),
+        _hareketler(kok, simdi, bugunku),
     ]
     for yazici in (_stoklar, _fonlar):
         yol = yazici(kok, simdi, rapor)
