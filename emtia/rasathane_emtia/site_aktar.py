@@ -48,6 +48,14 @@ def _sec(df: pd.DataFrame, n: int) -> tuple[list[datetime.date], dict[str, list[
     return tarihler[-n:], {k: v[-n:] for k, v in sutunlar.items()}
 
 
+def _rsi(c: pd.Series, n: int = 14) -> pd.Series:
+    """Wilder RSI (yumuşatma alpha = 1/n)."""
+    fark = c.diff()
+    kazanc = fark.clip(lower=0).ewm(alpha=1 / n, adjust=False).mean()
+    kayip = (-fark.clip(upper=0)).ewm(alpha=1 / n, adjust=False).mean()
+    return 100 - 100 / (1 + kazanc / kayip)
+
+
 def _fiyat_serisi(
     kok: Path,
     anahtar: str,
@@ -57,34 +65,40 @@ def _fiyat_serisi(
     isaretler: list[tuple[datetime.date, str]] | None = None,
     df: pd.DataFrame | None = None,
 ) -> None:
-    """Günlük (son 1 yıl: EMA 233/377, SMA 50/200, EMA 20, Kijun 26) ve haftalık (son 2 yıl: SMA 10/40, Kijun 26) seri.
+    """Ortak gösterge seti (tüm sayfalar): EMA 144/233/377, Kijun-sen (26), RSI (14).
 
-    Göstergeler tam geçmiş üzerinde hesaplanır; yalnız gösterilen aralık yazılır, böylece ısınma sorunu olmaz.
+    Günlük seri son 1 yıl, haftalık seri son 2 yıl yazılır; göstergeler tam geçmiş üzerinde
+    hesaplanır, böylece ısınma sorunu olmaz. Kijun için yüksek/düşük gerekir (gram ve döviz yok).
     """
     c = kapanis.astype(float).dropna()
-    # Kijun-sen için yüksek/düşük gerekir; gram ve döviz serilerinde yoktur, o zaman çizilmez.
     hi: pd.Series | None = None
     lo: pd.Series | None = None
     if df is not None and {"High", "Low"} <= set(df.columns):
         hi = df["High"].astype(float).reindex(c.index)
         lo = df["Low"].astype(float).reindex(c.index)
+
     gunluk = pd.DataFrame(
         {
             "kapanis": c,
+            "ema144": c.ewm(span=144, adjust=False).mean(),
             "ema233": c.ewm(span=233, adjust=False).mean(),
             "ema377": c.ewm(span=377, adjust=False).mean(),
-            "sma50": c.rolling(50).mean(),
-            "sma200": c.rolling(200).mean(),
-            "ema20": c.ewm(span=20, adjust=False).mean(),
+            "rsi14": _rsi(c),
         }
     )
     if hi is not None and lo is not None:
         gunluk["kijun"] = (hi.rolling(26).max() + lo.rolling(26).min()) / 2
     t, s = _sec(gunluk, SERI_GUN)
     seri_cok_yaz(kok, BOLUM, anahtar, t, s, ad=ad, birim=birim, isaretler=isaretler or [])
+
     h = c.resample("W-FRI").last().dropna()
     haftalik = pd.DataFrame(
-        {"kapanis": h, "sma10": h.rolling(10).mean(), "sma40": h.rolling(40).mean()}
+        {
+            "kapanis": h,
+            "ema144": h.ewm(span=144, adjust=False).mean(),
+            "ema233": h.ewm(span=233, adjust=False).mean(),
+            "rsi14": _rsi(h),
+        }
     )
     if hi is not None and lo is not None:
         whi = hi.resample("W-FRI").max().reindex(h.index)
