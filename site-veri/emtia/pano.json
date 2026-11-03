@@ -1,0 +1,312 @@
+{
+ "aciklama": "20 emtianın ön ay vadeli fiyatı; gram altın, USD/TRY ve dolar endeksi.",
+ "baslik": "Emtia panosu",
+ "bolum": "emtia",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T20:40:48Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "Altın",
+   "birim": "$/ons",
+   "g1a": -0.05408001714058974,
+   "g1h": -0.03499732347679341,
+   "grup": "Değerli metaller",
+   "gunluk": -0.00947201146998411,
+   "gyb": -0.09423880777988103,
+   "kapanis": 3932.0,
+   "seri": "GC=F"
+  },
+  {
+   "ad": "Gümüş",
+   "birim": "$/ons",
+   "g1a": -0.18488882515984295,
+   "g1h": -0.08616207710419976,
+   "grup": "Değerli metaller",
+   "gunluk": -0.02178626805287387,
+   "gyb": -0.2925685148626004,
+   "kapanis": 49.6150016784668,
+   "seri": "SI=F"
+  },
+  {
+   "ad": "Platin",
+   "birim": "$/ons",
+   "g1a": -0.16849257219072544,
+   "g1h": -0.07537456102402285,
+   "grup": "Değerli metaller",
+   "gunluk": -0.027210384627741613,
+   "gyb": -0.30238385410266655,
+   "kapanis": 1419.300048828125,
+   "seri": "PL=F"
+  },
+  {
+   "ad": "Paladyum",
+   "birim": "$/ons",
+   "g1a": -0.20450647803079414,
+   "g1h": -0.09299600573588562,
+   "grup": "Değerli metaller",
+   "gunluk": -0.03792350690270896,
+   "gyb": -0.430088369857773,
+   "kapanis": 928.5,
+   "seri": "PA=F"
+  },
+  {
+   "ad": "Brent petrol",
+   "birim": "$/varil",
+   "g1a": 0.0406698748351888,
+   "g1h": -0.08324548609219895,
+   "grup": "Enerji",
+   "gunluk": -0.0035314987977713708,
+   "gyb": 0.7156943984194051,
+   "kapanis": 104.4000015258789,
+   "seri": "BZ=F"
+  },
+  {
+   "ad": "WTI petrol",
+   "birim": "$/varil",
+   "g1a": 0.08173988072960658,
+   "g1h": -0.03163166780623905,
+   "grup": "Enerji",
+   "gunluk": 0.0029027449922705006,
+   "gyb": 0.6847788392318308,
+   "kapanis": 96.73999786376953,
+   "seri": "CL=F"
+  },
+  {
+   "ad": "Doğalgaz",
+   "birim": "$/MMBtu · Henry Hub",
+   "g1a": -0.0538160347926272,
+   "g1h": 0.07563959739173431,
+   "grup": "Enerji",
+   "gunluk": 0.015756329529210022,
+   "gyb": -0.2129680039818359,
+   "kapanis": 2.9010000228881836,
+   "seri": "NG=F"
+  },
+  {
+   "ad": "Benzin",
+   "birim": "$/galon · RBOB",
+   "g1a": -0.09201530602876862,
+   "g1h": -0.060587696944570446,
+   "grup": "Enerji",
+   "gunluk": 0.016344263242523915,
+   "gyb": 0.7283335332504026,
+   "kapanis": 2.947499990463257,
+   "seri": "RB=F"
+  },
+  {
+   "ad": "Dizel",
+   "birim": "$/galon · ısınma yakıtı",
+   "g1a": 0.002068091869733113,
+   "g1h": -0.046197045830370875,
+   "grup": "Enerji",
+   "gunluk": 0.03007958681588785,
+   "gyb": 1.147788264602576,
+   "kapanis": 4.554599761962891,
+   "seri": "HO=F"
+  },
+  {
+   "ad": "Bakır",
+   "birim": "$/libre",
+   "g1a": -0.0283197331015147,
+   "g1h": -0.03367563308195576,
+   "grup": "Sanayi metalleri",
+   "gunluk": -0.022082949480693115,
+   "gyb": 0.13658970475565013,
+   "kapanis": 6.39900016784668,
+   "seri": "HG=F"
+  },
+  {
+   "ad": "Alüminyum",
+   "birim": "$/ton",
+   "g1a": -0.021228964026555497,
+   "g1h": -0.03515714177003271,
+   "grup": "Sanayi metalleri",
+   "gunluk": -0.04374387208688435,
+   "gyb": 0.09066666666666667,
+   "kapanis": 3169.75,
+   "seri": "ALI=F"
+  },
+  {
+   "ad": "Buğday",
+   "birim": "¢/buşel",
+   "g1a": -0.1350668111231491,
+   "g1h": -0.018844735764031117,
+   "grup": "Tarım",
+   "gunluk": -0.012778235779060232,
+   "gyb": 0.18096646942800798,
+   "kapanis": 598.75,
+   "seri": "ZW=F"
+  },
+  {
+   "ad": "Mısır",
+   "birim": "¢/buşel",
+   "g1a": -0.11211664152840628,
+   "g1h": -0.016155988857938675,
+   "grup": "Tarım",
+   "gunluk": -0.015058561070831034,
+   "gyb": 0.0028392958546279434,
+   "kapanis": 441.5,
+   "seri": "ZC=F"
+  },
+  {
+   "ad": "Soya",
+   "birim": "¢/buşel",
+   "g1a": -0.052508295920359216,
+   "g1h": -0.01281269066503965,
+   "grup": "Tarım",
+   "gunluk": 0.007262917617762987,
+   "gyb": 0.1775836972343523,
+   "kapanis": 1213.5,
+   "seri": "ZS=F"
+  },
+  {
+   "ad": "Kahve",
+   "birim": "¢/libre",
+   "g1a": -0.02905486362903309,
+   "g1h": -0.0330213181515957,
+   "grup": "Tarım",
+   "gunluk": -0.027559117228138863,
+   "gyb": -0.18551974826388884,
+   "kapanis": 284.04998779296875,
+   "seri": "KC=F"
+  },
+  {
+   "ad": "Kakao",
+   "birim": "$/ton",
+   "g1a": -0.0761888529060849,
+   "g1h": -0.028151335843643488,
+   "grup": "Tarım",
+   "gunluk": -0.002759889604415866,
+   "gyb": -0.1063478977741138,
+   "kapanis": 5420.0,
+   "seri": "CC=F"
+  },
+  {
+   "ad": "Şeker",
+   "birim": "¢/libre",
+   "g1a": -0.11480941694752445,
+   "g1h": -0.04427085144238263,
+   "grup": "Tarım",
+   "gunluk": -0.03725073999825279,
+   "gyb": 0.2225183278919045,
+   "kapanis": 18.350000381469727,
+   "seri": "SB=F"
+  },
+  {
+   "ad": "Pamuk",
+   "birim": "¢/libre",
+   "g1a": -0.001426171583931768,
+   "g1h": -0.013323096951760593,
+   "grup": "Tarım",
+   "gunluk": -0.008241140727053953,
+   "gyb": 0.19838183703056878,
+   "kapanis": 77.0199966430664,
+   "seri": "CT=F"
+  },
+  {
+   "ad": "Canlı sığır",
+   "birim": "¢/libre",
+   "g1a": 0.004257781596123333,
+   "g1h": -0.051413030209748634,
+   "grup": "Hayvancılık",
+   "gunluk": -0.0069412558837842475,
+   "gyb": -0.05959050408725086,
+   "kapanis": 218.1750030517578,
+   "seri": "LE=F"
+  },
+  {
+   "ad": "Domuz",
+   "birim": "¢/libre",
+   "g1a": -0.24694924664015083,
+   "g1h": -0.05481662945965926,
+   "grup": "Hayvancılık",
+   "gunluk": 0.007735294694301897,
+   "gyb": -0.3111045704915275,
+   "kapanis": 58.625,
+   "seri": "HE=F"
+  },
+  {
+   "ad": "Gram altın",
+   "birim": "₺/gram",
+   "g1a": -0.03795380926127334,
+   "g1h": -0.030887668792787037,
+   "grup": "Değerli metaller",
+   "gunluk": -0.008935163909504551,
+   "gyb": 0.05423845075624523,
+   "kapanis": 6319.939323820682,
+   "seri": "gram"
+  },
+  {
+   "ad": "USD/TRY",
+   "birim": "₺",
+   "g1a": 0.017048173388375387,
+   "g1h": 0.004258697705184611,
+   "grup": "Döviz ve endeks",
+   "gunluk": 0.0005419812127431811,
+   "gyb": 0.16392539204753565,
+   "kapanis": 49.99290084838867,
+   "seri": "TRY=X"
+  }
+ ],
+ "sayfa": "pano",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Ad",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "grup",
+   "basamak": 2,
+   "baslik": "Grup",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "kapanis",
+   "basamak": 2,
+   "baslik": "Kapanış",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "gunluk",
+   "basamak": 1,
+   "baslik": "Günlük",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "g1h",
+   "basamak": 1,
+   "baslik": "1 hafta",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "g1a",
+   "basamak": 1,
+   "baslik": "1 ay",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "gyb",
+   "basamak": 1,
+   "baslik": "Yılbaşından beri",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "birim",
+   "basamak": 2,
+   "baslik": "Birim",
+   "tur": "metin"
+  }
+ ],
+ "suzgecler": [
+  "grup"
+ ]
+}

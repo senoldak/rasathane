@@ -1,0 +1,85 @@
+{
+ "aciklama": "Günlük getirisi 60 günlük oynaklığın 2,5 katını aşan emtialar ve 52 hafta zirve ya da dibini aşanlar.",
+ "baslik": "Günün hareketleri",
+ "bolum": "emtia",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T20:40:48Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "Alüminyum",
+   "gunluk": -0.04374387208688435,
+   "kapanis": 3169.75,
+   "onceki": null,
+   "seri": "ALI=F",
+   "tur": "Sert Düşüş",
+   "z": -3.035693441873191
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.03792350690270896,
+   "kapanis": 928.5,
+   "onceki": 965.0999755859375,
+   "seri": "PA=F",
+   "tur": "52 Hafta Dibi",
+   "z": null
+  },
+  {
+   "ad": "Platin",
+   "gunluk": -0.027210384627741613,
+   "kapanis": 1419.300048828125,
+   "onceki": 1438.0,
+   "seri": "PL=F",
+   "tur": "52 Hafta Dibi",
+   "z": null
+  }
+ ],
+ "sayfa": "hareketler",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Emtia",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "tur",
+   "basamak": 2,
+   "baslik": "Tür",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "kapanis",
+   "basamak": 2,
+   "baslik": "Kapanış",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "gunluk",
+   "basamak": 1,
+   "baslik": "Günlük",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "z",
+   "basamak": 1,
+   "baslik": "Oynaklık katı",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "onceki",
+   "basamak": 2,
+   "baslik": "Önceki 52 hafta seviyesi",
+   "tur": "sayi"
+  }
+ ],
+ "suzgecler": [
+  "tur"
+ ]
+}
