@@ -70,7 +70,7 @@ def test_aktar_sayfa_ve_seriler(tmp_path: Path) -> None:
     assert pano["suzgecler"] == ["grup"]
     gunluk = _oku(e / "seri" / "GC=F.json")
     assert len(gunluk["tarihler"]) == 252
-    assert {"kapanis", "sma50", "sma200", "ema20"} <= set(gunluk["sutunlar"])
+    assert {"kapanis", "sma50", "sma200", "ema20", "ema233", "ema377"} <= set(gunluk["sutunlar"])
     haftalik = _oku(e / "seri" / "GC=F-hafta.json")
     assert len(haftalik["tarihler"]) <= 104
     assert {"kapanis", "sma10", "sma40"} <= set(haftalik["sutunlar"])

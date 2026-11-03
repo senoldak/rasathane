@@ -55,26 +55,41 @@ def _fiyat_serisi(
     birim: str,
     kapanis: pd.Series,
     isaretler: list[tuple[datetime.date, str]] | None = None,
+    df: pd.DataFrame | None = None,
 ) -> None:
-    """Günlük (son 1 yıl, SMA 50/200 ve EMA 20) ve haftalık (son 2 yıl, SMA 10/40) seri.
+    """Günlük (son 1 yıl: EMA 233/377, SMA 50/200, EMA 20, Kijun 26) ve haftalık (son 2 yıl: SMA 10/40, Kijun 26) seri.
 
     Göstergeler tam geçmiş üzerinde hesaplanır; yalnız gösterilen aralık yazılır, böylece ısınma sorunu olmaz.
     """
     c = kapanis.astype(float).dropna()
+    # Kijun-sen için yüksek/düşük gerekir; gram ve döviz serilerinde yoktur, o zaman çizilmez.
+    hi: pd.Series | None = None
+    lo: pd.Series | None = None
+    if df is not None and {"High", "Low"} <= set(df.columns):
+        hi = df["High"].astype(float).reindex(c.index)
+        lo = df["Low"].astype(float).reindex(c.index)
     gunluk = pd.DataFrame(
         {
             "kapanis": c,
+            "ema233": c.ewm(span=233, adjust=False).mean(),
+            "ema377": c.ewm(span=377, adjust=False).mean(),
             "sma50": c.rolling(50).mean(),
             "sma200": c.rolling(200).mean(),
             "ema20": c.ewm(span=20, adjust=False).mean(),
         }
     )
+    if hi is not None and lo is not None:
+        gunluk["kijun"] = (hi.rolling(26).max() + lo.rolling(26).min()) / 2
     t, s = _sec(gunluk, SERI_GUN)
     seri_cok_yaz(kok, BOLUM, anahtar, t, s, ad=ad, birim=birim, isaretler=isaretler or [])
     h = c.resample("W-FRI").last().dropna()
     haftalik = pd.DataFrame(
         {"kapanis": h, "sma10": h.rolling(10).mean(), "sma40": h.rolling(40).mean()}
     )
+    if hi is not None and lo is not None:
+        whi = hi.resample("W-FRI").max().reindex(h.index)
+        wlo = lo.resample("W-FRI").min().reindex(h.index)
+        haftalik["kijun"] = (whi.rolling(26).max() + wlo.rolling(26).min()) / 2
     t, s = _sec(haftalik, HAFTA_SAYI)
     seri_cok_yaz(
         kok, BOLUM, f"{anahtar}-hafta", t, s, ad=ad, birim=birim, isaretler=isaretler or []
@@ -91,7 +106,15 @@ def _pano(
 ) -> Path:
     satirlar: list[dict[str, object]] = []
 
-    def ekle(anahtar: str, ad: str, grup: str, birim: str, o: Olcum, seri: pd.Series) -> None:
+    def ekle(
+        anahtar: str,
+        ad: str,
+        grup: str,
+        birim: str,
+        o: Olcum,
+        seri: pd.Series,
+        df: pd.DataFrame | None = None,
+    ) -> None:
         satirlar.append(
             {
                 "ad": ad,
@@ -105,11 +128,19 @@ def _pano(
                 "seri": anahtar,
             }
         )
-        _fiyat_serisi(kok, anahtar, ad, birim, seri)
+        _fiyat_serisi(kok, anahtar, ad, birim, seri, df=df)
 
     for e in EMTIALAR:
         if e.sembol in olcumler and e.sembol in bugunku:
-            ekle(e.sembol, e.ad, e.grup, e.birim, olcumler[e.sembol], bugunku[e.sembol]["Close"])
+            ekle(
+                e.sembol,
+                e.ad,
+                e.grup,
+                e.birim,
+                olcumler[e.sembol],
+                bugunku[e.sembol]["Close"],
+                bugunku[e.sembol],
+            )
     if gram is not None and gram_olcum is not None:
         ekle("gram", "Gram altın", "Değerli metaller", "₺/gram", gram_olcum, gram)
     for sembol, ad, birim in ((USDTRY, "USD/TRY", "₺"), (DOLAR_ENDEKSI, "Dolar endeksi", "puan")):
@@ -208,6 +239,7 @@ def _hareketler(
             e.birim if e else "",
             bugunku[sembol]["Close"],
             [(gun, " · ".join(liste))],
+            df=bugunku[sembol],
         )
     return _sayfa(
         kok,
