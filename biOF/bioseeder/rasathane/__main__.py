@@ -1,7 +1,8 @@
-"""Kullanım: python -m bioseeder.rasathane {evren,ilk-kurulum,sabah,haftalik,gun-ici} [--kuru] [--tarih YYYY-AA-GG]"""
+"""Kullanım: python -m bioseeder.rasathane {evren,ilk-kurulum,sabah,haftalik,gun-ici} [--kuru] [--tarih YYYY-AA-GG] [--site DIZIN]"""
 import argparse
 import sys
 from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
 from typing import List, Optional
 
 from bioseeder.rasathane.ayar import CIKTI, VERI, ayar_oku
@@ -27,6 +28,7 @@ def argumanlar(argv: List[str]) -> argparse.Namespace:
     p.add_argument("is_adi", choices=ISLER, help="çalıştırılacak iş")
     p.add_argument("--kuru", action="store_true", help="Telegram'a gönderme, kartları cikti/ altına yaz")
     p.add_argument("--tarih", type=date.fromisoformat, help="sabah işi için ABD işlem günü (YYYY-AA-GG)")
+    p.add_argument("--site", type=Path, default=None, help="site JSON'larını bu klasöre (site-veri) yaz")
     return p.parse_args(argv)
 
 
@@ -36,7 +38,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     bugun = istanbul_bugun()
     b = Baglam(kaynak=GercekKaynaklar(Istemci(sec_ua=ayar.sec_ua), VERI, bugun), telegram=Telegram(ayar),
                kuru=a.kuru or not ayar.gonderim_acik, bugun=bugun, veri=VERI, cikti=CIKTI,
-               gonderim_acik=ayar.gonderim_acik, fiyat_cekici=yahoo_kapanislar)
+               gonderim_acik=ayar.gonderim_acik, fiyat_cekici=yahoo_kapanislar, site=a.site)
     isler = {
         "evren": lambda: evren_isi(b),
         "ilk-kurulum": lambda: ilk_kurulum_isi(b),

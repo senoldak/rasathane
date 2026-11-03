@@ -444,6 +444,16 @@ biOF, ABD borsalarındaki ilaç ve biyotek şirketlerinin **faz ve FDA gelişmel
 
 Kartlar Rasathane'nin ortak Kâğıt düzenindedir; mesaj metni yalnız "biOF · Kart adı · GG.AA.YYYY" satırıdır. Kartlar sonucun iyi ya da kötü olduğunu yorumlamaz, her kartta "Yatırım tavsiyesi değildir" yazar. Olay yoksa hiçbir şey gönderilmez. Veri okunamazsa o paylaşım gönderilmez ve hata sahibine özel mesajla bildirilir.
 
+### Site verisi (`site-veri/biof/`)
+
+`--site DIZIN` verilirse koşu, Telegram'dan bağımsız olarak site JSON'larını o klasöre yazar; `--kuru` ile de yazılır. Finfolis `/rasathane/biof/` sayfalarını bu dosyalardan kurar.
+
+- `takvim.json`: haftalık koşuda yazılır; 60 gün içinde bitişi beklenen Faz 2/3 çalışmalar, `veri/ctgov.csv` görüntüsünden okunur (bu adım ağa çıkmaz; hisse grafikleri için Yahoo'ya çıkılır).
+- `olaylar.json`: sabah ve büyük olay koşularında yazılır; son 365 günün olayları önceki sayfadaki satırlarla birleşir, yinelenmez.
+- `seri/<hisse>.json` ve `seri/<hisse>-hafta.json`: Yahoo kapanışı ve ortak gösterge seti (EMA 144/233/377, RSI 14). Olay günleri çizgide işaretlenir. Fiyat çekilemezse o hissenin grafiği yazılmaz, satır grafiksiz kalır. Bir koşuda en çok 60 hisse.
+
+SEC'e erişim için `SEC_ILETISIM` ayarı gerekir; yoksa sabah ve büyük olay koşuları olaylar sayfasını yazamaz, takvim yine yazılır.
+
 ### Kurulum
 
 1. **Konu:** Rasathane grubunda (konular açık) **biOF** adlı bir konu açın ve konuya yalnız yöneticilerin yazabilmesini sağlayın.

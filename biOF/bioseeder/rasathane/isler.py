@@ -20,6 +20,7 @@ from bioseeder.rasathane.kart import FIKIR, KART_BASINA, calisma_kutucugu, kart,
 from bioseeder.rasathane.kayit import Kayit
 from bioseeder.rasathane.olay import Olay, buyuk_mu, sirala
 from bioseeder.rasathane.siniflandir import siniflandir
+from bioseeder.rasathane.site_aktar import olaylar_aktar, takvim_aktar
 from bioseeder.rasathane.takvim import edgar_acik_mi, is_gunleri, onceki_is_gunu
 from rasathane_ortak import kagit
 from rasathane_ortak.tek_gonderim import Giden, GonderimKaydi
@@ -89,10 +90,27 @@ class Baglam:
     cikti: Path
     gonderim_acik: bool = False
     fiyat_cekici: Optional[FiyatCekici] = None  # None: Olay Grafiği kapalı
+    site: Optional[Path] = None  # site-veri kökü; None: site verisi yazılmaz
 
     @property
     def kayit_yolu(self) -> Path:
         return self.veri / "gonderilen.json"
+
+
+def _site(b: Baglam, ne: str, yazici: Callable[[], object]) -> None:
+    """Site verisi yandaki bir çıktıdır: hatası Telegram gönderimini ya da kayıtları durdurmaz."""
+    if b.site is None:
+        return
+    try:
+        yazici()
+    except Exception as exc:  # noqa: BLE001
+        print(f"biOF site verisi yazılamadı ({ne}): {type(exc).__name__}: {exc}", file=sys.stderr)
+
+
+def _takvim_sitesi(b: Baglam) -> None:
+    sirketler, _ = b.kaynak.evren()
+    takvim_aktar(b.site, b.bugun, goruntu_oku(b.veri / "ctgov.csv"), {s.ticker: s.mikro for s in sirketler},
+                 fiyat=b.fiyat_cekici)
 
 
 def _gidenler(anahtar: Callable[[Tuple[int, ...]], str], k: "kagit.Kart") -> List[Giden]:
@@ -213,6 +231,7 @@ def sabah_isi(b: Baglam, tarih: Optional[date] = None) -> int:
 
     eslesmeyen: Set[str] = set()
     olaylar: List[Olay] = []
+    tum: List[Olay] = []  # gönderilmiş olanlar dahil; site sayfası yinelenmeden birleşir
     for gun in gunler:
         yeni = b.kaynak.ctgov_guncel(gun, sponsorlar, eslesmeyen)
         gunun = fark(goruntu, yeni, gun, mikro)
@@ -227,8 +246,10 @@ def sabah_isi(b: Baglam, tarih: Optional[date] = None) -> int:
                     gunun.append(o)
         if len(gunun) > AZAMI_GUN_OLAY:
             raise KaynakHatasi(f"Olağandışı olay sayısı ({len(gunun)}, {gun.isoformat()}); veri bozuk olabilir")
+        tum.extend(gunun)
         olaylar.extend(o for o in gunun if not kayit.gonderildi_mi(o.kimlik))
 
+    _site(b, "sabah", lambda: olaylar_aktar(b.site, b.bugun, tum, fiyat=b.fiyat_cekici))
     gidenler: List[Giden] = []
     if olaylar:
         olaylar = sirala(olaylar)
@@ -268,6 +289,7 @@ def sabah_isi(b: Baglam, tarih: Optional[date] = None) -> int:
 
 def haftalik_isi(b: Baglam) -> int:
     kayit = Kayit.oku(b.kayit_yolu)
+    _site(b, "haftalik", lambda: _takvim_sitesi(b))
     if b.bugun in kayit.haftalik:
         return 0
     sirketler, _ = b.kaynak.evren()
@@ -305,6 +327,7 @@ def gun_ici_isi(b: Baglam) -> int:
         o = _bildirim_olayi(bl, _bulten(b, bl), sirket, goruntu)
         if o and buyuk_mu(o):
             adaylar.append(o)
+    _site(b, "gun-ici", lambda: olaylar_aktar(b.site, b.bugun, adaylar, fiyat=b.fiyat_cekici))
     gonderilen = 0
     for o in sirala(adaylar):
         if kayit.gun_ici_sayisi(b.bugun) + (gonderilen if b.kuru else 0) >= AZAMI_GUN_ICI:
