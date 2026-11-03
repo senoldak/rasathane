@@ -22,8 +22,7 @@ SAYFA = "islemler"
 BASLIK = "Yönetici işlemleri"
 ACIKLAMA = (
     "SEC Form 4 beyanlarından: en az $100 bin açık piyasa alımı ve plan dışı CEO/CFO satışları (≥ $5 Mn). "
-    "Puan 0–100: rol, tutar, pozisyon artışı, 7 günlük küme ve plan dışı durumu. "
-    "Grafik yok: hisse fiyat geçmişi bu sayfada yok."
+    "Puan 0–100: rol, tutar, pozisyon artışı, 7 günlük küme ve plan dışı durumu."
 )
 KAYNAK = Kaynak("SEC EDGAR", "https://www.sec.gov/")
 KUME_GUN = 7
