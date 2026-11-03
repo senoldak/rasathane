@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
-from rasathane_ortak.site import Kaynak, Sutun, sayfa_yaz, seri_yaz
+from rasathane_ortak.site import Kaynak, Sutun, sayfa_yaz, seri_cok_yaz, seri_yaz
 
 from .evren import ADLAR, DOLAR_ENDEKSI, EMTIALAR, USDTRY
 from .raporlar import Pozisyon, Stok
@@ -18,6 +18,7 @@ log = logging.getLogger("emtia")
 
 BOLUM = "emtia"
 SERI_GUN = 252
+HAFTA_SAYI = 104
 _YAHOO = Kaynak("Yahoo Finance", "https://finance.yahoo.com/")
 _EIA = Kaynak("EIA", "https://www.eia.gov/")
 _CFTC = Kaynak("CFTC", "https://www.cftc.gov/")
@@ -39,6 +40,45 @@ def _noktalar(s: pd.Series) -> list[tuple[datetime.date, float]]:
 
 def _seri_anahtari(onek: str, ham: str) -> str:
     return f"{onek}-{ham.replace('_', '-')}"
+
+
+def _sec(df: pd.DataFrame, n: int) -> tuple[list[datetime.date], dict[str, list[float | None]]]:
+    tarihler = [_gun(i) for i in df.index]
+    sutunlar = {k: [None if pd.isna(v) else float(v) for v in df[k]] for k in df.columns}
+    return tarihler[-n:], {k: v[-n:] for k, v in sutunlar.items()}
+
+
+def _fiyat_serisi(
+    kok: Path,
+    anahtar: str,
+    ad: str,
+    birim: str,
+    kapanis: pd.Series,
+    isaretler: list[tuple[datetime.date, str]] | None = None,
+) -> None:
+    """Günlük (son 1 yıl, SMA 50/200 ve EMA 20) ve haftalık (son 2 yıl, SMA 10/40) seri.
+
+    Göstergeler tam geçmiş üzerinde hesaplanır; yalnız gösterilen aralık yazılır, böylece ısınma sorunu olmaz.
+    """
+    c = kapanis.astype(float).dropna()
+    gunluk = pd.DataFrame(
+        {
+            "kapanis": c,
+            "sma50": c.rolling(50).mean(),
+            "sma200": c.rolling(200).mean(),
+            "ema20": c.ewm(span=20, adjust=False).mean(),
+        }
+    )
+    t, s = _sec(gunluk, SERI_GUN)
+    seri_cok_yaz(kok, BOLUM, anahtar, t, s, ad=ad, birim=birim, isaretler=isaretler or [])
+    h = c.resample("W-FRI").last().dropna()
+    haftalik = pd.DataFrame(
+        {"kapanis": h, "sma10": h.rolling(10).mean(), "sma40": h.rolling(40).mean()}
+    )
+    t, s = _sec(haftalik, HAFTA_SAYI)
+    seri_cok_yaz(
+        kok, BOLUM, f"{anahtar}-hafta", t, s, ad=ad, birim=birim, isaretler=isaretler or []
+    )
 
 
 def _pano(
@@ -65,7 +105,7 @@ def _pano(
                 "seri": anahtar,
             }
         )
-        seri_yaz(kok, BOLUM, anahtar, _noktalar(seri), ad=ad, birim=birim)
+        _fiyat_serisi(kok, anahtar, ad, birim, seri)
 
     for e in EMTIALAR:
         if e.sembol in olcumler and e.sembol in bugunku:
@@ -161,14 +201,13 @@ def _hareketler(
         if sembol not in bugunku:
             continue
         e = ADLAR.get(sembol)
-        seri_yaz(
+        _fiyat_serisi(
             kok,
-            BOLUM,
             sembol,
-            _noktalar(bugunku[sembol]["Close"]),
-            ad=e.ad if e else sembol,
-            birim=e.birim if e else "",
-            isaretler=[(gun, " · ".join(liste))],
+            e.ad if e else sembol,
+            e.birim if e else "",
+            bugunku[sembol]["Close"],
+            [(gun, " · ".join(liste))],
         )
     return _sayfa(
         kok,

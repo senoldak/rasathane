@@ -68,8 +68,13 @@ def test_aktar_sayfa_ve_seriler(tmp_path: Path) -> None:
     pano = _oku(e / "pano.json")
     assert len(pano["satirlar"]) == 23
     assert pano["suzgecler"] == ["grup"]
-    assert len(_oku(e / "seri" / "GC=F.json")["noktalar"]) == 252
-    assert len(_oku(e / "seri" / "gram.json")["noktalar"]) == 252
+    gunluk = _oku(e / "seri" / "GC=F.json")
+    assert len(gunluk["tarihler"]) == 252
+    assert {"kapanis", "sma50", "sma200", "ema20"} <= set(gunluk["sutunlar"])
+    haftalik = _oku(e / "seri" / "GC=F-hafta.json")
+    assert len(haftalik["tarihler"]) <= 104
+    assert {"kapanis", "sma10", "sma40"} <= set(haftalik["sutunlar"])
+    assert len(_oku(e / "seri" / "gram.json")["tarihler"]) == 252
     assert len(_oku(e / "oranlar.json")["satirlar"]) == 4
     assert (e / "seri" / "oran-altin-gumus.json").exists()
 
