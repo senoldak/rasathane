@@ -11,6 +11,7 @@ import pandas as pd
 from rasathane_ortak.site import Kaynak, Sutun, sayfa_yaz, seri_cok_yaz, seri_yaz
 
 from .evren import ADLAR, DOLAR_ENDEKSI, EMTIALAR, USDTRY
+from .merkez_altin import aktar as merkez_aktar
 from .raporlar import Pozisyon, Stok
 from .tarama import TURLER, Olcum, OranOlcum, Sinyal, olc, sinyaller
 
@@ -370,4 +371,7 @@ def aktar(
         yol = yazici(kok, simdi, rapor)
         if yol is not None:
             yollar.append(yol)
+    merkez = merkez_aktar(kok, simdi)
+    if merkez is not None:
+        yollar.append(merkez)
     return yollar
