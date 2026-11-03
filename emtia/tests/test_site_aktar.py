@@ -66,7 +66,7 @@ def test_aktar_sayfa_ve_seriler(tmp_path: Path) -> None:
     for ad in ("pano", "hareketler"):
         assert (e / f"{ad}.json").exists()
     pano = _oku(e / "pano.json")
-    assert len(pano["satirlar"]) == 23
+    assert len(pano["satirlar"]) == 22
     assert pano["suzgecler"] == ["grup"]
     gunluk = _oku(e / "seri" / "GC=F.json")
     assert len(gunluk["tarihler"]) == 252

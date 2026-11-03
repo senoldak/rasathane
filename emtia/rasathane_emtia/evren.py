@@ -31,7 +31,6 @@ EMTIALAR: tuple[Emtia, ...] = (
     Emtia("SB=F", "Şeker", "Tarım", "¢/libre"),
     Emtia("CT=F", "Pamuk", "Tarım", "¢/libre"),
     Emtia("LE=F", "Canlı sığır", "Hayvancılık", "¢/libre"),
-    Emtia("HE=F", "Domuz", "Hayvancılık", "¢/libre"),
 )
 ADLAR = {e.sembol: e for e in EMTIALAR}
 
