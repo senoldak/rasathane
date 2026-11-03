@@ -27,7 +27,7 @@ import requests
 from rasathane_ortak import kagit
 from rasathane_ortak.tek_gonderim import Giden, GonderimKaydi, sirayla_gonder
 
-from . import analiz, raporlar, veri
+from . import analiz, raporlar, site_aktar, veri
 from .cizim import (
     FIKIR,
     SAYFA_SATIRI,
@@ -221,6 +221,7 @@ def calistir(
     simdi: datetime.datetime | None = None,
     veri_dizini: Path = Path("veri"),
     kaynaklar: Kaynaklar | None = None,
+    site_dizini: Path | None = None,
 ) -> Sonuc:
     k = kaynaklar or Kaynaklar()
     simdi = simdi or datetime.datetime.now(datetime.timezone.utc)
@@ -284,6 +285,13 @@ def calistir(
     gun_tarihi = kagit.tarih_metni(datetime.date.fromisoformat(tarih))
     haftalik = _ilk_mi(tarih, gunler)
     yeni_durum: dict[str, Any] = {}
+    # Haftalık kartlar ve site verisi aynı çağrıları paylaşır (her biri en çok bir kez).
+    tahvil: dict[str, pd.Series] | None = None
+    saatlik: dict[str, pd.DataFrame] | None = None
+    if haftalik or site_dizini:
+        tahvil = k.dene("tahvil faizleri", k.tahviller)
+        saatlik = k.dene("saatlik kurlar", lambda: k.saatlik(_SEANS_KURLARI))
+    duyarlilik_sonuc: list[analiz.Duyarlilik] | None = None
 
     kartlar.append(("pano", pano_ciz(olcumler, olcumler.get(SEPET), tarih)))
     r = analiz.risk(tablolar)
@@ -310,7 +318,6 @@ def calistir(
     if haftalik:
         if faizler and abd is not None:
             kartlar.append(("carry", carry_ciz(analiz.carry(faizler, tablolar), abd, tarih)))
-        tahvil: dict[str, pd.Series] | None = k.dene("tahvil faizleri", k.tahviller)
         if tahvil:
             farklar = [
                 f
@@ -332,7 +339,6 @@ def calistir(
         oyn = analiz.oynakliklar(tablolar, [x.sembol for x in KURLAR])
         if oyn:
             kartlar.append(("oynaklik", oynaklik_ciz(oyn, tarih)))
-        saatlik = k.dene("saatlik kurlar", lambda: k.saatlik(_SEANS_KURLARI))
         if saatlik:
             kartlar.append(("seans", seans_ciz(analiz.seanslar(saatlik), tarih)))
         karneler = analiz.karne(kayit, {**tablolar, **kur_tablolari})
@@ -349,6 +355,7 @@ def calistir(
                 tablolar[USDTRY],
                 hisseler[BIST100],
             )
+            duyarlilik_sonuc = d
             if len(d) >= 10:
                 kartlar.append(("duyarlilik", duyarlilik_ciz(d, tarih)))
 
@@ -406,6 +413,26 @@ def calistir(
             gr = grafik(df_tl, grafik_kodu)
             grafikler.append((f"grafik:{anahtar}:{donem}", gr, f"{gr.baslik} | {gr.tarih}"))
         yeni_durum.setdefault("raporlar", {})[anahtar] = donem
+
+    if site_dizini:
+        try:
+            site_aktar.aktar(
+                site_dizini,
+                simdi,
+                tarih,
+                tablolar,
+                olcumler,
+                bulunan,
+                gunler,
+                kayit,
+                faizler,
+                tahvil,
+                pozisyonlar,
+                saatlik,
+                duyarlilik_sonuc,
+            )
+        except Exception as e:
+            log.warning("site verisi yazılamadı: %s", e)
 
     gidenler: list[Giden] = []
     for anahtar, kart in kartlar:

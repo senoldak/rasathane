@@ -33,6 +33,10 @@ python -m rasathane_fx --kuru
 
 Kartlar `cikti/` klasörüne yazılır. Gönderim kaydı, sinyal kaydı ve son politika faizleri `veri/` altında tutulur.
 
+## Site
+
+`--site ../site-veri` ile sayfa ve seri JSON'ları `site-veri/fx/` altına yazılır: FX panosu, risk iştahı, politika faizleri, carry, faiz farkı ve kur, Fed beklentisi, kur bağları, kur oynaklığı, seanslar, CFTC fon pozisyonları, geçmiş isabet (kart karnesi), kura duyarlı hisseler ve hareketler. Site metinleri yön dili kullanmaz; her sayfada yatırım tavsiyesi uyarısı bulunur. Kart gönderimi ile bağımsızdır.
+
 ## Ayarlar
 
 - `TELEGRAM_BOT_TOKEN`, `TELEGRAM_SAHIP_ID`: depo secret'ları.

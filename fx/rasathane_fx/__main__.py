@@ -1,7 +1,8 @@
-"""python -m rasathane_fx [--kuru] [--tarih YYYY-AA-GG]"""
+"""python -m rasathane_fx [--kuru] [--tarih YYYY-AA-GG] [--site DIZIN]"""
 
 import argparse
 import logging
+from pathlib import Path
 
 from .calistir import calistir
 
@@ -11,8 +12,9 @@ def main() -> None:
     p = argparse.ArgumentParser(prog="rasathane_fx")
     p.add_argument("--kuru", action="store_true", help="kartları üret, gönderme")
     p.add_argument("--tarih", default=None, help="YYYY-AA-GG (yalnız son seans)")
+    p.add_argument("--site", type=Path, default=None, help="site JSON'larını bu klasöre yaz")
     a = p.parse_args()
-    print(calistir(kuru=a.kuru, tarih=a.tarih or None))
+    print(calistir(kuru=a.kuru, tarih=a.tarih or None, site_dizini=a.site))
 
 
 if __name__ == "__main__":
