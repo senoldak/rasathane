@@ -50,6 +50,7 @@ class Stok:
     deger: float
     degisim: float
     yil_once: float | None
+    gecmis: tuple[tuple[str, float], ...] = ()  # (dönem, değer), en yeni önce
 
 
 def eia_stok(s: EiaSeri, al: JsonAl = json_al) -> Stok:
@@ -76,6 +77,7 @@ def eia_stok(s: EiaSeri, al: JsonAl = json_al) -> Stok:
         deger=degerler[0],
         degisim=degerler[0] - degerler[1],
         yil_once=degerler[52] if len(degerler) > 52 else None,
+        gecmis=tuple((str(r["period"]), d) for r, d in zip(satirlar, degerler, strict=True)),
     )
 
 
@@ -107,6 +109,7 @@ class Pozisyon:
     degisim: int
     yuzdelik: float  # son 3 yılda bu haftanın net pozisyonunun altında kalan haftaların payı
     acik: int  # toplam açık pozisyon
+    gecmis: tuple[tuple[str, int], ...] = ()  # (rapor tarihi, net), en yeni önce
 
     @property
     def uc(self) -> bool:
@@ -138,4 +141,8 @@ def cot(kod: str, sembol: str, al: JsonAl = json_al) -> Pozisyon:
         degisim=netler[0] - netler[1],
         yuzdelik=sum(n < netler[0] for n in gecmis) / len(gecmis),
         acik=int(satirlar[0]["open_interest_all"]),
+        gecmis=tuple(
+            (str(r["report_date_as_yyyy_mm_dd"])[:10], n)
+            for r, n in zip(satirlar, netler, strict=True)
+        ),
     )

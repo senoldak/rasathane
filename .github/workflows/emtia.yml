@@ -50,10 +50,13 @@ jobs:
           # Gerçek gönderim yalnız EMTIA_GONDER=1 iken ve elle kuru seçilmemişken.
           KURU: ${{ (vars.EMTIA_GONDER != '1' || inputs.kuru == true) && '1' || '0' }}
           TARIH: ${{ inputs.tarih }}
+          # Site verisi Telegram gönderiminden bağımsız; elle başlatılan kuru koşu siteye yazmaz.
+          SITE: ${{ inputs.kuru == true && '0' || '1' }}
         run: |
           ARGS=()
           if [ "$KURU" = "1" ]; then ARGS+=(--kuru); fi
           if [ -n "$TARIH" ]; then ARGS+=(--tarih "$TARIH"); fi
+          if [ "$SITE" = "1" ]; then ARGS+=(--site ../site-veri); fi
           python -m rasathane_emtia "${ARGS[@]}"
       - name: Kartları yapıt olarak sakla
         if: always()
@@ -65,12 +68,12 @@ jobs:
       - name: Kaydı depoya yaz
         if: always()
         run: |
-          [ -d veri ] || exit 0  # kuru koşuda kayıt yazılmaz
+          # Var olmayan yol git add'e verilmez (kuru koşuda kayıt ve site verisi yazılmaz)
           git config user.name "senoldak"
           git config user.email "119886960+senoldak@users.noreply.github.com"
-          git add veri
+          for y in veri ../site-veri/emtia; do if [ -e "$y" ]; then git add "$y"; fi; done
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Emtia: kayıt $(date -u +%F)"
+          git commit -m "Emtia: kayıt ve site verisi $(date -u +%F)"
           for i in 1 2 3; do
             git pull --rebase --autostash && git push && exit 0
             sleep 10

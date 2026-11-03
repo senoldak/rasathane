@@ -24,7 +24,7 @@ import requests
 from rasathane_ortak import kagit
 from rasathane_ortak.tek_gonderim import Giden, GonderimKaydi, sirayla_gonder
 
-from . import raporlar, veri
+from . import raporlar, site_aktar, veri
 from .cizim import (
     FIKIR,
     SAYFA_SATIRI,
@@ -157,6 +157,7 @@ def calistir(
     veri_dizini: Path = Path("veri"),
     indir: Indirici = veri.indir,
     rapor_kaynagi: RaporKaynagi = raporlari_al,
+    site_dizini: Path | None = None,
 ) -> Sonuc:
     simdi = simdi or datetime.datetime.now(datetime.timezone.utc)
     tablolar = indir(TUM_SEMBOLLER)
@@ -262,6 +263,14 @@ def calistir(
     son_raporlar: dict[str, str] = dict(durum.get("raporlar", {}))
     yeni_raporlar: dict[str, str] = {}
     rapor = rapor_kaynagi()
+    if site_dizini:
+        try:
+            site_aktar.aktar(
+                site_dizini, simdi, tarih, bugunku, olcumler, gram, gram_olcum,
+                oran_olcumleri, bulunan, rapor,
+            )  # fmt: skip
+        except Exception as e:
+            log.warning("site verisi yazılamadı: %s", e)
     for anahtar, ad_ in (
         ("eia_petrol", "EIA Petrol Stokları"),
         ("eia_gaz", "EIA Doğalgaz Depoları"),

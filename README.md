@@ -39,6 +39,8 @@ Her klasörde `pytest`. CI (`.github/workflows/ci.yml`) yedisini ayrı işler ol
 
 `.github/workflows/` altında fikir başına bir iş akışı. Elle başlatılan koşu öntanımlı olarak kurudur: kartlar çizilir ve yapıt olarak yüklenir, Telegram'a gönderilmez. Gönderilen kartların kaydı her projenin veri klasörüne yazılır ve depoya commit'lenir; aynı kart iki kez gitmez.
 
+Emtia botu ayrıca `site-veri/emtia/` altına sayfa ve grafik serisi JSON'ları yazar; finfolis bunları `/rasathane/` sayfaları için okur.
+
 ## Marka
 
 `marka/`: Rasathane işareti ve onu üreten betikler.

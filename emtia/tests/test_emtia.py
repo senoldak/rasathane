@@ -127,3 +127,56 @@ def test_gonderim_kaydi_ve_rapor_tekrarlanmaz(tmp_path: Path, monkeypatch: Any) 
     assert s1["durum"] == "gonderildi" and "eia_gaz:2026-10-16" in gidenler
     s2 = c.calistir(False, simdi=simdi, rapor_kaynagi=lambda: {"eia_gaz": [stok]}, **ortak)
     assert s2["durum"] == "zaten_gonderildi"
+
+
+def test_calistir_kuru_site_yazar(tmp_path: Path) -> None:
+    ortak: dict[str, Any] = {
+        "kuru": True,
+        "veri_dizini": tmp_path / "veri",
+        "simdi": datetime.datetime(2026, 10, 27, 23, tzinfo=datetime.timezone.utc),
+        "indir": _tablolar,
+        "rapor_kaynagi": dict,
+    }
+    c.calistir(cikti=tmp_path / "c1", site_dizini=tmp_path / "sv", **ortak)
+    assert (tmp_path / "sv" / "emtia" / "pano.json").exists()
+    c.calistir(cikti=tmp_path / "c2", site_dizini=None, **ortak)
+    assert not (tmp_path / "c2" / "emtia").exists()
+    assert not list(tmp_path.glob("c2/**/*.json"))
+
+
+def test_calistir_site_hatasi_akisi_durdurmaz(tmp_path: Path, monkeypatch: Any) -> None:
+    def patla(*a: Any, **k: Any) -> None:
+        raise RuntimeError("x")
+
+    monkeypatch.setattr(c.site_aktar, "aktar", patla)
+    sonuc = c.calistir(
+        kuru=True,
+        cikti=tmp_path / "c",
+        veri_dizini=tmp_path / "v",
+        simdi=datetime.datetime(2026, 10, 27, 23, tzinfo=datetime.timezone.utc),
+        indir=_tablolar,
+        rapor_kaynagi=dict,
+        site_dizini=tmp_path / "sv",
+    )
+    assert sonuc["durum"] == "kuru"
+
+
+def test_eia_cot_gecmis() -> None:
+    veri = {
+        "response": {
+            "data": [{"period": f"p{i}", "value": str(400000 - i * 1000)} for i in range(60)]
+        }
+    }
+    s = raporlar.eia_stok(raporlar.PETROL[0], al=lambda u, q: veri)
+    assert len(s.gecmis) == 60 and s.gecmis[0] == ("p0", 400.0)
+    satirlar = [
+        {
+            "report_date_as_yyyy_mm_dd": f"2026-10-20T00:00:{i:02d}.000",
+            "m_money_positions_long_all": str(1000 - i),
+            "m_money_positions_short_all": "100",
+            "open_interest_all": "5000",
+        }
+        for i in range(157)
+    ]
+    p = raporlar.cot("088691", "GC=F", al=lambda u, q: satirlar)
+    assert len(p.gecmis) == 157 and p.gecmis[0][1] == 900
