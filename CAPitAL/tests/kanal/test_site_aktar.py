@@ -23,7 +23,7 @@ def test_sayfa_sema_ve_sutunlar(tmp_path):
     assert veri["guncellendi"] == "2026-11-02T12:00:00Z"
     assert veri["grafik"] == "yok"
     assert [s["anahtar"] for s in veri["sutunlar"]] == [
-        "bildirim", "uye", "parti", "meclis", "varlik", "islem", "tutar", "uyum", "gecikme", "belge",
+        "varlik", "islem", "bildirim", "islem_tarihi", "uye", "parti", "meclis", "tutar", "uyum", "gecikme", "belge",
     ]
     assert all("seri" not in r for r in veri["satirlar"])  # hisse fiyat geçmişi yok: grafik de yok
 

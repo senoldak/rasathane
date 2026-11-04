@@ -36,12 +36,13 @@ _KAYNAKLAR = (
 _PARTI = {"D": "Demokrat", "R": "Cumhuriyetçi", "I": "Bağımsız"}
 _ISLEM = {"Purchase": "Alış", "Sale (Full)": "Satış", "Sale (Partial)": "Satış", "Exchange": "Değişim"}
 _SUTUNLAR = (
+    Sutun("varlik", "Hisse", "metin"),
+    Sutun("islem", "İşlem", "metin"),
     Sutun("bildirim", "Bildirim tarihi", "tarih"),
+    Sutun("islem_tarihi", "İşlem tarihi", "tarih"),
     Sutun("uye", "Üye", "metin"),
     Sutun("parti", "Parti", "metin"),
     Sutun("meclis", "Meclis", "metin"),
-    Sutun("varlik", "Varlık", "metin"),
-    Sutun("islem", "İşlem", "metin"),
     Sutun("tutar", "Tutar aralığı", "metin"),
     Sutun("uyum", "Süre uyumu", "metin"),
     Sutun("gecikme", "İşlemden bildirime (gün)", "sayi", 0),
@@ -59,6 +60,7 @@ def _varlik(b: Beyan) -> str:
 def satir(b: Beyan) -> dict[str, object]:
     return {
         "bildirim": b.beyan_tarihi.isoformat(),
+        "islem_tarihi": b.islem_tarihi.isoformat(),
         "uye": b.uye,
         "parti": _PARTI.get(b.parti, b.parti),
         "meclis": b.meclis,
