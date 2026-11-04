@@ -1,0 +1,80 @@
+{
+ "baslangic": "2026-10-26",
+ "bitis": "2026-10-30",
+ "guncellendi": "2026-11-04T10:55:38Z",
+ "satirlar": [
+  {
+   "alan": 0,
+   "iki_parti": false,
+   "partiler": "Cumhuriyetçi 2",
+   "satan": 2,
+   "ticker": "ABT",
+   "tutar": "$51k–115k",
+   "varlik": "Abbott Laboratories"
+  },
+  {
+   "alan": 0,
+   "iki_parti": false,
+   "partiler": "Cumhuriyetçi 2",
+   "satan": 2,
+   "ticker": "V",
+   "tutar": "$16k–65k",
+   "varlik": "Visa"
+  },
+  {
+   "alan": 1,
+   "iki_parti": false,
+   "partiler": "Cumhuriyetçi 2",
+   "satan": 1,
+   "ticker": "TXN",
+   "tutar": "$16k–65k",
+   "varlik": "Texas Instruments"
+  },
+  {
+   "alan": 0,
+   "iki_parti": false,
+   "partiler": "Cumhuriyetçi 1",
+   "satan": 1,
+   "ticker": "COST",
+   "tutar": "$350k–750k",
+   "varlik": "Costco Wholesale"
+  },
+  {
+   "alan": 0,
+   "iki_parti": false,
+   "partiler": "Cumhuriyetçi 1",
+   "satan": 1,
+   "ticker": "MSFT",
+   "tutar": "$250k–500k",
+   "varlik": "Microsoft"
+  },
+  {
+   "alan": 0,
+   "iki_parti": false,
+   "partiler": "Cumhuriyetçi 1",
+   "satan": 1,
+   "ticker": "AAPL",
+   "tutar": "$250k–500k",
+   "varlik": "Apple"
+  },
+  {
+   "alan": 0,
+   "iki_parti": false,
+   "partiler": "Cumhuriyetçi 1",
+   "satan": 1,
+   "ticker": "AMZN",
+   "tutar": "$115k–300k",
+   "varlik": "Amazon.com"
+  },
+  {
+   "alan": 0,
+   "iki_parti": false,
+   "partiler": "Cumhuriyetçi 1",
+   "satan": 1,
+   "ticker": "GOOG",
+   "tutar": "$100k–250k",
+   "varlik": "Alphabet"
+  }
+ ],
+ "sema": 1
+}

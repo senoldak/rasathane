@@ -1,0 +1,226 @@
+{
+ "aciklama": "30.10.2026 tarihli bülten. Oran, satım opsiyonlarının alım opsiyonlarına göre payıdır; yorum içermez.",
+ "baslik": "Put/call oranı",
+ "bolum": "viop",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:56:45Z",
+ "kaynaklar": [
+  {
+   "ad": "Borsa İstanbul",
+   "url": "https://borsaistanbul.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "cagri_hacim": 3121052500.0,
+   "dayanak": "XU030",
+   "oran_acik": 0.7869942261295647,
+   "oran_hacim": 0.15046286469067727,
+   "put_hacim": 469602500.0,
+   "seri": "putcall-xu030"
+  },
+  {
+   "cagri_hacim": 1895548000.0,
+   "dayanak": "USDTRYK",
+   "oran_acik": 0.15621136469128627,
+   "oran_hacim": 0.028976844690822918,
+   "put_hacim": 54927000.0,
+   "seri": "putcall-usdtryk"
+  },
+  {
+   "cagri_hacim": 16075000.0,
+   "dayanak": "THYAO",
+   "oran_acik": 0.7471271830162955,
+   "oran_hacim": 0.8006842923794713,
+   "put_hacim": 12871000.0,
+   "seri": "putcall-thyao"
+  },
+  {
+   "cagri_hacim": 11676000.0,
+   "dayanak": "ASELS",
+   "oran_acik": 0.5825563046908622,
+   "oran_hacim": 0.7541966426858513,
+   "put_hacim": 8806000.0,
+   "seri": "putcall-asels"
+  },
+  {
+   "cagri_hacim": 9228400.0,
+   "dayanak": "AKBNK",
+   "oran_acik": 3.5897005593945375,
+   "oran_hacim": 2.1703220493259936,
+   "put_hacim": 20028600.0,
+   "seri": "putcall-akbnk"
+  },
+  {
+   "cagri_hacim": 6505000.0,
+   "dayanak": "TUPRS",
+   "oran_acik": 0.8022641509433962,
+   "oran_hacim": 1.6384319754035357,
+   "put_hacim": 10658000.0,
+   "seri": "putcall-tuprs"
+  },
+  {
+   "cagri_hacim": 6320000.0,
+   "dayanak": "SAHOL",
+   "oran_acik": 1.1746303468641004,
+   "oran_hacim": 1.9329113924050634,
+   "put_hacim": 12216000.0,
+   "seri": "putcall-sahol"
+  },
+  {
+   "cagri_hacim": 4272500.0,
+   "dayanak": "KCHOL",
+   "oran_acik": 0.42817214727775715,
+   "oran_hacim": 1.8818022235225278,
+   "put_hacim": 8040000.0,
+   "seri": "putcall-kchol"
+  },
+  {
+   "cagri_hacim": 4116800.0,
+   "dayanak": "EKGYO",
+   "oran_acik": 4.184493786074567,
+   "oran_hacim": 6.639902351340847,
+   "put_hacim": 27335150.0,
+   "seri": "putcall-ekgyo"
+  },
+  {
+   "cagri_hacim": 4095000.0,
+   "dayanak": "YKBNK",
+   "oran_acik": 0.21398131909119045,
+   "oran_hacim": 0.02573870573870574,
+   "put_hacim": 105400.0,
+   "seri": "putcall-ykbnk"
+  },
+  {
+   "cagri_hacim": 3652000.0,
+   "dayanak": "PGSUS",
+   "oran_acik": 0.3576915501280284,
+   "oran_hacim": 0.24315443592552027,
+   "put_hacim": 888000.0,
+   "seri": "putcall-pgsus"
+  },
+  {
+   "cagri_hacim": 1836000.0,
+   "dayanak": "VAKBN",
+   "oran_acik": 3.2432187319647126,
+   "oran_hacim": 0.00522875816993464,
+   "put_hacim": 9600.0,
+   "seri": "putcall-vakbn"
+  },
+  {
+   "cagri_hacim": 1733600.0,
+   "dayanak": "ARCLK",
+   "oran_acik": 0.9818742768993444,
+   "oran_hacim": 0.07614213197969544,
+   "put_hacim": 132000.0,
+   "seri": "putcall-arclk"
+  },
+  {
+   "cagri_hacim": 1690000.0,
+   "dayanak": "TAVHL",
+   "oran_acik": 1.1533909877105144,
+   "oran_hacim": 0.6153846153846154,
+   "put_hacim": 1040000.0,
+   "seri": "putcall-tavhl"
+  },
+  {
+   "cagri_hacim": 1423000.0,
+   "dayanak": "TTKOM",
+   "oran_acik": 5.733605271415124,
+   "oran_hacim": 2.150667603654252,
+   "put_hacim": 3060400.0,
+   "seri": "putcall-ttkom"
+  },
+  {
+   "cagri_hacim": 1275000.0,
+   "dayanak": "GARAN",
+   "oran_acik": 3.529075309818875,
+   "oran_hacim": 0.0,
+   "put_hacim": 0.0,
+   "seri": "putcall-garan"
+  },
+  {
+   "cagri_hacim": 765950.0,
+   "dayanak": "PETKM",
+   "oran_acik": 1.2091081467682379,
+   "oran_hacim": 35.792610483713034,
+   "put_hacim": 27415350.0,
+   "seri": "putcall-petkm"
+  },
+  {
+   "cagri_hacim": 740000.0,
+   "dayanak": "KRDMD",
+   "oran_acik": 0.6773079579464354,
+   "oran_hacim": 1.75,
+   "put_hacim": 1295000.0,
+   "seri": "putcall-krdmd"
+  },
+  {
+   "cagri_hacim": 316900.0,
+   "dayanak": "ISCTR",
+   "oran_acik": 2.347456239682388,
+   "oran_hacim": 481.449195329757,
+   "put_hacim": 152571250.0,
+   "seri": "putcall-isctr"
+  },
+  {
+   "cagri_hacim": 117000.0,
+   "dayanak": "BIMAS",
+   "oran_acik": 1.3304144775248103,
+   "oran_hacim": 15.905982905982906,
+   "put_hacim": 1861000.0,
+   "seri": "putcall-bimas"
+  },
+  {
+   "cagri_hacim": 43400.0,
+   "dayanak": "EREGL",
+   "oran_acik": 0.6198832994430201,
+   "oran_hacim": 34.585253456221196,
+   "put_hacim": 1501000.0,
+   "seri": "putcall-eregl"
+  },
+  {
+   "cagri_hacim": 40800.0,
+   "dayanak": "FROTO",
+   "oran_acik": 6.797060486150367,
+   "oran_hacim": 51.990196078431374,
+   "put_hacim": 2121200.0,
+   "seri": "putcall-froto"
+  }
+ ],
+ "sayfa": "put-call",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "dayanak",
+   "basamak": 2,
+   "baslik": "Dayanak",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "oran_hacim",
+   "basamak": 2,
+   "baslik": "Put/call (hacim)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "oran_acik",
+   "basamak": 2,
+   "baslik": "Put/call (açık poz.)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "cagri_hacim",
+   "basamak": 0,
+   "baslik": "Alım hacmi (TL)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "put_hacim",
+   "basamak": 0,
+   "baslik": "Satım hacmi (TL)",
+   "tur": "sayi"
+  }
+ ],
+ "suzgecler": []
+}

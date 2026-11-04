@@ -1,0 +1,16 @@
+{
+ "ad": "TRT131130T14 vade eğrisi (uzlaşma)",
+ "birim": "fiyat",
+ "isaretler": [],
+ "noktalar": [
+  [
+   "2026-12-31",
+   54.975
+  ],
+  [
+   "2027-03-31",
+   54.02
+  ]
+ ],
+ "sema": 1
+}

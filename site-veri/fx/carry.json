@@ -1,0 +1,204 @@
+{
+ "aciklama": "Politika faizi, ABD'ye fark, 3 aylık yıllık oynaklık ve fark/oynaklık oranı. Tablo ABD faizine göre sıralanmıştır. Yatırım tavsiyesi değildir. Veriler gecikmelidir.",
+ "baslik": "Carry tablosu",
+ "bolum": "fx",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:46:32Z",
+ "kaynaklar": [
+  {
+   "ad": "BIS",
+   "url": "https://www.bis.org/statistics/cbpol.htm"
+  },
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "TRY",
+   "faiz": 36.0,
+   "fark": 32.125,
+   "g1a": -0.01667386667087911,
+   "oran": 19.083334224527903,
+   "oynaklik": 0.016834060349218
+  },
+  {
+   "ad": "BRL",
+   "faiz": 13.75,
+   "fark": 9.875,
+   "g1a": -0.04832091333654054,
+   "oran": 0.4770413508162787,
+   "oynaklik": 0.20700511565931579
+  },
+  {
+   "ad": "ZAR",
+   "faiz": 7.25,
+   "fark": 3.375,
+   "g1a": 0.003353491592425817,
+   "oran": 0.4032294751935582,
+   "oynaklik": 0.0836992384641508
+  },
+  {
+   "ad": "MXN",
+   "faiz": 6.5,
+   "fark": 2.625,
+   "g1a": -0.03467862335833227,
+   "oran": 0.2948487586082664,
+   "oynaklik": 0.08902869431739927
+  },
+  {
+   "ad": "INR",
+   "faiz": 5.5,
+   "fark": 1.625,
+   "g1a": 0.01684048042391506,
+   "oran": 0.20460623626748925,
+   "oynaklik": 0.07942084413671428
+  },
+  {
+   "ad": "HUF",
+   "faiz": 5.5,
+   "fark": 1.625,
+   "g1a": 0.0025228376045640655,
+   "oran": 0.16993155412845895,
+   "oynaklik": 0.09562673679613316
+  },
+  {
+   "ad": "AUD",
+   "faiz": 4.6,
+   "fark": 0.7249999999999996,
+   "g1a": 0.002841590138133787,
+   "oran": 0.11862365473681558,
+   "oynaklik": 0.061117658329489274
+  },
+  {
+   "ad": "NOK",
+   "faiz": 4.5,
+   "fark": 0.625,
+   "g1a": 0.037331070152269996,
+   "oran": 0.10983112901396892,
+   "oynaklik": 0.05690554268275883
+  },
+  {
+   "ad": "PLN",
+   "faiz": 3.75,
+   "fark": -0.125,
+   "g1a": -0.01214963732032881,
+   "oran": -0.018379751178311025,
+   "oynaklik": 0.06800962580358863
+  },
+  {
+   "ad": "GBP",
+   "faiz": 3.75,
+   "fark": -0.125,
+   "g1a": 0.012713865384868184,
+   "oran": -0.028376292384353873,
+   "oynaklik": 0.0440508570700105
+  },
+  {
+   "ad": "KRW",
+   "faiz": 3.0,
+   "fark": -0.875,
+   "g1a": -0.00029777681791109956,
+   "oran": -0.08846212531945319,
+   "oynaklik": 0.09891238728893437
+  },
+  {
+   "ad": "NZD",
+   "faiz": 2.75,
+   "fark": -1.125,
+   "g1a": -0.005246973512062936,
+   "oran": -0.1732460441360434,
+   "oynaklik": 0.06493654764876369
+  },
+  {
+   "ad": "SEK",
+   "faiz": 1.75,
+   "fark": -2.125,
+   "g1a": 0.025335258987378984,
+   "oran": -0.32042835811285075,
+   "oynaklik": 0.06631747615957269
+  },
+  {
+   "ad": "EUR",
+   "faiz": 2.5,
+   "fark": -1.375,
+   "g1a": -0.005562336855136851,
+   "oran": -0.32486313315172327,
+   "oynaklik": 0.042325516800265035
+  },
+  {
+   "ad": "JPY",
+   "faiz": 1.25,
+   "fark": -2.625,
+   "g1a": -0.005717392745022809,
+   "oran": -0.33279777055515114,
+   "oynaklik": 0.0788767303224763
+  },
+  {
+   "ad": "CAD",
+   "faiz": 2.25,
+   "fark": -1.625,
+   "g1a": 0.017677764939227236,
+   "oran": -0.388273845150158,
+   "oynaklik": 0.04185190479084575
+  },
+  {
+   "ad": "CHF",
+   "faiz": 0.0,
+   "fark": -3.875,
+   "g1a": 0.009520903043448214,
+   "oran": -0.59600707864872,
+   "oynaklik": 0.065016006333104
+  },
+  {
+   "ad": "CNY",
+   "faiz": 3.0,
+   "fark": -0.875,
+   "g1a": 0.006636401040947426,
+   "oran": -0.9197760476042427,
+   "oynaklik": 0.00951318532678828
+  }
+ ],
+ "sayfa": "carry",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Para birimi",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "faiz",
+   "basamak": 2,
+   "baslik": "Politika faizi (%)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "fark",
+   "basamak": 2,
+   "baslik": "ABD'ye fark (puan)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "oynaklik",
+   "basamak": 1,
+   "baslik": "3 aylık oynaklık",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "oran",
+   "basamak": 2,
+   "baslik": "Fark / oynaklık",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "g1a",
+   "basamak": 1,
+   "baslik": "USD karşısında 1 ay",
+   "tur": "yuzde"
+  }
+ ],
+ "suzgecler": []
+}

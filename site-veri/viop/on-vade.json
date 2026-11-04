@@ -1,0 +1,594 @@
+{
+ "aciklama": "30.10.2026 tarihli bülten. Her dayanağın en çok işlem gören vadeli sözleşmesi; satıra tıklayınca grafik açılır.",
+ "baslik": "Ön vade fiyatı",
+ "bolum": "viop",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:56:45Z",
+ "kaynaklar": [
+  {
+   "ad": "Borsa İstanbul",
+   "url": "https://borsaistanbul.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "acik": 553486.0,
+   "dayanak": "XU030",
+   "fiyat": 14108.0,
+   "hacim": 77439345660.0,
+   "seri": "fiyat-xu030",
+   "yuzde": -0.036930848522083504
+  },
+  {
+   "acik": 6171699.0,
+   "dayanak": "USDTRY",
+   "fiyat": 49.82,
+   "hacim": 54342393737.0,
+   "seri": "fiyat-usdtry",
+   "yuzde": -0.0002809326965526049
+  },
+  {
+   "acik": 107777.0,
+   "dayanak": "ONS ALTIN",
+   "fiyat": 3948.9,
+   "hacim": 10951288429.504261,
+   "seri": "fiyat-ons-altin",
+   "yuzde": -0.03449877750611241
+  },
+  {
+   "acik": 197812.0,
+   "dayanak": "ASELS",
+   "fiyat": 356.05,
+   "hacim": 9946751815.0,
+   "seri": "fiyat-asels",
+   "yuzde": -0.029968669118648705
+  },
+  {
+   "acik": 245768.0,
+   "dayanak": "ONS GUMUS",
+   "fiyat": 50.15,
+   "hacim": 9610340570.33579,
+   "seri": "fiyat-ons-gumus",
+   "yuzde": -0.0788023512123438
+  },
+  {
+   "acik": 367717.0,
+   "dayanak": "THYAO",
+   "fiyat": 242.2,
+   "hacim": 7562053595.0,
+   "seri": "fiyat-thyao",
+   "yuzde": -0.042119833893612846
+  },
+  {
+   "acik": 1117013.0,
+   "dayanak": "AKBNK",
+   "fiyat": 62.41,
+   "hacim": 6235454424.0,
+   "seri": "fiyat-akbnk",
+   "yuzde": -0.03464810518174799
+  },
+  {
+   "acik": 1780910.0,
+   "dayanak": "YKBNK",
+   "fiyat": 34.83,
+   "hacim": 5570913347.0,
+   "seri": "fiyat-ykbnk",
+   "yuzde": -0.017212189616252815
+  },
+  {
+   "acik": 660338.0,
+   "dayanak": "SAHOL",
+   "fiyat": 82.89,
+   "hacim": 4479907992.0,
+   "seri": "fiyat-sahol",
+   "yuzde": -0.030753040224508865
+  },
+  {
+   "acik": 3617288.0,
+   "dayanak": "ISCTR",
+   "fiyat": 11.96,
+   "hacim": 4423656344.0,
+   "seri": "fiyat-isctr",
+   "yuzde": -0.03781174577634727
+  },
+  {
+   "acik": 125127.0,
+   "dayanak": "TUPRS",
+   "fiyat": 353.0,
+   "hacim": 4195270060.0,
+   "seri": "fiyat-tuprs",
+   "yuzde": -0.03274421153582663
+  },
+  {
+   "acik": 169881.0,
+   "dayanak": "KCHOL",
+   "fiyat": 197.8,
+   "hacim": 2755512480.0,
+   "seri": "fiyat-kchol",
+   "yuzde": -0.03488655769699933
+  },
+  {
+   "acik": 188555.0,
+   "dayanak": "GARAN",
+   "fiyat": 128.3,
+   "hacim": 2578862965.0,
+   "seri": "fiyat-garan",
+   "yuzde": -0.011175337186897782
+  },
+  {
+   "acik": 7727783.0,
+   "dayanak": "SASA",
+   "fiyat": 1.48,
+   "hacim": 2301823310.0,
+   "seri": "fiyat-sasa",
+   "yuzde": -0.02631578947368418
+  },
+  {
+   "acik": 65408.0,
+   "dayanak": "ASTOR",
+   "fiyat": 161.8,
+   "hacim": 2233067420.0,
+   "seri": "fiyat-astor",
+   "yuzde": -0.09986091794158547
+  },
+  {
+   "acik": 420091.0,
+   "dayanak": "GR ALTIN",
+   "fiyat": 6664.1,
+   "hacim": 2129523313.9,
+   "seri": "fiyat-gr-altin",
+   "yuzde": -0.03441231018894164
+  },
+  {
+   "acik": 70851.0,
+   "dayanak": "BIMAS",
+   "fiyat": 356.85,
+   "hacim": 2127508260.0,
+   "seri": "fiyat-bimas",
+   "yuzde": -0.04470619729621195
+  },
+  {
+   "acik": 193337.0,
+   "dayanak": "TCELL",
+   "fiyat": 92.23,
+   "hacim": 1945278894.0,
+   "seri": "fiyat-tcell",
+   "yuzde": -0.014426159435776631
+  },
+  {
+   "acik": 618275.0,
+   "dayanak": "EREGL",
+   "fiyat": 29.66,
+   "hacim": 1879364525.0,
+   "seri": "fiyat-eregl",
+   "yuzde": -0.049967969250480415
+  },
+  {
+   "acik": 86727.0,
+   "dayanak": "TAVHL",
+   "fiyat": 255.15,
+   "hacim": 1506999005.0,
+   "seri": "fiyat-tavhl",
+   "yuzde": -0.03242320819112621
+  },
+  {
+   "acik": 9259.0,
+   "dayanak": "BIST L.BANKA",
+   "fiyat": 14025.0,
+   "hacim": 1407885540.0,
+   "seri": "fiyat-bist-l-banka",
+   "yuzde": -0.02813387845610149
+  },
+  {
+   "acik": 300626.0,
+   "dayanak": "TRALT",
+   "fiyat": 33.25,
+   "hacim": 1370985818.0,
+   "seri": "fiyat-tralt",
+   "yuzde": -0.09842733188720176
+  },
+  {
+   "acik": 239853.0,
+   "dayanak": "KRDMD",
+   "fiyat": 36.16,
+   "hacim": 1230632791.0,
+   "seri": "fiyat-krdmd",
+   "yuzde": -0.03701731025299604
+  },
+  {
+   "acik": 316581.0,
+   "dayanak": "HALKB",
+   "fiyat": 39.6,
+   "hacim": 1195275998.0,
+   "seri": "fiyat-halkb",
+   "yuzde": -0.08227114716106598
+  },
+  {
+   "acik": 408860.0,
+   "dayanak": "SISE",
+   "fiyat": 32.8,
+   "hacim": 1194105373.0,
+   "seri": "fiyat-sise",
+   "yuzde": -0.05801263641585308
+  },
+  {
+   "acik": 1166296.0,
+   "dayanak": "EKGYO",
+   "fiyat": 16.58,
+   "hacim": 1158054068.0,
+   "seri": "fiyat-ekgyo",
+   "yuzde": -0.05148741418764313
+  },
+  {
+   "acik": 18923.0,
+   "dayanak": "EURUSD",
+   "fiyat": 1.1161,
+   "hacim": 1152480319.69636,
+   "seri": "fiyat-eurusd",
+   "yuzde": 0.0014356213548676333
+  },
+  {
+   "acik": 29652.0,
+   "dayanak": "TKFEN",
+   "fiyat": 195.85,
+   "hacim": 1131773250.0,
+   "seri": "fiyat-tkfen",
+   "yuzde": 0.004101512432709731
+  },
+  {
+   "acik": 162445.0,
+   "dayanak": "TTKOM",
+   "fiyat": 47.42,
+   "hacim": 937236045.0,
+   "seri": "fiyat-ttkom",
+   "yuzde": -0.0204503201817805
+  },
+  {
+   "acik": 265391.0,
+   "dayanak": "VAKBN",
+   "fiyat": 29.67,
+   "hacim": 931348866.0,
+   "seri": "fiyat-vakbn",
+   "yuzde": -0.05629770992366401
+  },
+  {
+   "acik": 88992.0,
+   "dayanak": "PGSUS",
+   "fiyat": 115.0,
+   "hacim": 931198305.0,
+   "seri": "fiyat-pgsus",
+   "yuzde": -0.055053410024650806
+  },
+  {
+   "acik": 466866.0,
+   "dayanak": "PETKM",
+   "fiyat": 16.63,
+   "hacim": 921562867.0,
+   "seri": "fiyat-petkm",
+   "yuzde": -0.07508342602892115
+  },
+  {
+   "acik": 22451.0,
+   "dayanak": "MGROS",
+   "fiyat": 424.6,
+   "hacim": 814898055.0,
+   "seri": "fiyat-mgros",
+   "yuzde": -0.028486443198718625
+  },
+  {
+   "acik": 52339.0,
+   "dayanak": "TOASO",
+   "fiyat": 217.3,
+   "hacim": 750616105.0,
+   "seri": "fiyat-toaso",
+   "yuzde": -0.07728237791932069
+  },
+  {
+   "acik": 78048.0,
+   "dayanak": "ENKAI",
+   "fiyat": 77.93,
+   "hacim": 709791356.0,
+   "seri": "fiyat-enkai",
+   "yuzde": -0.022698771005768448
+  },
+  {
+   "acik": 125478.0,
+   "dayanak": "FROTO",
+   "fiyat": 64.03,
+   "hacim": 701818517.0,
+   "seri": "fiyat-froto",
+   "yuzde": -0.06525547445255475
+  },
+  {
+   "acik": 86223.0,
+   "dayanak": "AKSEN",
+   "fiyat": 62.19,
+   "hacim": 572547327.0,
+   "seri": "fiyat-aksen",
+   "yuzde": -0.09986973512809383
+  },
+  {
+   "acik": 13522.0,
+   "dayanak": "EURTRY",
+   "fiyat": 57.01,
+   "hacim": 552397827.0,
+   "seri": "fiyat-eurtry",
+   "yuzde": -0.001366311659192987
+  },
+  {
+   "acik": 58475.0,
+   "dayanak": "ALARK",
+   "fiyat": 94.58,
+   "hacim": 539978267.0,
+   "seri": "fiyat-alark",
+   "yuzde": -0.02524992270431814
+  },
+  {
+   "acik": 37324.0,
+   "dayanak": "TRMET",
+   "fiyat": 96.57,
+   "hacim": 533096968.0,
+   "seri": "fiyat-trmet",
+   "yuzde": -0.10000000000000009
+  },
+  {
+   "acik": 23156.0,
+   "dayanak": "GUBRF",
+   "fiyat": 258.05,
+   "hacim": 516630925.0,
+   "seri": "fiyat-gubrf",
+   "yuzde": -0.09993024066968947
+  },
+  {
+   "acik": 330257.0,
+   "dayanak": "AEFES",
+   "fiyat": 15.9,
+   "hacim": 474986045.0,
+   "seri": "fiyat-aefes",
+   "yuzde": -0.026331904470299983
+  },
+  {
+   "acik": 3305.0,
+   "dayanak": "BRSAN",
+   "fiyat": 655.6,
+   "hacim": 437795080.0,
+   "seri": "fiyat-brsan",
+   "yuzde": -0.011459589867309994
+  },
+  {
+   "acik": 271741.0,
+   "dayanak": "DOHOL",
+   "fiyat": 15.85,
+   "hacim": 390788668.0,
+   "seri": "fiyat-dohol",
+   "yuzde": -0.037059538274605175
+  },
+  {
+   "acik": 1091720.0,
+   "dayanak": "HEKTS",
+   "fiyat": 1.65,
+   "hacim": 335020045.0,
+   "seri": "fiyat-hekts",
+   "yuzde": 0.0185185185185186
+  },
+  {
+   "acik": 21338.0,
+   "dayanak": "ENJSA",
+   "fiyat": 108.9,
+   "hacim": 303042415.0,
+   "seri": "fiyat-enjsa",
+   "yuzde": -0.05755084379056663
+  },
+  {
+   "acik": 436577.0,
+   "dayanak": "ODAS",
+   "fiyat": 4.35,
+   "hacim": 294168468.0,
+   "seri": "fiyat-odas",
+   "yuzde": -0.0625
+  },
+  {
+   "acik": 283533.0,
+   "dayanak": "TSKB",
+   "fiyat": 9.11,
+   "hacim": 282984503.0,
+   "seri": "fiyat-tskb",
+   "yuzde": -0.0010964912280702066
+  },
+  {
+   "acik": 73391.0,
+   "dayanak": "CIMSA",
+   "fiyat": 39.51,
+   "hacim": 280388192.0,
+   "seri": "fiyat-cimsa",
+   "yuzde": -0.024925962487660547
+  },
+  {
+   "acik": 91832.0,
+   "dayanak": "OYAKC",
+   "fiyat": 17.88,
+   "hacim": 229644390.0,
+   "seri": "fiyat-oyakc",
+   "yuzde": -0.02614379084967322
+  },
+  {
+   "acik": 25145.0,
+   "dayanak": "ULKER",
+   "fiyat": 74.3,
+   "hacim": 215175367.0,
+   "seri": "fiyat-ulker",
+   "yuzde": -0.017715494447382407
+  },
+  {
+   "acik": 41157.0,
+   "dayanak": "SOKM",
+   "fiyat": 53.5,
+   "hacim": 203200700.0,
+   "seri": "fiyat-sokm",
+   "yuzde": -0.04413078434875828
+  },
+  {
+   "acik": 45624.0,
+   "dayanak": "ARCLK",
+   "fiyat": 67.95,
+   "hacim": 158232854.0,
+   "seri": "fiyat-arclk",
+   "yuzde": -0.045780087066423114
+  },
+  {
+   "acik": 5103.0,
+   "dayanak": "DOAS",
+   "fiyat": 151.65,
+   "hacim": 156722835.0,
+   "seri": "fiyat-doas",
+   "yuzde": 0.09970993473531542
+  },
+  {
+   "acik": 58058.0,
+   "dayanak": "VESTL",
+   "fiyat": 11.04,
+   "hacim": 116531678.0,
+   "seri": "fiyat-vestl",
+   "yuzde": -0.027312775330396555
+  },
+  {
+   "acik": 717.0,
+   "dayanak": "ONS PALADYUM",
+   "fiyat": 977.6,
+   "hacim": 29715634.51889,
+   "seri": "fiyat-ons-paladyum",
+   "yuzde": -0.056734851408722586
+  },
+  {
+   "acik": 57.0,
+   "dayanak": "BIST BDLKT10",
+   "fiyat": 17696.0,
+   "hacim": 11976320.0,
+   "seri": "fiyat-bist-bdlkt10",
+   "yuzde": -0.03716197834485013
+  },
+  {
+   "acik": 461.0,
+   "dayanak": "ONS PLATIN",
+   "fiyat": 1465.8,
+   "hacim": 9182481.78221,
+   "seri": "fiyat-ons-platin",
+   "yuzde": -0.06517857142857131
+  },
+  {
+   "acik": 238.0,
+   "dayanak": "TON BAKIR",
+   "fiyat": 14449.0,
+   "hacim": 4937324.7520550005,
+   "seri": "fiyat-ton-bakir",
+   "yuzde": -0.0023475799212869797
+  },
+  {
+   "acik": 33.0,
+   "dayanak": "GBPUSD",
+   "fiyat": 1.3418,
+   "hacim": 866936.71695,
+   "seri": "fiyat-gbpusd",
+   "yuzde": 0.006903797088398722
+  },
+  {
+   "acik": 0.0,
+   "dayanak": "1-AY TLREF",
+   "fiyat": 36.49,
+   "hacim": 0.0,
+   "seri": "fiyat-1-ay-tlref",
+   "yuzde": 0.0
+  },
+  {
+   "acik": 0.0,
+   "dayanak": "BIST XSD25",
+   "fiyat": 18073.0,
+   "hacim": 0.0,
+   "seri": "fiyat-bist-xsd25",
+   "yuzde": 0.0
+  },
+  {
+   "acik": 110.0,
+   "dayanak": "BY ELEKTRIK",
+   "fiyat": 2800.0,
+   "hacim": 0.0,
+   "seri": "fiyat-by-elektrik",
+   "yuzde": 0.0
+  },
+  {
+   "acik": 35.0,
+   "dayanak": "CNHTRY",
+   "fiyat": 7.4896,
+   "hacim": 0.0,
+   "seri": "fiyat-cnhtry",
+   "yuzde": -0.00020023761530352235
+  },
+  {
+   "acik": 0.0,
+   "dayanak": "FIZ. USDTRY",
+   "fiyat": 49.82,
+   "hacim": 0.0,
+   "seri": "fiyat-fiz-usdtry",
+   "yuzde": -0.016037288671196026
+  },
+  {
+   "acik": 6.0,
+   "dayanak": "RUBTRY",
+   "fiyat": 0.6184,
+   "hacim": 0.0,
+   "seri": "fiyat-rubtry",
+   "yuzde": -0.001017721273605554
+  },
+  {
+   "acik": 0.0,
+   "dayanak": "SASX 10",
+   "fiyat": 1486.0,
+   "hacim": 0.0,
+   "seri": "fiyat-sasx-10",
+   "yuzde": -0.03740890688259113
+  },
+  {
+   "acik": 0.0,
+   "dayanak": "TRT131130T14",
+   "fiyat": 54.02,
+   "hacim": 0.0,
+   "seri": "fiyat-trt131130t14",
+   "yuzde": 0.0
+  }
+ ],
+ "sayfa": "on-vade",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "dayanak",
+   "basamak": 2,
+   "baslik": "Dayanak",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "fiyat",
+   "basamak": 2,
+   "baslik": "Ön vade fiyatı",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "yuzde",
+   "basamak": 2,
+   "baslik": "Değişim (%)",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "hacim",
+   "basamak": 0,
+   "baslik": "Vadeli hacim (TL)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "acik",
+   "basamak": 0,
+   "baslik": "Açık pozisyon",
+   "tur": "sayi"
+  }
+ ],
+ "suzgecler": []
+}

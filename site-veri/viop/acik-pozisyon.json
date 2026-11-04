@@ -1,0 +1,554 @@
+{
+ "aciklama": "30.10.2026 tarihli bülten. Satıra tıklayınca dayanağın açık pozisyon geçmişi çizilir.",
+ "baslik": "Vadeli açık pozisyon",
+ "bolum": "viop",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:56:45Z",
+ "kaynaklar": [
+  {
+   "ad": "Borsa İstanbul",
+   "url": "https://borsaistanbul.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "acik": 7727783.0,
+   "dayanak": "SASA",
+   "degisim": 253549.0,
+   "hacim": 2301823310.0,
+   "seri": "acik-sasa",
+   "yuzde": 0.03392307492647407
+  },
+  {
+   "acik": 6171699.0,
+   "dayanak": "USDTRY",
+   "degisim": -9650.0,
+   "hacim": 54342393737.0,
+   "seri": "acik-usdtry",
+   "yuzde": -0.0015611478982985752
+  },
+  {
+   "acik": 3617288.0,
+   "dayanak": "ISCTR",
+   "degisim": 531873.0,
+   "hacim": 4423656344.0,
+   "seri": "acik-isctr",
+   "yuzde": 0.17238296955190793
+  },
+  {
+   "acik": 1780910.0,
+   "dayanak": "YKBNK",
+   "degisim": 314894.0,
+   "hacim": 5570913347.0,
+   "seri": "acik-ykbnk",
+   "yuzde": 0.21479574574902321
+  },
+  {
+   "acik": 1166296.0,
+   "dayanak": "EKGYO",
+   "degisim": 83901.0,
+   "hacim": 1158054068.0,
+   "seri": "acik-ekgyo",
+   "yuzde": 0.0775142161595351
+  },
+  {
+   "acik": 1117013.0,
+   "dayanak": "AKBNK",
+   "degisim": 107887.0,
+   "hacim": 6235454424.0,
+   "seri": "acik-akbnk",
+   "yuzde": 0.10691132722771983
+  },
+  {
+   "acik": 1091720.0,
+   "dayanak": "HEKTS",
+   "degisim": 119547.0,
+   "hacim": 335020045.0,
+   "seri": "acik-hekts",
+   "yuzde": 0.12296885430885243
+  },
+  {
+   "acik": 660338.0,
+   "dayanak": "SAHOL",
+   "degisim": 105282.0,
+   "hacim": 4479907992.0,
+   "seri": "acik-sahol",
+   "yuzde": 0.1896781586002133
+  },
+  {
+   "acik": 618275.0,
+   "dayanak": "EREGL",
+   "degisim": 13142.0,
+   "hacim": 1879364525.0,
+   "seri": "acik-eregl",
+   "yuzde": 0.02171753978051106
+  },
+  {
+   "acik": 553486.0,
+   "dayanak": "XU030",
+   "degisim": 24283.0,
+   "hacim": 77439345660.0,
+   "seri": "acik-xu030",
+   "yuzde": 0.04588598326162172
+  },
+  {
+   "acik": 466866.0,
+   "dayanak": "PETKM",
+   "degisim": 53799.0,
+   "hacim": 921562867.0,
+   "seri": "acik-petkm",
+   "yuzde": 0.13024279354196777
+  },
+  {
+   "acik": 436577.0,
+   "dayanak": "ODAS",
+   "degisim": -19792.0,
+   "hacim": 294168468.0,
+   "seri": "acik-odas",
+   "yuzde": -0.04336841459433047
+  },
+  {
+   "acik": 420091.0,
+   "dayanak": "GR ALTIN",
+   "degisim": 697.0,
+   "hacim": 2129523313.9,
+   "seri": "acik-gr-altin",
+   "yuzde": 0.0016619217251558202
+  },
+  {
+   "acik": 408860.0,
+   "dayanak": "SISE",
+   "degisim": 40307.0,
+   "hacim": 1194105373.0,
+   "seri": "acik-sise",
+   "yuzde": 0.10936554579666968
+  },
+  {
+   "acik": 367717.0,
+   "dayanak": "THYAO",
+   "degisim": 16407.0,
+   "hacim": 7562053595.0,
+   "seri": "acik-thyao",
+   "yuzde": 0.04670234266032849
+  },
+  {
+   "acik": 330257.0,
+   "dayanak": "AEFES",
+   "degisim": 24801.0,
+   "hacim": 474986045.0,
+   "seri": "acik-aefes",
+   "yuzde": 0.08119336336493636
+  },
+  {
+   "acik": 316581.0,
+   "dayanak": "HALKB",
+   "degisim": -52262.0,
+   "hacim": 1195275998.0,
+   "seri": "acik-halkb",
+   "yuzde": -0.14169172249439463
+  },
+  {
+   "acik": 300626.0,
+   "dayanak": "TRALT",
+   "degisim": 40413.0,
+   "hacim": 1370985818.0,
+   "seri": "acik-tralt",
+   "yuzde": 0.15530738279793863
+  },
+  {
+   "acik": 283533.0,
+   "dayanak": "TSKB",
+   "degisim": 5760.0,
+   "hacim": 282984503.0,
+   "seri": "acik-tskb",
+   "yuzde": 0.020736356665334642
+  },
+  {
+   "acik": 271741.0,
+   "dayanak": "DOHOL",
+   "degisim": 47662.0,
+   "hacim": 390788668.0,
+   "seri": "acik-dohol",
+   "yuzde": 0.2127017703577756
+  },
+  {
+   "acik": 265391.0,
+   "dayanak": "VAKBN",
+   "degisim": 20414.0,
+   "hacim": 931348866.0,
+   "seri": "acik-vakbn",
+   "yuzde": 0.08333027182143629
+  },
+  {
+   "acik": 245768.0,
+   "dayanak": "ONS GUMUS",
+   "degisim": -24933.0,
+   "hacim": 9610340570.33579,
+   "seri": "acik-ons-gumus",
+   "yuzde": -0.0921053117646407
+  },
+  {
+   "acik": 239853.0,
+   "dayanak": "KRDMD",
+   "degisim": 54643.0,
+   "hacim": 1230632791.0,
+   "seri": "acik-krdmd",
+   "yuzde": 0.29503266562280656
+  },
+  {
+   "acik": 197812.0,
+   "dayanak": "ASELS",
+   "degisim": 15684.0,
+   "hacim": 9946751815.0,
+   "seri": "acik-asels",
+   "yuzde": 0.08611525959764561
+  },
+  {
+   "acik": 193337.0,
+   "dayanak": "TCELL",
+   "degisim": 33669.0,
+   "hacim": 1945278894.0,
+   "seri": "acik-tcell",
+   "yuzde": 0.2108688027657389
+  },
+  {
+   "acik": 188555.0,
+   "dayanak": "GARAN",
+   "degisim": 15468.0,
+   "hacim": 2578862965.0,
+   "seri": "acik-garan",
+   "yuzde": 0.08936546361078533
+  },
+  {
+   "acik": 169881.0,
+   "dayanak": "KCHOL",
+   "degisim": 15409.0,
+   "hacim": 2755512480.0,
+   "seri": "acik-kchol",
+   "yuzde": 0.09975270599202445
+  },
+  {
+   "acik": 162445.0,
+   "dayanak": "TTKOM",
+   "degisim": -6349.0,
+   "hacim": 937236045.0,
+   "seri": "acik-ttkom",
+   "yuzde": -0.03761389622853893
+  },
+  {
+   "acik": 125478.0,
+   "dayanak": "FROTO",
+   "degisim": -7278.0,
+   "hacim": 701818517.0,
+   "seri": "acik-froto",
+   "yuzde": -0.05482238090933743
+  },
+  {
+   "acik": 125127.0,
+   "dayanak": "TUPRS",
+   "degisim": 12154.0,
+   "hacim": 4195270060.0,
+   "seri": "acik-tuprs",
+   "yuzde": 0.10758322785090242
+  },
+  {
+   "acik": 107777.0,
+   "dayanak": "ONS ALTIN",
+   "degisim": 2140.0,
+   "hacim": 10951288429.504261,
+   "seri": "acik-ons-altin",
+   "yuzde": 0.020258053522913374
+  },
+  {
+   "acik": 91832.0,
+   "dayanak": "OYAKC",
+   "degisim": 10461.0,
+   "hacim": 229644390.0,
+   "seri": "acik-oyakc",
+   "yuzde": 0.12855931474358187
+  },
+  {
+   "acik": 88992.0,
+   "dayanak": "PGSUS",
+   "degisim": 1384.0,
+   "hacim": 931198305.0,
+   "seri": "acik-pgsus",
+   "yuzde": 0.01579764405077162
+  },
+  {
+   "acik": 86727.0,
+   "dayanak": "TAVHL",
+   "degisim": -3219.0,
+   "hacim": 1506999005.0,
+   "seri": "acik-tavhl",
+   "yuzde": -0.035788139550396905
+  },
+  {
+   "acik": 86223.0,
+   "dayanak": "AKSEN",
+   "degisim": 5832.0,
+   "hacim": 572547327.0,
+   "seri": "acik-aksen",
+   "yuzde": 0.07254543419039444
+  },
+  {
+   "acik": 78048.0,
+   "dayanak": "ENKAI",
+   "degisim": 14493.0,
+   "hacim": 709791356.0,
+   "seri": "acik-enkai",
+   "yuzde": 0.22803870663205097
+  },
+  {
+   "acik": 73391.0,
+   "dayanak": "CIMSA",
+   "degisim": 2083.0,
+   "hacim": 280388192.0,
+   "seri": "acik-cimsa",
+   "yuzde": 0.029211308689067145
+  },
+  {
+   "acik": 70851.0,
+   "dayanak": "BIMAS",
+   "degisim": -1134.0,
+   "hacim": 2127508260.0,
+   "seri": "acik-bimas",
+   "yuzde": -0.015753281933736193
+  },
+  {
+   "acik": 65408.0,
+   "dayanak": "ASTOR",
+   "degisim": 2543.0,
+   "hacim": 2233067420.0,
+   "seri": "acik-astor",
+   "yuzde": 0.04045176171160423
+  },
+  {
+   "acik": 58475.0,
+   "dayanak": "ALARK",
+   "degisim": 2262.0,
+   "hacim": 539978267.0,
+   "seri": "acik-alark",
+   "yuzde": 0.040239802180990165
+  },
+  {
+   "acik": 58058.0,
+   "dayanak": "VESTL",
+   "degisim": -10238.0,
+   "hacim": 116531678.0,
+   "seri": "acik-vestl",
+   "yuzde": -0.14990629026590138
+  },
+  {
+   "acik": 52339.0,
+   "dayanak": "TOASO",
+   "degisim": 2510.0,
+   "hacim": 750616105.0,
+   "seri": "acik-toaso",
+   "yuzde": 0.05037227317425595
+  },
+  {
+   "acik": 45624.0,
+   "dayanak": "ARCLK",
+   "degisim": -1662.0,
+   "hacim": 158232854.0,
+   "seri": "acik-arclk",
+   "yuzde": -0.03514782388021825
+  },
+  {
+   "acik": 41157.0,
+   "dayanak": "SOKM",
+   "degisim": -715.0,
+   "hacim": 203200700.0,
+   "seri": "acik-sokm",
+   "yuzde": -0.01707585021016431
+  },
+  {
+   "acik": 37324.0,
+   "dayanak": "TRMET",
+   "degisim": 6772.0,
+   "hacim": 533096968.0,
+   "seri": "acik-trmet",
+   "yuzde": 0.2216548834773501
+  },
+  {
+   "acik": 29652.0,
+   "dayanak": "TKFEN",
+   "degisim": 2392.0,
+   "hacim": 1131773250.0,
+   "seri": "acik-tkfen",
+   "yuzde": 0.08774761555392517
+  },
+  {
+   "acik": 25145.0,
+   "dayanak": "ULKER",
+   "degisim": 1411.0,
+   "hacim": 215175367.0,
+   "seri": "acik-ulker",
+   "yuzde": 0.05945057723097666
+  },
+  {
+   "acik": 23156.0,
+   "dayanak": "GUBRF",
+   "degisim": -501.0,
+   "hacim": 516630925.0,
+   "seri": "acik-gubrf",
+   "yuzde": -0.021177664116329206
+  },
+  {
+   "acik": 22451.0,
+   "dayanak": "MGROS",
+   "degisim": 1540.0,
+   "hacim": 814898055.0,
+   "seri": "acik-mgros",
+   "yuzde": 0.07364544976328248
+  },
+  {
+   "acik": 21338.0,
+   "dayanak": "ENJSA",
+   "degisim": -1849.0,
+   "hacim": 303042415.0,
+   "seri": "acik-enjsa",
+   "yuzde": -0.07974295941691464
+  },
+  {
+   "acik": 18923.0,
+   "dayanak": "EURUSD",
+   "degisim": -4118.0,
+   "hacim": 1152480319.69636,
+   "seri": "acik-eurusd",
+   "yuzde": -0.17872488173256368
+  },
+  {
+   "acik": 13522.0,
+   "dayanak": "EURTRY",
+   "degisim": -61.0,
+   "hacim": 552397827.0,
+   "seri": "acik-eurtry",
+   "yuzde": -0.004490907752337481
+  },
+  {
+   "acik": 9259.0,
+   "dayanak": "BIST L.BANKA",
+   "degisim": -311.0,
+   "hacim": 1407885540.0,
+   "seri": "acik-bist-l-banka",
+   "yuzde": -0.03249738766980146
+  },
+  {
+   "acik": 5103.0,
+   "dayanak": "DOAS",
+   "degisim": 871.0,
+   "hacim": 156722835.0,
+   "seri": "acik-doas",
+   "yuzde": 0.20581285444234404
+  },
+  {
+   "acik": 3305.0,
+   "dayanak": "BRSAN",
+   "degisim": 566.0,
+   "hacim": 437795080.0,
+   "seri": "acik-brsan",
+   "yuzde": 0.20664476086162833
+  },
+  {
+   "acik": 717.0,
+   "dayanak": "ONS PALADYUM",
+   "degisim": 55.0,
+   "hacim": 29715634.51889,
+   "seri": "acik-ons-paladyum",
+   "yuzde": 0.08308157099697885
+  },
+  {
+   "acik": 461.0,
+   "dayanak": "ONS PLATIN",
+   "degisim": 73.0,
+   "hacim": 9182481.78221,
+   "seri": "acik-ons-platin",
+   "yuzde": 0.18814432989690721
+  },
+  {
+   "acik": 238.0,
+   "dayanak": "TON BAKIR",
+   "degisim": -10.0,
+   "hacim": 4937324.7520550005,
+   "seri": "acik-ton-bakir",
+   "yuzde": -0.04032258064516129
+  },
+  {
+   "acik": 110.0,
+   "dayanak": "BY ELEKTRIK",
+   "degisim": 0.0,
+   "hacim": 0.0,
+   "seri": "acik-by-elektrik",
+   "yuzde": 0.0
+  },
+  {
+   "acik": 57.0,
+   "dayanak": "BIST BDLKT10",
+   "degisim": -5.0,
+   "hacim": 11976320.0,
+   "seri": "acik-bist-bdlkt10",
+   "yuzde": -0.08064516129032258
+  },
+  {
+   "acik": 35.0,
+   "dayanak": "CNHTRY",
+   "degisim": 0.0,
+   "hacim": 0.0,
+   "seri": "acik-cnhtry",
+   "yuzde": 0.0
+  },
+  {
+   "acik": 33.0,
+   "dayanak": "GBPUSD",
+   "degisim": 0.0,
+   "hacim": 866936.71695,
+   "seri": "acik-gbpusd",
+   "yuzde": 0.0
+  },
+  {
+   "acik": 6.0,
+   "dayanak": "RUBTRY",
+   "degisim": 0.0,
+   "hacim": 0.0,
+   "seri": "acik-rubtry",
+   "yuzde": 0.0
+  }
+ ],
+ "sayfa": "acik-pozisyon",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "dayanak",
+   "basamak": 2,
+   "baslik": "Dayanak",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "acik",
+   "basamak": 0,
+   "baslik": "Açık pozisyon",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "degisim",
+   "basamak": 0,
+   "baslik": "Önceki güne göre",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "yuzde",
+   "basamak": 2,
+   "baslik": "Değişim (%)",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "hacim",
+   "basamak": 0,
+   "baslik": "Vadeli hacim (TL)",
+   "tur": "sayi"
+  }
+ ],
+ "suzgecler": []
+}

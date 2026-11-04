@@ -1,0 +1,108 @@
+{
+ "aciklama": "BIS verisinde her para biriminin merkez bankasının son politika faizi. Yatırım tavsiyesi değildir. Veriler gecikmelidir.",
+ "baslik": "Politika faizleri",
+ "bolum": "fx",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:46:32Z",
+ "kaynaklar": [
+  {
+   "ad": "BIS",
+   "url": "https://www.bis.org/statistics/cbpol.htm"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "AUD",
+   "faiz": 4.6
+  },
+  {
+   "ad": "BRL",
+   "faiz": 13.75
+  },
+  {
+   "ad": "CAD",
+   "faiz": 2.25
+  },
+  {
+   "ad": "CHF",
+   "faiz": 0.0
+  },
+  {
+   "ad": "CNY",
+   "faiz": 3.0
+  },
+  {
+   "ad": "EUR",
+   "faiz": 2.5
+  },
+  {
+   "ad": "GBP",
+   "faiz": 3.75
+  },
+  {
+   "ad": "HUF",
+   "faiz": 5.5
+  },
+  {
+   "ad": "INR",
+   "faiz": 5.5
+  },
+  {
+   "ad": "JPY",
+   "faiz": 1.25
+  },
+  {
+   "ad": "KRW",
+   "faiz": 3.0
+  },
+  {
+   "ad": "MXN",
+   "faiz": 6.5
+  },
+  {
+   "ad": "NOK",
+   "faiz": 4.5
+  },
+  {
+   "ad": "NZD",
+   "faiz": 2.75
+  },
+  {
+   "ad": "PLN",
+   "faiz": 3.75
+  },
+  {
+   "ad": "SEK",
+   "faiz": 1.75
+  },
+  {
+   "ad": "TRY",
+   "faiz": 36.0
+  },
+  {
+   "ad": "USD",
+   "faiz": 3.875
+  },
+  {
+   "ad": "ZAR",
+   "faiz": 7.25
+  }
+ ],
+ "sayfa": "politika",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Para birimi",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "faiz",
+   "basamak": 2,
+   "baslik": "Politika faizi (%)",
+   "tur": "sayi"
+  }
+ ],
+ "suzgecler": []
+}

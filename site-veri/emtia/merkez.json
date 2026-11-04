@@ -1,0 +1,146 @@
+{
+ "aciklama": "Seçilmiş ülkelerin resmî altın rezervi (ton). Son ay verisi IMF tarafından düzeltilebilir.",
+ "baslik": "Merkez bankaları altın rezervi",
+ "bolum": "emtia",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:13:38Z",
+ "kaynaklar": [
+  {
+   "ad": "IMF, International Liquidity (IL)",
+   "url": "https://data.imf.org/en/datasets//IMF.STA:IL"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "Çin",
+   "aylik": 14.929668849431891,
+   "donem": "2026-06",
+   "seri": "imf-CHN",
+   "ton": 2346.4462875023873,
+   "yillik": 0.020838971583220456
+  },
+  {
+   "ad": "ABD",
+   "aylik": -5.4569682106375694e-12,
+   "donem": "2026-09",
+   "seri": "imf-USA",
+   "ton": 8133.525777594226,
+   "yillik": -7.64824870103098e-11
+  },
+  {
+   "ad": "Almanya",
+   "aylik": 0.0,
+   "donem": "2026-09",
+   "seri": "imf-DEU",
+   "ton": 3349.129068125591,
+   "yillik": -0.0003435022374064234
+  },
+  {
+   "ad": "İtalya",
+   "aylik": -0.00637621273745026,
+   "donem": "2026-08",
+   "seri": "imf-ITA",
+   "ton": 2451.8495940619932,
+   "yillik": -2.6005657814964778e-06
+  },
+  {
+   "ad": "Fransa",
+   "aylik": 0.0,
+   "donem": "2026-07",
+   "seri": "imf-FRA",
+   "ton": 2437.0196118556078,
+   "yillik": 0.0
+  },
+  {
+   "ad": "Rusya",
+   "aylik": 0.0,
+   "donem": "2025-11",
+   "seri": "imf-RUS",
+   "ton": 2326.5400623698115,
+   "yillik": -0.002666666666666595
+  },
+  {
+   "ad": "Japonya",
+   "aylik": 2.2737367544323206e-13,
+   "donem": "2026-09",
+   "seri": "imf-JPN",
+   "ton": 845.979758056381,
+   "yillik": 2.220446049250313e-16
+  },
+  {
+   "ad": "Hindistan",
+   "aylik": 0.0,
+   "donem": "2026-08",
+   "seri": "imf-IND",
+   "ton": 880.5179989195027,
+   "yillik": 0.0006087390813684923
+  },
+  {
+   "ad": "Polonya",
+   "aylik": 24.897451961504203,
+   "donem": "2026-09",
+   "seri": "imf-POL",
+   "ton": 672.8862255099232,
+   "yillik": 0.30571118759928884
+  },
+  {
+   "ad": "Türkiye",
+   "aylik": 3.8568311194371745,
+   "donem": "2026-09",
+   "seri": "imf-TUR",
+   "ton": 795.2225905696389,
+   "yillik": -0.004516606315461136
+  },
+  {
+   "ad": "Birleşik Krallık",
+   "aylik": 0.0,
+   "donem": "2026-09",
+   "seri": "imf-GBR",
+   "ton": 310.2895681744448,
+   "yillik": 2.0849956205992726e-08
+  },
+  {
+   "ad": "İsviçre",
+   "aylik": 0.0,
+   "donem": "2026-08",
+   "seri": "imf-CHE",
+   "ton": 1039.944745793244,
+   "yillik": 0.0
+  }
+ ],
+ "sayfa": "merkez",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Ülke",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "donem",
+   "basamak": 2,
+   "baslik": "Dönem",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "ton",
+   "basamak": 0,
+   "baslik": "Ton",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "aylik",
+   "basamak": 1,
+   "baslik": "Son ay (ton)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "yillik",
+   "basamak": 1,
+   "baslik": "1 yıl",
+   "tur": "yuzde"
+  }
+ ],
+ "suzgecler": []
+}

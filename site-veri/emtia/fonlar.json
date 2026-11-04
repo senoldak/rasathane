@@ -1,0 +1,212 @@
+{
+ "aciklama": "CFTC raporunda yönetilen fonların net pozisyonu ve son 3 yıldaki dilimi.",
+ "baslik": "Fon pozisyonları",
+ "bolum": "emtia",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:13:38Z",
+ "kaynaklar": [
+  {
+   "ad": "CFTC",
+   "url": "https://www.cftc.gov/"
+  }
+ ],
+ "satirlar": [
+  {
+   "acik": 396810,
+   "ad": "Altın",
+   "degisim": 1356,
+   "donem": "2026-10-27",
+   "net": 105562,
+   "seri": "cftc-GC=F",
+   "uc": "",
+   "yuzdelik": 0.24358974358974358
+  },
+  {
+   "acik": 116226,
+   "ad": "Gümüş",
+   "degisim": -184,
+   "donem": "2026-10-27",
+   "net": 3321,
+   "seri": "cftc-SI=F",
+   "uc": "Uç değer",
+   "yuzdelik": 0.03205128205128205
+  },
+  {
+   "acik": 83229,
+   "ad": "Platin",
+   "degisim": -4824,
+   "donem": "2026-10-27",
+   "net": 1765,
+   "seri": "cftc-PL=F",
+   "uc": "",
+   "yuzdelik": 0.23076923076923078
+  },
+  {
+   "acik": 27075,
+   "ad": "Paladyum",
+   "degisim": -1303,
+   "donem": "2026-10-27",
+   "net": -13297,
+   "seri": "cftc-PA=F",
+   "uc": "",
+   "yuzdelik": 0.08333333333333333
+  },
+  {
+   "acik": 337019,
+   "ad": "Bakır",
+   "degisim": -7115,
+   "donem": "2026-10-27",
+   "net": 40575,
+   "seri": "cftc-HG=F",
+   "uc": "",
+   "yuzdelik": 0.5641025641025641
+  },
+  {
+   "acik": 1886280,
+   "ad": "WTI petrol",
+   "degisim": -5059,
+   "donem": "2026-10-27",
+   "net": 31128,
+   "seri": "cftc-CL=F",
+   "uc": "",
+   "yuzdelik": 0.1282051282051282
+  },
+  {
+   "acik": 1681043,
+   "ad": "Doğalgaz",
+   "degisim": -48908,
+   "donem": "2026-10-27",
+   "net": -206317,
+   "seri": "cftc-NG=F",
+   "uc": "Uç değer",
+   "yuzdelik": 0.0
+  },
+  {
+   "acik": 525558,
+   "ad": "Buğday",
+   "degisim": -22601,
+   "donem": "2026-10-27",
+   "net": -74606,
+   "seri": "cftc-ZW=F",
+   "uc": "",
+   "yuzdelik": 0.3782051282051282
+  },
+  {
+   "acik": 1859085,
+   "ad": "Mısır",
+   "degisim": -83310,
+   "donem": "2026-10-27",
+   "net": 81113,
+   "seri": "cftc-ZC=F",
+   "uc": "",
+   "yuzdelik": 0.6858974358974359
+  },
+  {
+   "acik": 979414,
+   "ad": "Soya",
+   "degisim": -27544,
+   "donem": "2026-10-27",
+   "net": 193781,
+   "seri": "cftc-ZS=F",
+   "uc": "",
+   "yuzdelik": 0.8782051282051282
+  },
+  {
+   "acik": 171689,
+   "ad": "Kahve",
+   "degisim": -2233,
+   "donem": "2026-10-27",
+   "net": 20104,
+   "seri": "cftc-KC=F",
+   "uc": "",
+   "yuzdelik": 0.08974358974358974
+  },
+  {
+   "acik": 182269,
+   "ad": "Kakao",
+   "degisim": -2119,
+   "donem": "2026-10-27",
+   "net": -10940,
+   "seri": "cftc-CC=F",
+   "uc": "",
+   "yuzdelik": 0.1282051282051282
+  },
+  {
+   "acik": 1205131,
+   "ad": "Şeker",
+   "degisim": -26819,
+   "donem": "2026-10-27",
+   "net": 237711,
+   "seri": "cftc-SB=F",
+   "uc": "Uç değer",
+   "yuzdelik": 0.9743589743589743
+  },
+  {
+   "acik": 397988,
+   "ad": "Pamuk",
+   "degisim": -12721,
+   "donem": "2026-10-27",
+   "net": 47877,
+   "seri": "cftc-CT=F",
+   "uc": "",
+   "yuzdelik": 0.8333333333333334
+  },
+  {
+   "acik": 288757,
+   "ad": "Canlı sığır",
+   "degisim": 5471,
+   "donem": "2026-10-27",
+   "net": 56573,
+   "seri": "cftc-LE=F",
+   "uc": "",
+   "yuzdelik": 0.2564102564102564
+  }
+ ],
+ "sayfa": "fonlar",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Emtia",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "donem",
+   "basamak": 2,
+   "baslik": "Rapor tarihi",
+   "tur": "tarih"
+  },
+  {
+   "anahtar": "net",
+   "basamak": 0,
+   "baslik": "Net pozisyon",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "degisim",
+   "basamak": 0,
+   "baslik": "Haftalık değişim",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "yuzdelik",
+   "basamak": 0,
+   "baslik": "3 yıllık dilim",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "acik",
+   "basamak": 0,
+   "baslik": "Açık pozisyon",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "uc",
+   "basamak": 2,
+   "baslik": "Durum",
+   "tur": "metin"
+  }
+ ],
+ "suzgecler": []
+}

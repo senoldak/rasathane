@@ -1,0 +1,100 @@
+{
+ "baslangic": "2026-08-05",
+ "bugun": "2026-11-04",
+ "en_dusuk": [
+  {
+   "alim": 5,
+   "eyalet": "VA",
+   "fark": -19.47,
+   "ort_degisim": -20.75,
+   "ort_spy": -1.28,
+   "parti": "Cumhuriyetçi",
+   "uye": "John J McGuire III"
+  },
+  {
+   "alim": 17,
+   "eyalet": "TX",
+   "fark": -14.95,
+   "ort_degisim": -2.19,
+   "ort_spy": 12.77,
+   "parti": "Demokrat",
+   "uye": "Julie Johnson"
+  },
+  {
+   "alim": 16,
+   "eyalet": "OH",
+   "fark": -7.63,
+   "ort_degisim": 1.7,
+   "ort_spy": 9.34,
+   "parti": "Cumhuriyetçi",
+   "uye": "Michael Rulli"
+  },
+  {
+   "alim": 20,
+   "eyalet": "MD",
+   "fark": -5.86,
+   "ort_degisim": -7.17,
+   "ort_spy": -1.31,
+   "parti": "Demokrat",
+   "uye": "April McClain Delaney"
+  },
+  {
+   "alim": 7,
+   "eyalet": "LA",
+   "fark": -4.62,
+   "ort_degisim": -6.03,
+   "ort_spy": -1.41,
+   "parti": "Demokrat",
+   "uye": "Cleo Fields"
+  }
+ ],
+ "en_yuksek": [
+  {
+   "alim": 6,
+   "eyalet": "FL",
+   "fark": 11.7,
+   "ort_degisim": 10.42,
+   "ort_spy": -1.29,
+   "parti": "Cumhuriyetçi",
+   "uye": "Scott Scott Franklin"
+  },
+  {
+   "alim": 6,
+   "eyalet": "TX",
+   "fark": 11.06,
+   "ort_degisim": 10.38,
+   "ort_spy": -0.68,
+   "parti": "Demokrat",
+   "uye": "Lloyd Doggett"
+  },
+  {
+   "alim": 13,
+   "eyalet": "TX",
+   "fark": 6.6,
+   "ort_degisim": 4.9,
+   "ort_spy": -1.71,
+   "parti": "Cumhuriyetçi",
+   "uye": "Michael T. McCaul"
+  },
+  {
+   "alim": 5,
+   "eyalet": "KS",
+   "fark": 6.02,
+   "ort_degisim": 44.58,
+   "ort_spy": 38.56,
+   "parti": "Cumhuriyetçi",
+   "uye": "Tracey Robert Mann"
+  },
+  {
+   "alim": 274,
+   "eyalet": "CA",
+   "fark": 5.01,
+   "ort_degisim": 4.41,
+   "ort_spy": -0.6,
+   "parti": "Demokrat",
+   "uye": "Rohit Khanna"
+  }
+ ],
+ "guncellendi": "2026-11-04T10:55:38Z",
+ "sema": 1
+}

@@ -1,0 +1,212 @@
+{
+ "aciklama": "Yıllıklaştırılmış 1 aylık ve 3 aylık oynaklık; 1 aylık oynaklığın son 5 yıldaki yüzdeliği. Tablo yüzdeliğe göre sıralanmıştır. Yatırım tavsiyesi değildir. Veriler gecikmelidir.",
+ "baslik": "Kur oynaklığı",
+ "bolum": "fx",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:46:32Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "USD/BRL",
+   "ay": 0.3408264704921302,
+   "ceyrek": 0.20700511565931567,
+   "seri": "BRL=X",
+   "yuzdelik": 1.0
+  },
+  {
+   "ad": "USD/INR",
+   "ay": 0.058749255625426794,
+   "ceyrek": 0.07942084413671385,
+   "seri": "INR=X",
+   "yuzdelik": 0.756155679110405
+  },
+  {
+   "ad": "USD/MXN",
+   "ay": 0.10774232703685248,
+   "ceyrek": 0.0890286943174,
+   "seri": "MXN=X",
+   "yuzdelik": 0.6322478157267672
+  },
+  {
+   "ad": "EUR/CHF",
+   "ay": 0.04421699697630703,
+   "ceyrek": 0.04875209172213793,
+   "seri": "EURCHF=X",
+   "yuzdelik": 0.3947577442414615
+  },
+  {
+   "ad": "USD/KRW",
+   "ay": 0.08035349660992543,
+   "ceyrek": 0.09891238728893426,
+   "seri": "KRW=X",
+   "yuzdelik": 0.3113582208101668
+  },
+  {
+   "ad": "EUR/JPY",
+   "ay": 0.06605063779526121,
+   "ceyrek": 0.0713767136022726,
+   "seri": "EURJPY=X",
+   "yuzdelik": 0.27243844320889593
+  },
+  {
+   "ad": "USD/PLN",
+   "ay": 0.06984976641120658,
+   "ceyrek": 0.06800962580358849,
+   "seri": "PLN=X",
+   "yuzdelik": 0.18665607625099284
+  },
+  {
+   "ad": "USD/CAD",
+   "ay": 0.04018148295503162,
+   "ceyrek": 0.04185190479084579,
+   "seri": "CAD=X",
+   "yuzdelik": 0.18506751389992057
+  },
+  {
+   "ad": "AUD/USD",
+   "ay": 0.06486893022758893,
+   "ceyrek": 0.061117658329489274,
+   "seri": "AUDUSD=X",
+   "yuzdelik": 0.1453534551231136
+  },
+  {
+   "ad": "USD/TRY",
+   "ay": 0.012899716424106974,
+   "ceyrek": 0.016834060349217864,
+   "seri": "TRY=X",
+   "yuzdelik": 0.12867355043685463
+  },
+  {
+   "ad": "USD/JPY",
+   "ay": 0.05371416999105789,
+   "ceyrek": 0.07887673032247583,
+   "seri": "JPY=X",
+   "yuzdelik": 0.11755361397934869
+  },
+  {
+   "ad": "USD/CHF",
+   "ay": 0.05560285267371629,
+   "ceyrek": 0.06501600633310384,
+   "seri": "CHF=X",
+   "yuzdelik": 0.11517077045274027
+  },
+  {
+   "ad": "EUR/TRY",
+   "ay": 0.051272967355860635,
+   "ceyrek": 0.047686316844760865,
+   "seri": "EURTRY=X",
+   "yuzdelik": 0.10087370929308975
+  },
+  {
+   "ad": "EUR/USD",
+   "ay": 0.04210931949965976,
+   "ceyrek": 0.042325516800265035,
+   "seri": "EURUSD=X",
+   "yuzdelik": 0.09928514694201747
+  },
+  {
+   "ad": "NZD/USD",
+   "ay": 0.0649529973352005,
+   "ceyrek": 0.06493654764876369,
+   "seri": "NZDUSD=X",
+   "yuzdelik": 0.0857823669579031
+  },
+  {
+   "ad": "USD/HUF",
+   "ay": 0.06868488303811034,
+   "ceyrek": 0.09562673679613308,
+   "seri": "HUF=X",
+   "yuzdelik": 0.07625099285146943
+  },
+  {
+   "ad": "Dolar endeksi",
+   "ay": 0.04197533694288257,
+   "ceyrek": 0.045742888823459844,
+   "seri": "DX-Y.NYB",
+   "yuzdelik": 0.05668016194331984
+  },
+  {
+   "ad": "EUR/GBP",
+   "ay": 0.024041183969680077,
+   "ceyrek": 0.025651041687702405,
+   "seri": "EURGBP=X",
+   "yuzdelik": 0.04289118347895155
+  },
+  {
+   "ad": "USD/ZAR",
+   "ay": 0.07052756823739277,
+   "ceyrek": 0.083699238464151,
+   "seri": "ZAR=X",
+   "yuzdelik": 0.03812549642573471
+  },
+  {
+   "ad": "GBP/TRY",
+   "ay": 0.050488048021670416,
+   "ceyrek": 0.04845016921459079,
+   "seri": "GBPTRY=X",
+   "yuzdelik": 0.03177124702144559
+  },
+  {
+   "ad": "GBP/USD",
+   "ay": 0.043772747763192864,
+   "ceyrek": 0.0440508570700105,
+   "seri": "GBPUSD=X",
+   "yuzdelik": 0.030182684670373314
+  },
+  {
+   "ad": "USD/NOK",
+   "ay": 0.05249803086515525,
+   "ceyrek": 0.05690554268275873,
+   "seri": "NOK=X",
+   "yuzdelik": 0.024622716441620333
+  },
+  {
+   "ad": "USD/CNY",
+   "ay": 0.008930229828819603,
+   "ceyrek": 0.009513185326788241,
+   "seri": "CNY=X",
+   "yuzdelik": 0.015885623510722795
+  },
+  {
+   "ad": "USD/SEK",
+   "ay": 0.051579988820792455,
+   "ceyrek": 0.0663174761595724,
+   "seri": "SEK=X",
+   "yuzdelik": 0.008737092930897538
+  }
+ ],
+ "sayfa": "oynaklik",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Parite",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "ay",
+   "basamak": 1,
+   "baslik": "1 aylık oynaklık",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "ceyrek",
+   "basamak": 1,
+   "baslik": "3 aylık oynaklık",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "yuzdelik",
+   "basamak": 0,
+   "baslik": "5 yıllık dilim",
+   "tur": "yuzde"
+  }
+ ],
+ "suzgecler": []
+}

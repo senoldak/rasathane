@@ -1,0 +1,20 @@
+{
+ "ad": "ONS PALADYUM vade eğrisi (uzlaşma)",
+ "birim": "fiyat",
+ "isaretler": [],
+ "noktalar": [
+  [
+   "2026-10-30",
+   977.6
+  ],
+  [
+   "2026-12-31",
+   1017.2
+  ],
+  [
+   "2027-02-26",
+   1032.3
+  ]
+ ],
+ "sema": 1
+}

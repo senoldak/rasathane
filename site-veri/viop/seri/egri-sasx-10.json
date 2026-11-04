@@ -1,0 +1,16 @@
+{
+ "ad": "SASX 10 vade eğrisi (uzlaşma)",
+ "birim": "fiyat",
+ "isaretler": [],
+ "noktalar": [
+  [
+   "2026-10-30",
+   1486.0
+  ],
+  [
+   "2026-12-31",
+   1521.25
+  ]
+ ],
+ "sema": 1
+}

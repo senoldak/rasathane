@@ -1,0 +1,82 @@
+{
+ "aciklama": "Dört oranın bugünkü değeri ve son 5 yıldaki yüzdelik dilimi.",
+ "baslik": "Emtia oranları",
+ "bolum": "emtia",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T21:22:16Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "Altın / gümüş",
+   "anlam": "yükselişi korku göstergesi",
+   "deger": 79.06897514279417,
+   "g1a": 0.1578256430628533,
+   "seri": "oran-altin-gumus",
+   "yuzdelik": 0.29378980891719747
+  },
+  {
+   "ad": "Bakır / altın",
+   "anlam": "büyüme beklentisinin göstergesi",
+   "deger": 0.0016283918819223933,
+   "g1a": 0.027848956013595938,
+   "seri": "oran-bakir-altin",
+   "yuzdelik": 0.39936356404136836
+  },
+  {
+   "ad": "Brent / doğalgaz",
+   "anlam": "petrolün gaza göre pahalılığı",
+   "deger": 35.933194524024486,
+   "g1a": 0.09819750994323484,
+   "seri": "oran-brent-gaz",
+   "yuzdelik": 0.8536197295147175
+  },
+  {
+   "ad": "Brent / WTI",
+   "anlam": "küresel ve ABD petrolü farkı",
+   "deger": 1.0785529558048692,
+   "g1a": -0.038526799639194254,
+   "seri": "oran-brent-wti",
+   "yuzdelik": 0.8813694267515924
+  }
+ ],
+ "sayfa": "oranlar",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Oran",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "deger",
+   "basamak": 3,
+   "baslik": "Değer",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "yuzdelik",
+   "basamak": 0,
+   "baslik": "5 yıllık dilim",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "g1a",
+   "basamak": 1,
+   "baslik": "1 ay",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "anlam",
+   "basamak": 2,
+   "baslik": "Anlamı",
+   "tur": "metin"
+  }
+ ],
+ "suzgecler": []
+}

@@ -1,0 +1,668 @@
+{
+ "aciklama": "30.10.2026 tarihli bülten. Grafik, vade tarihine göre uzlaşma fiyatlarını gösterir.",
+ "baslik": "Vade eğrisi",
+ "bolum": "viop",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:56:45Z",
+ "kaynaklar": [
+  {
+   "ad": "Borsa İstanbul",
+   "url": "https://borsaistanbul.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "dayanak": "1-AY TLREF",
+   "seri": "egri-1-ay-tlref",
+   "sozlesme": 7,
+   "uzak_uzlasma": 36.82,
+   "uzak_vade": "2027-04-30",
+   "yakin_uzlasma": 37.09,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "AEFES",
+   "seri": "egri-aefes",
+   "sozlesme": 3,
+   "uzak_uzlasma": 16.32,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 15.43,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "AKBNK",
+   "seri": "egri-akbnk",
+   "sozlesme": 3,
+   "uzak_uzlasma": 64.28,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 60.9,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "AKSEN",
+   "seri": "egri-aksen",
+   "sozlesme": 3,
+   "uzak_uzlasma": 64.16,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 60.6,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "ALARK",
+   "seri": "egri-alark",
+   "sozlesme": 3,
+   "uzak_uzlasma": 98.43,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 91.8,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "ARCLK",
+   "seri": "egri-arclk",
+   "sozlesme": 3,
+   "uzak_uzlasma": 70.21,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 67.95,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "ASELS",
+   "seri": "egri-asels",
+   "sozlesme": 3,
+   "uzak_uzlasma": 366.6,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 347.0,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "ASTOR",
+   "seri": "egri-astor",
+   "sozlesme": 3,
+   "uzak_uzlasma": 167.4,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 158.9,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "BIMAS",
+   "seri": "egri-bimas",
+   "sozlesme": 3,
+   "uzak_uzlasma": 366.65,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 347.5,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "BIST BDLKT10",
+   "seri": "egri-bist-bdlkt10",
+   "sozlesme": 3,
+   "uzak_uzlasma": 18105.0,
+   "uzak_vade": "2027-02-26",
+   "yakin_uzlasma": 16503.0,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "BIST L.BANKA",
+   "seri": "egri-bist-l-banka",
+   "sozlesme": 3,
+   "uzak_uzlasma": 14952.0,
+   "uzak_vade": "2027-02-26",
+   "yakin_uzlasma": 13326.0,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "BIST XSD25",
+   "seri": "egri-bist-xsd25",
+   "sozlesme": 3,
+   "uzak_uzlasma": 18073.0,
+   "uzak_vade": "2027-02-26",
+   "yakin_uzlasma": 15735.0,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "BRSAN",
+   "seri": "egri-brsan",
+   "sozlesme": 3,
+   "uzak_uzlasma": 675.3,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 639.5,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "BY ELEKTRIK",
+   "seri": "egri-by-elektrik",
+   "sozlesme": 17,
+   "uzak_uzlasma": 3500.0,
+   "uzak_vade": "2028-09-29",
+   "yakin_uzlasma": 2925.5,
+   "yakin_vade": "2026-11-02"
+  },
+  {
+   "dayanak": "CIMSA",
+   "seri": "egri-cimsa",
+   "sozlesme": 3,
+   "uzak_uzlasma": 40.74,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 38.96,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "CNHTRY",
+   "seri": "egri-cnhtry",
+   "sozlesme": 4,
+   "uzak_uzlasma": 10.25,
+   "uzak_vade": "2027-12-31",
+   "yakin_uzlasma": 7.4896,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "DOAS",
+   "seri": "egri-doas",
+   "sozlesme": 3,
+   "uzak_uzlasma": 151.5,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 149.2,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "DOHOL",
+   "seri": "egri-dohol",
+   "sozlesme": 3,
+   "uzak_uzlasma": 16.8,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 15.85,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "EKGYO",
+   "seri": "egri-ekgyo",
+   "sozlesme": 3,
+   "uzak_uzlasma": 17.15,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 16.19,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "ENJSA",
+   "seri": "egri-enjsa",
+   "sozlesme": 3,
+   "uzak_uzlasma": 113.05,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 105.5,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "ENKAI",
+   "seri": "egri-enkai",
+   "sozlesme": 3,
+   "uzak_uzlasma": 80.69,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 76.65,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "EREGL",
+   "seri": "egri-eregl",
+   "sozlesme": 3,
+   "uzak_uzlasma": 31.41,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 29.66,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "EURTRY",
+   "seri": "egri-eurtry",
+   "sozlesme": 4,
+   "uzak_uzlasma": 78.474,
+   "uzak_vade": "2027-12-31",
+   "yakin_uzlasma": 55.765,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "EURUSD",
+   "seri": "egri-eurusd",
+   "sozlesme": 4,
+   "uzak_uzlasma": 1.1404,
+   "uzak_vade": "2027-12-31",
+   "yakin_uzlasma": 1.1193,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "FIZ. USDTRY",
+   "seri": "egri-fiz-usdtry",
+   "sozlesme": 4,
+   "uzak_uzlasma": 70.106,
+   "uzak_vade": "2027-12-31",
+   "yakin_uzlasma": 49.82,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "FROTO",
+   "seri": "egri-froto",
+   "sozlesme": 3,
+   "uzak_uzlasma": 65.87,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 65.45,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "GARAN",
+   "seri": "egri-garan",
+   "sozlesme": 3,
+   "uzak_uzlasma": 132.0,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 125.2,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "GBPUSD",
+   "seri": "egri-gbpusd",
+   "sozlesme": 4,
+   "uzak_uzlasma": 1.3538,
+   "uzak_vade": "2027-12-31",
+   "yakin_uzlasma": 1.3417,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "GR ALTIN",
+   "seri": "egri-gr-altin",
+   "sozlesme": 3,
+   "uzak_uzlasma": 7072.2,
+   "uzak_vade": "2027-02-26",
+   "yakin_uzlasma": 6268.0,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "GUBRF",
+   "seri": "egri-gubrf",
+   "sozlesme": 3,
+   "uzak_uzlasma": 265.6,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 250.25,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "HALKB",
+   "seri": "egri-halkb",
+   "sozlesme": 3,
+   "uzak_uzlasma": 39.46,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 39.6,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "HEKTS",
+   "seri": "egri-hekts",
+   "sozlesme": 3,
+   "uzak_uzlasma": 1.7,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 1.6,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "ISCTR",
+   "seri": "egri-isctr",
+   "sozlesme": 3,
+   "uzak_uzlasma": 12.34,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 11.65,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "KCHOL",
+   "seri": "egri-kchol",
+   "sozlesme": 3,
+   "uzak_uzlasma": 202.65,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 192.8,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "KRDMD",
+   "seri": "egri-krdmd",
+   "sozlesme": 3,
+   "uzak_uzlasma": 38.35,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 36.16,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "MGROS",
+   "seri": "egri-mgros",
+   "sozlesme": 3,
+   "uzak_uzlasma": 439.4,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 413.5,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "ODAS",
+   "seri": "egri-odas",
+   "sozlesme": 3,
+   "uzak_uzlasma": 4.45,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 4.25,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "ONS ALTIN",
+   "seri": "egri-ons-altin",
+   "sozlesme": 3,
+   "uzak_uzlasma": 3994.5,
+   "uzak_vade": "2027-02-26",
+   "yakin_uzlasma": 3913.3,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "ONS GUMUS",
+   "seri": "egri-ons-gumus",
+   "sozlesme": 3,
+   "uzak_uzlasma": 50.7,
+   "uzak_vade": "2027-02-26",
+   "yakin_uzlasma": 50.1,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "ONS PALADYUM",
+   "seri": "egri-ons-paladyum",
+   "sozlesme": 3,
+   "uzak_uzlasma": 1032.3,
+   "uzak_vade": "2027-02-26",
+   "yakin_uzlasma": 977.6,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "ONS PLATIN",
+   "seri": "egri-ons-platin",
+   "sozlesme": 3,
+   "uzak_uzlasma": 1495.4,
+   "uzak_vade": "2027-02-26",
+   "yakin_uzlasma": 1427.0,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "OYAKC",
+   "seri": "egri-oyakc",
+   "sozlesme": 3,
+   "uzak_uzlasma": 18.86,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 17.88,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "PETKM",
+   "seri": "egri-petkm",
+   "sozlesme": 3,
+   "uzak_uzlasma": 17.2,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 16.24,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "PGSUS",
+   "seri": "egri-pgsus",
+   "sozlesme": 3,
+   "uzak_uzlasma": 120.4,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 115.0,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "RUBTRY",
+   "seri": "egri-rubtry",
+   "sozlesme": 4,
+   "uzak_uzlasma": 0.75297,
+   "uzak_vade": "2027-12-31",
+   "yakin_uzlasma": 0.6184,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "SAHOL",
+   "seri": "egri-sahol",
+   "sozlesme": 3,
+   "uzak_uzlasma": 85.39,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 81.1,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "SASA",
+   "seri": "egri-sasa",
+   "sozlesme": 3,
+   "uzak_uzlasma": 1.53,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 1.45,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "SASX 10",
+   "seri": "egri-sasx-10",
+   "sozlesme": 2,
+   "uzak_uzlasma": 1521.25,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 1486.0,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "SISE",
+   "seri": "egri-sise",
+   "sozlesme": 3,
+   "uzak_uzlasma": 33.87,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 32.04,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "SOKM",
+   "seri": "egri-sokm",
+   "sozlesme": 3,
+   "uzak_uzlasma": 55.33,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 51.85,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "TAVHL",
+   "seri": "egri-tavhl",
+   "sozlesme": 3,
+   "uzak_uzlasma": 269.65,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 250.0,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "TCELL",
+   "seri": "egri-tcell",
+   "sozlesme": 3,
+   "uzak_uzlasma": 91.3,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 90.1,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "THYAO",
+   "seri": "egri-thyao",
+   "sozlesme": 3,
+   "uzak_uzlasma": 255.05,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 242.2,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "TKFEN",
+   "seri": "egri-tkfen",
+   "sozlesme": 3,
+   "uzak_uzlasma": 201.65,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 191.4,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "TOASO",
+   "seri": "egri-toaso",
+   "sozlesme": 3,
+   "uzak_uzlasma": 225.0,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 211.2,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "TON BAKIR",
+   "seri": "egri-ton-bakir",
+   "sozlesme": 3,
+   "uzak_uzlasma": 14655.0,
+   "uzak_vade": "2027-02-26",
+   "yakin_uzlasma": 14449.0,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "TRALT",
+   "seri": "egri-tralt",
+   "sozlesme": 3,
+   "uzak_uzlasma": 34.35,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 32.42,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "TRMET",
+   "seri": "egri-trmet",
+   "sozlesme": 3,
+   "uzak_uzlasma": 99.79,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 94.05,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "TRT131130T14",
+   "seri": "egri-trt131130t14",
+   "sozlesme": 2,
+   "uzak_uzlasma": 54.02,
+   "uzak_vade": "2027-03-31",
+   "yakin_uzlasma": 54.975,
+   "yakin_vade": "2026-12-31"
+  },
+  {
+   "dayanak": "TSKB",
+   "seri": "egri-tskb",
+   "sozlesme": 3,
+   "uzak_uzlasma": 9.37,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 8.94,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "TTKOM",
+   "seri": "egri-ttkom",
+   "sozlesme": 3,
+   "uzak_uzlasma": 48.71,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 46.16,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "TUPRS",
+   "seri": "egri-tuprs",
+   "sozlesme": 3,
+   "uzak_uzlasma": 361.55,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 343.5,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "ULKER",
+   "seri": "egri-ulker",
+   "sozlesme": 3,
+   "uzak_uzlasma": 77.77,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 74.3,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "USDTRY",
+   "seri": "egri-usdtry",
+   "sozlesme": 19,
+   "uzak_uzlasma": 70.939,
+   "uzak_vade": "2028-01-31",
+   "yakin_uzlasma": 49.82,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "VAKBN",
+   "seri": "egri-vakbn",
+   "sozlesme": 3,
+   "uzak_uzlasma": 30.97,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 28.88,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "VESTL",
+   "seri": "egri-vestl",
+   "sozlesme": 3,
+   "uzak_uzlasma": 11.23,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 11.02,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "XU030",
+   "seri": "egri-xu030",
+   "sozlesme": 3,
+   "uzak_uzlasma": 14764.0,
+   "uzak_vade": "2027-02-26",
+   "yakin_uzlasma": 13471.0,
+   "yakin_vade": "2026-10-30"
+  },
+  {
+   "dayanak": "YKBNK",
+   "seri": "egri-ykbnk",
+   "sozlesme": 3,
+   "uzak_uzlasma": 35.9,
+   "uzak_vade": "2026-12-31",
+   "yakin_uzlasma": 33.96,
+   "yakin_vade": "2026-10-30"
+  }
+ ],
+ "sayfa": "vade-egrisi",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "dayanak",
+   "basamak": 2,
+   "baslik": "Dayanak",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "sozlesme",
+   "basamak": 0,
+   "baslik": "Sözleşme",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "yakin_vade",
+   "basamak": 2,
+   "baslik": "En yakın vade",
+   "tur": "tarih"
+  },
+  {
+   "anahtar": "yakin_uzlasma",
+   "basamak": 2,
+   "baslik": "Uzlaşma (yakın)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "uzak_vade",
+   "basamak": 2,
+   "baslik": "En uzak vade",
+   "tur": "tarih"
+  },
+  {
+   "anahtar": "uzak_uzlasma",
+   "basamak": 2,
+   "baslik": "Uzlaşma (uzak)",
+   "tur": "sayi"
+  }
+ ],
+ "suzgecler": []
+}

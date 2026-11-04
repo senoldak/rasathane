@@ -1,0 +1,170 @@
+{
+ "aciklama": "Son 90 işlem gününde sert hareket, 52 hafta zirve ya da dibi, oynaklık sıçraması ve kur bağı kırılmaları. Grafiği olan satırlar seriye bağlıdır. Yatırım tavsiyesi değildir. Veriler gecikmelidir.",
+ "baslik": "Hareketler",
+ "bolum": "fx",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:46:32Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "USD/TRY",
+   "gunluk": 0.00045189277338031353,
+   "kapanis": 49.988399505615234,
+   "seri": "TRY=X",
+   "tarih": "2026-11-03",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "USD/CNY",
+   "gunluk": -0.00010508887132476552,
+   "kapanis": 6.660299777984619,
+   "seri": "CNY=X",
+   "tarih": "2026-11-03",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "TL sepeti",
+   "gunluk": 0.0019301231071324754,
+   "kapanis": 52.96879005432129,
+   "seri": "sepet",
+   "tarih": "2026-11-03",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "GBP/TRY",
+   "gunluk": 0.0024745306134363876,
+   "kapanis": 67.07340240478516,
+   "seri": "GBPTRY=X",
+   "tarih": "2026-11-03",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "USD/MXN",
+   "gunluk": -0.003092494584644001,
+   "kapanis": 18.793800354003906,
+   "seri": "MXN=X",
+   "tarih": "2026-11-02",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "USD/SEK",
+   "gunluk": -0.0050049595374381806,
+   "kapanis": 9.902210235595703,
+   "seri": "SEK=X",
+   "tarih": "2026-10-29",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "USD/NOK",
+   "gunluk": -0.009149228423379507,
+   "kapanis": 9.248680114746094,
+   "seri": "NOK=X",
+   "tarih": "2026-10-29",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "USD/MXN",
+   "gunluk": -0.0029566034467747304,
+   "kapanis": 18.631790161132812,
+   "seri": "MXN=X",
+   "tarih": "2026-10-29",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "GBP/TRY",
+   "gunluk": 0.0034227332131127053,
+   "kapanis": 66.5273666381836,
+   "seri": "GBPTRY=X",
+   "tarih": "2026-10-29",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "USD/TRY",
+   "gunluk": 0.00036759285455278956,
+   "kapanis": 49.799198150634766,
+   "seri": "TRY=X",
+   "tarih": "2026-10-28",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "USD/PLN",
+   "gunluk": 0.0035188082793351505,
+   "kapanis": 3.9526898860931396,
+   "seri": "PLN=X",
+   "tarih": "2026-10-28",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "USD/CNY",
+   "gunluk": -0.0002998283386249634,
+   "kapanis": 6.668000221252441,
+   "seri": "CNY=X",
+   "tarih": "2026-10-28",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "NZD/USD",
+   "gunluk": -0.0013695048604376314,
+   "kapanis": 0.5680201053619385,
+   "seri": "NZDUSD=X",
+   "tarih": "2026-10-28",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "EUR/USD",
+   "gunluk": -0.0039510224286721796,
+   "kapanis": 1.1129660606384277,
+   "seri": "EURUSD=X",
+   "tarih": "2026-10-28",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "EUR/GBP",
+   "gunluk": -0.0013615498631864842,
+   "kapanis": 0.836139976978302,
+   "seri": "EURGBP=X",
+   "tarih": "2026-10-28",
+   "tur": "52 Hafta Dibi"
+  }
+ ],
+ "sayfa": "hareketler",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "tarih",
+   "basamak": 2,
+   "baslik": "Tarih",
+   "tur": "tarih"
+  },
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Parite",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "tur",
+   "basamak": 2,
+   "baslik": "Hareket",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "kapanis",
+   "basamak": 4,
+   "baslik": "Kapanış",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "gunluk",
+   "basamak": 2,
+   "baslik": "Günlük",
+   "tur": "yuzde"
+  }
+ ],
+ "suzgecler": []
+}

@@ -1,0 +1,42 @@
+{
+ "guncellendi": "2026-11-04T10:55:38Z",
+ "satirlar": [
+  {
+   "eyalet": "VA",
+   "gec": false,
+   "gecikme": 31,
+   "islem": "Alış",
+   "parti": "Cumhuriyetçi",
+   "ticker": "MU",
+   "tutar": "$1,001 - $15,000",
+   "uye": "John J McGuire III",
+   "varlik": "Micron Technology"
+  },
+  {
+   "eyalet": "VA",
+   "gec": false,
+   "gecikme": 37,
+   "islem": "Alış",
+   "parti": "Cumhuriyetçi",
+   "ticker": "MU",
+   "tutar": "$1,001 - $15,000",
+   "uye": "John J McGuire III",
+   "varlik": "Micron Technology"
+  },
+  {
+   "eyalet": "VA",
+   "gec": false,
+   "gecikme": 38,
+   "islem": "Alış",
+   "parti": "Cumhuriyetçi",
+   "ticker": "MU",
+   "tutar": "$1,001 - $15,000",
+   "uye": "John J McGuire III",
+   "varlik": "Micron Technology"
+  }
+ ],
+ "sema": 1,
+ "tarih": "2026-11-01",
+ "toplam": 4,
+ "uye": 1
+}

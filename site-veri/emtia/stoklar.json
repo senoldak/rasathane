@@ -1,0 +1,101 @@
+{
+ "aciklama": "ABD haftalık petrol stokları ve doğalgaz depoları.",
+ "baslik": "EIA stokları",
+ "bolum": "emtia",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T21:02:19Z",
+ "kaynaklar": [
+  {
+   "ad": "EIA",
+   "url": "https://www.eia.gov/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "Ham petrol (SPR hariç)",
+   "birim": "Mn varil",
+   "deger": 410.625,
+   "degisim": -1.891999999999996,
+   "donem": "2026-10-23",
+   "seri": "eia-WCESTUS1",
+   "yil_once": 415.966
+  },
+  {
+   "ad": "Cushing ham petrol",
+   "birim": "Mn varil",
+   "deger": 26.97,
+   "degisim": -0.6240000000000023,
+   "donem": "2026-10-23",
+   "seri": "eia-W-EPC0-SAX-YCUOK-MBBL",
+   "yil_once": 22.565
+  },
+  {
+   "ad": "Benzin",
+   "birim": "Mn varil",
+   "deger": 209.18,
+   "degisim": 3.8700000000000045,
+   "donem": "2026-10-23",
+   "seri": "eia-WGTSTUS1",
+   "yil_once": 210.738
+  },
+  {
+   "ad": "Distilat (dizel)",
+   "birim": "Mn varil",
+   "deger": 102.824,
+   "degisim": -1.4620000000000033,
+   "donem": "2026-10-23",
+   "seri": "eia-WDISTUS1",
+   "yil_once": 112.189
+  },
+  {
+   "ad": "Doğalgaz depoları",
+   "birim": "Bcf",
+   "deger": 3724.0,
+   "degisim": 80.0,
+   "donem": "2026-10-23",
+   "seri": "eia-NW2-EPG0-SWO-R48-BCF",
+   "yil_once": 3872.0
+  }
+ ],
+ "sayfa": "stoklar",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Kalem",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "donem",
+   "basamak": 2,
+   "baslik": "Rapor haftası",
+   "tur": "tarih"
+  },
+  {
+   "anahtar": "deger",
+   "basamak": 1,
+   "baslik": "Stok",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "degisim",
+   "basamak": 1,
+   "baslik": "Haftalık değişim",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "yil_once",
+   "basamak": 1,
+   "baslik": "1 yıl önce",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "birim",
+   "basamak": 2,
+   "baslik": "Birim",
+   "tur": "metin"
+  }
+ ],
+ "suzgecler": []
+}

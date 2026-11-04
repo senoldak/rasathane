@@ -1,0 +1,104 @@
+{
+ "aciklama": "Önümüzdeki 10 ayın 30 gün vadeli Fed fonu fiyatlarından örtük ortalama faiz; bugünkü faize göre fark ve bir önceki kapanışa göre değişim (baz puan). Yatırım tavsiyesi değildir. Veriler gecikmelidir.",
+ "baslik": "Fed beklentisi",
+ "bolum": "fx",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:46:32Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "2026-11-01",
+   "degisim": 0.0,
+   "faiz": 3.8799972534179688,
+   "fark": 0.499725341796875
+  },
+  {
+   "ad": "2026-12-01",
+   "degisim": 0.99945068359375,
+   "faiz": 4.019996643066406,
+   "fark": 14.499664306640625
+  },
+  {
+   "ad": "2027-01-01",
+   "degisim": 1.49993896484375,
+   "faiz": 4.089996337890625,
+   "fark": 21.4996337890625
+  },
+  {
+   "ad": "2027-02-01",
+   "degisim": 1.49993896484375,
+   "faiz": 4.150001525878906,
+   "fark": 27.500152587890625
+  },
+  {
+   "ad": "2027-03-01",
+   "degisim": 1.999664306640625,
+   "faiz": 4.214996337890625,
+   "fark": 33.9996337890625
+  },
+  {
+   "ad": "2027-04-01",
+   "degisim": 2.9998779296875,
+   "faiz": 4.305000305175781,
+   "fark": 43.000030517578125
+  },
+  {
+   "ad": "2027-05-01",
+   "degisim": 3.5003662109375,
+   "faiz": 4.370002746582031,
+   "fark": 49.500274658203125
+  },
+  {
+   "ad": "2027-06-01",
+   "degisim": 4.000091552734375,
+   "faiz": 4.430000305175781,
+   "fark": 55.500030517578125
+  },
+  {
+   "ad": "2027-07-01",
+   "degisim": 4.999542236328125,
+   "faiz": 4.464996337890625,
+   "fark": 58.9996337890625
+  },
+  {
+   "ad": "2027-08-01",
+   "degisim": 5.500030517578125,
+   "faiz": 4.4850006103515625,
+   "fark": 61.00006103515625
+  }
+ ],
+ "sayfa": "fed",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Vade ayı",
+   "tur": "tarih"
+  },
+  {
+   "anahtar": "faiz",
+   "basamak": 3,
+   "baslik": "Örtük faiz (%)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "fark",
+   "basamak": 1,
+   "baslik": "Bugünkü faize göre (bp)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "degisim",
+   "basamak": 1,
+   "baslik": "Bir önceki kapanışa göre (bp)",
+   "tur": "sayi"
+  }
+ ],
+ "suzgecler": []
+}

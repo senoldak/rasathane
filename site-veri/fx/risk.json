@@ -1,0 +1,113 @@
+{
+ "aciklama": "Riskli paraların (AUD, NZD, MXN, ZAR, BRL) ile güvenli limanların (JPY, CHF) USD karşısındaki getirisi. Skor iki grubun farkıdır; yüzdelik, son 5 yıldaki 1 aylık farkın dilimidir. Yatırım tavsiyesi değildir. Veriler gecikmelidir.",
+ "baslik": "Risk iştahı",
+ "bolum": "fx",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:46:32Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "AUD/USD",
+   "g1a": 0.002841590138133787,
+   "g1h": -0.006816058964386973,
+   "grup": "Riskli para",
+   "gunluk": -0.008144165095240852
+  },
+  {
+   "ad": "NZD/USD",
+   "g1a": -0.005246973512062936,
+   "g1h": -0.01760729089220059,
+   "grup": "Riskli para",
+   "gunluk": -0.00658810155289602
+  },
+  {
+   "ad": "USD/MXN",
+   "g1a": -0.03467862335833227,
+   "g1h": -0.01398587006485863,
+   "grup": "Riskli para",
+   "gunluk": -0.0010375524225541
+  },
+  {
+   "ad": "USD/ZAR",
+   "g1a": 0.003353491592425817,
+   "g1h": 0.0020539015568306063,
+   "grup": "Riskli para",
+   "gunluk": 0.0054163566316842715
+  },
+  {
+   "ad": "USD/BRL",
+   "g1a": -0.04832091333654054,
+   "g1h": -0.02108116744697286,
+   "grup": "Riskli para",
+   "gunluk": -0.009693305678057484
+  },
+  {
+   "ad": "USD/JPY",
+   "g1a": -0.005717392745022809,
+   "g1h": -0.00701588206331305,
+   "grup": "Güvenli liman",
+   "gunluk": -0.006076641456416398
+  },
+  {
+   "ad": "USD/CHF",
+   "g1a": 0.009520903043448214,
+   "g1h": 0.008838243468593632,
+   "grup": "Güvenli liman",
+   "gunluk": 0.005449214705337324
+  },
+  {
+   "ad": "Risk skoru (riskli − güvenli)",
+   "g1a": -0.017646246009675442,
+   "grup": "Skor",
+   "gunluk": -0.0036956402478733,
+   "seri": "risk-skor",
+   "yuzdelik": 0.17029862792574657
+  }
+ ],
+ "sayfa": "risk",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Kalem",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "grup",
+   "basamak": 2,
+   "baslik": "Grup",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "gunluk",
+   "basamak": 2,
+   "baslik": "Günlük",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "g1h",
+   "basamak": 2,
+   "baslik": "1 hafta",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "g1a",
+   "basamak": 2,
+   "baslik": "1 ay",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "yuzdelik",
+   "basamak": 0,
+   "baslik": "5 yıllık dilim",
+   "tur": "yuzde"
+  }
+ ],
+ "suzgecler": []
+}

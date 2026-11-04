@@ -1,0 +1,161 @@
+{
+ "aciklama": "CFTC TFF raporunda kaldıraçlı fonların net vadeli pozisyonu ve son 3 yıldaki dilimi. Yatırım tavsiyesi değildir. Veriler gecikmelidir.",
+ "baslik": "Fon pozisyonları",
+ "bolum": "fx",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:46:32Z",
+ "kaynaklar": [
+  {
+   "ad": "CFTC",
+   "url": "https://www.cftc.gov/"
+  }
+ ],
+ "satirlar": [
+  {
+   "acik": 868188,
+   "ad": "EUR",
+   "degisim": -2734,
+   "donem": "2026-10-27",
+   "net": -71574,
+   "uc": "Uç değer",
+   "yuzdelik": 0.0
+  },
+  {
+   "acik": 374026,
+   "ad": "JPY",
+   "degisim": 8260,
+   "donem": "2026-10-27",
+   "net": -14630,
+   "uc": "",
+   "yuzdelik": 0.7756410256410257
+  },
+  {
+   "acik": 253937,
+   "ad": "GBP",
+   "degisim": -6909,
+   "donem": "2026-10-27",
+   "net": 17195,
+   "uc": "",
+   "yuzdelik": 0.17307692307692307
+  },
+  {
+   "acik": 135489,
+   "ad": "CHF",
+   "degisim": -3895,
+   "donem": "2026-10-27",
+   "net": -17502,
+   "uc": "Uç değer",
+   "yuzdelik": 0.038461538461538464
+  },
+  {
+   "acik": 360941,
+   "ad": "CAD",
+   "degisim": -5634,
+   "donem": "2026-10-27",
+   "net": -96747,
+   "uc": "Uç değer",
+   "yuzdelik": 0.038461538461538464
+  },
+  {
+   "acik": 325008,
+   "ad": "AUD",
+   "degisim": -4083,
+   "donem": "2026-10-27",
+   "net": 48414,
+   "uc": "",
+   "yuzdelik": 0.8525641025641025
+  },
+  {
+   "acik": 129053,
+   "ad": "NZD",
+   "degisim": -3274,
+   "donem": "2026-10-27",
+   "net": -22554,
+   "uc": "",
+   "yuzdelik": 0.07051282051282051
+  },
+  {
+   "acik": 279359,
+   "ad": "MXN",
+   "degisim": 4521,
+   "donem": "2026-10-27",
+   "net": 68335,
+   "uc": "",
+   "yuzdelik": 0.9358974358974359
+  },
+  {
+   "acik": 168738,
+   "ad": "BRL",
+   "degisim": -11077,
+   "donem": "2026-10-27",
+   "net": 7600,
+   "uc": "",
+   "yuzdelik": 0.7371794871794872
+  },
+  {
+   "acik": 37796,
+   "ad": "ZAR",
+   "degisim": 374,
+   "donem": "2026-10-27",
+   "net": 5262,
+   "uc": "",
+   "yuzdelik": 0.782051282051282
+  },
+  {
+   "acik": 48263,
+   "ad": "Dolar endeksi",
+   "degisim": -25,
+   "donem": "2026-10-27",
+   "net": 3158,
+   "uc": "",
+   "yuzdelik": 0.7243589743589743
+  }
+ ],
+ "sayfa": "fonlar",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Para birimi",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "donem",
+   "basamak": 2,
+   "baslik": "Rapor tarihi",
+   "tur": "tarih"
+  },
+  {
+   "anahtar": "net",
+   "basamak": 0,
+   "baslik": "Net pozisyon",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "degisim",
+   "basamak": 0,
+   "baslik": "Haftalık değişim",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "yuzdelik",
+   "basamak": 0,
+   "baslik": "3 yıllık dilim",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "acik",
+   "basamak": 0,
+   "baslik": "Açık pozisyon",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "uc",
+   "basamak": 2,
+   "baslik": "Durum",
+   "tur": "metin"
+  }
+ ],
+ "suzgecler": []
+}

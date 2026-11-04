@@ -1,0 +1,86 @@
+{
+ "aciklama": "Son 5 işlem gününde seans başına ortalama saatlik mutlak hareket (oran). Asya 23–07, Londra 07–12, New York 12–21 UTC. Yatırım tavsiyesi değildir. Veriler gecikmelidir.",
+ "baslik": "Seanslara göre hareket",
+ "bolum": "fx",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:46:32Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "EUR/USD",
+   "asya": 0.002815015992047143,
+   "londra": 0.0030412869455048565,
+   "new_york": 0.005585068163848688
+  },
+  {
+   "ad": "USD/JPY",
+   "asya": 0.003958717078412199,
+   "londra": 0.0028344232654815118,
+   "new_york": 0.005076233715461597
+  },
+  {
+   "ad": "GBP/USD",
+   "asya": 0.002615022897058783,
+   "londra": 0.0031304163097966575,
+   "new_york": 0.005250515262662137
+  },
+  {
+   "ad": "AUD/USD",
+   "asya": 0.0041893370245739804,
+   "londra": 0.004278251288842061,
+   "new_york": 0.006022879451807561
+  },
+  {
+   "ad": "USD/CAD",
+   "asya": 0.0026046329048578843,
+   "londra": 0.0025210704895103687,
+   "new_york": 0.005590914788586143
+  },
+  {
+   "ad": "USD/CHF",
+   "asya": 0.004238563148695834,
+   "londra": 0.00422686625466695,
+   "new_york": 0.006622427256015034
+  },
+  {
+   "ad": "USD/TRY",
+   "asya": 0.0015683177694935323,
+   "londra": 0.001456249350378247,
+   "new_york": 0.0009140247830409009
+  }
+ ],
+ "sayfa": "seanslar",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Parite",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "asya",
+   "basamak": 2,
+   "baslik": "Asya",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "londra",
+   "basamak": 2,
+   "baslik": "Londra",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "new_york",
+   "basamak": 2,
+   "baslik": "New York",
+   "tur": "yuzde"
+  }
+ ],
+ "suzgecler": []
+}

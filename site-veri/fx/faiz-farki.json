@@ -1,0 +1,84 @@
+{
+ "aciklama": "ABD ile Euro bölgesi ve Japonya arasındaki 2 yıllık devlet tahvili faiz farkı; fark, bir aylık değişim ve kurla 1 yıllık korelasyon (haftalık değişimler). Yatırım tavsiyesi değildir. Veriler gecikmelidir.",
+ "baslik": "Faiz farkı ve kur",
+ "bolum": "fx",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:46:32Z",
+ "kaynaklar": [
+  {
+   "ad": "FRED",
+   "url": "https://fred.stlouisfed.org/"
+  },
+  {
+   "ad": "ECB",
+   "url": "https://www.ecb.europa.eu/"
+  },
+  {
+   "ad": "Japonya Maliye Bakanlığı",
+   "url": "https://www.mof.go.jp/english/"
+  },
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "ABD – Euro",
+   "fark": 1.5964940824,
+   "fark_1a": -0.24160986730000023,
+   "korelasyon": -0.22009701007479981,
+   "kur": "EUR/USD",
+   "kur_1a": -0.005562336855136851
+  },
+  {
+   "ad": "ABD – Japonya",
+   "fark": 2.715,
+   "fark_1a": -0.19600000000000017,
+   "korelasyon": 0.12989354074060613,
+   "kur": "USD/JPY",
+   "kur_1a": 0.005750269292960297
+  }
+ ],
+ "sayfa": "faiz-farki",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Fark",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "kur",
+   "basamak": 2,
+   "baslik": "Kur",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "fark",
+   "basamak": 2,
+   "baslik": "Fark (puan)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "fark_1a",
+   "basamak": 2,
+   "baslik": "1 ayda değişim (puan)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "kur_1a",
+   "basamak": 2,
+   "baslik": "Kur 1 ay",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "korelasyon",
+   "basamak": 2,
+   "baslik": "1 yıllık korelasyon",
+   "tur": "sayi"
+  }
+ ],
+ "suzgecler": []
+}

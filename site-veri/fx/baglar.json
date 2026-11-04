@@ -1,0 +1,72 @@
+{
+ "aciklama": "Kur ile emtia ya da faiz arasındaki 60 günlük korelasyon ve 1 yıllık korelasyon. İkisi 0,5 ya da daha fazla ayrılırsa bağ kırılmış sayılır. Yatırım tavsiyesi değildir. Veriler gecikmelidir.",
+ "baslik": "Kur bağları",
+ "bolum": "fx",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:46:32Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "AUD – bakır",
+   "durum": "Normal",
+   "kisa": -0.028261960218169468,
+   "seri": "bag-aud_bakir",
+   "uzun": 0.05733087583489997
+  },
+  {
+   "ad": "CAD – WTI petrol",
+   "durum": "Normal",
+   "kisa": 0.07542208168367864,
+   "seri": "bag-cad_petrol",
+   "uzun": -0.01472617286384815
+  },
+  {
+   "ad": "NOK – Brent",
+   "durum": "Normal",
+   "kisa": 0.10371613322779519,
+   "seri": "bag-nok_brent",
+   "uzun": -0.05119728261226611
+  },
+  {
+   "ad": "USD/JPY – ABD 10 yıllık",
+   "durum": "Normal",
+   "kisa": -0.0254655253405426,
+   "seri": "bag-jpy_faiz",
+   "uzun": -0.028859783777080237
+  }
+ ],
+ "sayfa": "baglar",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Bağ",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "kisa",
+   "basamak": 2,
+   "baslik": "60 gün",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "uzun",
+   "basamak": 2,
+   "baslik": "1 yıl",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "durum",
+   "basamak": 2,
+   "baslik": "Durum",
+   "tur": "metin"
+  }
+ ],
+ "suzgecler": []
+}

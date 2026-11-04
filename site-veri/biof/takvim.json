@@ -1,0 +1,1414 @@
+{
+ "aciklama": "Bitiş tarihi önümüzdeki 60 gün içinde olan Faz 2 ve Faz 3 çalışmaları. Tarihler şirketin ClinicalTrials.gov tahminidir; sonuç açıklama tarihi değildir.",
+ "baslik": "Önümüzdeki 60 gün",
+ "bolum": "biof",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-03T22:47:51Z",
+ "kaynaklar": [
+  {
+   "ad": "ClinicalTrials.gov",
+   "url": "https://clinicaltrials.gov/"
+  },
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "bitis": "11.2026",
+   "faz": "3",
+   "hastalik": "Atopic Dermatitis",
+   "ilac": "Upadacitinib 15mg Dose",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ABBV",
+   "ticker": "ABBV"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "3",
+   "hastalik": "Non Muscle Invasive Bladder Cancer",
+   "ilac": "Cretostimogene Grenadenorepvec",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "CGON",
+   "ticker": "CGON"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "3",
+   "hastalik": "Allergy",
+   "ilac": "DBV712 250 mcg",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "DBVT",
+   "ticker": "DBVT"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "3",
+   "hastalik": "Multiple Sclerosis",
+   "ilac": "IMU-838 tablets",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "IMUX",
+   "ticker": "IMUX"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "3",
+   "hastalik": "Multiple Sclerosis, Relapsing-Remitting",
+   "ilac": "IMU-838 tablets",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "IMUX",
+   "ticker": "IMUX"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "3",
+   "hastalik": "Obesity",
+   "ilac": "Retatrutide",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "LLY",
+   "ticker": "LLY"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "3",
+   "hastalik": "Type 1 Diabetes",
+   "ilac": "Tirzepatide",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "LLY",
+   "ticker": "LLY"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "3",
+   "hastalik": "Type 1 Diabetes",
+   "ilac": "Tirzepatide",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "LLY",
+   "ticker": "LLY"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "3",
+   "hastalik": "Atherosclerotic Cardiovascular Disease",
+   "ilac": "Obicetrapib",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "seri": "NAMSW",
+   "ticker": "NAMSW"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "3",
+   "hastalik": "Epidemic Meningitis",
+   "ilac": "experimental vaccine",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "seri": "SVA",
+   "ticker": "SVA"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "3",
+   "hastalik": "Common Warts",
+   "ilac": "VP-102",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "VRCA",
+   "ticker": "VRCA"
+  },
+  {
+   "bitis": "18.11.2026",
+   "faz": "3",
+   "hastalik": "Sjögren's Syndrome",
+   "ilac": "Deucravacitinib",
+   "kalan_gun": 14,
+   "mikro": "MİKRO",
+   "seri": "CELG-RI",
+   "ticker": "CELG-RI"
+  },
+  {
+   "bitis": "28.11.2026",
+   "faz": "3",
+   "hastalik": "Yellow Fever Immunization",
+   "ilac": "Yellow fever vaccine (live)",
+   "kalan_gun": 24,
+   "mikro": "",
+   "seri": "SNY",
+   "ticker": "SNY"
+  },
+  {
+   "bitis": "29.11.2026",
+   "faz": "3",
+   "hastalik": "Menstrual Migraine",
+   "ilac": "Rimegepant",
+   "kalan_gun": 25,
+   "mikro": "",
+   "seri": "PFE",
+   "ticker": "PFE"
+  },
+  {
+   "bitis": "30.11.2026",
+   "faz": "3",
+   "hastalik": "Immune Thrombocytopenia",
+   "ilac": "rilzabrutinib",
+   "kalan_gun": 26,
+   "mikro": "",
+   "seri": "SNY",
+   "ticker": "SNY"
+  },
+  {
+   "bitis": "01.12.2026",
+   "faz": "3",
+   "hastalik": "Antibody-mediated Rejection",
+   "ilac": "Felzartamab",
+   "kalan_gun": 27,
+   "mikro": "",
+   "seri": "BIIB",
+   "ticker": "BIIB"
+  },
+  {
+   "bitis": "01.12.2026",
+   "faz": "3",
+   "hastalik": "Nausea and Vomiting",
+   "ilac": "Tradipitant",
+   "kalan_gun": 27,
+   "mikro": "",
+   "seri": "VNDA",
+   "ticker": "VNDA"
+  },
+  {
+   "bitis": "02.12.2026",
+   "faz": "3",
+   "hastalik": "Severe Alopecia Areata",
+   "ilac": "Ritlecitinib higher dose",
+   "kalan_gun": 28,
+   "mikro": "",
+   "seri": "PFE",
+   "ticker": "PFE"
+  },
+  {
+   "bitis": "04.12.2026",
+   "faz": "3",
+   "hastalik": "Lyme Disease",
+   "ilac": "VLA15",
+   "kalan_gun": 30,
+   "mikro": "",
+   "seri": "PFE",
+   "ticker": "PFE"
+  },
+  {
+   "bitis": "14.12.2026",
+   "faz": "3",
+   "hastalik": "Early-stage Non-squamous Non-small Cell Lung Cancer (NSCLC)",
+   "ilac": "ABP 234",
+   "kalan_gun": 40,
+   "mikro": "",
+   "seri": "AMGN",
+   "ticker": "AMGN"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2/3",
+   "hastalik": "AMD",
+   "ilac": "ABBV-RGX-314",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ABBV",
+   "ticker": "ABBV"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Hidradenitis Suppurativa",
+   "ilac": "Lutikizumab",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ABBV",
+   "ticker": "ABBV"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Primary Vitreoretinal Lymphoma",
+   "ilac": "ICM ADX-2191 injection",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "seri": "ALDX",
+   "ticker": "ALDX"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "HEPATITIS C VIRUS CHRONIC INFECTION",
+   "ilac": "Bemnifosbuvir-Ruzasvir",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "AVIR",
+   "ticker": "AVIR"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Binge-Eating Disorder",
+   "ilac": "Solriamfetol 150 mg",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "AXSM",
+   "ticker": "AXSM"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Excessive Sleepiness",
+   "ilac": "Solriamfetol 150 mg",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "AXSM",
+   "ticker": "AXSM"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2/3",
+   "hastalik": "Acute Stroke",
+   "ilac": "Recombinant human tissue kallikrein",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "DMAC",
+   "ticker": "DMAC"
+  },
+  {
+   "bitis": "15.12.2026",
+   "faz": "3",
+   "hastalik": "Non-Clear Cell Renal Cell Carcinoma",
+   "ilac": "XL092",
+   "kalan_gun": 41,
+   "mikro": "",
+   "seri": "EXEL",
+   "ticker": "EXEL"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Metastatic Breast Cancer",
+   "ilac": "Sacituzumab Govitecan-hziy",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "GILD",
+   "ticker": "GILD"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Platinum-resistant Ovarian Cancer",
+   "ilac": "olvimulogene nanivacirepvec",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "GNLX",
+   "ticker": "GNLX"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Postoperative Ocular Inflammation",
+   "ilac": "Sham (No Treatment)",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "HROW",
+   "ticker": "HROW"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Hereditary Angioedema",
+   "ilac": "Donidalorsen",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "IONS",
+   "ticker": "IONS"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2/3",
+   "hastalik": "Relapsed/Refractory Diffuse Large B-cell Lymphoma",
+   "ilac": "Selinexor (combination therapy)",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "seri": "KPTI",
+   "ticker": "KPTI"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Dystrophic Epidermolysis Bullosa",
+   "ilac": "KB803",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "KRYS",
+   "ticker": "KRYS"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Androgenetic Alopecia",
+   "ilac": "VDPHL01",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "MANE",
+   "ticker": "MANE"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "NASH",
+   "ilac": "Resmetirom",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "MDGL",
+   "ticker": "MDGL"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Developmental and Epileptic Encephalopathy 1",
+   "ilac": "1.0mg/kg/day PRAX-562",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "PRAX",
+   "ticker": "PRAX"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Epileptic Encephalopathy",
+   "ilac": "1mg elsunersen",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "PRAX",
+   "ticker": "PRAX"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "PAH",
+   "ilac": "Ralinepag",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "UTHR",
+   "ticker": "UTHR"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Viral Hepatitis",
+   "ilac": "Tobevibart",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "VIR",
+   "ticker": "VIR"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "3",
+   "hastalik": "Social Anxiety Disorder (SAD)",
+   "ilac": "VQW-765",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "VNDA",
+   "ticker": "VNDA"
+  },
+  {
+   "bitis": "23.12.2026",
+   "faz": "3",
+   "hastalik": "Asthma",
+   "ilac": "Benralizumab",
+   "kalan_gun": 49,
+   "mikro": "",
+   "seri": "AZN",
+   "ticker": "AZN"
+  },
+  {
+   "bitis": "30.12.2026",
+   "faz": "3",
+   "hastalik": "Breast Cancer",
+   "ilac": "Vepdegestrant (ARV-471/PF-07850327)",
+   "kalan_gun": 56,
+   "mikro": "",
+   "seri": "PFE",
+   "ticker": "PFE"
+  },
+  {
+   "bitis": "30.12.2026",
+   "faz": "2/3",
+   "hastalik": "Netherton Syndrome",
+   "ilac": "QRX003, 4% Lotion",
+   "kalan_gun": 56,
+   "mikro": "MİKRO",
+   "seri": "QNRX",
+   "ticker": "QNRX"
+  },
+  {
+   "bitis": "30.12.2026",
+   "faz": "2/3",
+   "hastalik": "Netherton Syndrome",
+   "ilac": "QRX003, 4% Lotion",
+   "kalan_gun": 56,
+   "mikro": "MİKRO",
+   "seri": "QNRX",
+   "ticker": "QNRX"
+  },
+  {
+   "bitis": "30.12.2026",
+   "faz": "3",
+   "hastalik": "Myasthaenia Gravis",
+   "ilac": "Decartes-08",
+   "kalan_gun": 56,
+   "mikro": "",
+   "seri": "RNAC",
+   "ticker": "RNAC"
+  },
+  {
+   "bitis": "30.12.2026",
+   "faz": "3",
+   "hastalik": "Rabies",
+   "ilac": "Rabies Vaccine (Serum-free Vero Cell), Freeze-dried",
+   "kalan_gun": 56,
+   "mikro": "MİKRO",
+   "seri": "SVA",
+   "ticker": "SVA"
+  },
+  {
+   "bitis": "31.12.2026",
+   "faz": "3",
+   "hastalik": "Cancer",
+   "ilac": "Durvalumab",
+   "kalan_gun": 57,
+   "mikro": "",
+   "seri": "AZN",
+   "ticker": "AZN"
+  },
+  {
+   "bitis": "31.12.2026",
+   "faz": "2/3",
+   "hastalik": "Pulmonary Arterial Hypertension",
+   "ilac": "Treprostinil Palmitil",
+   "kalan_gun": 57,
+   "mikro": "",
+   "seri": "INSM",
+   "ticker": "INSM"
+  },
+  {
+   "bitis": "31.12.2026",
+   "faz": "3",
+   "hastalik": "B-cell Malignancies",
+   "ilac": "Zanubrutinib",
+   "kalan_gun": 57,
+   "mikro": "",
+   "seri": "ONC",
+   "ticker": "ONC"
+  },
+  {
+   "bitis": "31.12.2026",
+   "faz": "3",
+   "hastalik": "Advanced Malignancies",
+   "ilac": "Avelumab",
+   "kalan_gun": 57,
+   "mikro": "",
+   "seri": "PFE",
+   "ticker": "PFE"
+  },
+  {
+   "bitis": "31.12.2026",
+   "faz": "3",
+   "hastalik": "Viral Hepatitis",
+   "ilac": "Tobevibart",
+   "kalan_gun": 57,
+   "mikro": "",
+   "seri": "VIR",
+   "ticker": "VIR"
+  },
+  {
+   "bitis": "05.11.2026",
+   "faz": "2",
+   "hastalik": "Prostate Cancer",
+   "ilac": "AZD9750",
+   "kalan_gun": 1,
+   "mikro": "",
+   "seri": "AZN",
+   "ticker": "AZN"
+  },
+  {
+   "bitis": "11.11.2026",
+   "faz": "2",
+   "hastalik": "Cervical Cancer",
+   "ilac": "PRGN-2009 plus Pembrolizumab",
+   "kalan_gun": 7,
+   "mikro": "",
+   "seri": "PGEN",
+   "ticker": "PGEN"
+  },
+  {
+   "bitis": "12.11.2026",
+   "faz": "2",
+   "hastalik": "Atopic Dermatitis",
+   "ilac": "PF-07275315",
+   "kalan_gun": 8,
+   "mikro": "",
+   "seri": "PFE",
+   "ticker": "PFE"
+  },
+  {
+   "bitis": "13.11.2026",
+   "faz": "2",
+   "hastalik": "Advanced Solid Tumors",
+   "ilac": "REGN7075",
+   "kalan_gun": 9,
+   "mikro": "",
+   "seri": "REGN",
+   "ticker": "REGN"
+  },
+  {
+   "bitis": "13.11.2026",
+   "faz": "2",
+   "hastalik": "Overweight or Obesity",
+   "ilac": "Olatorepatide",
+   "kalan_gun": 9,
+   "mikro": "",
+   "seri": "REGN",
+   "ticker": "REGN"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Chronic Lymphocytic Leukemia (CLL)",
+   "ilac": "Venetoclax",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ABBV",
+   "ticker": "ABBV"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "High Grade Ovarian Cancer",
+   "ilac": "Mirvetuximab soravtansine",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ABBV",
+   "ticker": "ABBV"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Hepatocellular Carcinoma",
+   "ilac": "Budigalimab",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ABBV",
+   "ticker": "ABBV"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Generalized Anxiety Disorder (GAD)",
+   "ilac": "ABBV-932",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ABBV",
+   "ticker": "ABBV"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Idiopathic Hypersomnia",
+   "ilac": "ALKS 2680",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ALKS",
+   "ticker": "ALKS"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Dermatomyositis",
+   "ilac": "Empasiprubart IV",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ARGX",
+   "ticker": "ARGX"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Breast Neoplasms",
+   "ilac": "(Z)-endoxifen",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "seri": "ATOS",
+   "ticker": "ATOS"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Colorectal Cancer Stage II",
+   "ilac": "RO7198457 intravenous (IV)",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "BNTX",
+   "ticker": "BNTX"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Metastatic Colorectal Cancer",
+   "ilac": "Onvansertib",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "CRDF",
+   "ticker": "CRDF"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Non-muscle Invasive Bladder Cancer (NMIBC)",
+   "ilac": "N-803 and BCG",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "IBRX",
+   "ticker": "IBRX"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Alzheimer Disease",
+   "ilac": "IGC-AD1-Active",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "seri": "IGC",
+   "ticker": "IGC"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Macular Edema",
+   "ilac": "KIO-104",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "seri": "KPRX",
+   "ticker": "KPRX"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Diabetes Mellitus, Type 2",
+   "ilac": "LY3938577",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "LLY",
+   "ticker": "LLY"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Acute Pain",
+   "ilac": "LY4515100",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "LLY",
+   "ticker": "LLY"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Dyslipidemias",
+   "ilac": "obicetrapib 10 mg + obicetrapib/evolocumab 140 mg Q 2 weeks",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "seri": "NAMSW",
+   "ticker": "NAMSW"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Relapsed/Refractory Multiple Myeloma",
+   "ilac": "Sonrotoclax",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ONC",
+   "ticker": "ONC"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Chronic Lymphocytic Leukemia",
+   "ilac": "Sonrotoclax",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ONC",
+   "ticker": "ONC"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Influenza",
+   "ilac": "TRX-100",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "seri": "TRAW",
+   "ticker": "TRAW"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Locally Advanced Urothelial Carcinoma",
+   "ilac": "TYRA-300",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "TYRA",
+   "ticker": "TYRA"
+  },
+  {
+   "bitis": "11.2026",
+   "faz": "2",
+   "hastalik": "Viral Hepatitis",
+   "ilac": "Tobevibart",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "VIR",
+   "ticker": "VIR"
+  },
+  {
+   "bitis": "17.11.2026",
+   "faz": "2",
+   "hastalik": "Gastric Cancer",
+   "ilac": "AZD0901",
+   "kalan_gun": 13,
+   "mikro": "",
+   "seri": "AZN",
+   "ticker": "AZN"
+  },
+  {
+   "bitis": "20.11.2026",
+   "faz": "2",
+   "hastalik": "Obesity",
+   "ilac": "Nimacimab injection",
+   "kalan_gun": 16,
+   "mikro": "MİKRO",
+   "seri": "SKYE",
+   "ticker": "SKYE"
+  },
+  {
+   "bitis": "24.11.2026",
+   "faz": "2",
+   "hastalik": "Metastatic Prostate Cancer",
+   "ilac": "AZD0754",
+   "kalan_gun": 20,
+   "mikro": "",
+   "seri": "AZN",
+   "ticker": "AZN"
+  },
+  {
+   "bitis": "24.11.2026",
+   "faz": "2",
+   "hastalik": "Pulmonary Hypertension",
+   "ilac": "TX000045- Dose A",
+   "kalan_gun": 20,
+   "mikro": "",
+   "seri": "TECX",
+   "ticker": "TECX"
+  },
+  {
+   "bitis": "30.11.2026",
+   "faz": "2",
+   "hastalik": "Advanced MTAP-null Solid Tumors",
+   "ilac": "Anvumetostat",
+   "kalan_gun": 26,
+   "mikro": "",
+   "seri": "AMGN",
+   "ticker": "AMGN"
+  },
+  {
+   "bitis": "30.11.2026",
+   "faz": "2",
+   "hastalik": "KRAS G12D Mutation",
+   "ilac": "ARV-806",
+   "kalan_gun": 26,
+   "mikro": "",
+   "seri": "ARVN",
+   "ticker": "ARVN"
+  },
+  {
+   "bitis": "30.11.2026",
+   "faz": "2",
+   "hastalik": "Eye Cancer",
+   "ilac": "AU-011",
+   "kalan_gun": 26,
+   "mikro": "",
+   "seri": "AURA",
+   "ticker": "AURA"
+  },
+  {
+   "bitis": "30.11.2026",
+   "faz": "2",
+   "hastalik": "Hepatocellular Carcinoma",
+   "ilac": "Durvalumab",
+   "kalan_gun": 26,
+   "mikro": "",
+   "seri": "AZN",
+   "ticker": "AZN"
+  },
+  {
+   "bitis": "30.11.2026",
+   "faz": "2",
+   "hastalik": "Obesity and Cardiovascular Risk",
+   "ilac": "Oral BGE-102",
+   "kalan_gun": 26,
+   "mikro": "",
+   "seri": "BIOA",
+   "ticker": "BIOA"
+  },
+  {
+   "bitis": "30.11.2026",
+   "faz": "2",
+   "hastalik": "Cancer",
+   "ilac": "IMC-R117C",
+   "kalan_gun": 26,
+   "mikro": "",
+   "seri": "IMCR",
+   "ticker": "IMCR"
+  },
+  {
+   "bitis": "30.11.2026",
+   "faz": "2",
+   "hastalik": "Glioblastoma Multiforme",
+   "ilac": "Perillyl alcohol",
+   "kalan_gun": 26,
+   "mikro": "",
+   "seri": "NTHI",
+   "ticker": "NTHI"
+  },
+  {
+   "bitis": "30.11.2026",
+   "faz": "2",
+   "hastalik": "Duchenne Muscular Dystrophy",
+   "ilac": "SGT-001",
+   "kalan_gun": 26,
+   "mikro": "",
+   "seri": "SLDB",
+   "ticker": "SLDB"
+  },
+  {
+   "bitis": "01.12.2026",
+   "faz": "2",
+   "hastalik": "Systemic Lupus Erythematosus (SLE)",
+   "ilac": "Descartes-08",
+   "kalan_gun": 27,
+   "mikro": "",
+   "seri": "RNAC",
+   "ticker": "RNAC"
+  },
+  {
+   "bitis": "01.12.2026",
+   "faz": "2",
+   "hastalik": "Pandemic Influenza Immunization",
+   "ilac": "Pandemic flu H5 HA mRNA SD2 vaccine",
+   "kalan_gun": 27,
+   "mikro": "",
+   "seri": "SNY",
+   "ticker": "SNY"
+  },
+  {
+   "bitis": "03.12.2026",
+   "faz": "2",
+   "hastalik": "Non-Transfusion Dependent Beta-Thalassemia (NTDT)",
+   "ilac": "REGN7999",
+   "kalan_gun": 29,
+   "mikro": "",
+   "seri": "REGN",
+   "ticker": "REGN"
+  },
+  {
+   "bitis": "08.12.2026",
+   "faz": "2",
+   "hastalik": "Hidradenitis Suppurativa",
+   "ilac": "Ritlecitinib",
+   "kalan_gun": 34,
+   "mikro": "",
+   "seri": "PFE",
+   "ticker": "PFE"
+  },
+  {
+   "bitis": "10.12.2026",
+   "faz": "2",
+   "hastalik": "Chronic Kidney Disease and Hypertension",
+   "ilac": "Baxdrostat/dapagliflozin",
+   "kalan_gun": 36,
+   "mikro": "",
+   "seri": "AZN",
+   "ticker": "AZN"
+  },
+  {
+   "bitis": "14.12.2026",
+   "faz": "2",
+   "hastalik": "Heart Failure",
+   "ilac": "BMS-986435",
+   "kalan_gun": 40,
+   "mikro": "MİKRO",
+   "seri": "CELG-RI",
+   "ticker": "CELG-RI"
+  },
+  {
+   "bitis": "14.12.2026",
+   "faz": "2",
+   "hastalik": "Overweight",
+   "ilac": "NNC0662-0419",
+   "kalan_gun": 40,
+   "mikro": "",
+   "seri": "NVO",
+   "ticker": "NVO"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Unresectable Metastatic Colorectal Cancer",
+   "ilac": "ABBV-400",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ABBV",
+   "ticker": "ABBV"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Moderately to Severely Active Crohn Disease",
+   "ilac": "Obefazimod",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ABVX",
+   "ticker": "ABVX"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Bipolar I Disorder",
+   "ilac": "AL001",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "seri": "ALZN",
+   "ticker": "ALZN"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Major Depressive Disorder",
+   "ilac": "ALTO-300",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "ANRO",
+   "ticker": "ANRO"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Idiopathic Pulmonary Fibrosis (IPF)",
+   "ilac": "AP02",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "AVLN",
+   "ticker": "AVLN"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Heart Failure, Systolic",
+   "ilac": "CardiALLO™ Human Allogenic Culture-expanded Bone marrow-derived Mesenchymal Stem Cells (hMSCs)",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "ticker": "BCDA"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Lymphoblastic Lymphoma",
+   "ilac": "BEAM-201",
+   "kalan_gun": null,
+   "mikro": "",
+   "ticker": "BEAM"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Cushing Syndrome",
+   "ilac": "relacorilant",
+   "kalan_gun": null,
+   "mikro": "",
+   "ticker": "CORT"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Frontotemporal Dementia",
+   "ilac": "DNL593",
+   "kalan_gun": null,
+   "mikro": "",
+   "ticker": "DNLI"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Friedreich Ataxia",
+   "ilac": "DT-216P2",
+   "kalan_gun": null,
+   "mikro": "",
+   "ticker": "DSGN"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Chemotherapy Induced Neuropathic Pain",
+   "ilac": "Halneuron",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "ticker": "DWTX"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "NSCLC",
+   "ilac": "EIK1001",
+   "kalan_gun": null,
+   "mikro": "",
+   "ticker": "EIKN"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "RSV Infection",
+   "ilac": "zelicapavir",
+   "kalan_gun": null,
+   "mikro": "",
+   "ticker": "ENTA"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Eosinophilic Esophagitis",
+   "ilac": "EP-104GI",
+   "kalan_gun": null,
+   "mikro": "",
+   "ticker": "EPRX"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Hypertension",
+   "ilac": "Tonlamarsen",
+   "kalan_gun": null,
+   "mikro": "",
+   "ticker": "KARD"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Diffuse Large B-cell Lymphoma",
+   "ilac": "Selinexor",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "seri": "KPTI",
+   "ticker": "KPTI"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Neurotrophic Keratitis",
+   "ilac": "KB801",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "KRYS",
+   "ticker": "KRYS"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Nausea",
+   "ilac": "LY3537021",
+   "kalan_gun": null,
+   "mikro": "",
+   "seri": "LLY",
+   "ticker": "LLY"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Adenocarcinoma of Lung",
+   "ilac": "LP-300",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "ticker": "LTRN"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Arrhythmogenic Cardiomyopathy",
+   "ilac": "LX2020",
+   "kalan_gun": null,
+   "mikro": "",
+   "ticker": "LXEO"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Paroxysmal Nocturnal Hemoglobinuria",
+   "ilac": "OMS906 study drug",
+   "kalan_gun": null,
+   "mikro": "",
+   "ticker": "OMER"
+  },
+  {
+   "bitis": "15.12.2026",
+   "faz": "2",
+   "hastalik": "Advanced Solid Tumor",
+   "ilac": "rezatapopt",
+   "kalan_gun": 41,
+   "mikro": "",
+   "ticker": "PMVP"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Lymphatic Malformation",
+   "ilac": "TARA-002",
+   "kalan_gun": null,
+   "mikro": "",
+   "ticker": "TARA"
+  },
+  {
+   "bitis": "12.2026",
+   "faz": "2",
+   "hastalik": "Influenza",
+   "ilac": "TRX-100",
+   "kalan_gun": null,
+   "mikro": "MİKRO",
+   "seri": "TRAW",
+   "ticker": "TRAW"
+  },
+  {
+   "bitis": "17.12.2026",
+   "faz": "2",
+   "hastalik": "Alzheimer Disease, Early Onset",
+   "ilac": "BMS-986446",
+   "kalan_gun": 43,
+   "mikro": "MİKRO",
+   "seri": "CELG-RI",
+   "ticker": "CELG-RI"
+  },
+  {
+   "bitis": "17.12.2026",
+   "faz": "2",
+   "hastalik": "Crohn's Disease",
+   "ilac": "brivekimig",
+   "kalan_gun": 43,
+   "mikro": "",
+   "seri": "SNY",
+   "ticker": "SNY"
+  },
+  {
+   "bitis": "17.12.2026",
+   "faz": "2",
+   "hastalik": "Ulcerative Colitis",
+   "ilac": "SAR442970",
+   "kalan_gun": 43,
+   "mikro": "",
+   "seri": "SNY",
+   "ticker": "SNY"
+  },
+  {
+   "bitis": "23.12.2026",
+   "faz": "2",
+   "hastalik": "Focal Segmental Glomerulosclerosis",
+   "ilac": "frexalimab",
+   "kalan_gun": 49,
+   "mikro": "",
+   "seri": "SNY",
+   "ticker": "SNY"
+  },
+  {
+   "bitis": "25.12.2026",
+   "faz": "2",
+   "hastalik": "Chronic Spontaneous Urticaria",
+   "ilac": "Ritlecitinib 50 mg",
+   "kalan_gun": 51,
+   "mikro": "",
+   "seri": "PFE",
+   "ticker": "PFE"
+  },
+  {
+   "bitis": "29.12.2026",
+   "faz": "2",
+   "hastalik": "Hypercholesterolemia",
+   "ilac": "Alirocumab",
+   "kalan_gun": 55,
+   "mikro": "",
+   "seri": "REGN",
+   "ticker": "REGN"
+  },
+  {
+   "bitis": "30.12.2026",
+   "faz": "2",
+   "hastalik": "Residual, Progressive or Recurrent Grade II or III Meningioma",
+   "ilac": "NEO100",
+   "kalan_gun": 56,
+   "mikro": "",
+   "seri": "NTHI",
+   "ticker": "NTHI"
+  },
+  {
+   "bitis": "30.12.2026",
+   "faz": "2",
+   "hastalik": "Hematologic Malignancies",
+   "ilac": "SLS009",
+   "kalan_gun": 56,
+   "mikro": "",
+   "ticker": "SLS"
+  },
+  {
+   "bitis": "30.12.2026",
+   "faz": "2",
+   "hastalik": "Focal Impaired Awareness Seizures",
+   "ilac": "BIS-001ER",
+   "kalan_gun": 56,
+   "mikro": "",
+   "ticker": "SUPN"
+  },
+  {
+   "bitis": "31.12.2026",
+   "faz": "2",
+   "hastalik": "Alcohol Use Disorder",
+   "ilac": "CMND-100",
+   "kalan_gun": 57,
+   "mikro": "MİKRO",
+   "ticker": "CMND"
+  },
+  {
+   "bitis": "31.12.2026",
+   "faz": "2",
+   "hastalik": "Breast Cancer",
+   "ilac": "Zanidatamab",
+   "kalan_gun": 57,
+   "mikro": "",
+   "ticker": "JAZZ"
+  },
+  {
+   "bitis": "31.12.2026",
+   "faz": "2",
+   "hastalik": "Diabetes Mellitus, Type 2",
+   "ilac": "MN-001",
+   "kalan_gun": 57,
+   "mikro": "",
+   "ticker": "MNOV"
+  },
+  {
+   "bitis": "31.12.2026",
+   "faz": "2",
+   "hastalik": "Small Cell Lung Cancer",
+   "ilac": "PF-07104091 monotherapy dose escalation",
+   "kalan_gun": 57,
+   "mikro": "",
+   "seri": "PFE",
+   "ticker": "PFE"
+  },
+  {
+   "bitis": "31.12.2026",
+   "faz": "2",
+   "hastalik": "Myotonic Dystrophy 1",
+   "ilac": "SRP-1003 IV Infusion",
+   "kalan_gun": 57,
+   "mikro": "",
+   "ticker": "SRPT"
+  },
+  {
+   "bitis": "31.12.2026",
+   "faz": "2",
+   "hastalik": "Major Depressive Disorder (MDD)",
+   "ilac": "SPN-821 2400 mg",
+   "kalan_gun": 57,
+   "mikro": "",
+   "ticker": "SUPN"
+  },
+  {
+   "bitis": "31.12.2026",
+   "faz": "2",
+   "hastalik": "Ocular Rosacea",
+   "ilac": "lotilaner",
+   "kalan_gun": 57,
+   "mikro": "",
+   "ticker": "TARS"
+  },
+  {
+   "bitis": "01.01.2027",
+   "faz": "2",
+   "hastalik": "Smallpox",
+   "ilac": "Tecovirimat",
+   "kalan_gun": 58,
+   "mikro": "",
+   "ticker": "SIGA"
+  }
+ ],
+ "sayfa": "takvim",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ticker",
+   "basamak": 2,
+   "baslik": "Hisse",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "ilac",
+   "basamak": 2,
+   "baslik": "İlaç",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "hastalik",
+   "basamak": 2,
+   "baslik": "Hastalık",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "faz",
+   "basamak": 2,
+   "baslik": "Faz",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "bitis",
+   "basamak": 2,
+   "baslik": "Tahmini bitiş",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "kalan_gun",
+   "basamak": 0,
+   "baslik": "Kalan gün",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "mikro",
+   "basamak": 2,
+   "baslik": "Ölçek",
+   "tur": "metin"
+  }
+ ],
+ "suzgecler": [
+  "faz"
+ ]
+}
