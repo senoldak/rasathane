@@ -70,7 +70,7 @@ jobs:
               python -m pytest -q
           - proje: bist
             python: "3.12"
-            kur: pip install -e ".[dev]" ruff black mypy
+            kur: pip install -e ../ortak -e ".[dev]" ruff black mypy
             test: |
               python -m ruff check rasathane_bist tests
               python -m black -l 100 --check rasathane_bist tests

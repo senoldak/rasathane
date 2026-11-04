@@ -1,9 +1,9 @@
 [project]
 name = "rasathane-bist"
 version = "0.1.0"
-description = "Rasathane BIST yardımcıları: pay bülteni indirme ve ayrıştırma, Black-Scholes, Yahoo"
+description = "Rasathane BIST yardımcıları: pay ve VİOP bülteni, Black-Scholes, Yahoo, VİOP site verisi"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = ["rasathane-ortak"]
 
 [project.optional-dependencies]
 yahoo = ["yfinance>=1.7,<2"]

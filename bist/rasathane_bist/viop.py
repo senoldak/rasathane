@@ -8,7 +8,7 @@ import re
 from dataclasses import dataclass
 from datetime import date
 
-_URL = "https://borsaistanbul.com/viopdata/viop_{}.csv"
+_URL = "https://borsaistanbul.com/data/vadeli/viop_{}.csv"  # eski /viopdata/ yolu buraya yönlenir
 
 
 def viop_bulteni_url(gun: date) -> str:
@@ -149,3 +149,16 @@ def vadeli_mi(s: ViopSatiri) -> bool:
 def opsiyon_mu(s: ViopSatiri) -> bool:
     """Opsiyon sözleşmesi mi? Kod öneki (`O_`, esnek `TM_O_`) yeterlidir."""
     return s.kod.startswith(("O_", "TM_O_"))
+
+
+_ENDEKS_ADLARI = {"BIST 30": "XU030", "BIST 100": "XU100"}
+
+
+def dayanak_kanonik(s: ViopSatiri) -> str:
+    """Vadeli sözleşmenin dayanağı opsiyon kodundaki biçimde (XU030, USDTRY, THYAO).
+
+    Bültenin dayanak alanı kod verir (`D_XU030D`); sözleşme adının ilk parçası (`BIST 30_12/2026_VIS`)
+    ise opsiyon kodundaki dayanakla aynı yazılır. Böylece vadeli ve opsiyon aynı anahtarla eşleşir.
+    """
+    on = s.ad.split("_", 1)[0].strip()
+    return _ENDEKS_ADLARI.get(on, on)

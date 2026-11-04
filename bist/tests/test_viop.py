@@ -30,7 +30,7 @@ def satirlar() -> dict[str, ViopSatiri]:
 def test_viop_bulteni_url() -> None:
     assert (
         viop_bulteni_url(date(2026, 10, 23))
-        == "https://borsaistanbul.com/viopdata/viop_20261023.csv"
+        == "https://borsaistanbul.com/data/vadeli/viop_20261023.csv"
     )
 
 
