@@ -74,7 +74,7 @@ jobs:
             test: |
               python -m ruff check rasathane_bist tests
               python -m black -l 100 --check rasathane_bist tests
-              python -m mypy --strict rasathane_bist
+              MYPYPATH=../ortak python -m mypy --strict rasathane_bist
               python -m pytest -q
     defaults:
       run:
