@@ -3,7 +3,7 @@
  "baslik": "Günün hareketleri",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-04T23:16:15Z",
+ "guncellendi": "2026-11-05T23:16:26Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -12,64 +12,10 @@
  ],
  "satirlar": [
   {
-   "ad": "Brent petrol",
-   "gunluk": -0.08658302464110368,
-   "kapanis": 94.62999725341797,
-   "onceki": null,
-   "seri": "BZ=F",
-   "tur": "Sert Düşüş",
-   "z": -3.3307418856858044
-  },
-  {
-   "ad": "WTI petrol",
-   "gunluk": -0.08377558257007622,
-   "kapanis": 88.04000091552734,
-   "onceki": null,
-   "seri": "CL=F",
-   "tur": "Sert Düşüş",
-   "z": -3.2053553851945904
-  },
-  {
-   "ad": "Paladyum",
-   "gunluk": 0.0801075268817204,
-   "kapanis": 1004.5,
-   "onceki": null,
-   "seri": "PA=F",
-   "tur": "Sert Yükseliş",
-   "z": 3.4445327540816475
-  },
-  {
-   "ad": "Benzin",
-   "gunluk": -0.07259409412267115,
-   "kapanis": 2.722399950027466,
-   "onceki": null,
-   "seri": "RB=F",
-   "tur": "Sert Düşüş",
-   "z": -2.538729634585706
-  },
-  {
-   "ad": "Dizel",
-   "gunluk": -0.07252900822482511,
-   "kapanis": 4.202000141143799,
-   "onceki": null,
-   "seri": "HO=F",
-   "tur": "Sert Düşüş",
-   "z": -2.6524978545840363
-  },
-  {
-   "ad": "Altın",
-   "gunluk": 0.0334483940956678,
-   "kapanis": 4072.199951171875,
-   "onceki": null,
-   "seri": "GC=F",
-   "tur": "Sert Yükseliş",
-   "z": 2.6215703798555006
-  },
-  {
    "ad": "Domuz",
-   "gunluk": -0.019197952718323363,
-   "kapanis": 57.474998474121094,
-   "onceki": 58.17499923706055,
+   "gunluk": -0.04474371497960383,
+   "kapanis": 54.974998474121094,
+   "onceki": 57.54999923706055,
    "seri": "HE=F",
    "tur": "52 Hafta Dibi",
    "z": null

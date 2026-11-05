@@ -3,7 +3,7 @@
  "baslik": "EIA stokları",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-04T23:16:15Z",
+ "guncellendi": "2026-11-05T23:16:26Z",
  "kaynaklar": [
   {
    "ad": "EIA",
@@ -50,11 +50,11 @@
   {
    "ad": "Doğalgaz depoları",
    "birim": "Bcf",
-   "deger": 3724.0,
-   "degisim": 80.0,
-   "donem": "2026-10-23",
+   "deger": 3801.0,
+   "degisim": 77.0,
+   "donem": "2026-10-30",
    "seri": "eia-NW2-EPG0-SWO-R48-BCF",
-   "yil_once": 3872.0
+   "yil_once": 3905.0
   }
  ],
  "sayfa": "stoklar",

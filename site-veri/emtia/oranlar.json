@@ -3,7 +3,7 @@
  "baslik": "Emtia oranları",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-04T23:16:15Z",
+ "guncellendi": "2026-11-05T23:16:26Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -14,34 +14,34 @@
   {
    "ad": "Altın / gümüş",
    "anlam": "yükselişi korku göstergesi",
-   "deger": 77.8251293224274,
-   "g1a": 0.13692229523198507,
+   "deger": 79.17286480342531,
+   "g1a": 0.14530757298189556,
    "seri": "oran-altin-gumus",
-   "yuzdelik": 0.25238853503184716
+   "yuzdelik": 0.29936305732484075
   },
   {
    "ad": "Bakır / altın",
    "anlam": "büyüme beklentisinin göstergesi",
-   "deger": 0.0015743332478278577,
-   "g1a": -0.00039565836692567746,
+   "deger": 0.001518258173873865,
+   "g1a": -0.0469715768301181,
    "seri": "oran-bakir-altin",
-   "yuzdelik": 0.33651551312649164
+   "yuzdelik": 0.26252983293556087
   },
   {
    "ad": "Brent / doğalgaz",
    "anlam": "petrolün gaza göre pahalılığı",
-   "deger": 32.07796465214285,
-   "g1a": -0.006852428522853393,
+   "deger": 33.5475131458779,
+   "g1a": 0.07238213754912581,
    "seri": "oran-brent-gaz",
-   "yuzdelik": 0.7175815433571997
+   "yuzdelik": 0.7828162291169452
   },
   {
    "ad": "Brent / WTI",
    "anlam": "küresel ve ABD petrolü farkı",
-   "deger": 1.0748522974711643,
-   "g1a": -0.04419576098784839,
+   "deger": 1.0880772067628721,
+   "g1a": -0.04136270049564905,
    "seri": "oran-brent-wti",
-   "yuzdelik": 0.8527070063694268
+   "yuzdelik": 0.9347133757961783
   }
  ],
  "sayfa": "oranlar",
