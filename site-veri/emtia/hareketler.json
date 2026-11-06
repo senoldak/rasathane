@@ -3,7 +3,7 @@
  "baslik": "Günün hareketleri",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-05T23:16:26Z",
+ "guncellendi": "2026-11-06T23:16:13Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -13,9 +13,9 @@
  "satirlar": [
   {
    "ad": "Domuz",
-   "gunluk": -0.04474371497960383,
-   "kapanis": 54.974998474121094,
-   "onceki": 57.54999923706055,
+   "gunluk": -0.03130668823759186,
+   "kapanis": 53.375,
+   "onceki": 55.099998474121094,
    "seri": "HE=F",
    "tur": "52 Hafta Dibi",
    "z": null
