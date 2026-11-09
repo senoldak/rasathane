@@ -3,7 +3,7 @@
  "baslik": "Kur bağları",
  "bolum": "fx",
  "grafik": "cizgi",
- "guncellendi": "2026-11-03T22:46:32Z",
+ "guncellendi": "2026-11-09T22:46:15Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -14,30 +14,30 @@
   {
    "ad": "AUD – bakır",
    "durum": "Normal",
-   "kisa": -0.028261960218169468,
+   "kisa": -0.07204641991197958,
    "seri": "bag-aud_bakir",
-   "uzun": 0.05733087583489997
+   "uzun": 0.05185638836281435
   },
   {
    "ad": "CAD – WTI petrol",
    "durum": "Normal",
-   "kisa": 0.07542208168367864,
+   "kisa": 0.1652038975459001,
    "seri": "bag-cad_petrol",
-   "uzun": -0.01472617286384815
+   "uzun": 0.00456492969606882
   },
   {
    "ad": "NOK – Brent",
    "durum": "Normal",
-   "kisa": 0.10371613322779519,
+   "kisa": 0.11955953133885998,
    "seri": "bag-nok_brent",
-   "uzun": -0.05119728261226611
+   "uzun": -0.04963579581299526
   },
   {
    "ad": "USD/JPY – ABD 10 yıllık",
    "durum": "Normal",
-   "kisa": -0.0254655253405426,
+   "kisa": -0.051993015304082506,
    "seri": "bag-jpy_faiz",
-   "uzun": -0.028859783777080237
+   "uzun": -0.029265558072468258
   }
  ],
  "sayfa": "baglar",

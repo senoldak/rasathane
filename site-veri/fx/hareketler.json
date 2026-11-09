@@ -3,7 +3,7 @@
  "baslik": "Hareketler",
  "bolum": "fx",
  "grafik": "cizgi",
- "guncellendi": "2026-11-03T22:46:32Z",
+ "guncellendi": "2026-11-09T22:46:15Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -13,35 +13,107 @@
  "satirlar": [
   {
    "ad": "USD/TRY",
-   "gunluk": 0.00045189277338031353,
-   "kapanis": 49.988399505615234,
+   "gunluk": 0.0011867096129487553,
+   "kapanis": 50.212398529052734,
    "seri": "TRY=X",
-   "tarih": "2026-11-03",
+   "tarih": "2026-11-09",
    "tur": "52 Hafta Zirvesi"
-  },
-  {
-   "ad": "USD/CNY",
-   "gunluk": -0.00010508887132476552,
-   "kapanis": 6.660299777984619,
-   "seri": "CNY=X",
-   "tarih": "2026-11-03",
-   "tur": "52 Hafta Dibi"
   },
   {
    "ad": "TL sepeti",
-   "gunluk": 0.0019301231071324754,
-   "kapanis": 52.96879005432129,
+   "gunluk": 0.00029079826595679314,
+   "kapanis": 53.26152420043945,
    "seri": "sepet",
-   "tarih": "2026-11-03",
+   "tarih": "2026-11-09",
    "tur": "52 Hafta Zirvesi"
   },
   {
+   "ad": "USD/SEK",
+   "gunluk": 0.008054665923011184,
+   "kapanis": 9.80933952331543,
+   "seri": "SEK=X",
+   "tarih": "2026-11-06",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "USD/PLN",
+   "gunluk": 0.004257265240554808,
+   "kapanis": 3.918210029602051,
+   "seri": "PLN=X",
+   "tarih": "2026-11-06",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "USD/NOK",
+   "gunluk": 0.0005992246812438484,
+   "kapanis": 9.300009727478027,
+   "seri": "NOK=X",
+   "tarih": "2026-11-06",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "USD/KRW",
+   "gunluk": 0.012141171866666411,
+   "kapanis": 1356.3399658203125,
+   "seri": "KRW=X",
+   "tarih": "2026-11-06",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "USD/CAD",
+   "gunluk": 0.0032422736306254585,
+   "kapanis": 1.4017200469970703,
+   "seri": "CAD=X",
+   "tarih": "2026-11-06",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "NZD/USD",
+   "gunluk": -0.005119983077869317,
+   "kapanis": 0.5595595240592957,
+   "seri": "NZDUSD=X",
+   "tarih": "2026-11-06",
+   "tur": "Sert Düşüş · 52 Hafta Dibi"
+  },
+  {
+   "ad": "GBP/USD",
+   "gunluk": -0.0015609352060191872,
+   "kapanis": 1.3456052541732788,
+   "seri": "GBPUSD=X",
+   "tarih": "2026-11-06",
+   "tur": "Sert Düşüş"
+  },
+  {
    "ad": "GBP/TRY",
-   "gunluk": 0.0024745306134363876,
-   "kapanis": 67.07340240478516,
+   "gunluk": -0.000726732861536572,
+   "kapanis": 67.51737976074219,
    "seri": "GBPTRY=X",
-   "tarih": "2026-11-03",
-   "tur": "52 Hafta Zirvesi"
+   "tarih": "2026-11-06",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "EUR/USD",
+   "gunluk": -0.0005950413573903024,
+   "kapanis": 1.1228259801864624,
+   "seri": "EURUSD=X",
+   "tarih": "2026-11-06",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "EUR/TRY",
+   "gunluk": 0.00020682748779310423,
+   "kapanis": 56.33919906616211,
+   "seri": "EURTRY=X",
+   "tarih": "2026-11-06",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "AUD/USD",
+   "gunluk": -0.01045078620870643,
+   "kapanis": 0.6931101679801941,
+   "seri": "AUDUSD=X",
+   "tarih": "2026-11-06",
+   "tur": "Sert Düşüş"
   },
   {
    "ad": "USD/MXN",

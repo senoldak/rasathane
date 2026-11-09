@@ -1,0 +1,115 @@
+{
+ "aciklama": "Kayıtlı geçmiş hareketlerden sonraki 5, 20 ve 60 işlem gününde, hareket yönünde kalan ortalama getiri ve yönünü koruyan oran. Bu bir geçmiş sonuç tablosudur; gelecek için bir şey söylemez. Yatırım tavsiyesi değildir. Veriler gecikmelidir.",
+ "baslik": "Geçmiş isabet",
+ "bolum": "fx",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-09T22:46:15Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "52 Hafta Zirvesi",
+   "isabet": 0.5,
+   "ortalama": 0.0034170359403175588,
+   "sayi": 4,
+   "ufuk": "5 işlem günü"
+  },
+  {
+   "ad": "52 Hafta Zirvesi",
+   "isabet": null,
+   "ortalama": null,
+   "sayi": 0,
+   "ufuk": "20 işlem günü"
+  },
+  {
+   "ad": "52 Hafta Zirvesi",
+   "isabet": null,
+   "ortalama": null,
+   "sayi": 0,
+   "ufuk": "60 işlem günü"
+  },
+  {
+   "ad": "Sert Düşüş",
+   "isabet": 0.75,
+   "ortalama": 0.010083808646444314,
+   "sayi": 4,
+   "ufuk": "5 işlem günü"
+  },
+  {
+   "ad": "Sert Düşüş",
+   "isabet": null,
+   "ortalama": null,
+   "sayi": 0,
+   "ufuk": "20 işlem günü"
+  },
+  {
+   "ad": "Sert Düşüş",
+   "isabet": null,
+   "ortalama": null,
+   "sayi": 0,
+   "ufuk": "60 işlem günü"
+  },
+  {
+   "ad": "52 Hafta Dibi",
+   "isabet": 0.3333333333333333,
+   "ortalama": -0.0016472528215290734,
+   "sayi": 3,
+   "ufuk": "5 işlem günü"
+  },
+  {
+   "ad": "52 Hafta Dibi",
+   "isabet": null,
+   "ortalama": null,
+   "sayi": 0,
+   "ufuk": "20 işlem günü"
+  },
+  {
+   "ad": "52 Hafta Dibi",
+   "isabet": null,
+   "ortalama": null,
+   "sayi": 0,
+   "ufuk": "60 işlem günü"
+  }
+ ],
+ "sayfa": "gecmis-isabet",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Hareket türü",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "ufuk",
+   "basamak": 2,
+   "baslik": "Ufuk",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "sayi",
+   "basamak": 0,
+   "baslik": "Örnek",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "ortalama",
+   "basamak": 2,
+   "baslik": "Yönlü ortalama getiri",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "isabet",
+   "basamak": 0,
+   "baslik": "Yönünü koruyan oran",
+   "tur": "yuzde"
+  }
+ ],
+ "suzgecler": [
+  "ad"
+ ]
+}

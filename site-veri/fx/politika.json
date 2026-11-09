@@ -3,7 +3,7 @@
  "baslik": "Politika faizleri",
  "bolum": "fx",
  "grafik": "cizgi",
- "guncellendi": "2026-11-03T22:46:32Z",
+ "guncellendi": "2026-11-09T22:46:15Z",
  "kaynaklar": [
   {
    "ad": "BIS",
@@ -21,7 +21,7 @@
   },
   {
    "ad": "CAD",
-   "faiz": 2.25
+   "faiz": 2.5
   },
   {
    "ad": "CHF",
