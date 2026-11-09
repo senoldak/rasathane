@@ -3,7 +3,7 @@
  "baslik": "EIA stokları",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-03T21:02:19Z",
+ "guncellendi": "2026-11-06T23:16:13Z",
  "kaynaklar": [
   {
    "ad": "EIA",
@@ -14,47 +14,47 @@
   {
    "ad": "Ham petrol (SPR hariç)",
    "birim": "Mn varil",
-   "deger": 410.625,
-   "degisim": -1.891999999999996,
-   "donem": "2026-10-23",
+   "deger": 409.76,
+   "degisim": -0.8650000000000091,
+   "donem": "2026-10-30",
    "seri": "eia-WCESTUS1",
-   "yil_once": 415.966
+   "yil_once": 421.168
   },
   {
    "ad": "Cushing ham petrol",
    "birim": "Mn varil",
-   "deger": 26.97,
-   "degisim": -0.6240000000000023,
-   "donem": "2026-10-23",
+   "deger": 27.25,
+   "degisim": 0.28000000000000114,
+   "donem": "2026-10-30",
    "seri": "eia-W-EPC0-SAX-YCUOK-MBBL",
-   "yil_once": 22.565
+   "yil_once": 22.865
   },
   {
    "ad": "Benzin",
    "birim": "Mn varil",
-   "deger": 209.18,
-   "degisim": 3.8700000000000045,
-   "donem": "2026-10-23",
+   "deger": 208.958,
+   "degisim": -0.2220000000000084,
+   "donem": "2026-10-30",
    "seri": "eia-WGTSTUS1",
-   "yil_once": 210.738
+   "yil_once": 206.009
   },
   {
    "ad": "Distilat (dizel)",
    "birim": "Mn varil",
-   "deger": 102.824,
-   "degisim": -1.4620000000000033,
-   "donem": "2026-10-23",
+   "deger": 99.259,
+   "degisim": -3.5649999999999977,
+   "donem": "2026-10-30",
    "seri": "eia-WDISTUS1",
-   "yil_once": 112.189
+   "yil_once": 111.546
   },
   {
    "ad": "Doğalgaz depoları",
    "birim": "Bcf",
-   "deger": 3724.0,
-   "degisim": 80.0,
-   "donem": "2026-10-23",
+   "deger": 3801.0,
+   "degisim": 77.0,
+   "donem": "2026-10-30",
    "seri": "eia-NW2-EPG0-SWO-R48-BCF",
-   "yil_once": 3872.0
+   "yil_once": 3905.0
   }
  ],
  "sayfa": "stoklar",

@@ -3,7 +3,7 @@
  "baslik": "Fon pozisyonları",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-03T22:13:38Z",
+ "guncellendi": "2026-11-06T23:16:13Z",
  "kaynaklar": [
   {
    "ad": "CFTC",
@@ -12,154 +12,164 @@
  ],
  "satirlar": [
   {
-   "acik": 396810,
+   "acik": 399169,
    "ad": "Altın",
-   "degisim": 1356,
-   "donem": "2026-10-27",
-   "net": 105562,
+   "degisim": -1948,
+   "donem": "2026-11-03",
+   "net": 103614,
    "seri": "cftc-GC=F",
    "uc": "",
-   "yuzdelik": 0.24358974358974358
+   "yuzdelik": 0.21794871794871795
   },
   {
-   "acik": 116226,
+   "acik": 115583,
    "ad": "Gümüş",
-   "degisim": -184,
-   "donem": "2026-10-27",
-   "net": 3321,
+   "degisim": 714,
+   "donem": "2026-11-03",
+   "net": 4035,
    "seri": "cftc-SI=F",
    "uc": "Uç değer",
-   "yuzdelik": 0.03205128205128205
+   "yuzdelik": 0.04487179487179487
   },
   {
-   "acik": 83229,
+   "acik": 91278,
    "ad": "Platin",
-   "degisim": -4824,
-   "donem": "2026-10-27",
-   "net": 1765,
+   "degisim": -3048,
+   "donem": "2026-11-03",
+   "net": -1283,
    "seri": "cftc-PL=F",
    "uc": "",
-   "yuzdelik": 0.23076923076923078
+   "yuzdelik": 0.14743589743589744
   },
   {
-   "acik": 27075,
+   "acik": 30676,
    "ad": "Paladyum",
-   "degisim": -1303,
-   "donem": "2026-10-27",
-   "net": -13297,
+   "degisim": -1919,
+   "donem": "2026-11-03",
+   "net": -15216,
    "seri": "cftc-PA=F",
-   "uc": "",
-   "yuzdelik": 0.08333333333333333
+   "uc": "Uç değer",
+   "yuzdelik": 0.02564102564102564
   },
   {
-   "acik": 337019,
+   "acik": 327850,
    "ad": "Bakır",
-   "degisim": -7115,
-   "donem": "2026-10-27",
-   "net": 40575,
+   "degisim": -5685,
+   "donem": "2026-11-03",
+   "net": 34890,
    "seri": "cftc-HG=F",
    "uc": "",
-   "yuzdelik": 0.5641025641025641
+   "yuzdelik": 0.47435897435897434
   },
   {
-   "acik": 1886280,
+   "acik": 1908732,
    "ad": "WTI petrol",
-   "degisim": -5059,
-   "donem": "2026-10-27",
-   "net": 31128,
+   "degisim": -9400,
+   "donem": "2026-11-03",
+   "net": 21728,
    "seri": "cftc-CL=F",
    "uc": "",
-   "yuzdelik": 0.1282051282051282
+   "yuzdelik": 0.09615384615384616
   },
   {
-   "acik": 1681043,
+   "acik": 1678554,
    "ad": "Doğalgaz",
-   "degisim": -48908,
-   "donem": "2026-10-27",
-   "net": -206317,
+   "degisim": -19042,
+   "donem": "2026-11-03",
+   "net": -225359,
    "seri": "cftc-NG=F",
    "uc": "Uç değer",
    "yuzdelik": 0.0
   },
   {
-   "acik": 525558,
+   "acik": 534858,
    "ad": "Buğday",
-   "degisim": -22601,
-   "donem": "2026-10-27",
-   "net": -74606,
+   "degisim": -12520,
+   "donem": "2026-11-03",
+   "net": -87126,
    "seri": "cftc-ZW=F",
    "uc": "",
-   "yuzdelik": 0.3782051282051282
+   "yuzdelik": 0.25
   },
   {
-   "acik": 1859085,
+   "acik": 1918622,
    "ad": "Mısır",
-   "degisim": -83310,
-   "donem": "2026-10-27",
-   "net": 81113,
+   "degisim": -72318,
+   "donem": "2026-11-03",
+   "net": 8795,
    "seri": "cftc-ZC=F",
    "uc": "",
-   "yuzdelik": 0.6858974358974359
+   "yuzdelik": 0.6217948717948718
   },
   {
-   "acik": 979414,
+   "acik": 959576,
    "ad": "Soya",
-   "degisim": -27544,
-   "donem": "2026-10-27",
-   "net": 193781,
+   "degisim": -51054,
+   "donem": "2026-11-03",
+   "net": 142727,
    "seri": "cftc-ZS=F",
    "uc": "",
-   "yuzdelik": 0.8782051282051282
+   "yuzdelik": 0.7756410256410257
   },
   {
-   "acik": 171689,
+   "acik": 166984,
    "ad": "Kahve",
-   "degisim": -2233,
-   "donem": "2026-10-27",
-   "net": 20104,
+   "degisim": -5372,
+   "donem": "2026-11-03",
+   "net": 14732,
    "seri": "cftc-KC=F",
-   "uc": "",
-   "yuzdelik": 0.08974358974358974
+   "uc": "Uç değer",
+   "yuzdelik": 0.01282051282051282
   },
   {
-   "acik": 182269,
+   "acik": 179866,
    "ad": "Kakao",
-   "degisim": -2119,
-   "donem": "2026-10-27",
-   "net": -10940,
+   "degisim": -1313,
+   "donem": "2026-11-03",
+   "net": -12253,
    "seri": "cftc-CC=F",
    "uc": "",
-   "yuzdelik": 0.1282051282051282
+   "yuzdelik": 0.08333333333333333
   },
   {
-   "acik": 1205131,
+   "acik": 1191088,
    "ad": "Şeker",
-   "degisim": -26819,
-   "donem": "2026-10-27",
-   "net": 237711,
+   "degisim": -13927,
+   "donem": "2026-11-03",
+   "net": 223784,
    "seri": "cftc-SB=F",
    "uc": "Uç değer",
-   "yuzdelik": 0.9743589743589743
+   "yuzdelik": 0.9551282051282052
   },
   {
-   "acik": 397988,
+   "acik": 388040,
    "ad": "Pamuk",
-   "degisim": -12721,
-   "donem": "2026-10-27",
-   "net": 47877,
+   "degisim": -3709,
+   "donem": "2026-11-03",
+   "net": 44168,
    "seri": "cftc-CT=F",
    "uc": "",
-   "yuzdelik": 0.8333333333333334
+   "yuzdelik": 0.8076923076923077
   },
   {
-   "acik": 288757,
+   "acik": 287478,
    "ad": "Canlı sığır",
-   "degisim": 5471,
-   "donem": "2026-10-27",
-   "net": 56573,
+   "degisim": -6882,
+   "donem": "2026-11-03",
+   "net": 49691,
    "seri": "cftc-LE=F",
    "uc": "",
-   "yuzdelik": 0.2564102564102564
+   "yuzdelik": 0.20512820512820512
+  },
+  {
+   "acik": 324455,
+   "ad": "Domuz",
+   "degisim": -7426,
+   "donem": "2026-11-03",
+   "net": -59072,
+   "seri": "cftc-HE=F",
+   "uc": "Uç değer",
+   "yuzdelik": 0.0
   }
  ],
  "sayfa": "fonlar",
