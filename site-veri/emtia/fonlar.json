@@ -3,7 +3,7 @@
  "baslik": "Fon pozisyonları",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-06T23:16:13Z",
+ "guncellendi": "2026-11-09T23:16:17Z",
  "kaynaklar": [
   {
    "ad": "CFTC",
@@ -160,16 +160,6 @@
    "seri": "cftc-LE=F",
    "uc": "",
    "yuzdelik": 0.20512820512820512
-  },
-  {
-   "acik": 324455,
-   "ad": "Domuz",
-   "degisim": -7426,
-   "donem": "2026-11-03",
-   "net": -59072,
-   "seri": "cftc-HE=F",
-   "uc": "Uç değer",
-   "yuzdelik": 0.0
   }
  ],
  "sayfa": "fonlar",

@@ -3,7 +3,7 @@
  "baslik": "Merkez bankaları altın rezervi",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-03T22:13:38Z",
+ "guncellendi": "2026-11-09T23:16:17Z",
  "kaynaklar": [
   {
    "ad": "IMF, International Liquidity (IL)",
@@ -37,16 +37,16 @@
   },
   {
    "ad": "İtalya",
-   "aylik": -0.00637621273745026,
-   "donem": "2026-08",
+   "aylik": 0.0,
+   "donem": "2026-09",
    "seri": "imf-ITA",
-   "ton": 2451.8495940619932,
-   "yillik": -2.6005657814964778e-06
+   "ton": 2451.8559702747307,
+   "yillik": 0.0
   },
   {
    "ad": "Fransa",
    "aylik": 0.0,
-   "donem": "2026-07",
+   "donem": "2026-09",
    "seri": "imf-FRA",
    "ton": 2437.0196118556078,
    "yillik": 0.0
@@ -70,10 +70,10 @@
   {
    "ad": "Hindistan",
    "aylik": 0.0,
-   "donem": "2026-08",
+   "donem": "2026-09",
    "seri": "imf-IND",
    "ton": 880.5179989195027,
-   "yillik": 0.0006087390813684923
+   "yillik": 0.00038249960283254225
   },
   {
    "ad": "Polonya",
@@ -102,7 +102,7 @@
   {
    "ad": "İsviçre",
    "aylik": 0.0,
-   "donem": "2026-08",
+   "donem": "2026-09",
    "seri": "imf-CHE",
    "ton": 1039.944745793244,
    "yillik": 0.0

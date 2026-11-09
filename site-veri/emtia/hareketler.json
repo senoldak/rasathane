@@ -1,9 +1,9 @@
 {
- "aciklama": "Günlük getirisi 60 günlük oynaklığın 2,5 katını aşan emtialar ve 52 hafta zirve ya da dibini aşanlar.",
- "baslik": "Günün hareketleri",
+ "aciklama": "Son 90 işlem gününde günlük getirisi 60 günlük oynaklığın 2,5 katını aşan emtialar ve 52 hafta zirve ya da dibini aşanlar.",
+ "baslik": "Hareketler",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-06T23:16:13Z",
+ "guncellendi": "2026-11-09T23:16:17Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -12,18 +12,903 @@
  ],
  "satirlar": [
   {
-   "ad": "Domuz",
-   "gunluk": -0.03130668823759186,
-   "kapanis": 53.375,
-   "onceki": 55.099998474121094,
-   "seri": "HE=F",
-   "tur": "52 Hafta Dibi",
-   "z": null
+   "ad": "Doğalgaz",
+   "gunluk": 0.069046038565439,
+   "kapanis": 3.2049999237060547,
+   "seri": "NG=F",
+   "tarih": "2026-11-09",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "WTI petrol",
+   "gunluk": -0.08294301066765497,
+   "kapanis": 88.12000274658203,
+   "seri": "CL=F",
+   "tarih": "2026-11-04",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": 0.07505375031502015,
+   "kapanis": 999.7999877929688,
+   "seri": "PA=F",
+   "tarih": "2026-11-04",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Dizel",
+   "gunluk": -0.07175648699443671,
+   "kapanis": 4.20550012588501,
+   "seri": "HO=F",
+   "tarih": "2026-11-04",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Brent petrol",
+   "gunluk": -0.08667949671623043,
+   "kapanis": 94.62000274658203,
+   "seri": "BZ=F",
+   "tarih": "2026-11-04",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Altın",
+   "gunluk": 0.03365143156596351,
+   "kapanis": 4073.0,
+   "seri": "GC=F",
+   "tarih": "2026-11-04",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Platin",
+   "gunluk": -0.018231648790909882,
+   "kapanis": 1432.4000244140625,
+   "seri": "PL=F",
+   "tarih": "2026-11-03",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.03636926377977301,
+   "kapanis": 930.0,
+   "seri": "PA=F",
+   "tarih": "2026-11-03",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "WTI petrol",
+   "gunluk": -0.07356899212491452,
+   "kapanis": 96.45999908447266,
+   "seri": "CL=F",
+   "tarih": "2026-11-02",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.019804997444160533,
+   "kapanis": 965.0999755859375,
+   "seri": "PA=F",
+   "tarih": "2026-11-02",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Dizel",
+   "gunluk": -0.07700663530752838,
+   "kapanis": 4.421599864959717,
+   "seri": "HO=F",
+   "tarih": "2026-11-02",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Brent petrol",
+   "gunluk": -0.10940158800880195,
+   "kapanis": 104.7699966430664,
+   "seri": "BZ=F",
+   "tarih": "2026-11-02",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Benzin",
+   "gunluk": -0.12436595379848236,
+   "kapanis": 2.900099992752075,
+   "seri": "RB=F",
+   "tarih": "2026-11-02",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Platin",
+   "gunluk": -0.03799842585813029,
+   "kapanis": 1438.0,
+   "seri": "PL=F",
+   "tarih": "2026-10-30",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.015990406146702774,
+   "kapanis": 984.5999755859375,
+   "seri": "PA=F",
+   "tarih": "2026-10-30",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Gümüş",
+   "gunluk": -0.0592822834943213,
+   "kapanis": 49.09700012207031,
+   "seri": "SI=F",
+   "tarih": "2026-10-30",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Altın",
+   "gunluk": -0.03286699489251066,
+   "kapanis": 3898.89990234375,
+   "seri": "GC=F",
+   "tarih": "2026-10-30",
+   "tur": "Sert Düşüş · 52 Hafta Dibi"
+  },
+  {
+   "ad": "Platin",
+   "gunluk": -0.03430452532361561,
+   "kapanis": 1494.800048828125,
+   "seri": "PL=F",
+   "tarih": "2026-10-29",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.008718098489479686,
+   "kapanis": 1000.5999755859375,
+   "seri": "PA=F",
+   "tarih": "2026-10-29",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.013968924120786985,
+   "kapanis": 1009.4000244140625,
+   "seri": "PA=F",
+   "tarih": "2026-10-28",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.023093817771941305,
+   "kapanis": 1023.7000122070312,
+   "seri": "PA=F",
+   "tarih": "2026-10-27",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": -0.0563240811531619,
+   "kapanis": 19.100000381469727,
+   "seri": "SB=F",
+   "tarih": "2026-10-26",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.004754659676759809,
+   "kapanis": 1046.5999755859375,
+   "seri": "PA=F",
+   "tarih": "2026-10-23",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.03051532873231655,
+   "kapanis": 1051.5999755859375,
+   "seri": "PA=F",
+   "tarih": "2026-10-22",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.013550404460606513,
+   "kapanis": 1084.699951171875,
+   "seri": "PA=F",
+   "tarih": "2026-10-21",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.013915499330872105,
+   "kapanis": 21.1299991607666,
+   "seri": "SB=F",
+   "tarih": "2026-10-15",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.027551702438032066,
+   "kapanis": 1087.0999755859375,
+   "seri": "PA=F",
+   "tarih": "2026-10-14",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Gümüş",
+   "gunluk": -0.06103683345239552,
+   "kapanis": 55.54999923706055,
+   "seri": "SI=F",
+   "tarih": "2026-10-14",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.01247003473021091,
+   "kapanis": 21.110000610351562,
+   "seri": "SB=F",
+   "tarih": "2026-10-13",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.029629648467640823,
+   "kapanis": 20.850000381469727,
+   "seri": "SB=F",
+   "tarih": "2026-10-12",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Pamuk",
+   "gunluk": 0.05681671543198985,
+   "kapanis": 80.54000091552734,
+   "seri": "CT=F",
+   "tarih": "2026-10-09",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Mısır",
+   "gunluk": -0.04097951024487756,
+   "kapanis": 479.75,
+   "seri": "ZC=F",
+   "tarih": "2026-10-09",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.0010751287502224205,
+   "kapanis": 1114.9000244140625,
+   "seri": "PA=F",
+   "tarih": "2026-10-08",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.0004803183971382463,
+   "kapanis": 20.829999923706055,
+   "seri": "SB=F",
+   "tarih": "2026-10-07",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.0408215890311282,
+   "kapanis": 1116.0999755859375,
+   "seri": "PA=F",
+   "tarih": "2026-10-07",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.004341541465281651,
+   "kapanis": 20.81999969482422,
+   "seri": "SB=F",
+   "tarih": "2026-10-06",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.04014045282542167,
+   "kapanis": 20.729999542236328,
+   "seri": "SB=F",
+   "tarih": "2026-10-05",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.052270313791066725,
+   "kapanis": 19.93000030517578,
+   "seri": "SB=F",
+   "tarih": "2026-10-02",
+   "tur": "Sert Yükseliş · 52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": -0.006588015845745199,
+   "kapanis": 1161.0999755859375,
+   "seri": "PA=F",
+   "tarih": "2026-10-02",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.07430524308851139,
+   "kapanis": 18.940000534057617,
+   "seri": "SB=F",
+   "tarih": "2026-10-01",
+   "tur": "Sert Yükseliş · 52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Mısır",
+   "gunluk": -0.04070881226053635,
+   "kapanis": 500.75,
+   "seri": "ZC=F",
+   "tarih": "2026-09-30",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Pamuk",
+   "gunluk": -0.04970908710518418,
+   "kapanis": 75.12999725341797,
+   "seri": "CT=F",
+   "tarih": "2026-09-29",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Altın",
+   "gunluk": -0.035360614195681817,
+   "kapanis": 4168.39990234375,
+   "seri": "GC=F",
+   "tarih": "2026-09-28",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Doğalgaz",
+   "gunluk": 0.09063841523493932,
+   "kapanis": 3.296999931335449,
+   "seri": "NG=F",
+   "tarih": "2026-09-24",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": 0.018795550441120135,
+   "kapanis": 1328.0,
+   "seri": "ZS=F",
+   "tarih": "2026-09-21",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Mısır",
+   "gunluk": 0.02938388625592414,
+   "kapanis": 543.0,
+   "seri": "ZC=F",
+   "tarih": "2026-09-21",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": 0.0013270142180095146,
+   "kapanis": 1320.5,
+   "seri": "ZS=F",
+   "tarih": "2026-09-16",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": 0.02606496790507684,
+   "kapanis": 1318.75,
+   "seri": "ZS=F",
+   "tarih": "2026-09-15",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Mısır",
+   "gunluk": 0.04638671875,
+   "kapanis": 535.75,
+   "seri": "ZC=F",
+   "tarih": "2026-09-15",
+   "tur": "Sert Yükseliş · 52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Dizel",
+   "gunluk": 0.060566342015680785,
+   "kapanis": 5.26200008392334,
+   "seri": "HO=F",
+   "tarih": "2026-09-15",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.01793477883411021,
+   "kapanis": 18.729999542236328,
+   "seri": "SB=F",
+   "tarih": "2026-09-10",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": 0.016020073344914065,
+   "kapanis": 1316.0,
+   "seri": "ZS=F",
+   "tarih": "2026-09-10",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Platin",
+   "gunluk": -0.06127248606989899,
+   "kapanis": 1797.0999755859375,
+   "seri": "PL=F",
+   "tarih": "2026-09-10",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Dizel",
+   "gunluk": 0.05342631972203793,
+   "kapanis": 5.057499885559082,
+   "seri": "HO=F",
+   "tarih": "2026-09-10",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Bakır",
+   "gunluk": -0.04945986024364779,
+   "kapanis": 6.4670000076293945,
+   "seri": "HG=F",
+   "tarih": "2026-09-10",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Dizel",
+   "gunluk": 0.05105303886862722,
+   "kapanis": 4.801000118255615,
+   "seri": "HO=F",
+   "tarih": "2026-09-09",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Bakır",
+   "gunluk": 0.009571202459656147,
+   "kapanis": 6.803500175476074,
+   "seri": "HG=F",
+   "tarih": "2026-09-09",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Bakır",
+   "gunluk": 0.021524892966431564,
+   "kapanis": 6.738999843597412,
+   "seri": "HG=F",
+   "tarih": "2026-09-08",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.01851852621378436,
+   "kapanis": 18.700000762939453,
+   "seri": "SB=F",
+   "tarih": "2026-09-02",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Dizel",
+   "gunluk": 0.0010476083771562283,
+   "kapanis": 4.682199954986572,
+   "seri": "HO=F",
+   "tarih": "2026-09-02",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.03088159241447097,
+   "kapanis": 18.360000610351562,
+   "seri": "SB=F",
+   "tarih": "2026-09-01",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": 0.024701039011958414,
+   "kapanis": 1306.75,
+   "seri": "ZS=F",
+   "tarih": "2026-09-01",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Mısır",
+   "gunluk": 0.012621359223300876,
+   "kapanis": 521.5,
+   "seri": "ZC=F",
+   "tarih": "2026-09-01",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Dizel",
+   "gunluk": 0.04048676788234884,
+   "kapanis": 4.677299976348877,
+   "seri": "HO=F",
+   "tarih": "2026-09-01",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Canlı sığır",
+   "gunluk": -0.03929786206911812,
+   "kapanis": 212.0749969482422,
+   "seri": "LE=F",
+   "tarih": "2026-09-01",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Benzin",
+   "gunluk": -0.0878382732640377,
+   "kapanis": 3.1350998878479004,
+   "seri": "RB=F",
+   "tarih": "2026-09-01",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Pamuk",
+   "gunluk": 0.019795360493141345,
+   "kapanis": 91.69999694824219,
+   "seri": "CT=F",
+   "tarih": "2026-08-31",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Mısır",
+   "gunluk": 0.005859375,
+   "kapanis": 515.0,
+   "seri": "ZC=F",
+   "tarih": "2026-08-31",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": 0.015718265021886113,
+   "kapanis": 1276.25,
+   "seri": "ZS=F",
+   "tarih": "2026-08-28",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Buğday",
+   "gunluk": 0.03264893975092553,
+   "kapanis": 767.0,
+   "seri": "ZW=F",
+   "tarih": "2026-08-28",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.03411031132830611,
+   "kapanis": 18.190000534057617,
+   "seri": "SB=F",
+   "tarih": "2026-08-27",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": 0.0017939007374925264,
+   "kapanis": 1256.5,
+   "seri": "ZS=F",
+   "tarih": "2026-08-27",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Pamuk",
+   "gunluk": 0.03748434591956018,
+   "kapanis": 91.05999755859375,
+   "seri": "CT=F",
+   "tarih": "2026-08-27",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Buğday",
+   "gunluk": 0.016769336071184027,
+   "kapanis": 742.75,
+   "seri": "ZW=F",
+   "tarih": "2026-08-27",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": 0.02137622149837126,
+   "kapanis": 1254.25,
+   "seri": "ZS=F",
+   "tarih": "2026-08-26",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Mısır",
+   "gunluk": 0.02697302697302706,
+   "kapanis": 514.0,
+   "seri": "ZC=F",
+   "tarih": "2026-08-26",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Buğday",
+   "gunluk": 0.06564551422319465,
+   "kapanis": 730.5,
+   "seri": "ZW=F",
+   "tarih": "2026-08-26",
+   "tur": "Sert Yükseliş · 52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Mısır",
+   "gunluk": 0.01831129196337744,
+   "kapanis": 500.5,
+   "seri": "ZC=F",
+   "tarih": "2026-08-25",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Bakır",
+   "gunluk": 0.016744940027195288,
+   "kapanis": 6.709499835968018,
+   "seri": "HG=F",
+   "tarih": "2026-08-25",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.0022713802834963825,
+   "kapanis": 17.649999618530273,
+   "seri": "SB=F",
+   "tarih": "2026-08-24",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Mısır",
+   "gunluk": 0.01602067183462541,
+   "kapanis": 491.5,
+   "seri": "ZC=F",
+   "tarih": "2026-08-24",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.0051369948765045415,
+   "kapanis": 17.610000610351562,
+   "seri": "SB=F",
+   "tarih": "2026-08-21",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Mısır",
+   "gunluk": 0.010443864229765065,
+   "kapanis": 483.75,
+   "seri": "ZC=F",
+   "tarih": "2026-08-21",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Mısır",
+   "gunluk": 0.012156448202959913,
+   "kapanis": 478.75,
+   "seri": "ZC=F",
+   "tarih": "2026-08-20",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.004579274576439252,
+   "kapanis": 17.549999237060547,
+   "seri": "SB=F",
+   "tarih": "2026-08-19",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.03556600143882149,
+   "kapanis": 17.469999313354492,
+   "seri": "SB=F",
+   "tarih": "2026-08-18",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.01626508744331523,
+   "kapanis": 16.8700008392334,
+   "seri": "SB=F",
+   "tarih": "2026-08-17",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Mısır",
+   "gunluk": 0.04636519748139678,
+   "kapanis": 457.0,
+   "seri": "ZC=F",
+   "tarih": "2026-08-12",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Şeker",
+   "gunluk": 0.05651901640099344,
+   "kapanis": 16.450000762939453,
+   "seri": "SB=F",
+   "tarih": "2026-08-07",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Bakır",
+   "gunluk": 0.012767218100344424,
+   "kapanis": 6.703000068664551,
+   "seri": "HG=F",
+   "tarih": "2026-08-05",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Platin",
+   "gunluk": 0.07991350360205507,
+   "kapanis": 1747.300048828125,
+   "seri": "PL=F",
+   "tarih": "2026-08-04",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Paladyum",
+   "gunluk": 0.08345992675391045,
+   "kapanis": 1355.300048828125,
+   "seri": "PA=F",
+   "tarih": "2026-08-04",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Benzin",
+   "gunluk": -0.07912216731779842,
+   "kapanis": 2.9667000770568848,
+   "seri": "RB=F",
+   "tarih": "2026-08-03",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": -0.03165064102564108,
+   "kapanis": 1208.5,
+   "seri": "ZS=F",
+   "tarih": "2026-07-27",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": 0.00848484848484854,
+   "kapanis": 1248.0,
+   "seri": "ZS=F",
+   "tarih": "2026-07-24",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": 0.0036496350364962904,
+   "kapanis": 1237.5,
+   "seri": "ZS=F",
+   "tarih": "2026-07-23",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": 0.011070110701107083,
+   "kapanis": 1233.0,
+   "seri": "ZS=F",
+   "tarih": "2026-07-22",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Buğday",
+   "gunluk": 0.04092920353982299,
+   "kapanis": 705.75,
+   "seri": "ZW=F",
+   "tarih": "2026-07-22",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": 0.017849730178497225,
+   "kapanis": 1226.0,
+   "seri": "ZS=F",
+   "tarih": "2026-07-20",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Buğday",
+   "gunluk": 0.011856243052982496,
+   "kapanis": 682.75,
+   "seri": "ZW=F",
+   "tarih": "2026-07-17",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "Buğday",
+   "gunluk": 0.07326732673267333,
+   "kapanis": 677.5,
+   "seri": "ZW=F",
+   "tarih": "2026-07-15",
+   "tur": "Sert Yükseliş · 52 Hafta Zirvesi"
+  },
+  {
+   "ad": "WTI petrol",
+   "gunluk": 0.09424443890779477,
+   "kapanis": 78.13999938964844,
+   "seri": "CL=F",
+   "tarih": "2026-07-13",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Brent petrol",
+   "gunluk": 0.0959084424502672,
+   "kapanis": 83.30000305175781,
+   "seri": "BZ=F",
+   "tarih": "2026-07-13",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Pamuk",
+   "gunluk": 0.04936967339861864,
+   "kapanis": 79.91999816894531,
+   "seri": "CT=F",
+   "tarih": "2026-07-10",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Kahve",
+   "gunluk": 0.10084814867241709,
+   "kapanis": 356.95001220703125,
+   "seri": "KC=F",
+   "tarih": "2026-07-09",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Dizel",
+   "gunluk": 0.10776263772956374,
+   "kapanis": 3.6575000286102295,
+   "seri": "HO=F",
+   "tarih": "2026-07-08",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Kahve",
+   "gunluk": -0.08888584975541503,
+   "kapanis": 331.6000061035156,
+   "seri": "KC=F",
+   "tarih": "2026-07-07",
+   "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Soya",
+   "gunluk": 0.04462116191738463,
+   "kapanis": 1182.25,
+   "seri": "ZS=F",
+   "tarih": "2026-07-06",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Mısır",
+   "gunluk": 0.03705882352941181,
+   "kapanis": 440.75,
+   "seri": "ZC=F",
+   "tarih": "2026-07-06",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Kakao",
+   "gunluk": 0.13194584764598916,
+   "kapanis": 5602.0,
+   "seri": "CC=F",
+   "tarih": "2026-07-06",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Kahve",
+   "gunluk": 0.15301764373354176,
+   "kapanis": 363.95001220703125,
+   "seri": "KC=F",
+   "tarih": "2026-07-06",
+   "tur": "Sert Yükseliş"
   }
  ],
  "sayfa": "hareketler",
  "sema": 1,
  "sutunlar": [
+  {
+   "anahtar": "tarih",
+   "basamak": 2,
+   "baslik": "Tarih",
+   "tur": "tarih"
+  },
   {
    "anahtar": "ad",
    "basamak": 2,
@@ -33,7 +918,7 @@
   {
    "anahtar": "tur",
    "basamak": 2,
-   "baslik": "Tür",
+   "baslik": "Hareket",
    "tur": "metin"
   },
   {
@@ -47,21 +932,7 @@
    "basamak": 1,
    "baslik": "Günlük",
    "tur": "yuzde"
-  },
-  {
-   "anahtar": "z",
-   "basamak": 1,
-   "baslik": "Oynaklık katı",
-   "tur": "sayi"
-  },
-  {
-   "anahtar": "onceki",
-   "basamak": 2,
-   "baslik": "Önceki 52 hafta seviyesi",
-   "tur": "sayi"
   }
  ],
- "suzgecler": [
-  "tur"
- ]
+ "suzgecler": []
 }
