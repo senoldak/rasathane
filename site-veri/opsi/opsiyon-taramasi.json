@@ -1,0 +1,180 @@
+{
+ "aciklama": "Sermaye bandına göre nakit teminatlı put adayları. Beklenen hareket, 30 günlük IV'den bir standart sapma olarak hesaplanır.",
+ "baslik": "Opsiyon taraması",
+ "bolum": "opsi",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-09T23:31:27Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "Hewlett Packard Enterprise Comp",
+   "bant": "$2k–5k",
+   "fiyat": 47.540000915527344,
+   "hareket": 0.25855216957744315,
+   "iv30": 0.7909741949098651,
+   "konum": null,
+   "sembol": "HPE",
+   "seri": "fiyat-HPE",
+   "skor": 64.37509602090577
+  },
+  {
+   "ad": "Nike, Inc.",
+   "bant": "$2k–5k",
+   "fiyat": 39.880001068115234,
+   "hareket": 0.14469810151875448,
+   "iv30": 0.44266681088321425,
+   "konum": null,
+   "sembol": "NKE",
+   "seri": "fiyat-NKE",
+   "skor": 57.42311797391175
+  },
+  {
+   "ad": "General Mills, Inc.",
+   "bant": "$2k–5k",
+   "fiyat": 34.880001068115234,
+   "hareket": 0.11649576547744826,
+   "iv30": 0.35638898122389656,
+   "konum": null,
+   "sembol": "GIS",
+   "seri": "fiyat-GIS",
+   "skor": 51.39005035053501
+  },
+  {
+   "ad": "Comcast Corporation",
+   "bant": "$2k–5k",
+   "fiyat": 24.510000228881836,
+   "hareket": 0.09617272674187181,
+   "iv30": 0.3248054985137674,
+   "konum": null,
+   "sembol": "CMCSA",
+   "seri": "fiyat-CMCSA",
+   "skor": 47.844539678400196
+  },
+  {
+   "ad": "Bank of America Corporation",
+   "bant": "$2k–5k",
+   "fiyat": 50.54999923706055,
+   "hareket": 0.08875156955975391,
+   "iv30": 0.2715127140268937,
+   "konum": null,
+   "sembol": "BAC",
+   "seri": "fiyat-BAC",
+   "skor": 47.60733464890824
+  },
+  {
+   "ad": "Marvell Technology, Inc.",
+   "bant": "$5k–15k",
+   "fiyat": 154.60000610351562,
+   "hareket": 0.2645436366366973,
+   "iv30": 0.8093035550589899,
+   "konum": null,
+   "sembol": "MRVL",
+   "seri": "fiyat-MRVL",
+   "skor": 83.82602286287361
+  },
+  {
+   "ad": "Robinhood Markets, Inc.",
+   "bant": "$5k–15k",
+   "fiyat": 83.31999969482422,
+   "hareket": 0.21438274187998851,
+   "iv30": 0.6558491345797905,
+   "konum": null,
+   "sembol": "HOOD",
+   "seri": "fiyat-HOOD",
+   "skor": 75.23678277551195
+  },
+  {
+   "ad": "Oracle Corporation",
+   "bant": "$5k–15k",
+   "fiyat": 119.79000091552734,
+   "hareket": 0.1951817107678603,
+   "iv30": 0.5971084937637566,
+   "konum": null,
+   "sembol": "ORCL",
+   "seri": "fiyat-ORCL",
+   "skor": 74.44142012979967
+  },
+  {
+   "ad": "Strategy Inc",
+   "bant": "$5k–15k",
+   "fiyat": 125.58999633789062,
+   "hareket": 0.23865664203806145,
+   "iv30": 0.7301089200081363,
+   "konum": null,
+   "sembol": "MSTR",
+   "seri": "fiyat-MSTR",
+   "skor": 72.69490295987596
+  },
+  {
+   "ad": "Intel Corporation",
+   "bant": "$5k–15k",
+   "fiyat": 59.369998931884766,
+   "hareket": 0.17616779906303812,
+   "iv30": 0.673136215063518,
+   "konum": null,
+   "sembol": "INTC",
+   "seri": "fiyat-INTC",
+   "skor": 72.61025960677945
+  }
+ ],
+ "sayfa": "opsiyon-taramasi",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "bant",
+   "basamak": 2,
+   "baslik": "Sermaye bandı",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "sembol",
+   "basamak": 2,
+   "baslik": "Sembol",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Ad",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "fiyat",
+   "basamak": 2,
+   "baslik": "Fiyat",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "hareket",
+   "basamak": 1,
+   "baslik": "Beklenen hareket",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "iv30",
+   "basamak": 1,
+   "baslik": "IV30",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "konum",
+   "basamak": 0,
+   "baslik": "IV konumu",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "skor",
+   "basamak": 1,
+   "baslik": "Skor",
+   "tur": "sayi"
+  }
+ ],
+ "suzgecler": [
+  "bant"
+ ]
+}

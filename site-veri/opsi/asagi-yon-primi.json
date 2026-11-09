@@ -1,0 +1,98 @@
+{
+ "aciklama": "Evrendeki 25 delta put'un ATM IV'ye oranı en yüksek altı hisse. Fark, evren ortancasından ne kadar yukarıda olduklarını gösterir.",
+ "baslik": "Aşağı yön primi",
+ "bolum": "opsi",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-09T23:31:27Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "State Street Technology Select ",
+   "fark": 0.1726436225519823,
+   "kapanis": 170.8800048828125,
+   "sembol": "XLK",
+   "seri": "iv-XLK",
+   "skew": 1.2089672165828538
+  },
+  {
+   "ad": "State Street SPDR S&P 500 ETF T",
+   "fark": 0.1482946367506972,
+   "kapanis": 752.6900024414062,
+   "sembol": "SPY",
+   "seri": "iv-SPY",
+   "skew": 1.1846182307815687
+  },
+  {
+   "ad": "PDD Holdings Inc.",
+   "fark": 0.13701985550251128,
+   "kapanis": 80.5,
+   "sembol": "PDD",
+   "seri": "iv-PDD",
+   "skew": 1.1733434495333828
+  },
+  {
+   "ad": "Invesco QQQ Trust, Series 1",
+   "fark": 0.12035423344560714,
+   "kapanis": 679.3499755859375,
+   "sembol": "QQQ",
+   "seri": "iv-QQQ",
+   "skew": 1.1566778274764786
+  },
+  {
+   "ad": "Interactive Brokers Group, Inc.",
+   "fark": 0.11782881313907168,
+   "kapanis": 77.56999969482422,
+   "sembol": "IBKR",
+   "seri": "iv-IBKR",
+   "skew": 1.1541524071699432
+  },
+  {
+   "ad": "Skydance Corporation",
+   "fark": 0.10329180551216233,
+   "kapanis": 8.699999809265137,
+   "sembol": "SKYD",
+   "seri": "iv-SKYD",
+   "skew": 1.1396153995430338
+  }
+ ],
+ "sayfa": "asagi-yon-primi",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "sembol",
+   "basamak": 2,
+   "baslik": "Sembol",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Ad",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "kapanis",
+   "basamak": 2,
+   "baslik": "Kapanış",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "skew",
+   "basamak": 3,
+   "baslik": "Put skew (25Δ/ATM)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "fark",
+   "basamak": 3,
+   "baslik": "Ortancadan fark",
+   "tur": "sayi"
+  }
+ ],
+ "suzgecler": []
+}
