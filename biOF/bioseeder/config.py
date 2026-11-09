@@ -17,6 +17,8 @@ class Settings(BaseSettings):
     CLINICALTRIALS_BASE_URL: str = "https://clinicaltrials.gov/api/v2"
     OPENFDA_BASE_URL: str = "https://api.fda.gov"
     OPENFDA_API_KEY: Optional[str] = None
+    SEC_ILETISIM: Optional[str] = None
+    SEC_EMAIL: Optional[str] = None
 
     # Rate limiting & exponential backoff settings
     COLLECTOR_RATE_LIMIT_HZ: float = 5.0  # requests per second

@@ -9,7 +9,7 @@ EK = KOK / "rasathane" / "evren_ek.csv"
 CIKTI = KOK / "cikti"
 
 # SEC erişim kuralı: User-Agent'ta gerçek bir iletişim e-postası zorunlu. GitHub noreply adresini
-# SEC "beyansız araç" sayıp engelliyor; adres SEC_ILETISIM ayarından gelir.
+# SEC "beyansız araç" sayıp engelliyor; adres SEC_ILETISIM ya da SEC_EMAIL ayarından gelir.
 SEC_UA_ONEK = "biOF Rasathane"
 
 
@@ -33,11 +33,17 @@ def hedef_ayristir(s: str) -> Tuple[str, Optional[int]]:
 def ayar_oku(env: Mapping[str, str] = os.environ) -> Ayar:
     hedef = env.get("TELEGRAM_HEDEF") or ""
     sohbet, konu = hedef_ayristir(hedef) if hedef.strip() else (None, None)
+    email = (env.get("SEC_ILETISIM") or env.get("SEC_EMAIL") or "").strip()
+    sec_ua = None
+    if email:
+        sec_ua = f"{SEC_UA_ONEK} {email}"
+    elif (env.get("SEC_USER_AGENT") or "").strip():
+        sec_ua = env["SEC_USER_AGENT"].strip()
     return Ayar(
         bot_token=env.get("TELEGRAM_BOT_TOKEN") or None,
         sahip_id=env.get("TELEGRAM_SAHIP_ID") or None,
         hedef_sohbet=sohbet,
         hedef_konu=konu,
         gonderim_acik=(env.get("RASATHANE_GONDERIM") or "").strip().lower() == "acik",
-        sec_ua=f"{SEC_UA_ONEK} {env['SEC_ILETISIM'].strip()}" if (env.get("SEC_ILETISIM") or "").strip() else None,
+        sec_ua=sec_ua,
     )

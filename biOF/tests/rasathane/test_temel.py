@@ -77,4 +77,6 @@ def test_gonderim_acik(deger, beklenen):
 
 def test_sec_ua():
     assert ayar_oku({"SEC_ILETISIM": " ad@alan.com "}).sec_ua == "biOF Rasathane ad@alan.com"
+    assert ayar_oku({"SEC_EMAIL": " test@biyotek.org "}).sec_ua == "biOF Rasathane test@biyotek.org"
+    assert ayar_oku({"SEC_USER_AGENT": "OzelBot/1.0 info@alan.com"}).sec_ua == "OzelBot/1.0 info@alan.com"
     assert ayar_oku({}).sec_ua is None

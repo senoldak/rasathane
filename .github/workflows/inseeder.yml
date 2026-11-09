@@ -45,7 +45,7 @@ jobs:
           cache: pip
 
       - name: Bağımlılıkları kur
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt -e ../ortak
 
       - name: Kartları üret ve gönder
         env:
@@ -56,6 +56,8 @@ jobs:
           OLAY: ${{ github.event_name }}
           KURU: ${{ inputs.kuru }}
           TARIH: ${{ inputs.tarih }}
+          # Site verisi Telegram gönderiminden bağımsız; elle başlatılan kuru koşu siteye yazmaz.
+          SITE: ${{ inputs.kuru == true && '0' || '1' }}
         run: |
           ARGS=()
           if [ "$OLAY" = "workflow_dispatch" ]; then
@@ -67,6 +69,7 @@ jobs:
               ARGS+=(--tarih "$TARIH")
             fi
           fi
+          if [ "$SITE" = "1" ]; then ARGS+=(--site ../site-veri); fi
           python -m inseeder.kanal "${ARGS[@]}"
 
       - name: Kartları yükle
@@ -81,13 +84,13 @@ jobs:
         if: always() && !(github.event_name == 'workflow_dispatch' && inputs.kuru)
         run: |
           # Python csv CRLF yazar, git LF'ye çevirir: eklenmiş farka bakılır.
-          git add kanal_veri
+          for y in kanal_veri ../site-veri/inseeder; do if [ -e "$y" ]; then git add "$y"; fi; done
           if git diff --cached --quiet; then
             echo "Kayıtta değişiklik yok."; exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "INseeder: kayıt güncellemesi"
+          git commit -m "INseeder: kayıt ve site verisi güncellemesi"
           for i in 1 2 3; do
             git pull --rebase && git push && exit 0
             sleep 10

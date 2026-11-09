@@ -303,3 +303,27 @@ def test_grafik_yok_gunluk_yoksa(tmp_path):
     calistir(_ayar(tmp_path, SALI), SahteSec(), SahteTelegram().istemci(),
              fiyat_cekici=lambda *a: cagri.append(a) or [])
     assert cagri == []
+
+
+def test_site_yaz_cli_argumani(tmp_path):
+    site_dizini = tmp_path / "site-veri"
+    tg = SahteTelegram()
+    ay = _ayar(tmp_path, SALI, site=site_dizini)
+    b = beyan(sembol="XYZ", tutar=150_000.0, gun=PZT)
+    sec = SahteSec({PZT: _gun(PZT, b)})
+    calistir(ay, sec, tg.istemci())
+    hedef_json = site_dizini / "inseeder" / "islemler.json"
+    assert hedef_json.exists()
+    veri = json.loads(hedef_json.read_text(encoding="utf-8"))
+    assert veri["bolum"] == "inseeder"
+    assert veri["sayfa"] == "islemler"
+    assert any(r["hisse"] == "XYZ" for r in veri["satirlar"])
+
+
+def test_site_yaz_ortam_degiskeni(tmp_path, monkeypatch):
+    monkeypatch.setenv("SEC_USER_AGENT", "INseeder Test test@ornek.com")
+    monkeypatch.setenv("SITE_YAZ", "1")
+    # calistir modülündeki _argumanlar'ı test et
+    args = calistir_mod._argumanlar(["--site", str(tmp_path / "site-veri")])
+    assert args.site == tmp_path / "site-veri"
+

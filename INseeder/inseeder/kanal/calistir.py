@@ -4,7 +4,7 @@ import logging
 import os
 import sys
 from dataclasses import dataclass
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import List, Optional
 
@@ -34,6 +34,7 @@ class Ayarlar:
     hedef: Optional[str]
     token: Optional[str]
     sahip_id: Optional[str]
+    site: Optional[Path] = None
 
 
 def _isle(sec: SecIstemcisi, kayit: Kayit, gun: date, bekle_404: bool) -> None:
@@ -147,6 +148,13 @@ def calistir(ay: Ayarlar, sec: SecIstemcisi, tg: Optional[TelegramIstemcisi],
     kayit.buda(ay.bugun)
     if not ay.kuru:
         kayit.kaydet()
+    if ay.site is not None:
+        try:
+            from inseeder.kanal.site_aktar import aktar
+            aktar(ay.site, datetime.now(timezone.utc), kayit.beyanlar())
+            logger.info(f"INseeder site verisi yazıldı: {ay.site}")
+        except Exception as e:
+            logger.warning(f"INseeder site verisi yazılamadı: {e}")
     logger.info(f"{gun}: {sonuc} ({len(satirlar)} alım, haftalık: {'var' if ozet else 'yok'})")
     return sonuc
 
@@ -160,6 +168,7 @@ def _argumanlar(argv: Optional[List[str]]) -> argparse.Namespace:
     p.add_argument("--cikti", type=Path, default=Path("kanal_cikti"))
     p.add_argument("--veri", type=Path, default=Path("kanal_veri"))
     p.add_argument("--bugun", type=date.fromisoformat, help="İstanbul tarihi yerine bu gün (deneme için)")
+    p.add_argument("--site", type=Path, default=None, help="site JSON'larını bu klasöre (site-veri) yaz")
     return p.parse_args(argv)
 
 
@@ -175,10 +184,14 @@ def main(argv: Optional[List[str]] = None, sec_istemcisi: Optional[SecIstemcisi]
               "(ör. 'INseeder Ad Soyad eposta@ornek.com').", file=sys.stderr)
         return 2
     token = os.getenv("TELEGRAM_BOT_TOKEN") or None
+    site_yolu = arg.site
+    if site_yolu is None and os.getenv("SITE_YAZ") == "1":
+        site_yolu = Path("../site-veri")
     ay = Ayarlar(
         kuru=arg.kuru, tarih=arg.tarih, doldur=arg.doldur, cikti=arg.cikti, veri=arg.veri,
         bugun=arg.bugun or istanbul_bugun(), hedef=os.getenv("TELEGRAM_HEDEF") or None,
         token=token, sahip_id=os.getenv("TELEGRAM_SAHIP_ID") or None,
+        site=site_yolu,
     )
     sec = sec_istemcisi or SecIstemcisi(httpx.Client(headers={"User-Agent": ua}, timeout=30.0,
                                                      follow_redirects=True))
