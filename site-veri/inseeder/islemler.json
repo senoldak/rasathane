@@ -3,7 +3,7 @@
  "baslik": "Yönetici işlemleri",
  "bolum": "inseeder",
  "grafik": "yok",
- "guncellendi": "2026-11-03T22:53:37Z",
+ "guncellendi": "2026-11-10T04:08:08Z",
  "kaynaklar": [
   {
    "ad": "SEC EDGAR",
@@ -11,6 +11,1140 @@
   }
  ],
  "satirlar": [
+  {
+   "hisse": "FIGS",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "FIGS, Inc.",
+   "tarih": "2026-11-09",
+   "tutar": 79672394.8
+  },
+  {
+   "hisse": "NFRX",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "%10 ortak",
+   "sirket": "2023 ETF Series Trust",
+   "tarih": "2026-11-09",
+   "tutar": 45199994.4
+  },
+  {
+   "hisse": "GD",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "GENERAL DYNAMICS CORP",
+   "tarih": "2026-11-09",
+   "tutar": 16391397.965000002
+  },
+  {
+   "hisse": "LRN",
+   "islem": "Alım",
+   "puan": 90,
+   "rol": "Direktör",
+   "sirket": "Stride, Inc.",
+   "tarih": "2026-11-09",
+   "tutar": 8102077.109999999
+  },
+  {
+   "hisse": "PG",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CFO",
+   "sirket": "PROCTER & GAMBLE Co",
+   "tarih": "2026-11-09",
+   "tutar": 5184413.0
+  },
+  {
+   "hisse": "NATR",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "NATURES SUNSHINE PRODUCTS INC",
+   "tarih": "2026-11-09",
+   "tutar": 2849810.84
+  },
+  {
+   "hisse": "ROK",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "CEO",
+   "sirket": "ROCKWELL AUTOMATION, INC",
+   "tarih": "2026-11-09",
+   "tutar": 1545449.5356
+  },
+  {
+   "hisse": "PAM",
+   "islem": "Alım",
+   "puan": 90,
+   "rol": "Yönetici",
+   "sirket": "Pampa Energy Inc.",
+   "tarih": "2026-11-09",
+   "tutar": 1287400.0
+  },
+  {
+   "hisse": "VDTA",
+   "islem": "Alım",
+   "puan": 45,
+   "rol": "%10 ortak",
+   "sirket": "Vertical Data Inc.",
+   "tarih": "2026-11-09",
+   "tutar": 999882.0
+  },
+  {
+   "hisse": "NLY",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "Direktör",
+   "sirket": "ANNALY CAPITAL MANAGEMENT INC",
+   "tarih": "2026-11-09",
+   "tutar": 940000.0
+  },
+  {
+   "hisse": "FLOC",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "CEO",
+   "sirket": "Flowco Holdings Inc.",
+   "tarih": "2026-11-09",
+   "tutar": 798213.35
+  },
+  {
+   "hisse": "DGICA",
+   "islem": "Alım",
+   "puan": 45,
+   "rol": "%10 ortak",
+   "sirket": "DONEGAL GROUP INC",
+   "tarih": "2026-11-09",
+   "tutar": 621505.5
+  },
+  {
+   "hisse": "ADTN",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "CEO",
+   "sirket": "ADTRAN Holdings, Inc.",
+   "tarih": "2026-11-09",
+   "tutar": 600900.0
+  },
+  {
+   "hisse": "CMCO",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "CEO",
+   "sirket": "COLUMBUS MCKINNON CORP",
+   "tarih": "2026-11-09",
+   "tutar": 551349.3400000001
+  },
+  {
+   "hisse": "WCC",
+   "islem": "Alım",
+   "puan": 60,
+   "rol": "CFO",
+   "sirket": "WESCO INTERNATIONAL INC",
+   "tarih": "2026-11-09",
+   "tutar": 503527.49999999994
+  },
+  {
+   "hisse": "LUMN",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "CEO",
+   "sirket": "Lumen Technologies, Inc.",
+   "tarih": "2026-11-09",
+   "tutar": 396890.0
+  },
+  {
+   "hisse": "GFS",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "GLOBALFOUNDRIES Inc.",
+   "tarih": "2026-11-09",
+   "tutar": 380000.0
+  },
+  {
+   "hisse": "DKNG",
+   "islem": "Alım",
+   "puan": 50,
+   "rol": "CFO",
+   "sirket": "DraftKings Inc.",
+   "tarih": "2026-11-09",
+   "tutar": 349987.08
+  },
+  {
+   "hisse": "TTMI",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Direktör",
+   "sirket": "TTM TECHNOLOGIES INC",
+   "tarih": "2026-11-09",
+   "tutar": 309600.0
+  },
+  {
+   "hisse": "UPBD",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "CEO",
+   "sirket": "UPBOUND GROUP, INC.",
+   "tarih": "2026-11-09",
+   "tutar": 299988.9
+  },
+  {
+   "hisse": "TSM",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+   "tarih": "2026-11-09",
+   "tutar": 299880.0
+  },
+  {
+   "hisse": "MTDR",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "CEO",
+   "sirket": "Matador Resources Co",
+   "tarih": "2026-11-09",
+   "tutar": 256800.0
+  },
+  {
+   "hisse": "UFCS",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "UNITED FIRE GROUP INC",
+   "tarih": "2026-11-09",
+   "tutar": 237049.99999999997
+  },
+  {
+   "hisse": "NTHI",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "NEONC TECHNOLOGIES HOLDINGS, INC.",
+   "tarih": "2026-11-09",
+   "tutar": 230510.0
+  },
+  {
+   "hisse": "EP",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "EMPIRE PETROLEUM CORP",
+   "tarih": "2026-11-09",
+   "tutar": 203811.5431
+  },
+  {
+   "hisse": "LCRDX",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "Lord Abbett Credit Opportunities Fund",
+   "tarih": "2026-11-09",
+   "tutar": 199999.99773
+  },
+  {
+   "hisse": "AN",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "CFO",
+   "sirket": "AUTONATION, INC.",
+   "tarih": "2026-11-09",
+   "tutar": 199799.88
+  },
+  {
+   "hisse": "NXRT",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Yönetici",
+   "sirket": "NexPoint Residential Trust, Inc.",
+   "tarih": "2026-11-09",
+   "tutar": 199265.75999999998
+  },
+  {
+   "hisse": "ADM",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "Archer-Daniels-Midland Co",
+   "tarih": "2026-11-09",
+   "tutar": 196756.0
+  },
+  {
+   "hisse": "SOPH",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "CFO",
+   "sirket": "SOPHiA GENETICS SA",
+   "tarih": "2026-11-09",
+   "tutar": 141200.0
+  },
+  {
+   "hisse": "SOPH",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "CEO",
+   "sirket": "SOPHiA GENETICS SA",
+   "tarih": "2026-11-09",
+   "tutar": 137188.0
+  },
+  {
+   "hisse": "AUDC",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "AUDIOCODES LTD",
+   "tarih": "2026-11-09",
+   "tutar": 126139.6202
+  },
+  {
+   "hisse": "LKFN",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "LAKELAND FINANCIAL CORP",
+   "tarih": "2026-11-09",
+   "tutar": 117176.5658
+  },
+  {
+   "hisse": "NSLR",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "Neostellar Capital Corp.",
+   "tarih": "2026-11-09",
+   "tutar": 115200.0
+  },
+  {
+   "hisse": "NXRT",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Yönetici",
+   "sirket": "NexPoint Residential Trust, Inc.",
+   "tarih": "2026-11-09",
+   "tutar": 103053.0
+  },
+  {
+   "hisse": "OBIO",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "Orchestra BioMed Holdings, Inc.",
+   "tarih": "2026-11-09",
+   "tutar": 100000.0
+  },
+  {
+   "hisse": "AXP",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "AMERICAN EXPRESS CO",
+   "tarih": "2026-11-06",
+   "tutar": 99448560.26
+  },
+  {
+   "hisse": "LIN",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CFO",
+   "sirket": "LINDE PLC",
+   "tarih": "2026-11-06",
+   "tutar": 45258063.0
+  },
+  {
+   "hisse": "MDGL",
+   "islem": "Alım",
+   "puan": 60,
+   "rol": "Direktör",
+   "sirket": "MADRIGAL PHARMACEUTICALS, INC.",
+   "tarih": "2026-11-06",
+   "tutar": 35023032.1012
+  },
+  {
+   "hisse": "MAR",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "MARRIOTT INTERNATIONAL INC /MD/",
+   "tarih": "2026-11-06",
+   "tutar": 26616947.458199997
+  },
+  {
+   "hisse": "SN",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "SharkNinja, Inc.",
+   "tarih": "2026-11-06",
+   "tutar": 24999951.709999997
+  },
+  {
+   "hisse": "KOD",
+   "islem": "Alım",
+   "puan": 60,
+   "rol": "Direktör",
+   "sirket": "Kodiak Sciences Inc.",
+   "tarih": "2026-11-06",
+   "tutar": 24340835.9
+  },
+  {
+   "hisse": "AZO",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CFO",
+   "sirket": "AUTOZONE INC",
+   "tarih": "2026-11-06",
+   "tutar": 22905994.3
+  },
+  {
+   "hisse": "ROP",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "ROPER TECHNOLOGIES INC",
+   "tarih": "2026-11-06",
+   "tutar": 19699895.660000004
+  },
+  {
+   "hisse": "KMI",
+   "islem": "Alım",
+   "puan": 60,
+   "rol": "Direktör",
+   "sirket": "KINDER MORGAN, INC.",
+   "tarih": "2026-11-06",
+   "tutar": 14994200.0
+  },
+  {
+   "hisse": "ANVS",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "Direktör",
+   "sirket": "Annovis Bio, Inc.",
+   "tarih": "2026-11-06",
+   "tutar": 5000000.0
+  },
+  {
+   "hisse": "CVS",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "Yönetici",
+   "sirket": "CVS HEALTH Corp",
+   "tarih": "2026-11-06",
+   "tutar": 2001315.2249999999
+  },
+  {
+   "hisse": "MXF",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "MEXICO EQUITY & INCOME FUND INC",
+   "tarih": "2026-11-06",
+   "tutar": 499662.8
+  },
+  {
+   "hisse": "YPF",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "YPF SOCIEDAD ANONIMA",
+   "tarih": "2026-11-06",
+   "tutar": 356340.60000000003
+  },
+  {
+   "hisse": "KYN",
+   "islem": "Alım",
+   "puan": 45,
+   "rol": "COO/Başkan",
+   "sirket": "Kayne Anderson Energy Infrastructure Fund, Inc.",
+   "tarih": "2026-11-06",
+   "tutar": 331085.0
+  },
+  {
+   "hisse": "JOF",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "JAPAN SMALLER CAPITALIZATION FUND INC",
+   "tarih": "2026-11-06",
+   "tutar": 299286.88
+  },
+  {
+   "hisse": "TRNS",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "CEO",
+   "sirket": "TRANSCAT INC",
+   "tarih": "2026-11-06",
+   "tutar": 230366.5
+  },
+  {
+   "hisse": "LKQ",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Direktör",
+   "sirket": "LKQ CORP",
+   "tarih": "2026-11-06",
+   "tutar": 201085.473
+  },
+  {
+   "hisse": "KMT",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "KENNAMETAL INC",
+   "tarih": "2026-11-06",
+   "tutar": 165368.0
+  },
+  {
+   "hisse": "VISM",
+   "islem": "Alım",
+   "puan": 50,
+   "rol": "%10 ortak",
+   "sirket": "VISIUM TECHNOLOGIES, INC.",
+   "tarih": "2026-11-06",
+   "tutar": 108000.0
+  },
+  {
+   "hisse": "AGMB",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "AgomAb Therapeutics NV",
+   "tarih": "2026-11-06",
+   "tutar": 103500.0
+  },
+  {
+   "hisse": "SPPL",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "SIMPPLE LTD.",
+   "tarih": "2026-11-05",
+   "tutar": 10202628830.42
+  },
+  {
+   "hisse": "COUR",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "%10 ortak",
+   "sirket": "Coursera, Inc.",
+   "tarih": "2026-11-05",
+   "tutar": 31450844.1298
+  },
+  {
+   "hisse": "LYEL",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "%10 ortak",
+   "sirket": "Lyell Immunopharma, Inc.",
+   "tarih": "2026-11-05",
+   "tutar": 24999991.74
+  },
+  {
+   "hisse": "GLXY",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "CEO",
+   "sirket": "Galaxy Digital Inc.",
+   "tarih": "2026-11-05",
+   "tutar": 9864345.934
+  },
+  {
+   "hisse": "CROX",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "Crocs, Inc.",
+   "tarih": "2026-11-05",
+   "tutar": 6115595.4032
+  },
+  {
+   "hisse": "PG",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CFO",
+   "sirket": "PROCTER & GAMBLE Co",
+   "tarih": "2026-11-05",
+   "tutar": 5547960.0
+  },
+  {
+   "hisse": "EVTC",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "EVERTEC, Inc.",
+   "tarih": "2026-11-05",
+   "tutar": 5041360.6938000005
+  },
+  {
+   "hisse": "ETRA",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "Direktör",
+   "sirket": "Electra Therapeutics, Inc.",
+   "tarih": "2026-11-05",
+   "tutar": 3605116.3899999997
+  },
+  {
+   "hisse": "PAM",
+   "islem": "Alım",
+   "puan": 90,
+   "rol": "Yönetici",
+   "sirket": "Pampa Energy Inc.",
+   "tarih": "2026-11-05",
+   "tutar": 2616097.8600000003
+  },
+  {
+   "hisse": "TRAD",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "CEO",
+   "sirket": "APEX Tech Acquisition Inc.",
+   "tarih": "2026-11-05",
+   "tutar": 2089710.0
+  },
+  {
+   "hisse": "LBTY",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Yönetici",
+   "sirket": "Liberty Global Ltd.",
+   "tarih": "2026-11-05",
+   "tutar": 1995978.0728000002
+  },
+  {
+   "hisse": "BXMT",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "CEO",
+   "sirket": "BLACKSTONE MORTGAGE TRUST, INC.",
+   "tarih": "2026-11-05",
+   "tutar": 1035351.0
+  },
+  {
+   "hisse": "LBTY",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "CEO",
+   "sirket": "Liberty Global Ltd.",
+   "tarih": "2026-11-05",
+   "tutar": 1030172.0
+  },
+  {
+   "hisse": "FBRT",
+   "islem": "Alım",
+   "puan": 90,
+   "rol": "CEO",
+   "sirket": "Franklin BSP Realty Trust, Inc.",
+   "tarih": "2026-11-05",
+   "tutar": 998364.0
+  },
+  {
+   "hisse": "TTMI",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "TTM TECHNOLOGIES INC",
+   "tarih": "2026-11-05",
+   "tutar": 631541.0
+  },
+  {
+   "hisse": "BKR",
+   "islem": "Alım",
+   "puan": 50,
+   "rol": "Direktör",
+   "sirket": "Baker Hughes Co",
+   "tarih": "2026-11-05",
+   "tutar": 531000.0
+  },
+  {
+   "hisse": "SPXC",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "SPX Technologies, Inc.",
+   "tarih": "2026-11-05",
+   "tutar": 493020.0
+  },
+  {
+   "hisse": "CLX",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "CLOROX CO /DE/",
+   "tarih": "2026-11-05",
+   "tutar": 400250.80000000005
+  },
+  {
+   "hisse": "LBRT",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "Liberty Energy Inc.",
+   "tarih": "2026-11-05",
+   "tutar": 377335.0
+  },
+  {
+   "hisse": "MXF",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "MEXICO EQUITY & INCOME FUND INC",
+   "tarih": "2026-11-05",
+   "tutar": 314480.45
+  },
+  {
+   "hisse": "FLOC",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "Flowco Holdings Inc.",
+   "tarih": "2026-11-05",
+   "tutar": 292924.178
+  },
+  {
+   "hisse": "OACOX",
+   "islem": "Alım",
+   "puan": 30,
+   "rol": "Diğer",
+   "sirket": "OneAscent Capital Opportunities Fund",
+   "tarih": "2026-11-05",
+   "tutar": 288250.0
+  },
+  {
+   "hisse": "DGICA",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "DONEGAL GROUP INC",
+   "tarih": "2026-11-05",
+   "tutar": 282213.75
+  },
+  {
+   "hisse": "SYY",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "SYSCO CORP",
+   "tarih": "2026-11-05",
+   "tutar": 191550.0
+  },
+  {
+   "hisse": "CRH",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "CRH PUBLIC LTD CO",
+   "tarih": "2026-11-05",
+   "tutar": 189260.0
+  },
+  {
+   "hisse": "MTUS",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "Metallus Inc.",
+   "tarih": "2026-11-05",
+   "tutar": 166100.0
+  },
+  {
+   "hisse": "BXMT",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Direktör",
+   "sirket": "BLACKSTONE MORTGAGE TRUST, INC.",
+   "tarih": "2026-11-05",
+   "tutar": 114291.0
+  },
+  {
+   "hisse": "RRBI",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "RED RIVER BANCSHARES INC",
+   "tarih": "2026-11-05",
+   "tutar": 112605.50000000001
+  },
+  {
+   "hisse": "MTDR",
+   "islem": "Alım",
+   "puan": 50,
+   "rol": "CFO",
+   "sirket": "Matador Resources Co",
+   "tarih": "2026-11-05",
+   "tutar": 105140.0
+  },
+  {
+   "hisse": "UPBD",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "CEO",
+   "sirket": "UPBOUND GROUP, INC.",
+   "tarih": "2026-11-05",
+   "tutar": 100082.97
+  },
+  {
+   "hisse": "KNOP",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "Direktör",
+   "sirket": "KNOT Offshore Partners LP",
+   "tarih": "2026-11-04",
+   "tutar": 43499993.04
+  },
+  {
+   "hisse": "ASPE",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Direktör",
+   "sirket": "Aspen Neuroscience, Inc.",
+   "tarih": "2026-11-04",
+   "tutar": 15000000.0
+  },
+  {
+   "hisse": "DOLE",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "Dole plc",
+   "tarih": "2026-11-04",
+   "tutar": 12921443.571899999
+  },
+  {
+   "hisse": "INTC",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "CEO",
+   "sirket": "INTEL CORP",
+   "tarih": "2026-11-04",
+   "tutar": 9709680.0
+  },
+  {
+   "hisse": "CHD",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "CHURCH & DWIGHT CO INC /DE/",
+   "tarih": "2026-11-04",
+   "tutar": 9133047.252
+  },
+  {
+   "hisse": "AJG",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CFO",
+   "sirket": "Arthur J. Gallagher & Co.",
+   "tarih": "2026-11-04",
+   "tutar": 8528401.026
+  },
+  {
+   "hisse": "LRN",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Direktör",
+   "sirket": "Stride, Inc.",
+   "tarih": "2026-11-04",
+   "tutar": 1669736.8
+  },
+  {
+   "hisse": "CACC",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "Direktör",
+   "sirket": "CREDIT ACCEPTANCE CORP",
+   "tarih": "2026-11-04",
+   "tutar": 1455600.0
+  },
+  {
+   "hisse": "AN",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "CEO",
+   "sirket": "AUTONATION, INC.",
+   "tarih": "2026-11-04",
+   "tutar": 1031023.7532
+  },
+  {
+   "hisse": "LSCC",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "CEO",
+   "sirket": "LATTICE SEMICONDUCTOR CORP",
+   "tarih": "2026-11-04",
+   "tutar": 1003689.3342000002
+  },
+  {
+   "hisse": "HGV",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Direktör",
+   "sirket": "Hilton Grand Vacations Inc.",
+   "tarih": "2026-11-04",
+   "tutar": 499224.0
+  },
+  {
+   "hisse": "UPBD",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Direktör",
+   "sirket": "UPBOUND GROUP, INC.",
+   "tarih": "2026-11-04",
+   "tutar": 400012.15
+  },
+  {
+   "hisse": "UPBD",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Direktör",
+   "sirket": "UPBOUND GROUP, INC.",
+   "tarih": "2026-11-04",
+   "tutar": 393414.0
+  },
+  {
+   "hisse": "JBLU",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Direktör",
+   "sirket": "JETBLUE AIRWAYS CORP",
+   "tarih": "2026-11-04",
+   "tutar": 323843.5
+  },
+  {
+   "hisse": "AN",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "CFO",
+   "sirket": "AUTONATION, INC.",
+   "tarih": "2026-11-04",
+   "tutar": 299990.2761
+  },
+  {
+   "hisse": "MXF",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "MEXICO EQUITY & INCOME FUND INC",
+   "tarih": "2026-11-04",
+   "tutar": 283534.16
+  },
+  {
+   "hisse": "UPBD",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "CFO",
+   "sirket": "UPBOUND GROUP, INC.",
+   "tarih": "2026-11-04",
+   "tutar": 250580.0
+  },
+  {
+   "hisse": "LYCA",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "Lycia Therapeutics, Inc.",
+   "tarih": "2026-11-04",
+   "tutar": 223819.75
+  },
+  {
+   "hisse": "PAM",
+   "islem": "Alım",
+   "puan": 50,
+   "rol": "CFO",
+   "sirket": "Pampa Energy Inc.",
+   "tarih": "2026-11-04",
+   "tutar": 207320.96
+  },
+  {
+   "hisse": "HGV",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Direktör",
+   "sirket": "Hilton Grand Vacations Inc.",
+   "tarih": "2026-11-04",
+   "tutar": 103875.0
+  },
+  {
+   "hisse": "AN",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Yönetici",
+   "sirket": "AUTONATION, INC.",
+   "tarih": "2026-11-04",
+   "tutar": 100850.0
+  },
+  {
+   "hisse": "APH",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "AMPHENOL CORP /DE/",
+   "tarih": "2026-11-03",
+   "tutar": 65945990.0912
+  },
+  {
+   "hisse": "MGM",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "Direktör",
+   "sirket": "MGM Resorts International",
+   "tarih": "2026-11-03",
+   "tutar": 51740827.48
+  },
+  {
+   "hisse": "BBTX",
+   "islem": "Alım",
+   "puan": 90,
+   "rol": "Direktör",
+   "sirket": "Bambusa Therapeutics, Inc.",
+   "tarih": "2026-11-03",
+   "tutar": 46639957.19
+  },
+  {
+   "hisse": "SIRI",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "SIRIUS XM HOLDINGS INC.",
+   "tarih": "2026-11-03",
+   "tutar": 26894245.1765
+  },
+  {
+   "hisse": "DOV",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "DOVER Corp",
+   "tarih": "2026-11-03",
+   "tutar": 18572505.4917
+  },
+  {
+   "hisse": "LRN",
+   "islem": "Alım",
+   "puan": 60,
+   "rol": "Direktör",
+   "sirket": "Stride, Inc.",
+   "tarih": "2026-11-03",
+   "tutar": 17573121.28
+  },
+  {
+   "hisse": "LTH",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "Life Time Group Holdings, Inc.",
+   "tarih": "2026-11-03",
+   "tutar": 11891457.6
+  },
+  {
+   "hisse": "AER",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "AerCap Holdings N.V.",
+   "tarih": "2026-11-03",
+   "tutar": 9478516.94
+  },
+  {
+   "hisse": "PG",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "PROCTER & GAMBLE Co",
+   "tarih": "2026-11-03",
+   "tutar": 6311745.0
+  },
+  {
+   "hisse": "PLBY",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "Direktör",
+   "sirket": "Playboy, Inc.",
+   "tarih": "2026-11-03",
+   "tutar": 5000000.25
+  },
+  {
+   "hisse": "SITE",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "CEO",
+   "sirket": "SiteOne Landscape Supply, Inc.",
+   "tarih": "2026-11-03",
+   "tutar": 1003684.5
+  },
+  {
+   "hisse": "BA",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Direktör",
+   "sirket": "BOEING CO",
+   "tarih": "2026-11-03",
+   "tutar": 998421.0000000001
+  },
+  {
+   "hisse": "CAT",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "CATERPILLAR INC",
+   "tarih": "2026-11-03",
+   "tutar": 620390.0
+  },
+  {
+   "hisse": "BA",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Direktör",
+   "sirket": "BOEING CO",
+   "tarih": "2026-11-03",
+   "tutar": 510426.7
+  },
+  {
+   "hisse": "LKQ",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Direktör",
+   "sirket": "LKQ CORP",
+   "tarih": "2026-11-03",
+   "tutar": 400030.00000000006
+  },
+  {
+   "hisse": "TRTX",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "TPG RE Finance Trust, Inc.",
+   "tarih": "2026-11-03",
+   "tutar": 253239.0
+  },
+  {
+   "hisse": "LKQ",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Direktör",
+   "sirket": "LKQ CORP",
+   "tarih": "2026-11-03",
+   "tutar": 191500.0
+  },
+  {
+   "hisse": "NPKI",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "NPK International Inc.",
+   "tarih": "2026-11-03",
+   "tutar": 138600.0
+  },
+  {
+   "hisse": "STRZ",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "STARZ ENTERTAINMENT CORP /CN/",
+   "tarih": "2026-11-03",
+   "tutar": 110650.0
+  },
   {
    "hisse": "ROL",
    "islem": "Alım",
