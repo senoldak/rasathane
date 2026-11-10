@@ -1,0 +1,240 @@
+{
+ "aciklama": "3 aylık getiriye göre en güçlü 20 ETF; aynı hareketi izleyen kopyalar ayıklanmıştır.",
+ "baslik": "Yükselen temalar",
+ "bolum": "opsi",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-09T23:46:17Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  },
+  {
+   "ad": "Nasdaq ETF listesi",
+   "url": "https://www.nasdaq.com/market-activity/etf"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "Grayscale Zcash Trust The Zcash ETF The Zcash ETF Shares",
+   "g1a": -0.034665852419824894,
+   "g3a": 1.6456490452958294,
+   "hacim": 44295205.484412,
+   "sembol": "ZCSH",
+   "seri": "etf-ZCSH",
+   "tema": "–"
+  },
+  {
+   "ad": "Amplify Commodity Trust Breakwave Tanker Shipping ETF",
+   "g1a": -0.41597712468590553,
+   "g3a": 0.7207155576607338,
+   "hacim": 78288878.99020997,
+   "sembol": "BWET",
+   "seri": "etf-BWET",
+   "tema": "Denizcilik ve tanker"
+  },
+  {
+   "ad": "Grayscale Hyperliquid Staking ETF",
+   "g1a": -0.09678390094004652,
+   "g3a": 0.37944666108395375,
+   "hacim": 2939418.109419632,
+   "sembol": "HYPG",
+   "seri": "etf-HYPG",
+   "tema": "–"
+  },
+  {
+   "ad": "iShares Genomics Immunology and Healthcare ETF",
+   "g1a": 0.0331989942297386,
+   "g3a": 0.2377840554110775,
+   "hacim": 7437769.731200409,
+   "sembol": "IDNA",
+   "seri": "etf-IDNA",
+   "tema": "Biyoteknoloji"
+  },
+  {
+   "ad": "Grayscale Chainlink Trust ETF Grayscale Chainlink Trust ETF",
+   "g1a": -0.1640070453537248,
+   "g3a": 0.23429325523189926,
+   "hacim": 5040226.633109284,
+   "sembol": "GLNK",
+   "seri": "etf-GLNK",
+   "tema": "–"
+  },
+  {
+   "ad": "VanEck Biotech ETF",
+   "g1a": 0.07888718394978711,
+   "g3a": 0.18077553704728677,
+   "hacim": 4130817.4384918213,
+   "sembol": "BBH",
+   "seri": "etf-BBH",
+   "tema": "Biyoteknoloji"
+  },
+  {
+   "ad": "Coinshares Bitcoin ETF",
+   "g1a": -0.09063445725312325,
+   "g3a": 0.17841167135272085,
+   "hacim": 1162794.6574630737,
+   "sembol": "BRRR",
+   "seri": "etf-BRRR",
+   "tema": "Kripto ve blokzincir"
+  },
+  {
+   "ad": "Bitwise Solana Staking ETF Bitwise Solana Staking ETF",
+   "g1a": -0.19946449972790914,
+   "g3a": 0.15779284864274512,
+   "hacim": 41119110.3023654,
+   "sembol": "BSOL",
+   "seri": "etf-BSOL",
+   "tema": "–"
+  },
+  {
+   "ad": "United States Brent Oil Fund LP ETV",
+   "g1a": -0.07907487483304365,
+   "g3a": 0.15639720101823085,
+   "hacim": 135216468.83947602,
+   "sembol": "BNO",
+   "seri": "etf-BNO",
+   "tema": "Petrol ve gaz"
+  },
+  {
+   "ad": "Invesco S&P 500 Equal Weight Health Care ETF",
+   "g1a": 0.10135677993682357,
+   "g3a": 0.15067163036558928,
+   "hacim": 15590212.804302597,
+   "sembol": "RSPH",
+   "seri": "etf-RSPH",
+   "tema": "Sağlık"
+  },
+  {
+   "ad": "21Shares Ethereum Staking ETF",
+   "g1a": -0.14227972879259976,
+   "g3a": 0.1338457626488152,
+   "hacim": 8736332.638444375,
+   "sembol": "TETH",
+   "seri": "etf-TETH",
+   "tema": "Kripto ve blokzincir"
+  },
+  {
+   "ad": "Portfolio Building Block World Pharma and Biotech Index ETF",
+   "g1a": 0.11761947549963381,
+   "g3a": 0.13308421229155498,
+   "hacim": 10583783.296319962,
+   "sembol": "PBPH",
+   "seri": "etf-PBPH",
+   "tema": "Biyoteknoloji"
+  },
+  {
+   "ad": "Global X Genomics & Biotechnology ETF",
+   "g1a": -0.020509144176136362,
+   "g3a": 0.12827555915637956,
+   "hacim": 2260860.9919288633,
+   "sembol": "GNOM",
+   "seri": "etf-GNOM",
+   "tema": "Biyoteknoloji"
+  },
+  {
+   "ad": "State Street Health Care Select Sector SPDR ETF",
+   "g1a": 0.10257013361557465,
+   "g3a": 0.1252352598169122,
+   "hacim": 2101719125.594181,
+   "sembol": "XLV",
+   "seri": "etf-XLV",
+   "tema": "Sağlık"
+  },
+  {
+   "ad": "ROBO Global Healthcare Technology and Innovation ETF",
+   "g1a": 0.06309552009316266,
+   "g3a": 0.11274624793768795,
+   "hacim": 2948341.680120277,
+   "sembol": "HTEC",
+   "seri": "etf-HTEC",
+   "tema": "Sağlık"
+  },
+  {
+   "ad": "First Trust Nasdaq Pharmaceuticals ETF",
+   "g1a": 0.07513927527038189,
+   "g3a": 0.1122679474262791,
+   "hacim": 3291118.75157032,
+   "sembol": "FTXH",
+   "seri": "etf-FTXH",
+   "tema": "Sağlık"
+  },
+  {
+   "ad": "State Street SPDR S&P Health Care Services ETF",
+   "g1a": 0.079100158813451,
+   "g3a": 0.09939230759121243,
+   "hacim": 4345068.99319992,
+   "sembol": "XHS",
+   "seri": "etf-XHS",
+   "tema": "Sağlık"
+  },
+  {
+   "ad": "iShares Biotechnology ETF",
+   "g1a": 0.06334447906965512,
+   "g3a": 0.09933819256215126,
+   "hacim": 396603981.9725342,
+   "sembol": "IBB",
+   "seri": "etf-IBB",
+   "tema": "Biyoteknoloji"
+  },
+  {
+   "ad": "SonicShares Global Shipping ETF",
+   "g1a": -0.12046387461647878,
+   "g3a": 0.09781196633569644,
+   "hacim": 12092222.472190475,
+   "sembol": "BOAT",
+   "seri": "etf-BOAT",
+   "tema": "Denizcilik ve tanker"
+  },
+  {
+   "ad": "Kurv Yield Premium Strategy Microsoft (MSFT) ETF",
+   "g1a": 0.020638558239418847,
+   "g3a": 0.09323994742902664,
+   "hacim": 1302550.4675448418,
+   "sembol": "MSFY",
+   "seri": "etf-MSFY",
+   "tema": "–"
+  }
+ ],
+ "sayfa": "etf-temalar",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "sembol",
+   "basamak": 2,
+   "baslik": "Sembol",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Ad",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "tema",
+   "basamak": 2,
+   "baslik": "Tema",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "g1a",
+   "basamak": 1,
+   "baslik": "1 ay",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "g3a",
+   "basamak": 1,
+   "baslik": "3 ay",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "hacim",
+   "basamak": 0,
+   "baslik": "Ort. işlem tutarı ($)",
+   "tur": "sayi"
+  }
+ ],
+ "suzgecler": []
+}

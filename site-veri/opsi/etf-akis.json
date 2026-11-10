@@ -1,0 +1,196 @@
+{
+ "aciklama": "Fon varlığı değişiminden fiyat etkisi çıkarılarak tahmin edilen giriş ve çıkışlar (son 5 işlem günü).",
+ "baslik": "Fon akışı",
+ "bolum": "opsi",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-09T23:46:17Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  },
+  {
+   "ad": "Nasdaq ETF listesi",
+   "url": "https://www.nasdaq.com/market-activity/etf"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "DFA Investment Dimensions Group Inc. U.S. Core Equity 2 Portfo",
+   "akis": 49395271461.799255,
+   "oran": 1.2879003194739307,
+   "sembol": "DFAC",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "Vanguard Morningstar Value ETF",
+   "akis": 15928727833.002075,
+   "oran": 0.0632783063909953,
+   "sembol": "VTV",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "DFA Investment Dimensions Group Inc. U.S. Small Cap Portfolio:",
+   "akis": 15725822955.260265,
+   "oran": 0.8479981934704565,
+   "sembol": "DFAS",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "Vanguard S&P 500 ETF",
+   "akis": 13732165100.476074,
+   "oran": 0.007940824764709439,
+   "sembol": "VOO",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "Schwab US Dividend Equity ETF",
+   "akis": 13596574205.754074,
+   "oran": 0.1260259495143772,
+   "sembol": "SCHD",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "State Street Energy Select Sector SPDR ETF",
+   "akis": 11758989636.687378,
+   "oran": 0.30050964579208916,
+   "sembol": "XLE",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "Vanguard Total Bond Market ETF",
+   "akis": 11229469900.002808,
+   "oran": 0.028863748381453724,
+   "sembol": "BND",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "State Street SPDR Portfolio S&P 500 ETF",
+   "akis": 8917899623.72702,
+   "oran": 0.05136055981756801,
+   "sembol": "SPYM",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "iShares National Muni Bond ETF",
+   "akis": 7429142432.796532,
+   "oran": 0.15933908033643226,
+   "sembol": "MUB",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "Vanguard Div Appreciation ETF",
+   "akis": 7335328383.936218,
+   "oran": 0.057487803333773596,
+   "sembol": "VIG",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "Invesco QQQ Trust Series 1",
+   "akis": -27062645604.96991,
+   "oran": -0.054239630252805045,
+   "sembol": "QQQ",
+   "yon": "Çıkış"
+  },
+  {
+   "ad": "Vanguard Total International Stock ETF",
+   "akis": -25974942341.68628,
+   "oran": -0.0400054511401276,
+   "sembol": "VXUS",
+   "yon": "Çıkış"
+  },
+  {
+   "ad": "SPDR Gold Shares",
+   "akis": -20152079142.34137,
+   "oran": -0.142214084613671,
+   "sembol": "GLD",
+   "yon": "Çıkış"
+  },
+  {
+   "ad": "Vanguard Morningstar Growth ETF",
+   "akis": -18718404265.180237,
+   "oran": -0.04774225388509164,
+   "sembol": "VUG",
+   "yon": "Çıkış"
+  },
+  {
+   "ad": "iShares Core MSCI Emerging Markets ETF",
+   "akis": -14204866782.771057,
+   "oran": -0.08873879052262217,
+   "sembol": "IEMG",
+   "yon": "Çıkış"
+  },
+  {
+   "ad": "Vanguard FTSE Emerging Markets ETF",
+   "akis": -14136901167.597168,
+   "oran": -0.08585670703854517,
+   "sembol": "VWO",
+   "yon": "Çıkış"
+  },
+  {
+   "ad": "State Street SPDR S&P 500 ETF Trust Unit",
+   "akis": -9106459947.93689,
+   "oran": -0.011253433764659964,
+   "sembol": "SPY",
+   "yon": "Çıkış"
+  },
+  {
+   "ad": "iShares Gold Trust Shares of the iShares Gold Trust",
+   "akis": -8251517036.155777,
+   "oran": -0.132616331225299,
+   "sembol": "IAU",
+   "yon": "Çıkış"
+  },
+  {
+   "ad": "iShares Core S&P 500 ETF",
+   "akis": -7617399501.782837,
+   "oran": -0.008643672373759874,
+   "sembol": "IVV",
+   "yon": "Çıkış"
+  },
+  {
+   "ad": "VanEck Gold Miners ETF",
+   "akis": -7328693071.507824,
+   "oran": -0.27913793071397164,
+   "sembol": "GDX",
+   "yon": "Çıkış"
+  }
+ ],
+ "sayfa": "etf-akis",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "yon",
+   "basamak": 2,
+   "baslik": "Yön",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "sembol",
+   "basamak": 2,
+   "baslik": "Sembol",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Ad",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "akis",
+   "basamak": 0,
+   "baslik": "Tahmini akış ($)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "oran",
+   "basamak": 1,
+   "baslik": "Başlangıç varlığına oran",
+   "tur": "yuzde"
+  }
+ ],
+ "suzgecler": [
+  "yon"
+ ]
+}

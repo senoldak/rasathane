@@ -1,0 +1,524 @@
+{
+ "aciklama": "Günlük opsiyon hacminin açık pozisyona oranı yüksek hisse ve ETF'ler.",
+ "baslik": "Olağandışı opsiyon hareketi",
+ "bolum": "opsi",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-09T23:46:17Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  },
+  {
+   "ad": "Nasdaq ETF listesi",
+   "url": "https://www.nasdaq.com/market-activity/etf"
+  }
+ ],
+ "satirlar": [
+  {
+   "acik": 1147,
+   "ad": "State Street SPDR Bloomberg 1-3 Month T-Bill ETF",
+   "en_aktif": "83 C 20.11",
+   "hacim": 12165,
+   "oran": 10.605928509154316,
+   "put_cagri": 0.0026304973284011508,
+   "sembol": "BIL",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 5020,
+   "ad": "VanEck BDC Income ETF",
+   "en_aktif": "15 C 18.12",
+   "hacim": 12361,
+   "oran": 2.4623505976095617,
+   "put_cagri": 0.028881158482323435,
+   "sembol": "BIZD",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 5332,
+   "ad": "iShares 0-3 Month Treasury Bond ETF",
+   "en_aktif": "98 C 20.11",
+   "hacim": 8884,
+   "oran": 1.6661665416354088,
+   "put_cagri": 0.0440117064385412,
+   "sembol": "SGOV",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 125802,
+   "ad": "iShares Russell 2000 ETF",
+   "en_aktif": "287.5 C 11.11",
+   "hacim": 184096,
+   "oran": 1.4633789605888619,
+   "put_cagri": 0.5459162610811751,
+   "sembol": "IWM",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 336526,
+   "ad": "Invesco QQQ Trust Series 1",
+   "en_aktif": "660 P 13.11",
+   "hacim": 396539,
+   "oran": 1.1783309461973221,
+   "put_cagri": 1.3675267615736908,
+   "sembol": "QQQ",
+   "yon": "put"
+  },
+  {
+   "acik": 627160,
+   "ad": "State Street SPDR S&P 500 ETF Trust Unit",
+   "en_aktif": "730 P 13.11",
+   "hacim": 712649,
+   "oran": 1.1363113081191403,
+   "put_cagri": 1.7872657917374108,
+   "sembol": "SPY",
+   "yon": "put"
+  },
+  {
+   "acik": 48448,
+   "ad": "Roundhill ETF Trust Roundhill Memory ETF",
+   "en_aktif": "44 C 11.11",
+   "hacim": 48845,
+   "oran": 1.0081943527080581,
+   "put_cagri": 0.21324598218855564,
+   "sembol": "DRAM",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 416427,
+   "ad": "State Street SPDR S&P 500 ETF Trust Unit",
+   "en_aktif": "760 C 13.11",
+   "hacim": 398737,
+   "oran": 0.9575195652539341,
+   "put_cagri": 1.7872657917374108,
+   "sembol": "SPY",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 4512,
+   "ad": "iShares Trust iShares MSCI Saudi Arabia ETF",
+   "en_aktif": "39 C 18.12",
+   "hacim": 4243,
+   "oran": 0.9403812056737588,
+   "put_cagri": 0.05844921046429413,
+   "sembol": "KSA",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 6014,
+   "ad": "iShares Inc. iShares MSCI Chile ETF",
+   "en_aktif": "35 P 20.11",
+   "hacim": 5627,
+   "oran": 0.9356501496508147,
+   "put_cagri": 0.9858093903293623,
+   "sembol": "ECH",
+   "yon": "put"
+  },
+  {
+   "acik": 15466,
+   "ad": "United States Natural Gas Fund LP",
+   "en_aktif": "10 C 11.11",
+   "hacim": 14399,
+   "oran": 0.9310099573257468,
+   "put_cagri": 0.22855753871796652,
+   "sembol": "UNG",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 6183,
+   "ad": "iShares Inc. iShares MSCI Chile ETF",
+   "en_aktif": "40 C 18.12",
+   "hacim": 5708,
+   "oran": 0.923176451560731,
+   "put_cagri": 0.9858093903293623,
+   "sembol": "ECH",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 3335,
+   "ad": "Direxion Daily S&P 500 Bull 3X ETF",
+   "en_aktif": "280 C 13.11",
+   "hacim": 2982,
+   "oran": 0.8941529235382308,
+   "put_cagri": 0.4017437961099933,
+   "sembol": "SPXL",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 188189,
+   "ad": "VanEck Semiconductor ETF",
+   "en_aktif": "360 P 13.11",
+   "hacim": 167374,
+   "oran": 0.8893931101180197,
+   "put_cagri": 6.095414982337303,
+   "sembol": "SMH",
+   "yon": "put"
+  },
+  {
+   "acik": 344968,
+   "ad": "Invesco QQQ Trust Series 1",
+   "en_aktif": "700 C 13.11",
+   "hacim": 289968,
+   "oran": 0.8405649219637763,
+   "put_cagri": 1.3675267615736908,
+   "sembol": "QQQ",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 110275,
+   "ad": "ProShares UltraPro QQQ",
+   "en_aktif": "60 C 13.11",
+   "hacim": 85516,
+   "oran": 0.7754794831104058,
+   "put_cagri": 0.6896136395528322,
+   "sembol": "TQQQ",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 13305,
+   "ad": "ProShares Ultra Bloomberg Natural Gas",
+   "en_aktif": "19 C 13.11",
+   "hacim": 10263,
+   "oran": 0.7713641488162345,
+   "put_cagri": 0.328461463509695,
+   "sembol": "BOIL",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 15752,
+   "ad": "Direxion Daily Small Cap Bull 3X ETF",
+   "en_aktif": "60 C 13.11",
+   "hacim": 11854,
+   "oran": 0.7525393600812595,
+   "put_cagri": 0.8468871267082841,
+   "sembol": "TNA",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 84442,
+   "ad": "iShares Silver Trust",
+   "en_aktif": "50 C 13.11",
+   "hacim": 62808,
+   "oran": 0.743800478434902,
+   "put_cagri": 0.3995191695325436,
+   "sembol": "SLV",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 4474,
+   "ad": "United States Natural Gas Fund LP",
+   "en_aktif": "9.5 P 11.11",
+   "hacim": 3291,
+   "oran": 0.7355833705856057,
+   "put_cagri": 0.22855753871796652,
+   "sembol": "UNG",
+   "yon": "put"
+  },
+  {
+   "acik": 13639,
+   "ad": "Themes ETF Trust Leverage Shares 2X Long SPCX Daily ETF",
+   "en_aktif": "9 C 13.11",
+   "hacim": 9456,
+   "oran": 0.6933059608475695,
+   "put_cagri": 0.3414763113367174,
+   "sembol": "SPCH",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 38955,
+   "ad": "GraniteShares 2x Long NVDA Daily ETF",
+   "en_aktif": "24 C 13.11",
+   "hacim": 26990,
+   "oran": 0.6928507251957386,
+   "put_cagri": 0.5104853649499814,
+   "sembol": "NVDL",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 55765,
+   "ad": "United States Oil Fund",
+   "en_aktif": "140 P 11.11",
+   "hacim": 38558,
+   "oran": 0.6914372814489375,
+   "put_cagri": 0.8229042171760287,
+   "sembol": "USO",
+   "yon": "put"
+  },
+  {
+   "acik": 4562,
+   "ad": "ETF Opportunities Trust T-Rex 2X Long NVIDIA Daily Target ETF",
+   "en_aktif": "15 C 20.11",
+   "hacim": 3104,
+   "oran": 0.680403331871986,
+   "put_cagri": 0.43170103092783507,
+   "sembol": "NVDX",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 5085,
+   "ad": "GraniteShares 2x Long AMD Daily ETF",
+   "en_aktif": "73 P 13.11",
+   "hacim": 3372,
+   "oran": 0.6631268436578172,
+   "put_cagri": 0.4762039259991527,
+   "sembol": "AMDL",
+   "yon": "put"
+  },
+  {
+   "acik": 21586,
+   "ad": "GraniteShares 2x Long NVDA Daily ETF",
+   "en_aktif": "19 P 13.11",
+   "hacim": 13778,
+   "oran": 0.6382840730102844,
+   "put_cagri": 0.5104853649499814,
+   "sembol": "NVDL",
+   "yon": "put"
+  },
+  {
+   "acik": 8496,
+   "ad": "ProShares UltraPro S&P 500",
+   "en_aktif": "140 C 13.11",
+   "hacim": 5215,
+   "oran": 0.6138182674199624,
+   "put_cagri": 0.29913710450623204,
+   "sembol": "UPRO",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 11919,
+   "ad": "State Street SPDR Portfolio S&P 500 ETF",
+   "en_aktif": "81 P 20.11",
+   "hacim": 7141,
+   "oran": 0.5991274435774814,
+   "put_cagri": 2.679549718574109,
+   "sembol": "SPYM",
+   "yon": "put"
+  },
+  {
+   "acik": 7642,
+   "ad": "ProShares UltraShort Bloomberg Natural Gas",
+   "en_aktif": "37 P 27.11",
+   "hacim": 4519,
+   "oran": 0.5913373462444387,
+   "put_cagri": 2.1386654046379556,
+   "sembol": "KOLD",
+   "yon": "put"
+  },
+  {
+   "acik": 4552,
+   "ad": "GraniteShares 2x Short NVDA Daily ETF",
+   "en_aktif": "5 C 20.11",
+   "hacim": 2642,
+   "oran": 0.5804042179261862,
+   "put_cagri": 0.277441332323997,
+   "sembol": "NVD",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 23577,
+   "ad": "ProShares UltraPro Short QQQ",
+   "en_aktif": "43 P 20.11",
+   "hacim": 13319,
+   "oran": 0.5649149594944225,
+   "put_cagri": 0.3339518090414462,
+   "sembol": "SQQQ",
+   "yon": "put"
+  },
+  {
+   "acik": 11081,
+   "ad": "ERShares Private-Public Crossover ETF",
+   "en_aktif": "15 P 20.11",
+   "hacim": 6093,
+   "oran": 0.5498601209277141,
+   "put_cagri": 2.8890469416785205,
+   "sembol": "XOVR",
+   "yon": "put"
+  },
+  {
+   "acik": 18283,
+   "ad": "Direxion Daily Small Cap Bull 3X ETF",
+   "en_aktif": "51 P 13.11",
+   "hacim": 10039,
+   "oran": 0.5490893179456325,
+   "put_cagri": 0.8468871267082841,
+   "sembol": "TNA",
+   "yon": "put"
+  },
+  {
+   "acik": 5793,
+   "ad": "Direxion Daily MSFT Bull 2X ETF",
+   "en_aktif": "41 P 18.12",
+   "hacim": 3172,
+   "oran": 0.5475573968582772,
+   "put_cagri": 3.407089151450054,
+   "sembol": "MSFU",
+   "yon": "put"
+  },
+  {
+   "acik": 21423,
+   "ad": "VS TR 2x Long VIX Futures ETF",
+   "en_aktif": "33.5 P 20.11",
+   "hacim": 11571,
+   "oran": 0.5401204313121412,
+   "put_cagri": 1.1527196652719665,
+   "sembol": "UVIX",
+   "yon": "put"
+  },
+  {
+   "acik": 121246,
+   "ad": "Direxion Daily TSLA Bull 2X ETF",
+   "en_aktif": "10 C 13.11",
+   "hacim": 65044,
+   "oran": 0.5364630585751282,
+   "put_cagri": 0.26337556115860034,
+   "sembol": "TSLL",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 29033,
+   "ad": "Direxion Daily MU Bull 2X ETF",
+   "en_aktif": "18 C 13.11",
+   "hacim": 15515,
+   "oran": 0.5343918988736954,
+   "put_cagri": 0.3126651627457299,
+   "sembol": "MUU",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 110715,
+   "ad": "ProShares UltraPro QQQ",
+   "en_aktif": "47 P 13.11",
+   "hacim": 58973,
+   "oran": 0.5326559183489139,
+   "put_cagri": 0.6896136395528322,
+   "sembol": "TQQQ",
+   "yon": "put"
+  },
+  {
+   "acik": 63801,
+   "ad": "SPDR Gold Shares",
+   "en_aktif": "380 C 13.11",
+   "hacim": 33590,
+   "oran": 0.5264807761633831,
+   "put_cagri": 0.41851741589758856,
+   "sembol": "GLD",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 48573,
+   "ad": "iShares Silver Trust",
+   "en_aktif": "47.5 P 11.11",
+   "hacim": 25093,
+   "oran": 0.5166038745805283,
+   "put_cagri": 0.3995191695325436,
+   "sembol": "SLV",
+   "yon": "put"
+  },
+  {
+   "acik": 24889,
+   "ad": "State Street Financial Select Sector SPDR ETF",
+   "en_aktif": "58.5 C 11.11",
+   "hacim": 12855,
+   "oran": 0.5164932299409377,
+   "put_cagri": 0.8758459743290549,
+   "sembol": "XLF",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 13822,
+   "ad": "GraniteShares 2x Long AMD Daily ETF",
+   "en_aktif": "53 C 13.11",
+   "hacim": 7081,
+   "oran": 0.5122992331066416,
+   "put_cagri": 0.4762039259991527,
+   "sembol": "AMDL",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 355724,
+   "ad": "Direxion Daily Semiconductor Bull 3X ETF",
+   "en_aktif": "60 C 13.11",
+   "hacim": 179839,
+   "oran": 0.5055576795493135,
+   "put_cagri": 0.6456664016147776,
+   "sembol": "SOXL",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 92828,
+   "ad": "United States Oil Fund",
+   "en_aktif": "146 C 11.11",
+   "hacim": 46856,
+   "oran": 0.5047614943766967,
+   "put_cagri": 0.8229042171760287,
+   "sembol": "USO",
+   "yon": "çağrı"
+  },
+  {
+   "acik": 199601,
+   "ad": "iShares Russell 2000 ETF",
+   "en_aktif": "277 P 13.11",
+   "hacim": 100501,
+   "oran": 0.5035095014554035,
+   "put_cagri": 0.5459162610811751,
+   "sembol": "IWM",
+   "yon": "put"
+  }
+ ],
+ "sayfa": "etf-opsiyon",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "sembol",
+   "basamak": 2,
+   "baslik": "Sembol",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Ad",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "yon",
+   "basamak": 2,
+   "baslik": "Yön",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "hacim",
+   "basamak": 0,
+   "baslik": "Hacim",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "acik",
+   "basamak": 0,
+   "baslik": "Açık pozisyon",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "oran",
+   "basamak": 2,
+   "baslik": "Hacim / açık",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "put_cagri",
+   "basamak": 2,
+   "baslik": "Put / çağrı",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "en_aktif",
+   "basamak": 2,
+   "baslik": "En aktif",
+   "tur": "metin"
+  }
+ ],
+ "suzgecler": [
+  "yon"
+ ]
+}

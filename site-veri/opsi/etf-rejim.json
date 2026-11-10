@@ -1,0 +1,120 @@
+{
+ "aciklama": "Seçilmiş ETF çiftlerinin oranı ve 50 günlük ortalamasının üstünde olup olmadığı.",
+ "baslik": "Piyasa rejimi",
+ "bolum": "opsi",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-09T23:46:17Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  },
+  {
+   "ad": "Nasdaq ETF listesi",
+   "url": "https://www.nasdaq.com/market-activity/etf"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "Lüks / temel tüketim",
+   "anlam": "risk iştahı",
+   "g1a": -0.015703692865721153,
+   "oran": 1.3313896242584025,
+   "pay": "XLY",
+   "payda": "XLP",
+   "sma50": "Altında"
+  },
+  {
+   "ad": "Yüksek getirili / Hazine",
+   "anlam": "kredi iştahı",
+   "g1a": -0.02261307329261575,
+   "oran": 0.8443355071843462,
+   "pay": "HYG",
+   "payda": "IEF",
+   "sma50": "Altında"
+  },
+  {
+   "ad": "Bakır / altın",
+   "anlam": "büyüme beklentisi",
+   "g1a": -0.033953245416295186,
+   "oran": 0.10125681877264063,
+   "pay": "CPER",
+   "payda": "GLD",
+   "sma50": "Altında"
+  },
+  {
+   "ad": "Küçük / büyük şirket",
+   "anlam": "geniş katılım",
+   "g1a": 0.04762188341706297,
+   "oran": 0.3753338145176403,
+   "pay": "IWM",
+   "payda": "SPY",
+   "sma50": "Üstünde"
+  },
+  {
+   "ad": "Yarı iletken / piyasa",
+   "anlam": "teknoloji liderliği",
+   "g1a": -0.16435652323829042,
+   "oran": 0.6475574301254947,
+   "pay": "SMH",
+   "payda": "SPY",
+   "sma50": "Altında"
+  },
+  {
+   "ad": "Gelişen / ABD",
+   "anlam": "dolar zayıflığı",
+   "g1a": -0.05496389532978596,
+   "oran": 0.08108251548624469,
+   "pay": "EEM",
+   "payda": "SPY",
+   "sma50": "Altında"
+  }
+ ],
+ "sayfa": "etf-rejim",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Oran",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "pay",
+   "basamak": 2,
+   "baslik": "Pay",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "payda",
+   "basamak": 2,
+   "baslik": "Payda",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "anlam",
+   "basamak": 2,
+   "baslik": "Yükselirse",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "oran",
+   "basamak": 3,
+   "baslik": "Oran değeri",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "g1a",
+   "basamak": 1,
+   "baslik": "1 ay değişim",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "sma50",
+   "basamak": 2,
+   "baslik": "50 günlük ortalama",
+   "tur": "metin"
+  }
+ ],
+ "suzgecler": []
+}

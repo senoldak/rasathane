@@ -1,0 +1,87 @@
+{
+ "aciklama": "Son 45 günde listeye giren ETF'ler; ilk günden bu yana getiri ve işlem tutarı değişimi.",
+ "baslik": "Yeni ETF'ler",
+ "bolum": "opsi",
+ "grafik": "cizgi",
+ "guncellendi": "2026-11-09T23:46:17Z",
+ "kaynaklar": [
+  {
+   "ad": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/"
+  },
+  {
+   "ad": "Nasdaq ETF listesi",
+   "url": "https://www.nasdaq.com/market-activity/etf"
+  }
+ ],
+ "satirlar": [
+  {
+   "ad": "Mutual Fund Series Trust Eventide Dividend Growth ETF",
+   "getiri": -0.0014348551249137032,
+   "ilk_gorulme": "2026-11-03",
+   "ilk_hacim": 75316.20010375977,
+   "sembol": "ETDG",
+   "seri": null,
+   "son_hacim": 47449.98561172486
+  },
+  {
+   "ad": "Mutual Fund Series Trust Eventide Large Cap Focus ETF",
+   "getiri": -0.005514715335223519,
+   "ilk_gorulme": "2026-11-03",
+   "ilk_hacim": 107519.99858856201,
+   "sembol": "ELCF",
+   "seri": null,
+   "son_hacim": 22737.426892471314
+  },
+  {
+   "ad": "Listed Funds Trust Overlay Shares Nasdaq 100 Income ETF",
+   "getiri": -0.05252764374945573,
+   "ilk_gorulme": "2026-11-02",
+   "ilk_hacim": 5151601.946487427,
+   "sembol": "OVQ",
+   "seri": null,
+   "son_hacim": 2200969.0178352357
+  }
+ ],
+ "sayfa": "etf-yeni",
+ "sema": 1,
+ "sutunlar": [
+  {
+   "anahtar": "ilk_gorulme",
+   "basamak": 2,
+   "baslik": "Listeye giriş",
+   "tur": "tarih"
+  },
+  {
+   "anahtar": "sembol",
+   "basamak": 2,
+   "baslik": "Sembol",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "ad",
+   "basamak": 2,
+   "baslik": "Ad",
+   "tur": "metin"
+  },
+  {
+   "anahtar": "getiri",
+   "basamak": 1,
+   "baslik": "Girişten bu yana",
+   "tur": "yuzde"
+  },
+  {
+   "anahtar": "ilk_hacim",
+   "basamak": 0,
+   "baslik": "İlk 5 gün ort. tutar ($)",
+   "tur": "sayi"
+  },
+  {
+   "anahtar": "son_hacim",
+   "basamak": 0,
+   "baslik": "Son 5 gün ort. tutar ($)",
+   "tur": "sayi"
+  }
+ ],
+ "suzgecler": []
+}
