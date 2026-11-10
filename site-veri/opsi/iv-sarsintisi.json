@@ -3,7 +3,7 @@
  "baslik": "IV sarsıntısı",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-09T23:31:27Z",
+ "guncellendi": "2026-11-10T23:31:27Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -11,6 +11,102 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "Carrier Global Corporation",
+   "bilanco": "Diğer",
+   "fiyat": -0.006000440625058112,
+   "iv_degisim": 0.11330444565166342,
+   "iv_once": 0.31954837372391776,
+   "iv_simdi": 0.3557546250675968,
+   "kapanis": 53.0099983215332,
+   "sembol": "CARR",
+   "seri": "iv-CARR",
+   "tarih": "2026-11-10"
+  },
+  {
+   "ad": "Adobe Inc.",
+   "bilanco": "Diğer",
+   "fiyat": -0.0026125499614093606,
+   "iv_degisim": 0.12537927019622597,
+   "iv_once": 0.44572178279708086,
+   "iv_simdi": 0.5016060546347396,
+   "kapanis": 236.6999969482422,
+   "sembol": "ADBE",
+   "seri": "iv-ADBE",
+   "tarih": "2026-11-10"
+  },
+  {
+   "ad": "Bristol-Myers Squibb Company",
+   "bilanco": "Diğer",
+   "fiyat": 0.010621175633967805,
+   "iv_degisim": 0.13081938237661417,
+   "iv_once": 0.2956197737566042,
+   "iv_simdi": 0.3342925699777576,
+   "kapanis": 62.79999923706055,
+   "sembol": "BMY",
+   "seri": "iv-BMY",
+   "tarih": "2026-11-10"
+  },
+  {
+   "ad": "State Street Energy Select Sect",
+   "bilanco": "Diğer",
+   "fiyat": 0.0043590646391657994,
+   "iv_degisim": 0.13830961530126684,
+   "iv_once": 0.28742637903860935,
+   "iv_simdi": 0.3271802109508755,
+   "kapanis": 62.209999084472656,
+   "sembol": "XLE",
+   "seri": "iv-XLE",
+   "tarih": "2026-11-10"
+  },
+  {
+   "ad": "Ford Motor Company",
+   "bilanco": "Diğer",
+   "fiyat": -0.019169386263373167,
+   "iv_degisim": -0.12395207952879428,
+   "iv_once": 0.3591665505616914,
+   "iv_simdi": 0.3146471097223859,
+   "kapanis": 12.279999732971191,
+   "sembol": "F",
+   "seri": "iv-F",
+   "tarih": "2026-11-10"
+  },
+  {
+   "ad": "Occidental Petroleum Corporatio",
+   "bilanco": "Yakın",
+   "fiyat": 0.02044482135332948,
+   "iv_degisim": -0.1354814415011919,
+   "iv_once": 0.4125631386934204,
+   "iv_simdi": 0.3566684899529796,
+   "kapanis": 56.900001525878906,
+   "sembol": "OXY",
+   "seri": "iv-OXY",
+   "tarih": "2026-11-10"
+  },
+  {
+   "ad": "Flex Ltd.",
+   "bilanco": "Diğer",
+   "fiyat": -0.02660869745140937,
+   "iv_degisim": -0.18637910732159502,
+   "iv_once": 0.9222335243333781,
+   "iv_simdi": 0.7503484633260746,
+   "kapanis": 76.08999633789062,
+   "sembol": "FLEX",
+   "seri": "iv-FLEX",
+   "tarih": "2026-11-10"
+  },
+  {
+   "ad": "The Trade Desk, Inc.",
+   "bilanco": "Yakın",
+   "fiyat": 0.032819809852803195,
+   "iv_degisim": -0.3272077517923828,
+   "iv_once": 0.9317444031650068,
+   "iv_simdi": 0.6268704117602494,
+   "kapanis": 15.420000076293945,
+   "sembol": "TTD",
+   "seri": "iv-TTD",
+   "tarih": "2026-11-10"
+  },
   {
    "ad": "Flex Ltd.",
    "bilanco": "Diğer",
