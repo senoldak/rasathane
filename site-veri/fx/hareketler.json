@@ -3,7 +3,7 @@
  "baslik": "Hareketler",
  "bolum": "fx",
  "grafik": "cizgi",
- "guncellendi": "2026-11-09T22:46:15Z",
+ "guncellendi": "2026-11-10T22:46:14Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -13,19 +13,19 @@
  "satirlar": [
   {
    "ad": "USD/TRY",
-   "gunluk": 0.0011867096129487553,
-   "kapanis": 50.212398529052734,
+   "gunluk": 0.001763457963663173,
+   "kapanis": 50.211700439453125,
    "seri": "TRY=X",
-   "tarih": "2026-11-09",
+   "tarih": "2026-11-10",
    "tur": "52 Hafta Zirvesi"
   },
   {
-   "ad": "TL sepeti",
-   "gunluk": 0.00029079826595679314,
-   "kapanis": 53.26152420043945,
-   "seri": "sepet",
-   "tarih": "2026-11-09",
-   "tur": "52 Hafta Zirvesi"
+   "ad": "EUR/CHF",
+   "gunluk": 0.008450516027507904,
+   "kapanis": 0.921280026435852,
+   "seri": "EURCHF=X",
+   "tarih": "2026-11-10",
+   "tur": "Sert Yükseliş"
   },
   {
    "ad": "USD/SEK",
