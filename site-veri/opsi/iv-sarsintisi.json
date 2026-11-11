@@ -3,7 +3,7 @@
  "baslik": "IV sarsıntısı",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-10T23:31:27Z",
+ "guncellendi": "2026-11-11T23:31:23Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -11,6 +11,102 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "Adobe Inc.",
+   "bilanco": "Diğer",
+   "fiyat": 0.003802320096650602,
+   "iv_degisim": 0.11501651040806204,
+   "iv_once": 0.5016060546347396,
+   "iv_simdi": 0.5592990326383831,
+   "kapanis": 237.60000610351562,
+   "sembol": "ADBE",
+   "seri": "iv-ADBE",
+   "tarih": "2026-11-11"
+  },
+  {
+   "ad": "Paychex, Inc.",
+   "bilanco": "Diğer",
+   "fiyat": -0.007142807430794096,
+   "iv_degisim": 0.145319895756421,
+   "iv_once": 0.335236998837162,
+   "iv_simdi": 0.38395360456187383,
+   "kapanis": 115.37000274658203,
+   "sembol": "PAYX",
+   "seri": "iv-PAYX",
+   "tarih": "2026-11-11"
+  },
+  {
+   "ad": "The Kraft Heinz Company",
+   "bilanco": "Diğer",
+   "fiyat": 0.0012376521010224462,
+   "iv_degisim": 0.1653142514543593,
+   "iv_once": 0.34663049031935805,
+   "iv_simdi": 0.4039334503577603,
+   "kapanis": 24.270000457763672,
+   "sembol": "KHC",
+   "seri": "iv-KHC",
+   "tarih": "2026-11-11"
+  },
+  {
+   "ad": "Charles Schwab Corporation (The",
+   "bilanco": "Diğer",
+   "fiyat": -0.0026873052056368696,
+   "iv_degisim": 0.21398756365038873,
+   "iv_once": 0.2768432552929426,
+   "iv_simdi": 0.336084269006122,
+   "kapanis": 92.77999877929688,
+   "sembol": "SCHW",
+   "seri": "iv-SCHW",
+   "tarih": "2026-11-11"
+  },
+  {
+   "ad": "Equinix, Inc.",
+   "bilanco": "Diğer",
+   "fiyat": 0.017200055803571423,
+   "iv_degisim": -0.1342209707811035,
+   "iv_once": 0.3852968641858764,
+   "iv_simdi": 0.3335819450359331,
+   "kapanis": 1068.06005859375,
+   "sembol": "EQIX",
+   "seri": "iv-EQIX",
+   "tarih": "2026-11-11"
+  },
+  {
+   "ad": "State Street Financial Select S",
+   "bilanco": "Diğer",
+   "fiyat": 0.0058329069694236235,
+   "iv_degisim": -0.1621613729330874,
+   "iv_once": 0.16833561291302954,
+   "iv_simdi": 0.1410380788095199,
+   "kapanis": 58.630001068115234,
+   "sembol": "XLF",
+   "seri": "iv-XLF",
+   "tarih": "2026-11-11"
+  },
+  {
+   "ad": "Vistra Corp.",
+   "bilanco": "Diğer",
+   "fiyat": 0.017304500680003665,
+   "iv_degisim": -0.16659825650383753,
+   "iv_once": 0.5138909157234686,
+   "iv_simdi": 0.4282775851307782,
+   "kapanis": 133.4499969482422,
+   "sembol": "VST",
+   "seri": "iv-VST",
+   "tarih": "2026-11-11"
+  },
+  {
+   "ad": "State Street Energy Select Sect",
+   "bilanco": "Diğer",
+   "fiyat": 0.018646517673742258,
+   "iv_degisim": -0.20984837576975102,
+   "iv_once": 0.3271802109508755,
+   "iv_simdi": 0.2585219750988298,
+   "kapanis": 63.369998931884766,
+   "sembol": "XLE",
+   "seri": "iv-XLE",
+   "tarih": "2026-11-11"
+  },
   {
    "ad": "Carrier Global Corporation",
    "bilanco": "Diğer",

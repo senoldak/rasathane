@@ -3,7 +3,7 @@
  "baslik": "Aşağı yön primi",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-10T23:31:27Z",
+ "guncellendi": "2026-11-11T23:31:23Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -12,52 +12,52 @@
  ],
  "satirlar": [
   {
-   "ad": "State Street SPDR S&P 500 ETF T",
-   "fark": 0.1734161255714619,
-   "kapanis": 749.9199829101562,
-   "sembol": "SPY",
-   "seri": "iv-SPY",
-   "skew": 1.2106625091047898
+   "ad": "Carnival Corporation Ltd.",
+   "fark": 1.009970348647668,
+   "kapanis": 30.68000030517578,
+   "sembol": "CCL",
+   "seri": "iv-CCL",
+   "skew": 2.040051676050758
   },
   {
-   "ad": "State Street Technology Select ",
-   "fark": 0.17297227436847806,
-   "kapanis": 168.91000366210938,
-   "sembol": "XLK",
-   "seri": "iv-XLK",
-   "skew": 1.210218657901806
+   "ad": "State Street SPDR S&P 500 ETF T",
+   "fark": 0.1571870933427364,
+   "kapanis": 759.8099975585938,
+   "sembol": "SPY",
+   "seri": "iv-SPY",
+   "skew": 1.1872684207458264
+  },
+  {
+   "ad": "Flex Ltd.",
+   "fark": 0.1404577615910909,
+   "kapanis": 78.97000122070312,
+   "sembol": "FLEX",
+   "seri": "iv-FLEX",
+   "skew": 1.170539088994181
+  },
+  {
+   "ad": "State Street Financial Select S",
+   "fark": 0.13003456285329906,
+   "kapanis": 58.630001068115234,
+   "sembol": "XLF",
+   "seri": "iv-XLF",
+   "skew": 1.160115890256389
   },
   {
    "ad": "Invesco QQQ Trust, Series 1",
-   "fark": 0.13332422459194637,
-   "kapanis": 674.760009765625,
+   "fark": 0.10147372097912566,
+   "kapanis": 690.3800048828125,
    "sembol": "QQQ",
    "seri": "iv-QQQ",
-   "skew": 1.1705706081252742
+   "skew": 1.1315550483822157
   },
   {
-   "ad": "Citigroup, Inc.",
-   "fark": 0.13058001793272123,
-   "kapanis": 122.2699966430664,
-   "sembol": "C",
-   "seri": "iv-C",
-   "skew": 1.167826401466049
-  },
-  {
-   "ad": "Honeywell Aerospace Inc.",
-   "fark": 0.11723752109093422,
-   "kapanis": 166.47000122070312,
-   "sembol": "HONA",
-   "seri": "iv-HONA",
-   "skew": 1.154483904624262
-  },
-  {
-   "ad": "State Street SPDR Dow Jones Ind",
-   "fark": 0.10850219682663931,
-   "kapanis": 521.72998046875,
-   "sembol": "DIA",
-   "seri": "iv-DIA",
-   "skew": 1.1457485803599672
+   "ad": "Vistra Corp.",
+   "fark": 0.0990256897962909,
+   "kapanis": 133.4499969482422,
+   "sembol": "VST",
+   "seri": "iv-VST",
+   "skew": 1.129107017199381
   }
  ],
  "sayfa": "asagi-yon-primi",
