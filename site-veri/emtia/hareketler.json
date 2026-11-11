@@ -3,7 +3,7 @@
  "baslik": "Hareketler",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-10T23:16:15Z",
+ "guncellendi": "2026-11-11T23:16:16Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -12,28 +12,28 @@
  ],
  "satirlar": [
   {
+   "ad": "Pamuk",
+   "gunluk": 0.04651157604728917,
+   "kapanis": 82.3499984741211,
+   "seri": "CT=F",
+   "tarih": "2026-11-11",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Kakao",
+   "gunluk": 0.06727119358920297,
+   "kapanis": 5061.0,
+   "seri": "CC=F",
+   "tarih": "2026-11-11",
+   "tur": "Sert Yükseliş"
+  },
+  {
    "ad": "Soya",
-   "gunluk": 0.03764009304292659,
-   "kapanis": 1226.75,
+   "gunluk": 0.035736942271093364,
+   "kapanis": 1224.5,
    "seri": "ZS=F",
    "tarih": "2026-11-10",
    "tur": "Sert Yükseliş"
-  },
-  {
-   "ad": "Canlı sığır",
-   "gunluk": 0.029370981466922963,
-   "kapanis": 222.5500030517578,
-   "seri": "LE=F",
-   "tarih": "2026-11-10",
-   "tur": "Sert Yükseliş"
-  },
-  {
-   "ad": "Alüminyum",
-   "gunluk": -0.03606532002167018,
-   "kapanis": 3113.75,
-   "seri": "ALI=F",
-   "tarih": "2026-11-10",
-   "tur": "Sert Düşüş"
   },
   {
    "ad": "Doğalgaz",
@@ -882,14 +882,6 @@
    "seri": "HO=F",
    "tarih": "2026-07-08",
    "tur": "Sert Yükseliş"
-  },
-  {
-   "ad": "Kahve",
-   "gunluk": -0.08888584975541503,
-   "kapanis": 331.6000061035156,
-   "seri": "KC=F",
-   "tarih": "2026-07-07",
-   "tur": "Sert Düşüş"
   }
  ],
  "sayfa": "hareketler",

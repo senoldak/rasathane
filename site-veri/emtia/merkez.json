@@ -3,7 +3,7 @@
  "baslik": "Merkez bankaları altın rezervi",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-10T23:16:15Z",
+ "guncellendi": "2026-11-11T23:16:16Z",
  "kaynaklar": [
   {
    "ad": "IMF, International Liquidity (IL)",
@@ -94,7 +94,7 @@
   {
    "ad": "Birleşik Krallık",
    "aylik": 0.0,
-   "donem": "2026-09",
+   "donem": "2026-10",
    "seri": "imf-GBR",
    "ton": 310.2895681744448,
    "yillik": 2.0849956205992726e-08
