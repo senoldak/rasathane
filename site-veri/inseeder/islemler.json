@@ -3,7 +3,7 @@
  "baslik": "Yönetici işlemleri",
  "bolum": "inseeder",
  "grafik": "yok",
- "guncellendi": "2026-11-10T12:18:18Z",
+ "guncellendi": "2026-11-11T04:05:11Z",
  "kaynaklar": [
   {
    "ad": "SEC EDGAR",
@@ -11,6 +11,348 @@
   }
  ],
  "satirlar": [
+  {
+   "hisse": "MSI",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "Motorola Solutions, Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 36390913.954399996
+  },
+  {
+   "hisse": "NFRX",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "2023 ETF Series Trust",
+   "tarih": "2026-11-10",
+   "tutar": 24462563.6423
+  },
+  {
+   "hisse": "HST",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "HOST HOTELS & RESORTS, INC.",
+   "tarih": "2026-11-10",
+   "tutar": 16728115.787999999
+  },
+  {
+   "hisse": "FUN",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "Direktör",
+   "sirket": "Six Flags Entertainment Corporation/NEW",
+   "tarih": "2026-11-10",
+   "tutar": 14929000.0
+  },
+  {
+   "hisse": "ADUS",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "Addus HomeCare Corp",
+   "tarih": "2026-11-10",
+   "tutar": 12198991.29
+  },
+  {
+   "hisse": "ALL",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "ALLSTATE CORP",
+   "tarih": "2026-11-10",
+   "tutar": 11207049.651800001
+  },
+  {
+   "hisse": "UAL",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "United Airlines Holdings, Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 10825062.93
+  },
+  {
+   "hisse": "MSI",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CFO",
+   "sirket": "Motorola Solutions, Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 8926117.48
+  },
+  {
+   "hisse": "FDX",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CFO",
+   "sirket": "FEDEX CORP",
+   "tarih": "2026-11-10",
+   "tutar": 5298647.0615
+  },
+  {
+   "hisse": "TXO",
+   "islem": "Alım",
+   "puan": 60,
+   "rol": "Direktör",
+   "sirket": "TXO Partners, L.P.",
+   "tarih": "2026-11-10",
+   "tutar": 3078748.6662999997
+  },
+  {
+   "hisse": "MXF",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "MEXICO FUND INC",
+   "tarih": "2026-11-10",
+   "tutar": 2533527.55
+  },
+  {
+   "hisse": "PSEC",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "CEO",
+   "sirket": "PROSPECT CAPITAL CORP",
+   "tarih": "2026-11-10",
+   "tutar": 1727313.9408
+  },
+  {
+   "hisse": "LBTY",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "%10 ortak",
+   "sirket": "Liberty Global Ltd.",
+   "tarih": "2026-11-10",
+   "tutar": 1460150.0784
+  },
+  {
+   "hisse": "MX",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Direktör",
+   "sirket": "MAGNACHIP SEMICONDUCTOR Corp",
+   "tarih": "2026-11-10",
+   "tutar": 1371146.0274
+  },
+  {
+   "hisse": "PRTA",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "PROTHENA CORP PUBLIC LTD CO",
+   "tarih": "2026-11-10",
+   "tutar": 1194158.0
+  },
+  {
+   "hisse": "ETRA",
+   "islem": "Alım",
+   "puan": 50,
+   "rol": "Direktör",
+   "sirket": "Electra Therapeutics, Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 744530.6
+  },
+  {
+   "hisse": "BSM",
+   "islem": "Alım",
+   "puan": 50,
+   "rol": "Direktör",
+   "sirket": "Black Stone Minerals, L.P.",
+   "tarih": "2026-11-10",
+   "tutar": 686290.0
+  },
+  {
+   "hisse": "CRH",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "Direktör",
+   "sirket": "CRH PUBLIC LTD CO",
+   "tarih": "2026-11-10",
+   "tutar": 569700.0
+  },
+  {
+   "hisse": "MXF",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "MEXICO FUND INC",
+   "tarih": "2026-11-10",
+   "tutar": 470614.4
+  },
+  {
+   "hisse": "FLOC",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "CEO",
+   "sirket": "Flowco Holdings Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 389732.0
+  },
+  {
+   "hisse": "NVT",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "nVent Electric plc",
+   "tarih": "2026-11-10",
+   "tutar": 339435.0
+  },
+  {
+   "hisse": "STVN",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "Stevanato Group S.p.A.",
+   "tarih": "2026-11-10",
+   "tutar": 326750.0
+  },
+  {
+   "hisse": "BOLT",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "Bolt Biotherapeutics, Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 319000.0
+  },
+  {
+   "hisse": "ATEC",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "Alphatec Holdings, Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 242550.0
+  },
+  {
+   "hisse": "LILA",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "Liberty Latin America Ltd.",
+   "tarih": "2026-11-10",
+   "tutar": 221215.8515
+  },
+  {
+   "hisse": "SLQT",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Direktör",
+   "sirket": "SelectQuote, Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 200819.63999999998
+  },
+  {
+   "hisse": "WD",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "Walker & Dunlop, Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 200525.67500000002
+  },
+  {
+   "hisse": "CNXN",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "COO/Başkan",
+   "sirket": "PC CONNECTION INC",
+   "tarih": "2026-11-10",
+   "tutar": 199698.0
+  },
+  {
+   "hisse": "STLN",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "Starling Oncology, Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 176273.1
+  },
+  {
+   "hisse": "DTI",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "CEO",
+   "sirket": "Drilling Tools International Corp",
+   "tarih": "2026-11-10",
+   "tutar": 164300.0
+  },
+  {
+   "hisse": "EMN",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Yönetici",
+   "sirket": "EASTMAN CHEMICAL CO",
+   "tarih": "2026-11-10",
+   "tutar": 159989.02500000002
+  },
+  {
+   "hisse": "MX",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "CEO",
+   "sirket": "MAGNACHIP SEMICONDUCTOR Corp",
+   "tarih": "2026-11-10",
+   "tutar": 155360.0
+  },
+  {
+   "hisse": "UPBD",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Yönetici",
+   "sirket": "UPBOUND GROUP, INC.",
+   "tarih": "2026-11-10",
+   "tutar": 150074.25
+  },
+  {
+   "hisse": "SPXC",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "SPX Technologies, Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 140750.0
+  },
+  {
+   "hisse": "WW",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "CEO",
+   "sirket": "WW INTERNATIONAL, INC.",
+   "tarih": "2026-11-10",
+   "tutar": 137625.0
+  },
+  {
+   "hisse": "SLQT",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "Direktör",
+   "sirket": "SelectQuote, Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 114218.04000000001
+  },
+  {
+   "hisse": "OBK",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Yönetici",
+   "sirket": "Origin Bancorp, Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 107160.0
+  },
+  {
+   "hisse": "ARLO",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "Arlo Technologies, Inc.",
+   "tarih": "2026-11-10",
+   "tutar": 100401.675
+  },
   {
    "hisse": "FIGS",
    "islem": "Satış",
