@@ -3,7 +3,7 @@
  "baslik": "Fon akışı",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-09T23:46:17Z",
+ "guncellendi": "2026-11-10T23:46:21Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -17,142 +17,142 @@
  "satirlar": [
   {
    "ad": "DFA Investment Dimensions Group Inc. U.S. Core Equity 2 Portfo",
-   "akis": 49395271461.799255,
-   "oran": 1.2879003194739307,
+   "akis": 49446690200.97139,
+   "oran": 1.2892409783800762,
    "sembol": "DFAC",
    "yon": "Giriş"
   },
   {
    "ad": "Vanguard Morningstar Value ETF",
-   "akis": 15928727833.002075,
-   "oran": 0.0632783063909953,
+   "akis": 16202370385.226837,
+   "oran": 0.06436537608311578,
    "sembol": "VTV",
    "yon": "Giriş"
   },
   {
    "ad": "DFA Investment Dimensions Group Inc. U.S. Small Cap Portfolio:",
-   "akis": 15725822955.260265,
-   "oran": 0.8479981934704565,
+   "akis": 15932778897.792175,
+   "oran": 0.8591580714554957,
    "sembol": "DFAS",
    "yon": "Giriş"
   },
   {
-   "ad": "Vanguard S&P 500 ETF",
-   "akis": 13732165100.476074,
-   "oran": 0.007940824764709439,
-   "sembol": "VOO",
-   "yon": "Giriş"
-  },
-  {
    "ad": "Schwab US Dividend Equity ETF",
-   "akis": 13596574205.754074,
-   "oran": 0.1260259495143772,
+   "akis": 13414958580.695267,
+   "oran": 0.124342563593165,
    "sembol": "SCHD",
    "yon": "Giriş"
   },
   {
-   "ad": "State Street Energy Select Sector SPDR ETF",
-   "akis": 11758989636.687378,
-   "oran": 0.30050964579208916,
-   "sembol": "XLE",
-   "yon": "Giriş"
-  },
-  {
    "ad": "Vanguard Total Bond Market ETF",
-   "akis": 11229469900.002808,
-   "oran": 0.028863748381453724,
+   "akis": 12646573819.62616,
+   "oran": 0.032506211590368865,
    "sembol": "BND",
    "yon": "Giriş"
   },
   {
+   "ad": "Vanguard S&P 500 ETF",
+   "akis": 10967477773.777588,
+   "oran": 0.006342103992719552,
+   "sembol": "VOO",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "State Street Energy Select Sector SPDR ETF",
+   "akis": 10176122860.891731,
+   "oran": 0.2600583188646155,
+   "sembol": "XLE",
+   "yon": "Giriş"
+  },
+  {
    "ad": "State Street SPDR Portfolio S&P 500 ETF",
-   "akis": 8917899623.72702,
-   "oran": 0.05136055981756801,
+   "akis": 8685926178.312256,
+   "oran": 0.05002456294363896,
    "sembol": "SPYM",
    "yon": "Giriş"
   },
   {
    "ad": "iShares National Muni Bond ETF",
-   "akis": 7429142432.796532,
-   "oran": 0.15933908033643226,
+   "akis": 7499978614.991608,
+   "oran": 0.16085836364909029,
    "sembol": "MUB",
    "yon": "Giriş"
   },
   {
    "ad": "Vanguard Div Appreciation ETF",
-   "akis": 7335328383.936218,
-   "oran": 0.057487803333773596,
+   "akis": 7254576464.491699,
+   "oran": 0.05685494135120477,
    "sembol": "VIG",
    "yon": "Giriş"
   },
   {
+   "ad": "Vanguard Morningstar Total Stock Market ETF",
+   "akis": -501133173466.7676,
+   "oran": -0.21581061333350235,
+   "sembol": "VTI",
+   "yon": "Çıkış"
+  },
+  {
    "ad": "Invesco QQQ Trust Series 1",
-   "akis": -27062645604.96991,
-   "oran": -0.054239630252805045,
+   "akis": -30475207227.7937,
+   "oran": -0.06107917149125968,
    "sembol": "QQQ",
    "yon": "Çıkış"
   },
   {
+   "ad": "Vanguard Morningstar Growth ETF",
+   "akis": -20550290120.05597,
+   "oran": -0.05241457308137454,
+   "sembol": "VUG",
+   "yon": "Çıkış"
+  },
+  {
    "ad": "Vanguard Total International Stock ETF",
-   "akis": -25974942341.68628,
-   "oran": -0.0400054511401276,
+   "akis": -19825158776.29138,
+   "oran": -0.030533827961471742,
    "sembol": "VXUS",
    "yon": "Çıkış"
   },
   {
    "ad": "SPDR Gold Shares",
-   "akis": -20152079142.34137,
-   "oran": -0.142214084613671,
+   "akis": -13713715907.835968,
+   "oran": -0.0967782798345162,
    "sembol": "GLD",
    "yon": "Çıkış"
   },
   {
-   "ad": "Vanguard Morningstar Growth ETF",
-   "akis": -18718404265.180237,
-   "oran": -0.04774225388509164,
-   "sembol": "VUG",
-   "yon": "Çıkış"
-  },
-  {
-   "ad": "iShares Core MSCI Emerging Markets ETF",
-   "akis": -14204866782.771057,
-   "oran": -0.08873879052262217,
-   "sembol": "IEMG",
-   "yon": "Çıkış"
-  },
-  {
    "ad": "Vanguard FTSE Emerging Markets ETF",
-   "akis": -14136901167.597168,
-   "oran": -0.08585670703854517,
+   "akis": -13209363853.370605,
+   "oran": -0.08022355600277227,
    "sembol": "VWO",
    "yon": "Çıkış"
   },
   {
+   "ad": "iShares Core MSCI Emerging Markets ETF",
+   "akis": -12848958567.62024,
+   "oran": -0.08026833761995167,
+   "sembol": "IEMG",
+   "yon": "Çıkış"
+  },
+  {
    "ad": "State Street SPDR S&P 500 ETF Trust Unit",
-   "akis": -9106459947.93689,
-   "oran": -0.011253433764659964,
+   "akis": -10005368408.679321,
+   "oran": -0.012364272321167226,
    "sembol": "SPY",
    "yon": "Çıkış"
   },
   {
-   "ad": "iShares Gold Trust Shares of the iShares Gold Trust",
-   "akis": -8251517036.155777,
-   "oran": -0.132616331225299,
-   "sembol": "IAU",
-   "yon": "Çıkış"
-  },
-  {
    "ad": "iShares Core S&P 500 ETF",
-   "akis": -7617399501.782837,
-   "oran": -0.008643672373759874,
+   "akis": -8929065442.857544,
+   "oran": -0.010132055732912253,
    "sembol": "IVV",
    "yon": "Çıkış"
   },
   {
-   "ad": "VanEck Gold Miners ETF",
-   "akis": -7328693071.507824,
-   "oran": -0.27913793071397164,
-   "sembol": "GDX",
+   "ad": "Vanguard Information Tech ETF",
+   "akis": -5698995233.577057,
+   "oran": -0.03202994016924614,
+   "sembol": "VGT",
    "yon": "Çıkış"
   }
  ],

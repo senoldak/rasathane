@@ -3,7 +3,7 @@
  "baslik": "ETF hareketleri",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-09T23:46:17Z",
+ "guncellendi": "2026-11-10T23:46:21Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -15,6 +15,167 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "Northern Trust Intermediate Tax-Exempt Bond ETF",
+   "sembol": "TAXI",
+   "seri": "etf-TAXI",
+   "tarih": "2026-11-10",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "AB Active ETFs Inc. AB Tax-Aware Short Duration Municipal ETF",
+   "sembol": "TAFI",
+   "seri": "etf-TAFI",
+   "tarih": "2026-11-10",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "NEOS Enhanced Income Credit Select ETF",
+   "sembol": "HYBI",
+   "seri": "etf-HYBI",
+   "tarih": "2026-11-10",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "WisdomTree EnhancedContinuous Commodity Index Fund",
+   "sembol": "GCC",
+   "seri": "etf-GCC",
+   "tarih": "2026-11-10",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "iShares Bloomberg Roll Select Commodity Strategy ETF",
+   "sembol": "CMDY",
+   "seri": "etf-CMDY",
+   "tarih": "2026-11-10",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "ProShares Bitcoin ETF",
+   "sembol": "BITO",
+   "seri": "etf-BITO",
+   "tarih": "2026-11-10",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Direxion Daily Healthcare Bull 3X ETF",
+   "sembol": "CURE",
+   "seri": "etf-CURE",
+   "tarih": "2026-11-10",
+   "tur": "SPY'ye Göre Güçte Zirve"
+  },
+  {
+   "ad": "Vanguard FTSE All-Wld ex-US SmCp Idx ETF",
+   "sembol": "VSS",
+   "seri": "etf-VSS",
+   "tarih": "2026-11-10",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "ProShares Ultra Russell2000",
+   "sembol": "UWM",
+   "seri": "etf-UWM",
+   "tarih": "2026-11-10",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "iShares U.S. Telecommunications ETF",
+   "sembol": "IYZ",
+   "seri": "etf-IYZ",
+   "tarih": "2026-11-10",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "The Advisors Inner Circle Fund II 3EDGE Dynamic Hard Assets ET",
+   "sembol": "EDGH",
+   "seri": "etf-EDGH",
+   "tarih": "2026-11-10",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Invesco BulletShares 2030 High Yield Corporate Bond ETF",
+   "sembol": "BSJU",
+   "seri": "etf-BSJU",
+   "tarih": "2026-11-10",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "ProShares UltraPro Short 20 Year Treasury",
+   "sembol": "TTT",
+   "seri": "etf-TTT",
+   "tarih": "2026-11-10",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "Tradr 1.5X Short NVDA Daily ETF",
+   "sembol": "NVDS",
+   "seri": "etf-NVDS",
+   "tarih": "2026-11-10",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "GraniteShares 2x Long MARA Daily ETF",
+   "sembol": "MRAL",
+   "seri": "etf-MRAL",
+   "tarih": "2026-11-10",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "Direxion Daily LMT Bull 2X ETF",
+   "sembol": "LMTL",
+   "seri": "etf-LMTL",
+   "tarih": "2026-11-10",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "Tradr 2X Long CIEN Daily ETF Tradr 2X Short COHR Daily ETF",
+   "sembol": "COHQ",
+   "seri": "etf-COHQ",
+   "tarih": "2026-11-10",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "GraniteShares 2x Long AMD Daily ETF",
+   "sembol": "AMDL",
+   "seri": "etf-AMDL",
+   "tarih": "2026-11-10",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "Direxion Daily NVDA Bull 2X ETF",
+   "sembol": "NVDU",
+   "seri": "etf-NVDU",
+   "tarih": "2026-11-10",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Defiance Daily Target 2X Long HIMS ETF",
+   "sembol": "HIMZ",
+   "seri": "etf-HIMZ",
+   "tarih": "2026-11-10",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Leverage Shares 2X Long CRCL Daily ETF",
+   "sembol": "CRCG",
+   "seri": "etf-CRCG",
+   "tarih": "2026-11-10",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "iShares U.S. Medical Devices ETF",
+   "sembol": "IHI",
+   "seri": "etf-IHI",
+   "tarih": "2026-11-10",
+   "tur": "Altın Kesişim"
+  },
+  {
+   "ad": "Direxion Daily GOOGL Bear 1X ETF",
+   "sembol": "GGLS",
+   "seri": "etf-GGLS",
+   "tarih": "2026-11-10",
+   "tur": "Altın Kesişim"
+  },
   {
    "ad": "Militia Long/Short Equity ETF",
    "sembol": "ORR",
@@ -165,7 +326,7 @@
   {
    "ad": "NuShares ETF Trust Nuveen High Yield Corporate Bond ETF",
    "sembol": "NHYB",
-   "seri": "etf-NHYB",
+   "seri": null,
    "tarih": "2026-11-09",
    "tur": "Ölüm Kesişimi"
   },
@@ -6241,7 +6402,7 @@
   {
    "ad": "DBX ETF Trust Xtrackers USD High Yield BB-B ex Financials ETF",
    "sembol": "BHYB",
-   "seri": "etf-BHYB",
+   "seri": null,
    "tarih": "2026-10-27",
    "tur": "SMA 200'ü Yukarı Kesenler"
   },
