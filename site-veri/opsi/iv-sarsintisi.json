@@ -3,7 +3,7 @@
  "baslik": "IV sarsıntısı",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-11T23:31:23Z",
+ "guncellendi": "2026-11-12T23:31:20Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -11,6 +11,102 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "McDonald's Corporation",
+   "bilanco": "Diğer",
+   "fiyat": -0.004257579920409982,
+   "iv_degisim": 0.11350590311375419,
+   "iv_once": 0.2254835297939637,
+   "iv_simdi": 0.25107724148050464,
+   "kapanis": 273.6300048828125,
+   "sembol": "MCD",
+   "seri": "iv-MCD",
+   "tarih": "2026-11-12"
+  },
+  {
+   "ad": "Super Micro Computer, Inc.",
+   "bilanco": "Diğer",
+   "fiyat": -0.11304635226942517,
+   "iv_degisim": 0.1483265813857475,
+   "iv_once": 0.7717497131934168,
+   "iv_simdi": 0.8862207098368274,
+   "kapanis": 26.989999771118164,
+   "sembol": "SMCI",
+   "seri": "iv-SMCI",
+   "tarih": "2026-11-12"
+  },
+  {
+   "ad": "Fastenal Company",
+   "bilanco": "Diğer",
+   "fiyat": 0.0010812318756341366,
+   "iv_degisim": 0.1487262632772095,
+   "iv_once": 0.23846253633869452,
+   "iv_simdi": 0.27392817829995436,
+   "kapanis": 55.54999923706055,
+   "sembol": "FAST",
+   "seri": "iv-FAST",
+   "tarih": "2026-11-12"
+  },
+  {
+   "ad": "Ford Motor Company",
+   "bilanco": "Diğer",
+   "fiyat": -0.028571459711814406,
+   "iv_degisim": 1.9952481755146985,
+   "iv_once": 0.307919588877143,
+   "iv_simdi": 0.9222955867894986,
+   "kapanis": 11.899999618530273,
+   "sembol": "F",
+   "seri": "iv-F",
+   "tarih": "2026-11-12"
+  },
+  {
+   "ad": "KeyCorp",
+   "bilanco": "Diğer",
+   "fiyat": -0.005130625355014629,
+   "iv_degisim": -0.09731648571721319,
+   "iv_once": 0.31823128931792893,
+   "iv_simdi": 0.2872621385962504,
+   "kapanis": 21.329999923706055,
+   "sembol": "KEY",
+   "seri": "iv-KEY",
+   "tarih": "2026-11-12"
+  },
+  {
+   "ad": "Paychex, Inc.",
+   "bilanco": "Diğer",
+   "fiyat": -0.0016468963931950409,
+   "iv_degisim": -0.13809759760682805,
+   "iv_once": 0.38395360456187383,
+   "iv_simdi": 0.330930534179397,
+   "kapanis": 115.18000030517578,
+   "sembol": "PAYX",
+   "seri": "iv-PAYX",
+   "tarih": "2026-11-12"
+  },
+  {
+   "ad": "Charles Schwab Corporation (The",
+   "bilanco": "Diğer",
+   "fiyat": -0.011424849887261224,
+   "iv_degisim": -0.19469353959511282,
+   "iv_once": 0.336084269006122,
+   "iv_simdi": 0.270650833071084,
+   "kapanis": 91.72000122070312,
+   "sembol": "SCHW",
+   "seri": "iv-SCHW",
+   "tarih": "2026-11-12"
+  },
+  {
+   "ad": "Bristol-Myers Squibb Company",
+   "bilanco": "Diğer",
+   "fiyat": -0.009378479637878412,
+   "iv_degisim": -0.27733223740380697,
+   "iv_once": 0.3696542187240843,
+   "iv_simdi": 0.2671371871795778,
+   "kapanis": 62.31999969482422,
+   "sembol": "BMY",
+   "seri": "iv-BMY",
+   "tarih": "2026-11-12"
+  },
   {
    "ad": "Adobe Inc.",
    "bilanco": "Diğer",
