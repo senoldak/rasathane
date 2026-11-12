@@ -3,7 +3,7 @@
  "baslik": "Hareketler",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-11T23:16:16Z",
+ "guncellendi": "2026-11-12T23:16:15Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -12,20 +12,12 @@
  ],
  "satirlar": [
   {
-   "ad": "Pamuk",
-   "gunluk": 0.04651157604728917,
-   "kapanis": 82.3499984741211,
-   "seri": "CT=F",
-   "tarih": "2026-11-11",
-   "tur": "Sert Yükseliş"
-  },
-  {
-   "ad": "Kakao",
-   "gunluk": 0.06727119358920297,
-   "kapanis": 5061.0,
-   "seri": "CC=F",
-   "tarih": "2026-11-11",
-   "tur": "Sert Yükseliş"
+   "ad": "Altın",
+   "gunluk": -0.02957131579255723,
+   "kapanis": 3882.199951171875,
+   "seri": "GC=F",
+   "tarih": "2026-11-12",
+   "tur": "52 Hafta Dibi"
   },
   {
    "ad": "Soya",
@@ -873,14 +865,6 @@
    "kapanis": 356.95001220703125,
    "seri": "KC=F",
    "tarih": "2026-07-09",
-   "tur": "Sert Yükseliş"
-  },
-  {
-   "ad": "Dizel",
-   "gunluk": 0.10776263772956374,
-   "kapanis": 3.6575000286102295,
-   "seri": "HO=F",
-   "tarih": "2026-07-08",
    "tur": "Sert Yükseliş"
   }
  ],
