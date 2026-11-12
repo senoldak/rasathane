@@ -3,7 +3,7 @@
  "baslik": "Politika faizleri",
  "bolum": "fx",
  "grafik": "cizgi",
- "guncellendi": "2026-11-11T22:46:21Z",
+ "guncellendi": "2026-11-12T22:46:14Z",
  "kaynaklar": [
   {
    "ad": "BIS",
@@ -13,7 +13,7 @@
  "satirlar": [
   {
    "ad": "AUD",
-   "faiz": 4.6
+   "faiz": 4.85
   },
   {
    "ad": "BRL",
@@ -37,7 +37,7 @@
   },
   {
    "ad": "GBP",
-   "faiz": 3.75
+   "faiz": 4.0
   },
   {
    "ad": "HUF",
@@ -57,7 +57,7 @@
   },
   {
    "ad": "MXN",
-   "faiz": 6.5
+   "faiz": 6.25
   },
   {
    "ad": "NOK",
