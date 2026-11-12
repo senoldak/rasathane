@@ -3,7 +3,7 @@
  "baslik": "ETF hareketleri",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-10T23:46:21Z",
+ "guncellendi": "2026-11-11T23:46:26Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -15,6 +15,258 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "Invesco DB USD Index Bullish Fund ETF",
+   "sembol": "UUP",
+   "seri": "etf-UUP",
+   "tarih": "2026-11-11",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "WisdomTree Bloomberg U.S. Dollar Bullish Fund",
+   "sembol": "USDU",
+   "seri": "etf-USDU",
+   "tarih": "2026-11-11",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "Hartford AAA CLO ETF",
+   "sembol": "TRPA",
+   "seri": "etf-TRPA",
+   "tarih": "2026-11-11",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "Invesco Bloomberg Pricing Power ETF",
+   "sembol": "POWA",
+   "seri": "etf-POWA",
+   "tarih": "2026-11-11",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "Pacer Aristotle Pacific Floating Rate High Income ETF",
+   "sembol": "FLRT",
+   "seri": "etf-FLRT",
+   "tarih": "2026-11-11",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "Xtrackers MSCI Europe Hedged Equity ETF",
+   "sembol": "DBEU",
+   "seri": "etf-DBEU",
+   "tarih": "2026-11-11",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "Northern Lights Fund Trust IV Main BuyWrite ETF",
+   "sembol": "BUYW",
+   "seri": "etf-BUYW",
+   "tarih": "2026-11-11",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "Invesco BulletShares 2027 Municipal Bond ETF",
+   "sembol": "BSMR",
+   "seri": "etf-BSMR",
+   "tarih": "2026-11-11",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "ETF Opportunities Trust T-Rex 2X Long Apple Daily Target ETF",
+   "sembol": "AAPX",
+   "seri": "etf-AAPX",
+   "tarih": "2026-11-11",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "Invesco S&P 500 Equal Weight Utilities ETF",
+   "sembol": "RSPU",
+   "seri": "etf-RSPU",
+   "tarih": "2026-11-11",
+   "tur": "SMA 200'ü Yukarı Kesenler"
+  },
+  {
+   "ad": "iShares Euro High Yield Corporate Bond USD Hedged ETF",
+   "sembol": "EUHY",
+   "seri": "etf-EUHY",
+   "tarih": "2026-11-11",
+   "tur": "SMA 200'ü Yukarı Kesenler"
+  },
+  {
+   "ad": "DoubleLine ETF Trust DoubleLine Asset-Backed Securities ETF",
+   "sembol": "DABS",
+   "seri": "etf-DABS",
+   "tarih": "2026-11-11",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "SMI 3Fourteen Full-Cycle Trend ETF",
+   "sembol": "FCTE",
+   "seri": "etf-FCTE",
+   "tarih": "2026-11-11",
+   "tur": "SPY'ye Göre Güçte Zirve"
+  },
+  {
+   "ad": "First Trust Materials AlphaDEX Fund",
+   "sembol": "FXZ",
+   "seri": "etf-FXZ",
+   "tarih": "2026-11-11",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "AB Active ETFs Inc. AB Disruptors ETF",
+   "sembol": "FWD",
+   "seri": "etf-FWD",
+   "tarih": "2026-11-11",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "First Trust Emerging Markets Local Currency Bond ETF",
+   "sembol": "FEMB",
+   "seri": "etf-FEMB",
+   "tarih": "2026-11-11",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Pacer Emerging Markets Cash Cows 100 ETF",
+   "sembol": "ECOW",
+   "seri": "etf-ECOW",
+   "tarih": "2026-11-11",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "American Century ETF Trust Avantis Emerging Markets Small Cap",
+   "sembol": "AVEE",
+   "seri": "etf-AVEE",
+   "tarih": "2026-11-11",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "ETF Series Solutions Aptus Large Cap Upside ETF",
+   "sembol": "UPSD",
+   "seri": "etf-UPSD",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "Corgi SNDK 2x Daily ETF",
+   "sembol": "SNDC",
+   "seri": "etf-SNDC",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "First Trust Cloud Computing ETF",
+   "sembol": "SKYY",
+   "seri": "etf-SKYY",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "Tidal Trust II Return Stacked U.S. Stocks & Managed Futures ET",
+   "sembol": "RSST",
+   "seri": "etf-RSST",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "GraniteShares 2x Long NVDA Daily ETF",
+   "sembol": "NVDL",
+   "seri": "etf-NVDL",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "GraniteShares 2x Long NBIS Daily ETF",
+   "sembol": "NBIL",
+   "seri": "etf-NBIL",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "iShares U.S. Oil Equipment & Services ETF",
+   "sembol": "IEZ",
+   "seri": "etf-IEZ",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "Defiance Daily Target 2X Long HIMS ETF",
+   "sembol": "HIMZ",
+   "seri": "etf-HIMZ",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "VictoryShares Free Cash Flow Growth ETF",
+   "sembol": "GFLW",
+   "seri": "etf-GFLW",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "First Trust Energy AlphaDEX Fund",
+   "sembol": "FXN",
+   "seri": "etf-FXN",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "SMI 3Fourteen Full-Cycle Trend ETF",
+   "sembol": "FCTE",
+   "seri": "etf-FCTE",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "Xtrackers MSCI Emerging Markets Select ETF",
+   "sembol": "EMCS",
+   "seri": "etf-EMCS",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "Leverage Shares 2X Long CRWV Daily ETF",
+   "sembol": "CRWG",
+   "seri": "etf-CRWG",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "Elevation Series Trust Clough Hedged Equity ETF",
+   "sembol": "CBLS",
+   "seri": "etf-CBLS",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "KraneShares Public-Private AI & Technology ETF",
+   "sembol": "AGIX",
+   "seri": "etf-AGIX",
+   "tarih": "2026-11-11",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "iShares Trust iShares Mortgage Real Estate ETF",
+   "sembol": "REM",
+   "seri": "etf-REM",
+   "tarih": "2026-11-11",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "iShares 1-3 Year International Treasury Bond ETF",
+   "sembol": "ISHG",
+   "seri": "etf-ISHG",
+   "tarih": "2026-11-11",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Invesco CurrencyShares Euro Currency Trust",
+   "sembol": "FXE",
+   "seri": "etf-FXE",
+   "tarih": "2026-11-11",
+   "tur": "52 Haftanın Dibi"
+  },
   {
    "ad": "Northern Trust Intermediate Tax-Exempt Bond ETF",
    "sembol": "TAXI",
@@ -326,7 +578,7 @@
   {
    "ad": "NuShares ETF Trust Nuveen High Yield Corporate Bond ETF",
    "sembol": "NHYB",
-   "seri": null,
+   "seri": "etf-NHYB",
    "tarih": "2026-11-09",
    "tur": "Ölüm Kesişimi"
   },
