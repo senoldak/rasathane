@@ -3,7 +3,7 @@
  "baslik": "Hareketler",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-12T23:16:15Z",
+ "guncellendi": "2026-11-13T23:16:20Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -12,9 +12,25 @@
  ],
  "satirlar": [
   {
+   "ad": "Gümüş",
+   "gunluk": -0.026454786539703457,
+   "kapanis": 48.650001525878906,
+   "seri": "SI=F",
+   "tarih": "2026-11-13",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Canlı sığır",
+   "gunluk": 0.027524026145576697,
+   "kapanis": 224.9250030517578,
+   "seri": "LE=F",
+   "tarih": "2026-11-13",
+   "tur": "Sert Yükseliş"
+  },
+  {
    "ad": "Altın",
-   "gunluk": -0.02957131579255723,
-   "kapanis": 3882.199951171875,
+   "gunluk": -0.028796388244438198,
+   "kapanis": 3885.300048828125,
    "seri": "GC=F",
    "tarih": "2026-11-12",
    "tur": "52 Hafta Dibi"
@@ -857,14 +873,6 @@
    "kapanis": 79.91999816894531,
    "seri": "CT=F",
    "tarih": "2026-07-10",
-   "tur": "Sert Yükseliş"
-  },
-  {
-   "ad": "Kahve",
-   "gunluk": 0.10084814867241709,
-   "kapanis": 356.95001220703125,
-   "seri": "KC=F",
-   "tarih": "2026-07-09",
    "tur": "Sert Yükseliş"
   }
  ],
