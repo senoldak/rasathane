@@ -3,7 +3,7 @@
  "baslik": "Yönetici işlemleri",
  "bolum": "inseeder",
  "grafik": "yok",
- "guncellendi": "2026-11-11T11:47:04Z",
+ "guncellendi": "2026-11-13T04:06:58Z",
  "kaynaklar": [
   {
    "ad": "SEC EDGAR",
@@ -11,6 +11,573 @@
   }
  ],
  "satirlar": [
+  {
+   "hisse": "NFRX",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "%10 ortak",
+   "sirket": "2023 ETF Series Trust",
+   "tarih": "2026-11-12",
+   "tutar": 44499988.800000004
+  },
+  {
+   "hisse": "ALL",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "ALLSTATE CORP",
+   "tarih": "2026-11-12",
+   "tutar": 34039232.712799996
+  },
+  {
+   "hisse": "MSI",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "Motorola Solutions, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 21006423.973200005
+  },
+  {
+   "hisse": "MET",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "METLIFE INC",
+   "tarih": "2026-11-12",
+   "tutar": 19298702.43
+  },
+  {
+   "hisse": "MSI",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "Motorola Solutions, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 13153501.695
+  },
+  {
+   "hisse": "ROIV",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CFO",
+   "sirket": "Roivant Sciences Ltd.",
+   "tarih": "2026-11-12",
+   "tutar": 12473271.9
+  },
+  {
+   "hisse": "TPR",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CFO",
+   "sirket": "TAPESTRY, INC.",
+   "tarih": "2026-11-12",
+   "tutar": 7404350.1
+  },
+  {
+   "hisse": "OBIO",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "%10 ortak",
+   "sirket": "Orchestra BioMed Holdings, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 6000000.0
+  },
+  {
+   "hisse": "BEN",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CFO",
+   "sirket": "FRANKLIN TEMPLETON INC",
+   "tarih": "2026-11-12",
+   "tutar": 5792000.0
+  },
+  {
+   "hisse": "OFIX",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "Orthofix Medical Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 5106708.5806
+  },
+  {
+   "hisse": "LILA",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Direktör",
+   "sirket": "Liberty Latin America Ltd.",
+   "tarih": "2026-11-12",
+   "tutar": 5061968.5348000005
+  },
+  {
+   "hisse": "CTEV",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "Claritev Corp",
+   "tarih": "2026-11-12",
+   "tutar": 2935628.6075999998
+  },
+  {
+   "hisse": "MP",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Direktör",
+   "sirket": "MP Materials Corp. / DE",
+   "tarih": "2026-11-12",
+   "tutar": 1980000.0
+  },
+  {
+   "hisse": "JYNT",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "JOINT Corp",
+   "tarih": "2026-11-12",
+   "tutar": 1570171.4000000001
+  },
+  {
+   "hisse": "FIP",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "CEO",
+   "sirket": "FTAI Infrastructure Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 1530000.0
+  },
+  {
+   "hisse": "HOS",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "CEO",
+   "sirket": "HORNBECK OFFSHORE SERVICES, INC.",
+   "tarih": "2026-11-12",
+   "tutar": 1500009.1398190001
+  },
+  {
+   "hisse": "SJT",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "SAN JUAN BASIN ROYALTY TRUST",
+   "tarih": "2026-11-12",
+   "tutar": 1404986.74
+  },
+  {
+   "hisse": "PAM",
+   "islem": "Alım",
+   "puan": 60,
+   "rol": "Yönetici",
+   "sirket": "Pampa Energy Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 1300012.244
+  },
+  {
+   "hisse": "MP",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "COO/Başkan",
+   "sirket": "MP Materials Corp. / DE",
+   "tarih": "2026-11-12",
+   "tutar": 1175090.0
+  },
+  {
+   "hisse": "MNR",
+   "islem": "Alım",
+   "puan": 60,
+   "rol": "Direktör",
+   "sirket": "MACH NATURAL RESOURCES LP",
+   "tarih": "2026-11-12",
+   "tutar": 1008700.0000000001
+  },
+  {
+   "hisse": "BDSX",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "BIODESIX INC",
+   "tarih": "2026-11-12",
+   "tutar": 1001990.0
+  },
+  {
+   "hisse": "COHR",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "CEO",
+   "sirket": "COHERENT CORP.",
+   "tarih": "2026-11-12",
+   "tutar": 997400.0
+  },
+  {
+   "hisse": "EXFY",
+   "islem": "Alım",
+   "puan": 45,
+   "rol": "%10 ortak",
+   "sirket": "Expensify, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 988745.612
+  },
+  {
+   "hisse": "VISN",
+   "islem": "Alım",
+   "puan": 50,
+   "rol": "Direktör",
+   "sirket": "Vistance Networks, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 831060.0000000001
+  },
+  {
+   "hisse": "MXF",
+   "islem": "Alım",
+   "puan": 45,
+   "rol": "%10 ortak",
+   "sirket": "MEXICO FUND INC",
+   "tarih": "2026-11-12",
+   "tutar": 755308.44
+  },
+  {
+   "hisse": "ABCL",
+   "islem": "Alım",
+   "puan": 45,
+   "rol": "%10 ortak",
+   "sirket": "AbCellera Biologics Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 698920.1
+  },
+  {
+   "hisse": "HPP",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Direktör",
+   "sirket": "Hudson Pacific Properties, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 680112.3
+  },
+  {
+   "hisse": "BW",
+   "islem": "Alım",
+   "puan": 45,
+   "rol": "%10 ortak",
+   "sirket": "Babcock & Wilcox Enterprises, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 647592.5
+  },
+  {
+   "hisse": "EQPT",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Direktör",
+   "sirket": "EquipmentShare.com Inc",
+   "tarih": "2026-11-12",
+   "tutar": 554116.0
+  },
+  {
+   "hisse": "BLMN",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "CEO",
+   "sirket": "Bloomin' Brands, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 501999.99999999994
+  },
+  {
+   "hisse": "ASR",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "SOUTHEAST AIRPORT GROUP",
+   "tarih": "2026-11-12",
+   "tutar": 497649.75
+  },
+  {
+   "hisse": "NYSE:FLG",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "FLAGSTAR BANK, NATIONAL ASSOCIATION",
+   "tarih": "2026-11-12",
+   "tutar": 496428.76
+  },
+  {
+   "hisse": "DGICA",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "DONEGAL GROUP INC",
+   "tarih": "2026-11-12",
+   "tutar": 424497.0
+  },
+  {
+   "hisse": "XGN",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "EXAGEN INC.",
+   "tarih": "2026-11-12",
+   "tutar": 372977.45
+  },
+  {
+   "hisse": "RM",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "Regional Management Corp.",
+   "tarih": "2026-11-12",
+   "tutar": 359107.66000000003
+  },
+  {
+   "hisse": "BKD",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "Brookdale Senior Living Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 358068.0
+  },
+  {
+   "hisse": "TH",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "Target Hospitality Corp.",
+   "tarih": "2026-11-12",
+   "tutar": 312675.0
+  },
+  {
+   "hisse": "ALNY",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Direktör",
+   "sirket": "ALNYLAM PHARMACEUTICALS, INC.",
+   "tarih": "2026-11-12",
+   "tutar": 299526.2
+  },
+  {
+   "hisse": "NTHI",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "NEONC TECHNOLOGIES HOLDINGS, INC.",
+   "tarih": "2026-11-12",
+   "tutar": 294500.0
+  },
+  {
+   "hisse": "STVN",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Direktör",
+   "sirket": "Stevanato Group S.p.A.",
+   "tarih": "2026-11-12",
+   "tutar": 274400.0
+  },
+  {
+   "hisse": "BOOT",
+   "islem": "Alım",
+   "puan": 50,
+   "rol": "CFO",
+   "sirket": "Boot Barn Holdings, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 270740.0
+  },
+  {
+   "hisse": "EQPT",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "CEO",
+   "sirket": "EquipmentShare.com Inc",
+   "tarih": "2026-11-12",
+   "tutar": 249989.04
+  },
+  {
+   "hisse": "CSQR",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "CEO",
+   "sirket": "Csquare, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 247028.59999999998
+  },
+  {
+   "hisse": "ALNY",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Direktör",
+   "sirket": "ALNYLAM PHARMACEUTICALS, INC.",
+   "tarih": "2026-11-12",
+   "tutar": 243600.0
+  },
+  {
+   "hisse": "BFH",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "BREAD FINANCIAL HOLDINGS, INC.",
+   "tarih": "2026-11-12",
+   "tutar": 226000.0
+  },
+  {
+   "hisse": "COHR",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Direktör",
+   "sirket": "COHERENT CORP.",
+   "tarih": "2026-11-12",
+   "tutar": 222885.0
+  },
+  {
+   "hisse": "MP",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "CFO",
+   "sirket": "MP Materials Corp. / DE",
+   "tarih": "2026-11-12",
+   "tutar": 198515.68
+  },
+  {
+   "hisse": "VISN",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "Vistance Networks, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 198195.0
+  },
+  {
+   "hisse": "LRMR",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "Larimar Therapeutics, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 187082.0
+  },
+  {
+   "hisse": "ECL",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "ECOLAB INC.",
+   "tarih": "2026-11-12",
+   "tutar": 184875.0
+  },
+  {
+   "hisse": "HPP",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "CEO",
+   "sirket": "Hudson Pacific Properties, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 182000.0
+  },
+  {
+   "hisse": "CSQR",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Direktör",
+   "sirket": "Csquare, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 172399.99999999997
+  },
+  {
+   "hisse": "ADTN",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "ADTRAN Holdings, Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 171920.0
+  },
+  {
+   "hisse": "DOX",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "Direktör",
+   "sirket": "AMDOCS LTD",
+   "tarih": "2026-11-12",
+   "tutar": 149730.0
+  },
+  {
+   "hisse": "EGBN",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "EAGLE BANCORP INC",
+   "tarih": "2026-11-12",
+   "tutar": 149581.65
+  },
+  {
+   "hisse": "AUDC",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "AUDIOCODES LTD",
+   "tarih": "2026-11-12",
+   "tutar": 143408.6
+  },
+  {
+   "hisse": "ITIC",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "INVESTORS TITLE CO",
+   "tarih": "2026-11-12",
+   "tutar": 133000.0
+  },
+  {
+   "hisse": "MTDR",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "CEO",
+   "sirket": "Matador Resources Co",
+   "tarih": "2026-11-12",
+   "tutar": 123225.0
+  },
+  {
+   "hisse": "URG",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Yönetici",
+   "sirket": "UR-ENERGY INC",
+   "tarih": "2026-11-12",
+   "tutar": 109999.26000000001
+  },
+  {
+   "hisse": "AMH",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "American Homes 4 Rent",
+   "tarih": "2026-11-12",
+   "tutar": 105366.0
+  },
+  {
+   "hisse": "AFCG",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "Advanced Flower Capital Inc.",
+   "tarih": "2026-11-12",
+   "tutar": 100827.36
+  },
+  {
+   "hisse": "DOX",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Direktör",
+   "sirket": "AMDOCS LTD",
+   "tarih": "2026-11-12",
+   "tutar": 100800.0
+  },
+  {
+   "hisse": "NOMD",
+   "islem": "Alım",
+   "puan": 50,
+   "rol": "CFO",
+   "sirket": "Nomad Foods Ltd",
+   "tarih": "2026-11-12",
+   "tutar": 100160.8902
+  },
   {
    "hisse": "MSI",
    "islem": "Satış",
