@@ -3,7 +3,7 @@
  "baslik": "Aşağı yön primi",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-12T23:31:20Z",
+ "guncellendi": "2026-11-13T23:31:20Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -12,52 +12,52 @@
  ],
  "satirlar": [
   {
-   "ad": "State Street Energy Select Sect",
-   "fark": 0.29692761792656386,
-   "kapanis": 64.33000183105469,
-   "sembol": "XLE",
-   "seri": "iv-XLE",
-   "skew": 1.329046443800813
-  },
-  {
-   "ad": "Huntington Bancshares Incorpora",
-   "fark": 0.26055718680352546,
-   "kapanis": 15.729999542236328,
-   "sembol": "HBAN",
-   "seri": "iv-HBAN",
-   "skew": 1.2926760126777745
-  },
-  {
-   "ad": "Bristol-Myers Squibb Company",
-   "fark": 0.18893034154656152,
-   "kapanis": 62.31999969482422,
-   "sembol": "BMY",
-   "seri": "iv-BMY",
-   "skew": 1.2210491674208106
-  },
-  {
-   "ad": "Omnicom Group Inc.",
-   "fark": 0.16903800370154332,
-   "kapanis": 86.83999633789062,
-   "sembol": "OMC",
-   "seri": "iv-OMC",
-   "skew": 1.2011568295757924
+   "ad": "Alexandria Real Estate Equities",
+   "fark": 0.19212062182999734,
+   "kapanis": 43.84000015258789,
+   "sembol": "ARE",
+   "seri": "iv-ARE",
+   "skew": 1.220882258050975
   },
   {
    "ad": "State Street SPDR S&P 500 ETF T",
-   "fark": 0.16863500643378182,
-   "kapanis": 757.1199951171875,
+   "fark": 0.1533419826727045,
+   "kapanis": 754.3699951171875,
    "sembol": "SPY",
    "seri": "iv-SPY",
-   "skew": 1.200753832308031
+   "skew": 1.1821036188936822
+  },
+  {
+   "ad": "ON Semiconductor Corporation",
+   "fark": 0.13633828424453576,
+   "kapanis": 71.05999755859375,
+   "sembol": "ON",
+   "seri": "iv-ON",
+   "skew": 1.1650999204655135
+  },
+  {
+   "ad": "State Street Technology Select ",
+   "fark": 0.12043155930157812,
+   "kapanis": 170.27999877929688,
+   "sembol": "XLK",
+   "seri": "iv-XLK",
+   "skew": 1.1491931955225558
+  },
+  {
+   "ad": "Robinhood Markets, Inc.",
+   "fark": 0.11563592119754307,
+   "kapanis": 77.86000061035156,
+   "sembol": "HOOD",
+   "seri": "iv-HOOD",
+   "skew": 1.1443975574185208
   },
   {
    "ad": "Invesco QQQ Trust, Series 1",
-   "fark": 0.13870685619038325,
-   "kapanis": 688.1699829101562,
+   "fark": 0.11277326854818792,
+   "kapanis": 679.8900146484375,
    "sembol": "QQQ",
    "seri": "iv-QQQ",
-   "skew": 1.1708256820646323
+   "skew": 1.1415349047691656
   }
  ],
  "sayfa": "asagi-yon-primi",

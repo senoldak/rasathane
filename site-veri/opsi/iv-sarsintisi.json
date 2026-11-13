@@ -3,7 +3,7 @@
  "baslik": "IV sarsıntısı",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-12T23:31:20Z",
+ "guncellendi": "2026-11-13T23:31:20Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -11,6 +11,102 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "KeyCorp",
+   "bilanco": "Diğer",
+   "fiyat": 0.006094662973820331,
+   "iv_degisim": 0.15223753955372588,
+   "iv_once": 0.2872621385962504,
+   "iv_simdi": 0.33099421978308496,
+   "kapanis": 21.459999084472656,
+   "sembol": "KEY",
+   "seri": "iv-KEY",
+   "tarih": "2026-11-13"
+  },
+  {
+   "ad": "Bristol-Myers Squibb Company",
+   "bilanco": "Diğer",
+   "fiyat": 0.01781130641506956,
+   "iv_degisim": 0.24588002696946232,
+   "iv_once": 0.2671371871795778,
+   "iv_simdi": 0.3328208859678387,
+   "kapanis": 63.43000030517578,
+   "sembol": "BMY",
+   "seri": "iv-BMY",
+   "tarih": "2026-11-13"
+  },
+  {
+   "ad": "iShares iBoxx $ High Yield Corp",
+   "bilanco": "Diğer",
+   "fiyat": -0.0005196273549361585,
+   "iv_degisim": 0.3141796048206571,
+   "iv_once": 0.09259633480042666,
+   "iv_simdi": 0.12168821467586596,
+   "kapanis": 76.94000244140625,
+   "sembol": "HYG",
+   "seri": "iv-HYG",
+   "tarih": "2026-11-13"
+  },
+  {
+   "ad": "Ford Motor Company",
+   "bilanco": "Diğer",
+   "fiyat": 0.0008403553951601417,
+   "iv_degisim": 0.3678029086356329,
+   "iv_once": 0.9222955867894986,
+   "iv_simdi": 1.261518586232484,
+   "kapanis": 11.90999984741211,
+   "sembol": "F",
+   "seri": "iv-F",
+   "tarih": "2026-11-13"
+  },
+  {
+   "ad": "Carrier Global Corporation",
+   "bilanco": "Diğer",
+   "fiyat": -0.0031266906802460692,
+   "iv_degisim": -0.14825147173452025,
+   "iv_once": 0.33683993748965424,
+   "iv_simdi": 0.2869029210178492,
+   "kapanis": 54.20000076293945,
+   "sembol": "CARR",
+   "seri": "iv-CARR",
+   "tarih": "2026-11-13"
+  },
+  {
+   "ad": "Truist Financial Corporation",
+   "bilanco": "Diğer",
+   "fiyat": 0.0016035644825300732,
+   "iv_degisim": -0.1718382286906619,
+   "iv_once": 0.2976359238115194,
+   "iv_simdi": 0.2464906938690391,
+   "kapanis": 49.970001220703125,
+   "sembol": "TFC",
+   "seri": "iv-TFC",
+   "tarih": "2026-11-13"
+  },
+  {
+   "ad": "Alexandria Real Estate Equities",
+   "bilanco": "Diğer",
+   "fiyat": -0.010383726690627815,
+   "iv_degisim": -0.18871241708846465,
+   "iv_once": 0.4194100479620639,
+   "iv_simdi": 0.3402621640599539,
+   "kapanis": 43.84000015258789,
+   "sembol": "ARE",
+   "seri": "iv-ARE",
+   "tarih": "2026-11-13"
+  },
+  {
+   "ad": "Cisco Systems, Inc.",
+   "bilanco": "Yakın",
+   "fiyat": -0.0624448839641738,
+   "iv_degisim": -0.36492888809854473,
+   "iv_once": 0.5545349870175922,
+   "iv_simdi": 0.35216915079352135,
+   "kapanis": 95.63999938964844,
+   "sembol": "CSCO",
+   "seri": "iv-CSCO",
+   "tarih": "2026-11-13"
+  },
   {
    "ad": "McDonald's Corporation",
    "bilanco": "Diğer",
