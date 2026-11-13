@@ -3,7 +3,7 @@
  "baslik": "Geçmiş isabet",
  "bolum": "fx",
  "grafik": "cizgi",
- "guncellendi": "2026-11-12T22:46:14Z",
+ "guncellendi": "2026-11-13T22:46:22Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -11,6 +11,27 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "Sert Yükseliş",
+   "isabet": 0.8,
+   "ortalama": 0.015200081203927263,
+   "sayi": 5,
+   "ufuk": "5 işlem günü"
+  },
+  {
+   "ad": "Sert Yükseliş",
+   "isabet": null,
+   "ortalama": null,
+   "sayi": 0,
+   "ufuk": "20 işlem günü"
+  },
+  {
+   "ad": "Sert Yükseliş",
+   "isabet": null,
+   "ortalama": null,
+   "sayi": 0,
+   "ufuk": "60 işlem günü"
+  },
   {
    "ad": "52 Hafta Zirvesi",
    "isabet": 0.5,
@@ -34,9 +55,9 @@
   },
   {
    "ad": "Sert Düşüş",
-   "isabet": 0.75,
-   "ortalama": 0.009000346186313957,
-   "sayi": 4,
+   "isabet": 0.9,
+   "ortalama": 0.013725592906060124,
+   "sayi": 10,
    "ufuk": "5 işlem günü"
   },
   {
@@ -55,9 +76,9 @@
   },
   {
    "ad": "52 Hafta Dibi",
-   "isabet": 0.3333333333333333,
-   "ortalama": -0.0016472528215290734,
-   "sayi": 3,
+   "isabet": 0.5,
+   "ortalama": 0.0019111537841958182,
+   "sayi": 4,
    "ufuk": "5 işlem günü"
   },
   {
