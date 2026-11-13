@@ -3,7 +3,7 @@
  "baslik": "ETF hareketleri",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-11T23:46:26Z",
+ "guncellendi": "2026-11-12T23:46:26Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -15,6 +15,195 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "Virtus Reaves Utilities ETF",
+   "sembol": "UTES",
+   "seri": "etf-UTES",
+   "tarih": "2026-11-12",
+   "tur": "SMA 200'ü Yukarı Kesenler"
+  },
+  {
+   "ad": "Vanguard Short-Term Inflation-Protected Securities Index Fund",
+   "sembol": "VTIP",
+   "seri": "etf-VTIP",
+   "tarih": "2026-11-12",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "iShares Bitcoin Trust ETF",
+   "sembol": "IBIT",
+   "seri": "etf-IBIT",
+   "tarih": "2026-11-12",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "iShares Core 30/70 Conservative Allocation ETF",
+   "sembol": "AOK",
+   "seri": "etf-AOK",
+   "tarih": "2026-11-12",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Invesco S&P 500 Equal Weight Materials ETF",
+   "sembol": "RSPM",
+   "seri": "etf-RSPM",
+   "tarih": "2026-11-12",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "NEOS ETF Trust NEOS MLP & Energy Infrastructure High Income ET",
+   "sembol": "MLPI",
+   "seri": "etf-MLPI",
+   "tarih": "2026-11-12",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Horizon Kinetics Inflation Beneficiaries ETF",
+   "sembol": "INFL",
+   "seri": "etf-INFL",
+   "tarih": "2026-11-12",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Strategy Shares Nasdaq 7HANDL Index ETF",
+   "sembol": "HNDL",
+   "seri": "etf-HNDL",
+   "tarih": "2026-11-12",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Goldman Sachs Hedge Industry VIP ETF",
+   "sembol": "GVIP",
+   "seri": "etf-GVIP",
+   "tarih": "2026-11-12",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "iShares MSCI Emerging Markets Small Cap ETF",
+   "sembol": "EEMS",
+   "seri": "etf-EEMS",
+   "tarih": "2026-11-12",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "iShares MSCI UAE ETF",
+   "sembol": "UAE",
+   "seri": "etf-UAE",
+   "tarih": "2026-11-12",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "Leverage Shares 2X Long AMD Daily ETF",
+   "sembol": "AMDG",
+   "seri": "etf-AMDG",
+   "tarih": "2026-11-12",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "Volatility Shares Trust XRP 2X ETF",
+   "sembol": "XRPT",
+   "seri": "etf-XRPT",
+   "tarih": "2026-11-12",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Sprott Junior Uranium Miners ETF",
+   "sembol": "URNJ",
+   "seri": "etf-URNJ",
+   "tarih": "2026-11-12",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Invesco DB USD Index Bearish ETF",
+   "sembol": "UDN",
+   "seri": "etf-UDN",
+   "tarih": "2026-11-12",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Tradr 2X Short TSLA Daily ETF",
+   "sembol": "TSLQ",
+   "seri": "etf-TSLQ",
+   "tarih": "2026-11-12",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "GraniteShares 2x Long SMCI Daily ETF",
+   "sembol": "SMCL",
+   "seri": "etf-SMCL",
+   "tarih": "2026-11-12",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Invesco Financial Preferred ETF",
+   "sembol": "PGF",
+   "seri": "etf-PGF",
+   "tarih": "2026-11-12",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "ETF Opportunities Trust T-Rex 2X Long NVIDIA Daily Target ETF",
+   "sembol": "NVDX",
+   "seri": "etf-NVDX",
+   "tarih": "2026-11-12",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "AdvisorShares MSOS Daily Leveraged ETF",
+   "sembol": "MSOX",
+   "seri": "etf-MSOX",
+   "tarih": "2026-11-12",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Global X Lithium & Battery Tech ETF",
+   "sembol": "LIT",
+   "seri": "etf-LIT",
+   "tarih": "2026-11-12",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "SPDR Gold MiniShares Trust",
+   "sembol": "GLDM",
+   "seri": "etf-GLDM",
+   "tarih": "2026-11-12",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "iShares MSCI Philippines ETF",
+   "sembol": "EPHE",
+   "seri": "etf-EPHE",
+   "tarih": "2026-11-12",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Tidal ETF Trust II YieldMax COIN Option Income Strategy ETF",
+   "sembol": "CONY",
+   "seri": "etf-CONY",
+   "tarih": "2026-11-12",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Tidal Trust II Nicholas Crypto Income ETF",
+   "sembol": "BLOX",
+   "seri": "etf-BLOX",
+   "tarih": "2026-11-12",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Invesco S&P 500 Low Volatility ETF",
+   "sembol": "SPLV",
+   "seri": "etf-SPLV",
+   "tarih": "2026-11-12",
+   "tur": "Altın Kesişim"
+  },
+  {
+   "ad": "Short Term Municipal Bond Active Exchange-Traded Fund",
+   "sembol": "SMMU",
+   "seri": "etf-SMMU",
+   "tarih": "2026-11-12",
+   "tur": "Altın Kesişim"
+  },
   {
    "ad": "Invesco DB USD Index Bullish Fund ETF",
    "sembol": "UUP",

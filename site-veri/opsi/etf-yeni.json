@@ -3,7 +3,7 @@
  "baslik": "Yeni ETF'ler",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-11T23:46:26Z",
+ "guncellendi": "2026-11-12T23:46:26Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -17,39 +17,39 @@
  "satirlar": [
   {
    "ad": "FMI Funds Inc. FMI Global Equity ETF",
-   "getiri": null,
+   "getiri": -0.0020972258135552035,
    "ilk_gorulme": "2026-11-09",
-   "ilk_hacim": null,
+   "ilk_hacim": 584714.5904159546,
    "sembol": "FMIG",
    "seri": null,
-   "son_hacim": null
+   "son_hacim": 366749.05863227847
   },
   {
    "ad": "Mutual Fund Series Trust Eventide Dividend Growth ETF",
-   "getiri": 0.010185441801841,
+   "getiri": 0.002660217096409623,
    "ilk_gorulme": "2026-11-03",
    "ilk_hacim": 75316.20010375977,
    "sembol": "ETDG",
    "seri": null,
-   "son_hacim": 1219439.5352588654
+   "son_hacim": 1839296.5761245727
   },
   {
    "ad": "Mutual Fund Series Trust Eventide Large Cap Focus ETF",
-   "getiri": 0.0048284438045060885,
+   "getiri": 0.0016912136518791865,
    "ilk_gorulme": "2026-11-03",
    "ilk_hacim": 107519.99858856201,
    "sembol": "ELCF",
    "seri": null,
-   "son_hacim": 51814.44924468994
+   "son_hacim": 47854.04692993164
   },
   {
    "ad": "Listed Funds Trust Overlay Shares Nasdaq 100 Income ETF",
-   "getiri": -0.03238545437233309,
+   "getiri": -0.03909951749804064,
    "ilk_gorulme": "2026-11-02",
    "ilk_hacim": 5151601.946487427,
    "sembol": "OVQ",
    "seri": null,
-   "son_hacim": 4084616.348600769
+   "son_hacim": 3606355.009491348
   }
  ],
  "sayfa": "etf-yeni",

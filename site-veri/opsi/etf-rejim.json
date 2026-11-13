@@ -3,7 +3,7 @@
  "baslik": "Piyasa rejimi",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-11T23:46:26Z",
+ "guncellendi": "2026-11-12T23:46:26Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -18,8 +18,8 @@
   {
    "ad": "Lüks / temel tüketim",
    "anlam": "risk iştahı",
-   "g1a": -0.008678414153448055,
-   "oran": 1.3230180634368534,
+   "g1a": 0.021037477390009718,
+   "oran": 1.3228640710973123,
    "pay": "XLY",
    "payda": "XLP",
    "sma50": "Altında"
@@ -27,8 +27,8 @@
   {
    "ad": "Yüksek getirili / Hazine",
    "anlam": "kredi iştahı",
-   "g1a": -0.012073995115248981,
-   "oran": 0.850560769711422,
+   "g1a": -0.0015486879898986006,
+   "oran": 0.8533422474026355,
    "pay": "HYG",
    "payda": "IEF",
    "sma50": "Altında"
@@ -36,8 +36,8 @@
   {
    "ad": "Bakır / altın",
    "anlam": "büyüme beklentisi",
-   "g1a": -0.025097467631649995,
-   "oran": 0.10332173550636556,
+   "g1a": -0.005191501360095829,
+   "oran": 0.10493392358575551,
    "pay": "CPER",
    "payda": "GLD",
    "sma50": "Üstünde"
@@ -45,8 +45,8 @@
   {
    "ad": "Küçük / büyük şirket",
    "anlam": "geniş katılım",
-   "g1a": 0.0476000860037038,
-   "oran": 0.3725799834794353,
+   "g1a": 0.04296595331346076,
+   "oran": 0.3677620512430254,
    "pay": "IWM",
    "payda": "SPY",
    "sma50": "Üstünde"
@@ -54,8 +54,8 @@
   {
    "ad": "Yarı iletken / piyasa",
    "anlam": "teknoloji liderliği",
-   "g1a": -0.11735122511193796,
-   "oran": 0.6672194273358232,
+   "g1a": -0.09692906147595093,
+   "oran": 0.6626822884378718,
    "pay": "SMH",
    "payda": "SPY",
    "sma50": "Altında"
@@ -63,8 +63,8 @@
   {
    "ad": "Gelişen / ABD",
    "anlam": "dolar zayıflığı",
-   "g1a": -0.033677057245897424,
-   "oran": 0.08165199341265979,
+   "g1a": -0.03482216810416627,
+   "oran": 0.08075338094879551,
    "pay": "EEM",
    "payda": "SPY",
    "sma50": "Altında"

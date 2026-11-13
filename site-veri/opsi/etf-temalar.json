@@ -3,7 +3,7 @@
  "baslik": "Yükselen temalar",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-11T23:46:26Z",
+ "guncellendi": "2026-11-12T23:46:26Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -17,183 +17,183 @@
  "satirlar": [
   {
    "ad": "Grayscale Zcash Trust The Zcash ETF The Zcash ETF Shares",
-   "g1a": -0.18142546092100986,
-   "g3a": 1.1686650302446004,
-   "hacim": 46337023.357289694,
+   "g1a": -0.18016854385368963,
+   "g3a": 1.025080057883046,
+   "hacim": 45124285.71473827,
    "sembol": "ZCSH",
    "seri": "etf-ZCSH",
    "tema": "–"
   },
   {
    "ad": "Amplify Commodity Trust Breakwave Tanker Shipping ETF",
-   "g1a": -0.4561261090191754,
-   "g3a": 0.46845950564822636,
-   "hacim": 77727437.32831421,
+   "g1a": -0.41657477173911783,
+   "g3a": 0.5352922690840316,
+   "hacim": 73965972.24376526,
    "sembol": "BWET",
    "seri": "etf-BWET",
    "tema": "Denizcilik ve tanker"
   },
   {
    "ad": "Grayscale Hyperliquid Staking ETF",
-   "g1a": -0.09886258843723073,
-   "g3a": 0.27335071146996515,
-   "hacim": 2921134.446595669,
+   "g1a": -0.11911332930957508,
+   "g3a": 0.2926476663943829,
+   "hacim": 2913182.2252815245,
    "sembol": "HYPG",
    "seri": "etf-HYPG",
    "tema": "–"
   },
   {
-   "ad": "iShares Genomics Immunology and Healthcare ETF",
-   "g1a": 0.035057618854610784,
-   "g3a": 0.198070352150449,
-   "hacim": 7071270.47763443,
-   "sembol": "IDNA",
-   "seri": "etf-IDNA",
-   "tema": "Biyoteknoloji"
-  },
-  {
    "ad": "United States Brent Oil Fund LP ETV",
-   "g1a": -0.09754222155082504,
-   "g3a": 0.1811418982205979,
-   "hacim": 135703386.65129852,
+   "g1a": -0.06225022116567214,
+   "g3a": 0.20477881233949113,
+   "hacim": 136560464.07577896,
    "sembol": "BNO",
    "seri": "etf-BNO",
    "tema": "Petrol ve gaz"
   },
   {
-   "ad": "WisdomTree Bitcoin Fund Common Shares of Beneficial Interest",
-   "g1a": -0.10280053683701829,
-   "g3a": 0.1782029941353236,
-   "hacim": 1528880.8370452882,
-   "sembol": "BTCW",
-   "seri": "etf-BTCW",
-   "tema": "Kripto ve blokzincir"
-  },
-  {
-   "ad": "Grayscale Chainlink Trust ETF Grayscale Chainlink Trust ETF",
-   "g1a": -0.19335082932117076,
-   "g3a": 0.17752239551298055,
-   "hacim": 4693541.286705541,
-   "sembol": "GLNK",
-   "seri": "etf-GLNK",
-   "tema": "–"
-  },
-  {
    "ad": "VanEck Biotech ETF",
-   "g1a": 0.09268052207670352,
-   "g3a": 0.17367140540853354,
-   "hacim": 4320416.452064514,
+   "g1a": 0.05556016913728179,
+   "g3a": 0.16705148385849755,
+   "hacim": 4337103.9432724,
    "sembol": "BBH",
    "seri": "etf-BBH",
    "tema": "Biyoteknoloji"
   },
   {
+   "ad": "iShares Genomics Immunology and Healthcare ETF",
+   "g1a": -0.010174374548575615,
+   "g3a": 0.15980701508001927,
+   "hacim": 7074516.025183106,
+   "sembol": "IDNA",
+   "seri": "etf-IDNA",
+   "tema": "Biyoteknoloji"
+  },
+  {
+   "ad": "ProShares K-1 Free Crude Oil ETF",
+   "g1a": -0.05032785891230107,
+   "g3a": 0.15365458581440072,
+   "hacim": 9379628.513381958,
+   "sembol": "OILK",
+   "seri": "etf-OILK",
+   "tema": "Petrol ve gaz"
+  },
+  {
    "ad": "Invesco S&P 500 Equal Weight Health Care ETF",
-   "g1a": 0.09375002841323243,
-   "g3a": 0.14598370786915282,
-   "hacim": 16842975.925507355,
+   "g1a": 0.06767703479508236,
+   "g3a": 0.1366090877758328,
+   "hacim": 15565538.739157105,
    "sembol": "RSPH",
    "seri": "etf-RSPH",
    "tema": "Sağlık"
   },
   {
    "ad": "Portfolio Building Block World Pharma and Biotech Index ETF",
-   "g1a": 0.13290603713937443,
-   "g3a": 0.13027511545115278,
-   "hacim": 12996033.292678833,
+   "g1a": 0.09828119168794447,
+   "g3a": 0.13524943010843526,
+   "hacim": 14812564.353535462,
    "sembol": "PBPH",
    "seri": "etf-PBPH",
    "tema": "Biyoteknoloji"
   },
   {
-   "ad": "Bitwise Solana Staking ETF Bitwise Solana Staking ETF",
-   "g1a": -0.20647770100906726,
-   "g3a": 0.1285988620706886,
-   "hacim": 39499949.07936068,
-   "sembol": "BSOL",
-   "seri": "etf-BSOL",
-   "tema": "–"
+   "ad": "ARK 21Shares Bitcoin ETF Common Shares of Beneficial Interests",
+   "g1a": -0.12698414598307028,
+   "g3a": 0.13429252689841786,
+   "hacim": 39971727.07215738,
+   "sembol": "ARKB",
+   "seri": "etf-ARKB",
+   "tema": "Kripto ve blokzincir"
   },
   {
    "ad": "State Street Health Care Select Sector SPDR ETF",
-   "g1a": 0.1136979421770512,
-   "g3a": 0.1264587508952384,
-   "hacim": 2086973758.2953422,
+   "g1a": 0.0797309414916334,
+   "g3a": 0.12653916590196657,
+   "hacim": 2058233511.9366746,
    "sembol": "XLV",
    "seri": "etf-XLV",
    "tema": "Sağlık"
   },
   {
-   "ad": "First Trust Nasdaq Pharmaceuticals ETF",
-   "g1a": 0.10215189307298922,
-   "g3a": 0.11348968206291254,
-   "hacim": 3682031.7413396835,
-   "sembol": "FTXH",
-   "seri": "etf-FTXH",
-   "tema": "Sağlık"
-  },
-  {
-   "ad": "iShares Staked Ethereum Trust ETF",
-   "g1a": -0.16849331247002952,
-   "g3a": 0.1076627475244103,
-   "hacim": 12847830.600549316,
-   "sembol": "ETHB",
-   "seri": "etf-ETHB",
-   "tema": "Kripto ve blokzincir"
-  },
-  {
    "ad": "AGF U.S. Market Neutral Anti-Beta Fund",
-   "g1a": 0.04742766659882092,
-   "g3a": 0.10330222438671921,
-   "hacim": 23402682.347588778,
+   "g1a": 0.03755872503442137,
+   "g3a": 0.11804389652038316,
+   "hacim": 23595585.23890667,
    "sembol": "BTAL",
    "seri": "etf-BTAL",
    "tema": "–"
   },
   {
-   "ad": "Global X Genomics & Biotechnology ETF",
-   "g1a": -0.003060865617560693,
-   "g3a": 0.10292745603467979,
-   "hacim": 2203449.4331359863,
-   "sembol": "GNOM",
-   "seri": "etf-GNOM",
-   "tema": "Biyoteknoloji"
+   "ad": "Simplify Interest Rate Hedge ETF",
+   "g1a": -0.04868975455018498,
+   "g3a": 0.1147073841119226,
+   "hacim": 48557615.378145024,
+   "sembol": "PFIX",
+   "seri": "etf-PFIX",
+   "tema": "–"
   },
   {
-   "ad": "State Street SPDR S&P Health Care Services ETF",
-   "g1a": 0.08053792388358971,
-   "g3a": 0.0981207562488744,
-   "hacim": 4446465.879527283,
-   "sembol": "XHS",
-   "seri": "etf-XHS",
+   "ad": "Grayscale Chainlink Trust ETF Grayscale Chainlink Trust ETF",
+   "g1a": -0.19034601876567092,
+   "g3a": 0.11403512807947624,
+   "hacim": 4357316.8985167025,
+   "sembol": "GLNK",
+   "seri": "etf-GLNK",
+   "tema": "–"
+  },
+  {
+   "ad": "First Trust Nasdaq Pharmaceuticals ETF",
+   "g1a": 0.06929518919475242,
+   "g3a": 0.10976178513487089,
+   "hacim": 3981677.61659317,
+   "sembol": "FTXH",
+   "seri": "etf-FTXH",
    "tema": "Sağlık"
   },
   {
-   "ad": "iShares Biotechnology ETF",
-   "g1a": 0.09059091455925095,
-   "g3a": 0.09657045380961349,
-   "hacim": 416383637.2002739,
-   "sembol": "IBB",
-   "seri": "etf-IBB",
-   "tema": "Biyoteknoloji"
+   "ad": "Bitwise Solana Staking ETF Bitwise Solana Staking ETF",
+   "g1a": -0.2164230815201741,
+   "g3a": 0.09960942192992772,
+   "hacim": 38516899.88031645,
+   "sembol": "BSOL",
+   "seri": "etf-BSOL",
+   "tema": "–"
+  },
+  {
+   "ad": "Fidelity Disruptive Medicine ETF",
+   "g1a": 0.06841364524559901,
+   "g3a": 0.08358370939719229,
+   "hacim": 1386015.6822158813,
+   "sembol": "FMED",
+   "seri": "etf-FMED",
+   "tema": "–"
   },
   {
    "ad": "ROBO Global Healthcare Technology and Innovation ETF",
-   "g1a": 0.05368812392316502,
-   "g3a": 0.09589708411347564,
-   "hacim": 2674731.041404724,
+   "g1a": 0.027751832953983868,
+   "g3a": 0.07856091621446115,
+   "hacim": 3781088.3065311434,
    "sembol": "HTEC",
    "seri": "etf-HTEC",
    "tema": "Sağlık"
   },
   {
-   "ad": "Simplify Interest Rate Hedge ETF",
-   "g1a": -0.10221959503895639,
-   "g3a": 0.09454453115537675,
-   "hacim": 48943173.45481567,
-   "sembol": "PFIX",
-   "seri": "etf-PFIX",
-   "tema": "–"
+   "ad": "iShares U.S. Pharmaceutical ETF",
+   "g1a": 0.10815159681643594,
+   "g3a": 0.07688439462379315,
+   "hacim": 30831654.03600006,
+   "sembol": "IHE",
+   "seri": "etf-IHE",
+   "tema": "Sağlık"
+  },
+  {
+   "ad": "iShares Biotechnology ETF",
+   "g1a": 0.05008606482549194,
+   "g3a": 0.07657359633289063,
+   "hacim": 424700714.3676178,
+   "sembol": "IBB",
+   "seri": "etf-IBB",
+   "tema": "Biyoteknoloji"
   }
  ],
  "sayfa": "etf-temalar",
