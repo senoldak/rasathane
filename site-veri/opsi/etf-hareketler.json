@@ -3,7 +3,7 @@
  "baslik": "ETF hareketleri",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-12T23:46:26Z",
+ "guncellendi": "2026-11-13T23:46:28Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -15,6 +15,132 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "VanEck Retail ETF",
+   "sembol": "RTH",
+   "seri": "etf-RTH",
+   "tarih": "2026-11-13",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "Fidelity MSCI Consumer Staples Index ETF",
+   "sembol": "FSTA",
+   "seri": "etf-FSTA",
+   "tarih": "2026-11-13",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "State Street Utilities Select Sector SPDR ETF",
+   "sembol": "XLU",
+   "seri": "etf-XLU",
+   "tarih": "2026-11-13",
+   "tur": "SMA 200'ü Yukarı Kesenler"
+  },
+  {
+   "ad": "ProShares Short Bitcoin ETF",
+   "sembol": "BITI",
+   "seri": "etf-BITI",
+   "tarih": "2026-11-13",
+   "tur": "SMA 200'ü Yukarı Kesenler"
+  },
+  {
+   "ad": "iShares MSCI Global Gold Miners ETF",
+   "sembol": "RING",
+   "seri": "etf-RING",
+   "tarih": "2026-11-13",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Pacific North of South EM Equity Active ETF",
+   "sembol": "GEME",
+   "seri": "etf-GEME",
+   "tarih": "2026-11-13",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "First Trust Developed Markets Ex-US AlphaDEX Fund",
+   "sembol": "FDT",
+   "seri": "etf-FDT",
+   "tarih": "2026-11-13",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Eaton Vance Short Duration Income ETF",
+   "sembol": "EVSD",
+   "seri": "etf-EVSD",
+   "tarih": "2026-11-13",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "WisdomTree Emerging Market SmallCap Fund",
+   "sembol": "DGS",
+   "seri": "etf-DGS",
+   "tarih": "2026-11-13",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Direxion Daily MSCI Brazil Bull 2X ETF",
+   "sembol": "BRZU",
+   "seri": "etf-BRZU",
+   "tarih": "2026-11-13",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Bitwise Funds Trust Bitwise Crypto Industry Innovators ETF",
+   "sembol": "BITQ",
+   "seri": "etf-BITQ",
+   "tarih": "2026-11-13",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "iShares Silver Trust",
+   "sembol": "SLV",
+   "seri": "etf-SLV",
+   "tarih": "2026-11-13",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Sprott Critical Materials ETF",
+   "sembol": "SETM",
+   "seri": "etf-SETM",
+   "tarih": "2026-11-13",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Direxion Daily NFLX Bull 2X ETF",
+   "sembol": "NFXL",
+   "seri": "etf-NFXL",
+   "tarih": "2026-11-13",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Leverage Shares 2x Long NBIS Daily ETF",
+   "sembol": "NBIG",
+   "seri": "etf-NBIG",
+   "tarih": "2026-11-13",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "State Street SPDR Bloomberg International Corporate Bond ETF",
+   "sembol": "IBND",
+   "seri": "etf-IBND",
+   "tarih": "2026-11-13",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Leverage Shares 2X Long HOOD Daily ETF",
+   "sembol": "HOOG",
+   "seri": "etf-HOOG",
+   "tarih": "2026-11-13",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Invesco CurrencyShares Swiss Franc Trust",
+   "sembol": "FXF",
+   "seri": "etf-FXF",
+   "tarih": "2026-11-13",
+   "tur": "52 Haftanın Dibi"
+  },
   {
    "ad": "Virtus Reaves Utilities ETF",
    "sembol": "UTES",
@@ -746,7 +872,7 @@
   {
    "ad": "Fidelity Disruptive Medicine ETF",
    "sembol": "FMED",
-   "seri": "etf-FMED",
+   "seri": null,
    "tarih": "2026-11-09",
    "tur": "SPY'ye Göre Güçte Zirve"
   },

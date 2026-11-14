@@ -3,7 +3,7 @@
  "baslik": "Fon akışı",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-12T23:46:26Z",
+ "guncellendi": "2026-11-13T23:46:28Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -16,143 +16,143 @@
  ],
  "satirlar": [
   {
-   "ad": "DFA Investment Dimensions Group Inc. U.S. Core Equity 2 Portfo",
-   "akis": 49925852687.11159,
-   "oran": 1.3017343507357104,
-   "sembol": "DFAC",
-   "yon": "Giriş"
-  },
-  {
-   "ad": "Vanguard S&P 500 ETF",
-   "akis": 27958270872.95044,
-   "oran": 0.016167277927548556,
-   "sembol": "VOO",
-   "yon": "Giriş"
-  },
-  {
-   "ad": "Vanguard Morningstar Value ETF",
-   "akis": 17336433529.052246,
-   "oran": 0.06887054409364828,
-   "sembol": "VTV",
-   "yon": "Giriş"
-  },
-  {
    "ad": "Vanguard Total Bond Market ETF",
-   "akis": 16180774139.615356,
-   "oran": 0.041590368694329395,
+   "akis": 11407206472.470154,
+   "oran": 0.028863526989438986,
    "sembol": "BND",
    "yon": "Giriş"
   },
   {
-   "ad": "DFA Investment Dimensions Group Inc. U.S. Small Cap Portfolio:",
-   "akis": 16170779354.678436,
-   "oran": 0.8719919916934941,
-   "sembol": "DFAS",
+   "ad": "Vanguard Short-Term Inflation-Protected Securities Index Fund",
+   "akis": 1659651971.2261353,
+   "oran": 0.02261139523631705,
+   "sembol": "VTIP",
    "yon": "Giriş"
   },
   {
-   "ad": "Schwab US Dividend Equity ETF",
-   "akis": 14038846470.346878,
-   "oran": 0.13012534846926938,
-   "sembol": "SCHD",
+   "ad": "Vanguard Intermediate-Term Bond ETF",
+   "akis": 1512297738.1248322,
+   "oran": 0.029562765883899455,
+   "sembol": "BIV",
    "yon": "Giriş"
   },
   {
-   "ad": "State Street SPDR Portfolio S&P 500 ETF",
-   "akis": 10369955768.979218,
-   "oran": 0.059723338011243673,
-   "sembol": "SPYM",
+   "ad": "Vanguard Intermediate-Term Corporate Bond ETF",
+   "akis": 1488449433.9541016,
+   "oran": 0.021133882169949395,
+   "sembol": "VCIT",
    "yon": "Giriş"
   },
   {
-   "ad": "Vanguard Div Appreciation ETF",
-   "akis": 8557132514.362076,
-   "oran": 0.06706322134997739,
-   "sembol": "VIG",
+   "ad": "Vanguard Total International Bond ETF",
+   "akis": 1322346489.4508667,
+   "oran": 0.010689241356374836,
+   "sembol": "BNDX",
    "yon": "Giriş"
   },
   {
-   "ad": "iShares National Muni Bond ETF",
-   "akis": 7970352556.143715,
-   "oran": 0.1709468700783831,
-   "sembol": "MUB",
+   "ad": "Vanguard Tax-Exempt Bond ETF",
+   "akis": 1291890807.2669067,
+   "oran": 0.023076373657913762,
+   "sembol": "VTEB",
    "yon": "Giriş"
   },
   {
-   "ad": "Vanguard Morningstar Mid-Cap ETF",
-   "akis": 7416805277.01239,
-   "oran": 0.03426889522310419,
-   "sembol": "VO",
+   "ad": "Vanguard Real Estate ETF",
+   "akis": 1193420988.507515,
+   "oran": 0.017525708992063547,
+   "sembol": "VNQ",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "Vanguard Intermediate-Term Treasury ETF",
+   "akis": 1019491199.7180252,
+   "oran": 0.020756795531091967,
+   "sembol": "VGIT",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "Vanguard Long-Term Treasury ETF",
+   "akis": 943724641.2283268,
+   "oran": 0.05925842042693801,
+   "sembol": "VGLT",
+   "yon": "Giriş"
+  },
+  {
+   "ad": "Vanguard Short-Term Bond ETF",
+   "akis": 721681565.662857,
+   "oran": 0.01016841389311936,
+   "sembol": "BSV",
    "yon": "Giriş"
   },
   {
    "ad": "Vanguard Morningstar Total Stock Market ETF",
-   "akis": -477466232498.62646,
-   "oran": -0.20561855797478634,
+   "akis": -572559851515.9727,
+   "oran": -0.24652967779687246,
    "sembol": "VTI",
    "yon": "Çıkış"
   },
   {
-   "ad": "Invesco QQQ Trust Series 1",
-   "akis": -32386712164.45172,
-   "oran": -0.06491025742809442,
-   "sembol": "QQQ",
-   "yon": "Çıkış"
-  },
-  {
-   "ad": "Vanguard Morningstar Growth ETF",
-   "akis": -16386856699.822876,
-   "oran": -0.0417955217687476,
-   "sembol": "VUG",
-   "yon": "Çıkış"
-  },
-  {
-   "ad": "iShares Core MSCI Emerging Markets ETF",
-   "akis": -13115083438.30069,
-   "oran": -0.08193083819199613,
-   "sembol": "IEMG",
-   "yon": "Çıkış"
-  },
-  {
-   "ad": "Vanguard FTSE Emerging Markets ETF",
-   "akis": -11312867194.83435,
-   "oran": -0.06870568825501305,
-   "sembol": "VWO",
+   "ad": "Vanguard S&P 500 ETF",
+   "akis": -58119559959.31201,
+   "oran": -0.03333249288007534,
+   "sembol": "VOO",
    "yon": "Çıkış"
   },
   {
    "ad": "Vanguard Total International Stock ETF",
-   "akis": -9831258669.32959,
-   "oran": -0.015141667425787545,
+   "akis": -31333546265.180786,
+   "oran": -0.04845751884464583,
    "sembol": "VXUS",
    "yon": "Çıkış"
   },
   {
-   "ad": "VanEck Semiconductor ETF",
-   "akis": -8064481768.983719,
-   "oran": -0.1076989654395338,
-   "sembol": "SMH",
+   "ad": "Vanguard Morningstar Growth ETF",
+   "akis": -22568945196.475586,
+   "oran": -0.05938524596477848,
+   "sembol": "VUG",
+   "yon": "Çıkış"
+  },
+  {
+   "ad": "Vanguard FTSE Emerging Markets ETF",
+   "akis": -9140752138.562195,
+   "oran": -0.058318071251201205,
+   "sembol": "VWO",
    "yon": "Çıkış"
   },
   {
    "ad": "Vanguard Information Tech ETF",
-   "akis": -7084861230.927887,
-   "oran": -0.03981889298608824,
+   "akis": -7948726865.98819,
+   "oran": -0.04716843949158433,
    "sembol": "VGT",
    "yon": "Çıkış"
   },
   {
-   "ad": "State Street Technology Select Sector SPDR ETF",
-   "akis": -6657850928.834991,
-   "oran": -0.05230142701444339,
-   "sembol": "XLK",
+   "ad": "Vanguard FTSE Developed Markets ETF",
+   "akis": -6810644535.304993,
+   "oran": -0.021955815558107366,
+   "sembol": "VEA",
    "yon": "Çıkış"
   },
   {
-   "ad": "iShares PHLX SOX Semiconductor Sector Index Fund",
-   "akis": -6333427625.682404,
-   "oran": -0.13076259107109997,
-   "sembol": "SOXX",
+   "ad": "Vanguard Morningstar Mid-Cap ETF",
+   "akis": -4592377868.197296,
+   "oran": -0.020826997471413707,
+   "sembol": "VO",
+   "yon": "Çıkış"
+  },
+  {
+   "ad": "Vanguard Morningstar Small-Cap ETF",
+   "akis": -3989919833.0787964,
+   "oran": -0.02247147761805923,
+   "sembol": "VB",
+   "yon": "Çıkış"
+  },
+  {
+   "ad": "Vanguard Extended Market ETF",
+   "akis": -3604887852.8838654,
+   "oran": -0.03949926582125548,
+   "sembol": "VXF",
    "yon": "Çıkış"
   }
  ],
