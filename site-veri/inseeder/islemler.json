@@ -3,7 +3,7 @@
  "baslik": "Yönetici işlemleri",
  "bolum": "inseeder",
  "grafik": "yok",
- "guncellendi": "2026-11-13T12:01:53Z",
+ "guncellendi": "2026-11-14T04:06:41Z",
  "kaynaklar": [
   {
    "ad": "SEC EDGAR",
@@ -11,6 +11,267 @@
   }
  ],
  "satirlar": [
+  {
+   "hisse": "LYV",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "Live Nation Entertainment, Inc.",
+   "tarih": "2026-11-13",
+   "tutar": 35405734.230000004
+  },
+  {
+   "hisse": "LYV",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CFO",
+   "sirket": "Live Nation Entertainment, Inc.",
+   "tarih": "2026-11-13",
+   "tutar": 16728556.32
+  },
+  {
+   "hisse": "STWD",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "CEO",
+   "sirket": "STARWOOD PROPERTY TRUST, INC.",
+   "tarih": "2026-11-13",
+   "tutar": 14697681.5
+  },
+  {
+   "hisse": "FUN",
+   "islem": "Alım",
+   "puan": 60,
+   "rol": "Direktör",
+   "sirket": "Six Flags Entertainment Corporation/NEW",
+   "tarih": "2026-11-13",
+   "tutar": 9246000.0
+  },
+  {
+   "hisse": "LKNCY",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "Luckin Coffee Inc.",
+   "tarih": "2026-11-13",
+   "tutar": 7288800.000000001
+  },
+  {
+   "hisse": "PSEC",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "CEO",
+   "sirket": "PROSPECT CAPITAL CORP",
+   "tarih": "2026-11-13",
+   "tutar": 6054559.3225
+  },
+  {
+   "hisse": "BH",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "CEO",
+   "sirket": "Biglari Holdings Inc.",
+   "tarih": "2026-11-13",
+   "tutar": 5537124.529999999
+  },
+  {
+   "hisse": "AKAM",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "CEO",
+   "sirket": "AKAMAI TECHNOLOGIES INC",
+   "tarih": "2026-11-13",
+   "tutar": 2552400.0
+  },
+  {
+   "hisse": "STWD",
+   "islem": "Alım",
+   "puan": 90,
+   "rol": "Direktör",
+   "sirket": "STARWOOD PROPERTY TRUST, INC.",
+   "tarih": "2026-11-13",
+   "tutar": 2013450.1
+  },
+  {
+   "hisse": "SJT",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "SAN JUAN BASIN ROYALTY TRUST",
+   "tarih": "2026-11-13",
+   "tutar": 2012408.0299999998
+  },
+  {
+   "hisse": "IOND",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "Direktör",
+   "sirket": "Ionic Digital Inc.",
+   "tarih": "2026-11-13",
+   "tutar": 1291578.62
+  },
+  {
+   "hisse": "UPST",
+   "islem": "Alım",
+   "puan": 90,
+   "rol": "CEO",
+   "sirket": "Upstart Holdings, Inc.",
+   "tarih": "2026-11-13",
+   "tutar": 1028400.0000000001
+  },
+  {
+   "hisse": "TXO",
+   "islem": "Alım",
+   "puan": 50,
+   "rol": "Direktör",
+   "sirket": "TXO Partners, L.P.",
+   "tarih": "2026-11-13",
+   "tutar": 945219.5943
+  },
+  {
+   "hisse": "NXGL",
+   "islem": "Alım",
+   "puan": 90,
+   "rol": "CEO",
+   "sirket": "NEXGEL, INC.",
+   "tarih": "2026-11-13",
+   "tutar": 732688.0
+  },
+  {
+   "hisse": "KGS",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "Kodiak Gas Services, Inc.",
+   "tarih": "2026-11-13",
+   "tutar": 449900.0
+  },
+  {
+   "hisse": "GLP",
+   "islem": "Alım",
+   "puan": 30,
+   "rol": "Diğer",
+   "sirket": "GLOBAL PARTNERS LP",
+   "tarih": "2026-11-13",
+   "tutar": 442475.0
+  },
+  {
+   "hisse": "WY",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "WEYERHAEUSER CO",
+   "tarih": "2026-11-13",
+   "tutar": 306600.0
+  },
+  {
+   "hisse": "INDI",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "indie Semiconductor, Inc.",
+   "tarih": "2026-11-13",
+   "tutar": 299000.0
+  },
+  {
+   "hisse": "CTRI",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "Centuri Holdings, Inc.",
+   "tarih": "2026-11-13",
+   "tutar": 249920.0
+  },
+  {
+   "hisse": "ECX",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "CEO",
+   "sirket": "ECARX Holdings Inc.",
+   "tarih": "2026-11-13",
+   "tutar": 233670.0
+  },
+  {
+   "hisse": "CAT",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "CATERPILLAR INC",
+   "tarih": "2026-11-13",
+   "tutar": 208635.0
+  },
+  {
+   "hisse": "NTHI",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "NEONC TECHNOLOGIES HOLDINGS, INC.",
+   "tarih": "2026-11-13",
+   "tutar": 150501.0
+  },
+  {
+   "hisse": "FCPT",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "Four Corners Property Trust, Inc.",
+   "tarih": "2026-11-13",
+   "tutar": 149992.2732
+  },
+  {
+   "hisse": "CTEV",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "CEO",
+   "sirket": "Claritev Corp",
+   "tarih": "2026-11-13",
+   "tutar": 149927.4
+  },
+  {
+   "hisse": "IONS",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "IONIS PHARMACEUTICALS INC",
+   "tarih": "2026-11-13",
+   "tutar": 148200.0
+  },
+  {
+   "hisse": "XBIT",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "XBiotech Inc.",
+   "tarih": "2026-11-13",
+   "tutar": 143409.0
+  },
+  {
+   "hisse": "FF",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "CEO",
+   "sirket": "FutureFuel Corp.",
+   "tarih": "2026-11-13",
+   "tutar": 136066.4
+  },
+  {
+   "hisse": "ALDX",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "Aldeyra Therapeutics, Inc.",
+   "tarih": "2026-11-13",
+   "tutar": 128899.99999999999
+  },
+  {
+   "hisse": "FF",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Direktör",
+   "sirket": "FutureFuel Corp.",
+   "tarih": "2026-11-13",
+   "tutar": 113200.0
+  },
   {
    "hisse": "NFRX",
    "islem": "Alım",
