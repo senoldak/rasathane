@@ -3,7 +3,7 @@
  "baslik": "Faiz farkı ve kur",
  "bolum": "fx",
  "grafik": "cizgi",
- "guncellendi": "2026-11-13T22:46:22Z",
+ "guncellendi": "2026-11-16T22:46:18Z",
  "kaynaklar": [
   {
    "ad": "FRED",
@@ -25,19 +25,19 @@
  "satirlar": [
   {
    "ad": "ABD – Euro",
-   "fark": 1.7848584271000005,
-   "fark_1a": 0.07637466630000045,
-   "korelasyon": -0.3314713301999495,
+   "fark": 1.8081951242,
+   "fark_1a": 0.0772870701999997,
+   "korelasyon": -0.3164267684637573,
    "kur": "EUR/USD",
-   "kur_1a": -0.014942644154167573
+   "kur_1a": -0.01901879734938583
   },
   {
    "ad": "ABD – Japonya",
-   "fark": 3.003,
-   "fark_1a": 0.14100000000000001,
-   "korelasyon": 0.21891723354920756,
+   "fark": 2.998,
+   "fark_1a": 0.1070000000000002,
+   "korelasyon": 0.21394445858270286,
    "kur": "USD/JPY",
-   "kur_1a": 0.010946041633057568
+   "kur_1a": 0.0079168781346306
   }
  ],
  "sayfa": "faiz-farki",

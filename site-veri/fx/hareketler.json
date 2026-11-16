@@ -3,7 +3,7 @@
  "baslik": "Hareketler",
  "bolum": "fx",
  "grafik": "cizgi",
- "guncellendi": "2026-11-13T22:46:22Z",
+ "guncellendi": "2026-11-16T22:46:18Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -12,74 +12,106 @@
  ],
  "satirlar": [
   {
+   "ad": "USD/TRY",
+   "gunluk": 0.0025053284602976067,
+   "kapanis": 50.407901763916016,
+   "seri": "TRY=X",
+   "tarih": "2026-11-16",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "USD/SEK",
+   "gunluk": 0.005130925591596558,
+   "kapanis": 10.082759857177734,
+   "seri": "SEK=X",
+   "tarih": "2026-11-16",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "USD/PLN",
+   "gunluk": 0.004319991927732136,
+   "kapanis": 4.000959873199463,
+   "seri": "PLN=X",
+   "tarih": "2026-11-16",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "USD/CHF",
+   "gunluk": 0.004115204036798881,
+   "kapanis": 0.8393700122833252,
+   "seri": "CHF=X",
+   "tarih": "2026-11-16",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "USD/CAD",
+   "gunluk": 0.002524368063713922,
+   "kapanis": 1.4297000169754028,
+   "seri": "CAD=X",
+   "tarih": "2026-11-16",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "USD/BRL",
+   "gunluk": 0.02572377900663647,
+   "kapanis": 5.785799980163574,
+   "seri": "BRL=X",
+   "tarih": "2026-11-16",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
+   "ad": "NZD/USD",
+   "gunluk": -0.008254109398419085,
+   "kapanis": 0.5499037504196167,
+   "seri": "NZDUSD=X",
+   "tarih": "2026-11-16",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "EUR/USD",
+   "gunluk": -0.004553923096922263,
+   "kapanis": 1.0999890565872192,
+   "seri": "EURUSD=X",
+   "tarih": "2026-11-16",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "EUR/JPY",
+   "gunluk": -0.007704065221544765,
+   "kapanis": 175.29800415039062,
+   "seri": "EURJPY=X",
+   "tarih": "2026-11-16",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Dolar endeksi",
+   "gunluk": 0.0016825835559219904,
+   "kapanis": 103.58399963378906,
+   "seri": "DX-Y.NYB",
+   "tarih": "2026-11-16",
+   "tur": "52 Hafta Zirvesi"
+  },
+  {
    "ad": "USD/ZAR",
-   "gunluk": 0.019401841283774424,
-   "kapanis": 16.923099517822266,
+   "gunluk": 0.009477797399040089,
+   "kapanis": 16.758350372314453,
    "seri": "ZAR=X",
    "tarih": "2026-11-13",
    "tur": "Sert Yükseliş"
   },
   {
-   "ad": "USD/TRY",
-   "gunluk": 0.0018068496476100204,
-   "kapanis": 50.34469985961914,
-   "seri": "TRY=X",
-   "tarih": "2026-11-13",
-   "tur": "52 Hafta Zirvesi"
-  },
-  {
    "ad": "USD/SEK",
-   "gunluk": 0.010924224813324335,
-   "kapanis": 10.07289981842041,
+   "gunluk": 0.006748235845416062,
+   "kapanis": 10.031290054321289,
    "seri": "SEK=X",
    "tarih": "2026-11-13",
    "tur": "52 Hafta Zirvesi"
   },
   {
-   "ad": "USD/PLN",
-   "gunluk": 0.00533788431308313,
-   "kapanis": 3.992799997329712,
-   "seri": "PLN=X",
-   "tarih": "2026-11-13",
-   "tur": "52 Hafta Zirvesi"
-  },
-  {
    "ad": "USD/CHF",
-   "gunluk": 0.007100865548910429,
-   "kapanis": 0.8381999731063843,
+   "gunluk": 0.004373470880421282,
+   "kapanis": 0.8359299898147583,
    "seri": "CHF=X",
-   "tarih": "2026-11-13",
-   "tur": "52 Hafta Zirvesi"
-  },
-  {
-   "ad": "USD/BRL",
-   "gunluk": 0.01513772847112782,
-   "kapanis": 5.666600227355957,
-   "seri": "BRL=X",
-   "tarih": "2026-11-13",
-   "tur": "52 Hafta Zirvesi"
-  },
-  {
-   "ad": "NZD/USD",
-   "gunluk": -0.006939654849177246,
-   "kapanis": 0.5525166988372803,
-   "seri": "NZDUSD=X",
-   "tarih": "2026-11-13",
-   "tur": "52 Hafta Dibi"
-  },
-  {
-   "ad": "EUR/USD",
-   "gunluk": -0.006076282845734027,
-   "kapanis": 1.1027790307998657,
-   "seri": "EURUSD=X",
-   "tarih": "2026-11-13",
-   "tur": "52 Hafta Dibi"
-  },
-  {
-   "ad": "Dolar endeksi",
-   "gunluk": 0.0023359983340602852,
-   "kapanis": 103.41100311279297,
-   "seri": "DX-Y.NYB",
    "tarih": "2026-11-13",
    "tur": "52 Hafta Zirvesi"
   },
