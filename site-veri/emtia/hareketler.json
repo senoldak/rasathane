@@ -3,7 +3,7 @@
  "baslik": "Hareketler",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-13T23:16:20Z",
+ "guncellendi": "2026-11-16T23:16:11Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -13,19 +13,27 @@
  "satirlar": [
   {
    "ad": "Gümüş",
-   "gunluk": -0.026454786539703457,
-   "kapanis": 48.650001525878906,
+   "gunluk": -0.042442486226367926,
+   "kapanis": 46.95000076293945,
    "seri": "SI=F",
-   "tarih": "2026-11-13",
+   "tarih": "2026-11-16",
    "tur": "52 Hafta Dibi"
   },
   {
-   "ad": "Canlı sığır",
-   "gunluk": 0.027524026145576697,
-   "kapanis": 224.9250030517578,
-   "seri": "LE=F",
+   "ad": "Altın",
+   "gunluk": -0.007384903587289715,
+   "kapanis": 3857.60009765625,
+   "seri": "GC=F",
+   "tarih": "2026-11-16",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Gümüş",
+   "gunluk": -0.018830582922260253,
+   "kapanis": 49.03099822998047,
+   "seri": "SI=F",
    "tarih": "2026-11-13",
-   "tur": "Sert Yükseliş"
+   "tur": "52 Hafta Dibi"
   },
   {
    "ad": "Altın",
@@ -865,14 +873,6 @@
    "kapanis": 83.30000305175781,
    "seri": "BZ=F",
    "tarih": "2026-07-13",
-   "tur": "Sert Yükseliş"
-  },
-  {
-   "ad": "Pamuk",
-   "gunluk": 0.04936967339861864,
-   "kapanis": 79.91999816894531,
-   "seri": "CT=F",
-   "tarih": "2026-07-10",
    "tur": "Sert Yükseliş"
   }
  ],
