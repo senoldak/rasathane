@@ -3,7 +3,7 @@
  "baslik": "IV sarsıntısı",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-13T23:31:20Z",
+ "guncellendi": "2026-11-16T23:31:27Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -11,6 +11,102 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "Hasbro, Inc.",
+   "bilanco": "Diğer",
+   "fiyat": 0.0038987439187936346,
+   "iv_degisim": 0.21150226138842965,
+   "iv_once": 0.29126348971602706,
+   "iv_simdi": 0.3528663764508524,
+   "kapanis": 121.0199966430664,
+   "sembol": "HAS",
+   "seri": "iv-HAS",
+   "tarih": "2026-11-16"
+  },
+  {
+   "ad": "ON Semiconductor Corporation",
+   "bilanco": "Diğer",
+   "fiyat": -0.04742464442682692,
+   "iv_degisim": 0.21155468634625763,
+   "iv_once": 0.5469649647596343,
+   "iv_simdi": 0.6626779663217506,
+   "kapanis": 67.69000244140625,
+   "sembol": "ON",
+   "seri": "iv-ON",
+   "tarih": "2026-11-16"
+  },
+  {
+   "ad": "Alexandria Real Estate Equities",
+   "bilanco": "Diğer",
+   "fiyat": -0.007071199183668719,
+   "iv_degisim": 0.21461673341216136,
+   "iv_once": 0.3402621640599539,
+   "iv_simdi": 0.41328811821425415,
+   "kapanis": 43.529998779296875,
+   "sembol": "ARE",
+   "seri": "iv-ARE",
+   "tarih": "2026-11-16"
+  },
+  {
+   "ad": "Carrier Global Corporation",
+   "bilanco": "Diğer",
+   "fiyat": -0.04667901399226715,
+   "iv_degisim": 0.2490297155257406,
+   "iv_once": 0.2869029210178492,
+   "iv_simdi": 0.35835027382242823,
+   "kapanis": 51.66999816894531,
+   "sembol": "CARR",
+   "seri": "iv-CARR",
+   "tarih": "2026-11-16"
+  },
+  {
+   "ad": "FedEx Freight Holding Company, ",
+   "bilanco": "Diğer",
+   "fiyat": -0.007615837149644866,
+   "iv_degisim": -0.09482801897239823,
+   "iv_once": 0.4438190368539656,
+   "iv_simdi": 0.40173255680686626,
+   "kapanis": 132.91000366210938,
+   "sembol": "FDXF",
+   "seri": "iv-FDXF",
+   "tarih": "2026-11-16"
+  },
+  {
+   "ad": "United Parcel Service, Inc.",
+   "bilanco": "Diğer",
+   "fiyat": -0.005160158569225137,
+   "iv_degisim": -0.15211177241899276,
+   "iv_once": 0.2945503463432405,
+   "iv_simdi": 0.249745771094342,
+   "kapanis": 111.81999969482422,
+   "sembol": "UPS",
+   "seri": "iv-UPS",
+   "tarih": "2026-11-16"
+  },
+  {
+   "ad": "iShares iBoxx $ High Yield Corp",
+   "bilanco": "Diğer",
+   "fiyat": -0.0027293875462582884,
+   "iv_degisim": -0.27663031210171574,
+   "iv_once": 0.12168821467586596,
+   "iv_simdi": 0.08802556587098058,
+   "kapanis": 76.7300033569336,
+   "sembol": "HYG",
+   "seri": "iv-HYG",
+   "tarih": "2026-11-16"
+  },
+  {
+   "ad": "Ford Motor Company",
+   "bilanco": "Diğer",
+   "fiyat": -0.02854745230427258,
+   "iv_degisim": -0.7421306492811206,
+   "iv_once": 1.261518586232484,
+   "iv_simdi": 0.3253069787515693,
+   "kapanis": 11.569999694824219,
+   "sembol": "F",
+   "seri": "iv-F",
+   "tarih": "2026-11-16"
+  },
   {
    "ad": "KeyCorp",
    "bilanco": "Diğer",
