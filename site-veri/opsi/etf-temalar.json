@@ -3,7 +3,7 @@
  "baslik": "Yükselen temalar",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-13T23:46:28Z",
+ "guncellendi": "2026-11-16T23:46:25Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -16,181 +16,181 @@
  ],
  "satirlar": [
   {
+   "ad": "Angel Oak Income ETF",
+   "g1a": 2.0099462288108594,
+   "g3a": 1.9676508717959456,
+   "hacim": 13863559.370609855,
+   "sembol": "CARY",
+   "seri": "etf-CARY",
+   "tema": "–"
+  },
+  {
    "ad": "Grayscale Zcash Trust The Zcash ETF The Zcash ETF Shares",
-   "g1a": -0.22503043103871856,
-   "g3a": 0.9183416649240546,
-   "hacim": 43897002.885272026,
+   "g1a": -0.22207666341819732,
+   "g3a": 0.7799150755755333,
+   "hacim": 44278789.30964279,
    "sembol": "ZCSH",
    "seri": "etf-ZCSH",
    "tema": "–"
   },
   {
    "ad": "Amplify Commodity Trust Breakwave Tanker Shipping ETF",
-   "g1a": -0.31851430387054613,
-   "g3a": 0.6313680218518869,
-   "hacim": 73325778.12911987,
+   "g1a": -0.28984282684637175,
+   "g3a": 0.604851666000517,
+   "hacim": 68206918.0459137,
    "sembol": "BWET",
    "seri": "etf-BWET",
    "tema": "Denizcilik ve tanker"
   },
   {
-   "ad": "21shares Hyperliquid ETF",
-   "g1a": -0.1109233001667731,
-   "g3a": 0.2372235949809931,
-   "hacim": 2716561.22108078,
-   "sembol": "THYP",
-   "seri": "etf-THYP",
+   "ad": "Bitwise Hyperliquid ETF Common Shares of Beneficial Interest o",
+   "g1a": -0.13480117336012787,
+   "g3a": 0.16379565258241402,
+   "hacim": 14469711.937888145,
+   "sembol": "BHYP",
+   "seri": "etf-BHYP",
    "tema": "–"
   },
   {
-   "ad": "United States Brent Oil Fund LP ETV",
-   "g1a": -0.058587715098696314,
-   "g3a": 0.17490859994374475,
-   "hacim": 131484615.90673904,
-   "sembol": "BNO",
-   "seri": "etf-BNO",
-   "tema": "Petrol ve gaz"
-  },
-  {
    "ad": "Invesco S&P 500 Equal Weight Health Care ETF",
-   "g1a": 0.04882412831190952,
-   "g3a": 0.14899800213609704,
-   "hacim": 15199804.707566833,
+   "g1a": 0.05310640654739318,
+   "g3a": 0.13633085677321644,
+   "hacim": 15395536.489870071,
    "sembol": "RSPH",
    "seri": "etf-RSPH",
    "tema": "Sağlık"
   },
   {
-   "ad": "VanEck Biotech ETF",
-   "g1a": 0.0253166265207021,
-   "g3a": 0.13693962182996056,
-   "hacim": 4273313.669908905,
-   "sembol": "BBH",
-   "seri": "etf-BBH",
-   "tema": "Biyoteknoloji"
-  },
-  {
-   "ad": "State Street Health Care Select Sector SPDR ETF",
-   "g1a": 0.06580508776709992,
-   "g3a": 0.13482644953947576,
-   "hacim": 2038022923.4032333,
-   "sembol": "XLV",
-   "seri": "etf-XLV",
-   "tema": "Sağlık"
-  },
-  {
-   "ad": "Portfolio Building Block World Pharma and Biotech Index ETF",
-   "g1a": 0.08175504527326627,
-   "g3a": 0.13214574495111608,
-   "hacim": 15778343.841094304,
-   "sembol": "PBPH",
-   "seri": "etf-PBPH",
-   "tema": "Biyoteknoloji"
+   "ad": "United States Brent Oil Fund LP ETV",
+   "g1a": -0.12695344968074407,
+   "g3a": 0.12569562771717568,
+   "hacim": 130292468.85037307,
+   "sembol": "BNO",
+   "seri": "etf-BNO",
+   "tema": "Petrol ve gaz"
   },
   {
    "ad": "AGF U.S. Market Neutral Anti-Beta Fund",
-   "g1a": 0.04549019009459254,
-   "g3a": 0.12870444115857937,
-   "hacim": 23270290.704865836,
+   "g1a": 0.043010710157729726,
+   "g3a": 0.12046205048950176,
+   "hacim": 23315843.29743328,
    "sembol": "BTAL",
    "seri": "etf-BTAL",
    "tema": "–"
   },
   {
-   "ad": "iShares Genomics Immunology and Healthcare ETF",
-   "g1a": -0.04637338402662394,
-   "g3a": 0.11823752904637685,
-   "hacim": 6894271.297961426,
-   "sembol": "IDNA",
-   "seri": "etf-IDNA",
-   "tema": "Biyoteknoloji"
-  },
-  {
-   "ad": "ProShares K-1 Free Crude Oil ETF",
-   "g1a": -0.05931864348158267,
-   "g3a": 0.11573035948367583,
-   "hacim": 9374416.796193695,
-   "sembol": "OILK",
-   "seri": "etf-OILK",
-   "tema": "Petrol ve gaz"
+   "ad": "State Street Health Care Select Sector SPDR ETF",
+   "g1a": 0.06321089776784405,
+   "g3a": 0.1111710334142646,
+   "hacim": 2075859043.9609191,
+   "sembol": "XLV",
+   "seri": "etf-XLV",
+   "tema": "Sağlık"
   },
   {
    "ad": "Simplify Interest Rate Hedge ETF",
-   "g1a": -0.003423845887167709,
-   "g3a": 0.10693665174296152,
-   "hacim": 48958524.86541748,
+   "g1a": 0.013926376779346494,
+   "g3a": 0.11036480200879994,
+   "hacim": 45898165.050608635,
    "sembol": "PFIX",
    "seri": "etf-PFIX",
    "tema": "–"
   },
   {
+   "ad": "VanEck Biotech ETF",
+   "g1a": 0.030909036539855883,
+   "g3a": 0.10842930516837801,
+   "hacim": 4199469.431832123,
+   "sembol": "BBH",
+   "seri": "etf-BBH",
+   "tema": "Biyoteknoloji"
+  },
+  {
+   "ad": "Portfolio Building Block World Pharma and Biotech Index ETF",
+   "g1a": 0.07718696498951938,
+   "g3a": 0.10040300635845267,
+   "hacim": 15827215.372324849,
+   "sembol": "PBPH",
+   "seri": "etf-PBPH",
+   "tema": "Biyoteknoloji"
+  },
+  {
    "ad": "Fidelity MSCI Consumer Staples Index ETF",
-   "g1a": 0.07268085242742872,
-   "g3a": 0.10160095623554088,
-   "hacim": 14713129.590807915,
+   "g1a": 0.06375298288043485,
+   "g3a": 0.09561111454468851,
+   "hacim": 14879440.687691499,
    "sembol": "FSTA",
    "seri": "etf-FSTA",
    "tema": "–"
   },
   {
-   "ad": "Kurv Yield Premium Strategy Microsoft (MSFT) ETF",
-   "g1a": -0.03154829550098648,
-   "g3a": 0.10147550168715624,
-   "hacim": 1261511.8536426544,
-   "sembol": "MSFY",
-   "seri": "etf-MSFY",
-   "tema": "–"
-  },
-  {
-   "ad": "First Trust Nasdaq Pharmaceuticals ETF",
-   "g1a": 0.05384794509890045,
-   "g3a": 0.10026835260311695,
-   "hacim": 10902773.74728756,
-   "sembol": "FTXH",
-   "seri": "etf-FTXH",
-   "tema": "Sağlık"
-  },
-  {
-   "ad": "iShares U.S. Consumer Staples ETF",
-   "g1a": 0.05724780424513276,
-   "g3a": 0.0998878843384905,
-   "hacim": 56993005.71806602,
-   "sembol": "IYK",
-   "seri": "etf-IYK",
-   "tema": "–"
-  },
-  {
    "ad": "Invesco KBW Property & Casualty Insurance ETF",
-   "g1a": 0.09315625828016572,
-   "g3a": 0.09163581254458375,
-   "hacim": 4383831.702639771,
+   "g1a": 0.08265710278708105,
+   "g3a": 0.09535946055906508,
+   "hacim": 4504726.35842514,
    "sembol": "KBWP",
    "seri": "etf-KBWP",
    "tema": "Bankalar ve finans"
   },
   {
    "ad": "State Street SPDR S&P Health Care Services ETF",
-   "g1a": 0.03457341607981257,
-   "g3a": 0.08433411448076233,
-   "hacim": 4426219.504623413,
+   "g1a": 0.06518422484498099,
+   "g3a": 0.0933162629289932,
+   "hacim": 4497215.043745423,
    "sembol": "XHS",
    "seri": "etf-XHS",
    "tema": "Sağlık"
   },
   {
-   "ad": "iShares U.S. Pharmaceutical ETF",
-   "g1a": 0.09800233152238325,
-   "g3a": 0.08008437363648202,
-   "hacim": 29282134.78205719,
-   "sembol": "IHE",
-   "seri": "etf-IHE",
+   "ad": "iShares Genomics Immunology and Healthcare ETF",
+   "g1a": -0.03182044613702162,
+   "g3a": 0.0908838382258752,
+   "hacim": 6929700.800075531,
+   "sembol": "IDNA",
+   "seri": "etf-IDNA",
+   "tema": "Biyoteknoloji"
+  },
+  {
+   "ad": "iShares U.S. Consumer Staples ETF",
+   "g1a": 0.045460460793300905,
+   "g3a": 0.09077000494139442,
+   "hacim": 56706210.45408325,
+   "sembol": "IYK",
+   "seri": "etf-IYK",
+   "tema": "–"
+  },
+  {
+   "ad": "iShares U.S. Health Care Providers ETF",
+   "g1a": 0.04194371731409419,
+   "g3a": 0.08446027020760605,
+   "hacim": 67411273.32735062,
+   "sembol": "IHF",
+   "seri": "etf-IHF",
+   "tema": "Sağlık"
+  },
+  {
+   "ad": "Kurv Yield Premium Strategy Microsoft (MSFT) ETF",
+   "g1a": -0.025055969081561824,
+   "g3a": 0.07990665147718512,
+   "hacim": 1268952.467641735,
+   "sembol": "MSFY",
+   "seri": "etf-MSFY",
+   "tema": "–"
+  },
+  {
+   "ad": "First Trust Nasdaq Pharmaceuticals ETF",
+   "g1a": 0.05158306597061246,
+   "g3a": 0.07794454716963428,
+   "hacim": 10941278.354396248,
+   "sembol": "FTXH",
+   "seri": "etf-FTXH",
    "tema": "Sağlık"
   },
   {
    "ad": "Invesco Water Resources ETF",
-   "g1a": 0.0913365061960838,
-   "g3a": 0.0765144443306558,
-   "hacim": 5604566.777694702,
+   "g1a": 0.08907225862319801,
+   "g3a": 0.07789329780610155,
+   "hacim": 5596166.337293243,
    "sembol": "PHO",
    "seri": "etf-PHO",
    "tema": "Tarım ve emtia"

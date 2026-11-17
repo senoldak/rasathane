@@ -3,7 +3,7 @@
  "baslik": "ETF hareketleri",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-13T23:46:28Z",
+ "guncellendi": "2026-11-16T23:46:25Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -15,6 +15,405 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "Invesco S&P 500 Equal Weight Consumer Staples ETF",
+   "sembol": "RSPS",
+   "seri": "etf-RSPS",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "iShares U.S. Health Care Providers ETF",
+   "sembol": "IHF",
+   "seri": "etf-IHF",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "Angel Oak Income ETF",
+   "sembol": "CARY",
+   "seri": "etf-CARY",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Zirvesi"
+  },
+  {
+   "ad": "Tidal Trust II YieldMax  MSTR Short Option Income Strategy ETF",
+   "sembol": "WNTR",
+   "seri": "etf-WNTR",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ü Yukarı Kesenler"
+  },
+  {
+   "ad": "T-REX 2X Inverse Bitcoin Daily Target ETF",
+   "sembol": "BTCZ",
+   "seri": "etf-BTCZ",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ü Yukarı Kesenler"
+  },
+  {
+   "ad": "State Street Multi-Asset Real Return ETF",
+   "sembol": "RLY",
+   "seri": "etf-RLY",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Roundhill Russell 2000 0DTE Covered Call Strategy ETF",
+   "sembol": "RDTE",
+   "seri": "etf-RDTE",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "WisdomTree U.S. Efficient Core Fund",
+   "sembol": "NTSX",
+   "seri": "etf-NTSX",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "VanEck Natural Resources ETF",
+   "sembol": "HAP",
+   "seri": "etf-HAP",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Cambria Global Value ETF",
+   "sembol": "GVAL",
+   "seri": "etf-GVAL",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Grayscale Chainlink Trust ETF Grayscale Chainlink Trust ETF",
+   "sembol": "GLNK",
+   "seri": "etf-GLNK",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "iShares MSCI Australia Index Fund",
+   "sembol": "EWA",
+   "seri": "etf-EWA",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "iShares ESG MSCI KLD 400 ETF",
+   "sembol": "DSI",
+   "seri": "etf-DSI",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Direxion Auspice Broad Commodity Strategy ETF",
+   "sembol": "COM",
+   "seri": "etf-COM",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "PIMCO U.S. Treasury Index Fund PIMCO Commodity Strategy Active",
+   "sembol": "CMDT",
+   "seri": "etf-CMDT",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "abrdn Bloomberg All Commodity Strategy K-1 Free ETF",
+   "sembol": "BCI",
+   "seri": "etf-BCI",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Principal Exchange-Traded Funds Principal Focused Blue Chip ET",
+   "sembol": "BCHP",
+   "seri": "etf-BCHP",
+   "tarih": "2026-11-16",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "State Street Health Care Select Sector SPDR ETF",
+   "sembol": "XLV",
+   "seri": "etf-XLV",
+   "tarih": "2026-11-16",
+   "tur": "SPY'ye Göre Güçte Zirve"
+  },
+  {
+   "ad": "VanEck Pharmaceutical ETF",
+   "sembol": "PPH",
+   "seri": "etf-PPH",
+   "tarih": "2026-11-16",
+   "tur": "SPY'ye Göre Güçte Zirve"
+  },
+  {
+   "ad": "Vanguard Morningstar Mega Cap Value ETF",
+   "sembol": "MGV",
+   "seri": "etf-MGV",
+   "tarih": "2026-11-16",
+   "tur": "SPY'ye Göre Güçte Zirve"
+  },
+  {
+   "ad": "Fidelity Covington Trust Fidelity Enhanced Large Cap Value ETF",
+   "sembol": "FELV",
+   "seri": "etf-FELV",
+   "tarih": "2026-11-16",
+   "tur": "SPY'ye Göre Güçte Zirve"
+  },
+  {
+   "ad": "Vanguard Morningstar Small-Cap Growth ETF",
+   "sembol": "VBK",
+   "seri": "etf-VBK",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Zacks Trust Zacks Small/Mid Cap ETF",
+   "sembol": "SMIZ",
+   "seri": "etf-SMIZ",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "First Trust SMID Cap Rising Dividend Achievers ETF",
+   "sembol": "SDVY",
+   "seri": "etf-SDVY",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Schwab International Small-Cap Equity ETF",
+   "sembol": "SCHC",
+   "seri": "etf-SCHC",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "ALPS Medical Breakthroughs ETF",
+   "sembol": "SBIO",
+   "seri": "etf-SBIO",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Invesco CEF Income Composite ETF",
+   "sembol": "PCEF",
+   "seri": "etf-PCEF",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Putnam ETF Trust Putnam BDC Income ETF",
+   "sembol": "PBDC",
+   "seri": "etf-PBDC",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "iShares Global Materials ETF",
+   "sembol": "MXI",
+   "seri": "etf-MXI",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Invesco KBW Premium Yield Equity REIT ETF",
+   "sembol": "KBWY",
+   "seri": "etf-KBWY",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Amplify CWP International Enhanced Dividend Income ETF",
+   "sembol": "IDVO",
+   "seri": "etf-IDVO",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "iShares U.S. Digital Infrastructure and Real Estate ETF",
+   "sembol": "IDGT",
+   "seri": "etf-IDGT",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "iShares Copper and Metals Mining ETF",
+   "sembol": "ICOP",
+   "seri": "etf-ICOP",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "ETF Opp Tr Hedgeye Quality Growth ETF",
+   "sembol": "HGRO",
+   "seri": "etf-HGRO",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Sprott Active Gold & Silver Miners ETF",
+   "sembol": "GBUG",
+   "seri": "etf-GBUG",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "iShares Inc iShares MSCI Finland ETF",
+   "sembol": "EFNL",
+   "seri": "etf-EFNL",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Capital Group Equity ETF Trust I Capital Group U.S. Small and",
+   "sembol": "CGMM",
+   "seri": "etf-CGMM",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "ETF Opportunities Trust T-REX 2X Long BMNR Daily Target ETF",
+   "sembol": "BMNU",
+   "seri": "etf-BMNU",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Avantis Emerging Markets Value ETF",
+   "sembol": "AVES",
+   "seri": "etf-AVES",
+   "tarih": "2026-11-16",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Volatility Shares Trust XRP ETF",
+   "sembol": "XRPI",
+   "seri": "etf-XRPI",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Global X SuperDividend ETF",
+   "sembol": "SDIV",
+   "seri": "etf-SDIV",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Invesco Building & Construction ETF",
+   "sembol": "PKB",
+   "seri": "etf-PKB",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Invesco International Corporate Bond ETF",
+   "sembol": "PICB",
+   "seri": "etf-PICB",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "VanEck Preferred Securities ex Financials ETF",
+   "sembol": "PFXF",
+   "seri": "etf-PFXF",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Invesco WilderHill Clean Energy ETF",
+   "sembol": "PBW",
+   "seri": "etf-PBW",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "VanEck Mortgage REIT Income ETF",
+   "sembol": "MORT",
+   "seri": "etf-MORT",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "KraneShares Hang Seng TECH Index ETF",
+   "sembol": "KTEC",
+   "seri": "etf-KTEC",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Direxion Daily Junior Gold Miners Index Bull 2X ETF",
+   "sembol": "JNUG",
+   "seri": "etf-JNUG",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "iShares International Treasury Bond ETF",
+   "sembol": "IGOV",
+   "seri": "etf-IGOV",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "iShares Gold Trust Shares of the iShares Gold Trust",
+   "sembol": "IAU",
+   "seri": "etf-IAU",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "ETF Opportunities Trust T-REX 2X Long GLXY Daily Target ETF",
+   "sembol": "GLXU",
+   "seri": "etf-GLXU",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Global X Autonomous & Electric Vehicles ETF",
+   "sembol": "DRIV",
+   "seri": "etf-DRIV",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Direxion Daily CSI China Internet Index Bull 2X ETF",
+   "sembol": "CWEB",
+   "seri": "etf-CWEB",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Direxion Daily BA Bull 2X ETF",
+   "sembol": "BOEU",
+   "seri": "etf-BOEU",
+   "tarih": "2026-11-16",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "VanEck Consumer Discretionary TruSector ETF",
+   "sembol": "TRUD",
+   "seri": "etf-TRUD",
+   "tarih": "2026-11-16",
+   "tur": "Altın Kesişim"
+  },
+  {
+   "ad": "ProShares Short Russell2000",
+   "sembol": "RWM",
+   "seri": "etf-RWM",
+   "tarih": "2026-11-16",
+   "tur": "Altın Kesişim"
+  },
+  {
+   "ad": "Angel Oak Income ETF",
+   "sembol": "CARY",
+   "seri": "etf-CARY",
+   "tarih": "2026-11-16",
+   "tur": "Altın Kesişim"
+  },
   {
    "ad": "VanEck Retail ETF",
    "sembol": "RTH",
@@ -6969,7 +7368,7 @@
   {
    "ad": "DBX ETF Trust Xtrackers USD High Yield BB-B ex Financials ETF",
    "sembol": "BHYB",
-   "seri": null,
+   "seri": "etf-BHYB",
    "tarih": "2026-10-27",
    "tur": "SMA 200'ü Yukarı Kesenler"
   },

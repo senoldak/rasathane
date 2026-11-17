@@ -3,7 +3,7 @@
  "baslik": "Fon akışı",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-13T23:46:28Z",
+ "guncellendi": "2026-11-16T23:46:25Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -16,143 +16,45 @@
  ],
  "satirlar": [
   {
-   "ad": "Vanguard Total Bond Market ETF",
-   "akis": 11407206472.470154,
-   "oran": 0.028863526989438986,
-   "sembol": "BND",
+   "ad": "AB Active ETFs Inc. AB Tax-Aware Intermediate Municipal ETF",
+   "akis": 357854434.8725169,
+   "oran": 0.45593815627336026,
+   "sembol": "TAFM",
    "yon": "Giriş"
   },
   {
-   "ad": "Vanguard Short-Term Inflation-Protected Securities Index Fund",
-   "akis": 1659651971.2261353,
-   "oran": 0.02261139523631705,
-   "sembol": "VTIP",
+   "ad": "Lazard Active ETF Trust Lazard International Dynamic Equity ET",
+   "akis": 220675038.1310401,
+   "oran": 0.11641387638345087,
+   "sembol": "IDEQ",
    "yon": "Giriş"
   },
   {
-   "ad": "Vanguard Intermediate-Term Bond ETF",
-   "akis": 1512297738.1248322,
-   "oran": 0.029562765883899455,
-   "sembol": "BIV",
+   "ad": "iShares Trust iShares MSCI Poland ETF",
+   "akis": 198860623.42911065,
+   "oran": 0.23845344943418317,
+   "sembol": "EPOL",
    "yon": "Giriş"
   },
   {
-   "ad": "Vanguard Intermediate-Term Corporate Bond ETF",
-   "akis": 1488449433.9541016,
-   "oran": 0.021133882169949395,
-   "sembol": "VCIT",
+   "ad": "iShares Intermediate Government/Credit Bond ETF",
+   "akis": 155278052.29451227,
+   "oran": 0.04156457030306762,
+   "sembol": "GVI",
    "yon": "Giriş"
   },
   {
-   "ad": "Vanguard Total International Bond ETF",
-   "akis": 1322346489.4508667,
-   "oran": 0.010689241356374836,
-   "sembol": "BNDX",
-   "yon": "Giriş"
-  },
-  {
-   "ad": "Vanguard Tax-Exempt Bond ETF",
-   "akis": 1291890807.2669067,
-   "oran": 0.023076373657913762,
-   "sembol": "VTEB",
-   "yon": "Giriş"
-  },
-  {
-   "ad": "Vanguard Real Estate ETF",
-   "akis": 1193420988.507515,
-   "oran": 0.017525708992063547,
-   "sembol": "VNQ",
-   "yon": "Giriş"
-  },
-  {
-   "ad": "Vanguard Intermediate-Term Treasury ETF",
-   "akis": 1019491199.7180252,
-   "oran": 0.020756795531091967,
-   "sembol": "VGIT",
-   "yon": "Giriş"
-  },
-  {
-   "ad": "Vanguard Long-Term Treasury ETF",
-   "akis": 943724641.2283268,
-   "oran": 0.05925842042693801,
-   "sembol": "VGLT",
-   "yon": "Giriş"
-  },
-  {
-   "ad": "Vanguard Short-Term Bond ETF",
-   "akis": 721681565.662857,
-   "oran": 0.01016841389311936,
-   "sembol": "BSV",
+   "ad": "Invesco S&P 500 Equal Weight Industrials Portfolio",
+   "akis": 120248000.77836895,
+   "oran": 0.16254997508485688,
+   "sembol": "RSPN",
    "yon": "Giriş"
   },
   {
    "ad": "Vanguard Morningstar Total Stock Market ETF",
-   "akis": -572559851515.9727,
-   "oran": -0.24652967779687246,
+   "akis": -455193493125.50195,
+   "oran": -0.19666872841391714,
    "sembol": "VTI",
-   "yon": "Çıkış"
-  },
-  {
-   "ad": "Vanguard S&P 500 ETF",
-   "akis": -58119559959.31201,
-   "oran": -0.03333249288007534,
-   "sembol": "VOO",
-   "yon": "Çıkış"
-  },
-  {
-   "ad": "Vanguard Total International Stock ETF",
-   "akis": -31333546265.180786,
-   "oran": -0.04845751884464583,
-   "sembol": "VXUS",
-   "yon": "Çıkış"
-  },
-  {
-   "ad": "Vanguard Morningstar Growth ETF",
-   "akis": -22568945196.475586,
-   "oran": -0.05938524596477848,
-   "sembol": "VUG",
-   "yon": "Çıkış"
-  },
-  {
-   "ad": "Vanguard FTSE Emerging Markets ETF",
-   "akis": -9140752138.562195,
-   "oran": -0.058318071251201205,
-   "sembol": "VWO",
-   "yon": "Çıkış"
-  },
-  {
-   "ad": "Vanguard Information Tech ETF",
-   "akis": -7948726865.98819,
-   "oran": -0.04716843949158433,
-   "sembol": "VGT",
-   "yon": "Çıkış"
-  },
-  {
-   "ad": "Vanguard FTSE Developed Markets ETF",
-   "akis": -6810644535.304993,
-   "oran": -0.021955815558107366,
-   "sembol": "VEA",
-   "yon": "Çıkış"
-  },
-  {
-   "ad": "Vanguard Morningstar Mid-Cap ETF",
-   "akis": -4592377868.197296,
-   "oran": -0.020826997471413707,
-   "sembol": "VO",
-   "yon": "Çıkış"
-  },
-  {
-   "ad": "Vanguard Morningstar Small-Cap ETF",
-   "akis": -3989919833.0787964,
-   "oran": -0.02247147761805923,
-   "sembol": "VB",
-   "yon": "Çıkış"
-  },
-  {
-   "ad": "Vanguard Extended Market ETF",
-   "akis": -3604887852.8838654,
-   "oran": -0.03949926582125548,
-   "sembol": "VXF",
    "yon": "Çıkış"
   }
  ],
