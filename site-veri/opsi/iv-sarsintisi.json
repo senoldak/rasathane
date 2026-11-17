@@ -3,7 +3,7 @@
  "baslik": "IV sarsıntısı",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-16T23:31:27Z",
+ "guncellendi": "2026-11-17T23:31:23Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -11,6 +11,102 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "Microsoft Corporation",
+   "bilanco": "Diğer",
+   "fiyat": -0.02268383602293833,
+   "iv_degisim": 0.1383998620973339,
+   "iv_once": 0.31370311667632467,
+   "iv_simdi": 0.3571195847638319,
+   "kapanis": 506.239990234375,
+   "sembol": "MSFT",
+   "seri": "iv-MSFT",
+   "tarih": "2026-11-17"
+  },
+  {
+   "ad": "Edison International",
+   "bilanco": "Diğer",
+   "fiyat": 0.00645469910121621,
+   "iv_degisim": 0.1384887732925406,
+   "iv_once": 0.38262169665425094,
+   "iv_simdi": 0.43561050605900875,
+   "kapanis": 62.369998931884766,
+   "sembol": "EIX",
+   "seri": "iv-EIX",
+   "tarih": "2026-11-17"
+  },
+  {
+   "ad": "iShares iBoxx $ High Yield Corp",
+   "bilanco": "Diğer",
+   "fiyat": -0.0013033506990793864,
+   "iv_degisim": 0.1439475272034212,
+   "iv_once": 0.08802556587098058,
+   "iv_simdi": 0.1006966284087901,
+   "kapanis": 76.62999725341797,
+   "sembol": "HYG",
+   "seri": "iv-HYG",
+   "tarih": "2026-11-17"
+  },
+  {
+   "ad": "Truist Financial Corporation",
+   "bilanco": "Diğer",
+   "fiyat": -0.022791468866131703,
+   "iv_degisim": 0.1728117846314785,
+   "iv_once": 0.2574517952187976,
+   "iv_simdi": 0.3019424994071359,
+   "kapanis": 48.45000076293945,
+   "sembol": "TFC",
+   "seri": "iv-TFC",
+   "tarih": "2026-11-17"
+  },
+  {
+   "ad": "Altria Group, Inc.",
+   "bilanco": "Diğer",
+   "fiyat": -0.018250981160424118,
+   "iv_degisim": -0.05968251365491528,
+   "iv_once": 0.24101899790612524,
+   "iv_simdi": 0.22663437827249894,
+   "kapanis": 77.45999908447266,
+   "sembol": "MO",
+   "seri": "iv-MO",
+   "tarih": "2026-11-17"
+  },
+  {
+   "ad": "Copart, Inc.",
+   "bilanco": "Diğer",
+   "fiyat": -0.019638436164469586,
+   "iv_degisim": -0.07876474479153006,
+   "iv_once": 0.4139241467209438,
+   "iv_simdi": 0.3813215169414168,
+   "kapanis": 31.450000762939453,
+   "sembol": "CPRT",
+   "seri": "iv-CPRT",
+   "tarih": "2026-11-17"
+  },
+  {
+   "ad": "Home Depot, Inc. (The)",
+   "bilanco": "Yakın",
+   "fiyat": -0.024459727090257788,
+   "iv_degisim": -0.11300658369973426,
+   "iv_once": 0.34881582188345167,
+   "iv_simdi": 0.3093973375119878,
+   "kapanis": 339.010009765625,
+   "sembol": "HD",
+   "seri": "iv-HD",
+   "tarih": "2026-11-17"
+  },
+  {
+   "ad": "Consolidated Edison, Inc.",
+   "bilanco": "Diğer",
+   "fiyat": -0.021742648147377253,
+   "iv_degisim": -0.1311246498974783,
+   "iv_once": 0.2642312869426994,
+   "iv_simdi": 0.2295840519503778,
+   "kapanis": 119.2300033569336,
+   "sembol": "ED",
+   "seri": "iv-ED",
+   "tarih": "2026-11-17"
+  },
   {
    "ad": "Hasbro, Inc.",
    "bilanco": "Diğer",

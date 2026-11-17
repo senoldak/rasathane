@@ -3,7 +3,7 @@
  "baslik": "Aşağı yön primi",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-16T23:31:27Z",
+ "guncellendi": "2026-11-17T23:31:23Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -13,51 +13,51 @@
  "satirlar": [
   {
    "ad": "Ford Motor Company",
-   "fark": 6.50855404090681,
-   "kapanis": 11.569999694824219,
+   "fark": 6.331005557864824,
+   "kapanis": 11.34000015258789,
    "sembol": "F",
    "seri": "iv-F",
-   "skew": 7.549144579473486
+   "skew": 7.379966574924886
   },
   {
    "ad": "State Street SPDR S&P 500 ETF T",
-   "fark": 0.1498405020771174,
-   "kapanis": 739.9500122070312,
+   "fark": 0.13442240962397767,
+   "kapanis": 732.4400024414062,
    "sembol": "SPY",
    "seri": "iv-SPY",
-   "skew": 1.1904310406437937
+   "skew": 1.1833834266840393
+  },
+  {
+   "ad": "Chubb Limited",
+   "fark": 0.11485734440953221,
+   "kapanis": 375.6400146484375,
+   "sembol": "CB",
+   "seri": "iv-CB",
+   "skew": 1.1638183614695938
+  },
+  {
+   "ad": "Microchip Technology Incorporat",
+   "fark": 0.11467749056750831,
+   "kapanis": 59.43000030517578,
+   "sembol": "MCHP",
+   "seri": "iv-MCHP",
+   "skew": 1.16363850762757
+  },
+  {
+   "ad": "Flex Ltd.",
+   "fark": 0.11265483497713258,
+   "kapanis": 73.08999633789062,
+   "sembol": "FLEX",
+   "seri": "iv-FLEX",
+   "skew": 1.1616158520371942
   },
   {
    "ad": "Invesco QQQ Trust, Series 1",
-   "fark": 0.11335904308271205,
-   "kapanis": 661.75,
+   "fark": 0.09497044727633663,
+   "kapanis": 656.9500122070312,
    "sembol": "QQQ",
    "seri": "iv-QQQ",
-   "skew": 1.1539495816493883
-  },
-  {
-   "ad": "Apple Inc.",
-   "fark": 0.1081114061095736,
-   "kapanis": 352.7799987792969,
-   "sembol": "AAPL",
-   "seri": "iv-AAPL",
-   "skew": 1.1487019446762499
-  },
-  {
-   "ad": "Constellation Energy Corporatio",
-   "fark": 0.08792438262274715,
-   "kapanis": 277.82000732421875,
-   "sembol": "CEG",
-   "seri": "iv-CEG",
-   "skew": 1.1285149211894234
-  },
-  {
-   "ad": "FedEx Freight Holding Company, ",
-   "fark": 0.08159390877622363,
-   "kapanis": 132.91000366210938,
-   "sembol": "FDXF",
-   "seri": "iv-FDXF",
-   "skew": 1.1221844473429
+   "skew": 1.1439314643363983
   }
  ],
  "sayfa": "asagi-yon-primi",

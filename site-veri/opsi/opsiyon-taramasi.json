@@ -3,7 +3,7 @@
  "baslik": "Opsiyon taraması",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-16T23:31:27Z",
+ "guncellendi": "2026-11-17T23:31:23Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -12,114 +12,114 @@
  ],
  "satirlar": [
   {
-   "ad": "Hewlett Packard Enterprise Comp",
+   "ad": "Super Micro Computer, Inc.",
    "bant": "$2k–5k",
-   "fiyat": 46.56999969482422,
-   "hareket": 0.25522181670384825,
-   "iv30": 0.8619642201533919,
+   "fiyat": 24.139999389648438,
+   "hareket": 0.2755870163834305,
+   "iv30": 0.945636742532968,
    "konum": null,
-   "sembol": "HPE",
-   "seri": "fiyat-HPE",
-   "skor": 68.28111117363594
-  },
-  {
-   "ad": "Nike, Inc.",
-   "bant": "$2k–5k",
-   "fiyat": 38.2599983215332,
-   "hareket": 0.14851297719491452,
-   "iv30": 0.5015749602590411,
-   "konum": null,
-   "sembol": "NKE",
-   "seri": "fiyat-NKE",
-   "skor": 56.64360819845838
+   "sembol": "SMCI",
+   "seri": "fiyat-SMCI",
+   "skor": 81.80917421756983
   },
   {
    "ad": "Bank of America Corporation",
    "bant": "$2k–5k",
-   "fiyat": 50.08000183105469,
-   "hareket": 0.08763567384316936,
-   "iv30": 0.2959731900564655,
+   "fiyat": 49.439998626708984,
+   "hareket": 0.09218253687103756,
+   "iv30": 0.31631096061459546,
    "konum": null,
    "sembol": "BAC",
    "seri": "fiyat-BAC",
-   "skor": 50.76415798575308
+   "skor": 56.88805835563011
+  },
+  {
+   "ad": "Pfizer, Inc.",
+   "bant": "$2k–5k",
+   "fiyat": 28.469999313354492,
+   "hareket": 0.07911365802842266,
+   "iv30": 0.2714670046856491,
+   "konum": null,
+   "sembol": "PFE",
+   "seri": "fiyat-PFE",
+   "skor": 46.912392875584445
   },
   {
    "ad": "Comcast Corporation",
    "bant": "$2k–5k",
-   "fiyat": 25.600000381469727,
-   "hareket": 0.09356853743751208,
-   "iv30": 0.3575248795449744,
+   "fiyat": 25.309999465942383,
+   "hareket": 0.10797176572799747,
+   "iv30": 0.33912185089696056,
    "konum": null,
    "sembol": "CMCSA",
    "seri": "fiyat-CMCSA",
-   "skor": 50.23170817753696
+   "skor": 46.34686598572657
   },
   {
-   "ad": "Verizon Communications Inc.",
+   "ad": "AT&T Inc.",
    "bant": "$2k–5k",
-   "fiyat": 46.34000015258789,
-   "hareket": 0.07101025364074845,
-   "iv30": 0.23982392529305818,
+   "fiyat": 22.290000915527344,
+   "hareket": 0.08829385417218094,
+   "iv30": 0.2773167137520671,
    "konum": null,
-   "sembol": "VZ",
-   "seri": "fiyat-VZ",
-   "skor": 49.669407708723654
-  },
-  {
-   "ad": "Bloom Energy Corporation",
-   "bant": "$5k–15k",
-   "fiyat": 177.27999877929688,
-   "hareket": 0.294591578181707,
-   "iv30": 0.9949282676167209,
-   "konum": null,
-   "sembol": "BE",
-   "seri": "fiyat-BE",
-   "skor": 86.17206170391263
-  },
-  {
-   "ad": "Strategy Inc",
-   "bant": "$5k–15k",
-   "fiyat": 103.02999877929688,
-   "hareket": 0.24413854830771164,
-   "iv30": 0.8245325423947774,
-   "konum": null,
-   "sembol": "MSTR",
-   "seri": "fiyat-MSTR",
-   "skor": 85.49047454875334
+   "sembol": "T",
+   "seri": "fiyat-T",
+   "skor": 43.430587930789564
   },
   {
    "ad": "Marvell Technology, Inc.",
    "bant": "$5k–15k",
-   "fiyat": 145.36000061035156,
-   "hareket": 0.2680419267441616,
-   "iv30": 0.9052617575500558,
+   "fiyat": 148.74000549316406,
+   "hareket": 0.27415064030727204,
+   "iv30": 0.9407080270530594,
    "konum": null,
    "sembol": "MRVL",
    "seri": "fiyat-MRVL",
-   "skor": 84.22863105877518
+   "skor": 85.24927247505433
   },
   {
-   "ad": "Oracle Corporation",
+   "ad": "Bloom Energy Corporation",
    "bant": "$5k–15k",
-   "fiyat": 119.08999633789062,
-   "hareket": 0.22022560759631526,
-   "iv30": 0.7437710324342447,
+   "fiyat": 173.4600067138672,
+   "hareket": 0.29840581929659254,
+   "iv30": 1.0239361440740113,
    "konum": null,
-   "sembol": "ORCL",
-   "seri": "fiyat-ORCL",
-   "skor": 82.0319831165775
+   "sembol": "BE",
+   "seri": "fiyat-BE",
+   "skor": 84.8498437807666
+  },
+  {
+   "ad": "Strategy Inc",
+   "bant": "$5k–15k",
+   "fiyat": 96.5,
+   "hareket": 0.2558254841454908,
+   "iv30": 0.877827920411444,
+   "konum": null,
+   "sembol": "MSTR",
+   "seri": "fiyat-MSTR",
+   "skor": 82.75765220880494
   },
   {
    "ad": "Intel Corporation",
    "bant": "$5k–15k",
-   "fiyat": 55.470001220703125,
-   "hareket": 0.2196316085771226,
-   "iv30": 0.7417649112179523,
+   "fiyat": 55.16999816894531,
+   "hareket": 0.225581997045054,
+   "iv30": 0.7740517955423973,
    "konum": null,
    "sembol": "INTC",
    "seri": "fiyat-INTC",
-   "skor": 81.61599242795216
+   "skor": 80.87362978076038
+  },
+  {
+   "ad": "Oracle Corporation",
+   "bant": "$5k–15k",
+   "fiyat": 115.0,
+   "hareket": 0.22768022628749282,
+   "iv30": 0.7812515638476888,
+   "konum": null,
+   "sembol": "ORCL",
+   "seri": "fiyat-ORCL",
+   "skor": 80.48285250626589
   }
  ],
  "sayfa": "opsiyon-taramasi",
