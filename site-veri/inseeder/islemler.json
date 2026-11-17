@@ -3,7 +3,7 @@
  "baslik": "Yönetici işlemleri",
  "bolum": "inseeder",
  "grafik": "yok",
- "guncellendi": "2026-11-14T11:22:39Z",
+ "guncellendi": "2026-11-17T04:07:03Z",
  "kaynaklar": [
   {
    "ad": "SEC EDGAR",
@@ -11,6 +11,447 @@
   }
  ],
  "satirlar": [
+  {
+   "hisse": "CPRI",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "Capri Holdings Ltd",
+   "tarih": "2026-11-16",
+   "tutar": 46932874.980000004
+  },
+  {
+   "hisse": "EMO",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "ClearBridge Energy Midstream Opportunity Fund Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 35000000.0
+  },
+  {
+   "hisse": "MSI",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "Motorola Solutions, Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 21607871.313399997
+  },
+  {
+   "hisse": "CVLG",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "COVENANT LOGISTICS GROUP, INC.",
+   "tarih": "2026-11-16",
+   "tutar": 5661017.2618
+  },
+  {
+   "hisse": "HUBS",
+   "islem": "Alım",
+   "puan": 90,
+   "rol": "CEO",
+   "sirket": "HUBSPOT INC",
+   "tarih": "2026-11-16",
+   "tutar": 4997858.4
+  },
+  {
+   "hisse": "SONO",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "Direktör",
+   "sirket": "Sonos Inc",
+   "tarih": "2026-11-16",
+   "tutar": 1871497.4
+  },
+  {
+   "hisse": "KURA",
+   "islem": "Alım",
+   "puan": 90,
+   "rol": "CEO",
+   "sirket": "Kura Oncology, Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 1504765.01
+  },
+  {
+   "hisse": "PAM",
+   "islem": "Alım",
+   "puan": 60,
+   "rol": "Yönetici",
+   "sirket": "Pampa Energy Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 1436635.9
+  },
+  {
+   "hisse": "OIG",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "CEO",
+   "sirket": "Orion180 Insurance Group Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 1024689.7799999999
+  },
+  {
+   "hisse": "SKYD",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "Direktör",
+   "sirket": "Skydance Corp",
+   "tarih": "2026-11-16",
+   "tutar": 1000637.145
+  },
+  {
+   "hisse": "BRSP",
+   "islem": "Alım",
+   "puan": 90,
+   "rol": "CEO",
+   "sirket": "BrightSpire Capital, Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 1000180.1399999999
+  },
+  {
+   "hisse": "AMG",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "Direktör",
+   "sirket": "AFFILIATED MANAGERS GROUP, INC.",
+   "tarih": "2026-11-16",
+   "tutar": 1000000.0
+  },
+  {
+   "hisse": "NSLR",
+   "islem": "Alım",
+   "puan": 90,
+   "rol": "CEO",
+   "sirket": "Neostellar Capital Corp.",
+   "tarih": "2026-11-16",
+   "tutar": 994000.0
+  },
+  {
+   "hisse": "PCQ",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Diğer",
+   "sirket": "PIMCO CALIFORNIA MUNICIPAL INCOME FUND",
+   "tarih": "2026-11-16",
+   "tutar": 808990.0
+  },
+  {
+   "hisse": "LEO",
+   "islem": "Alım",
+   "puan": 45,
+   "rol": "%10 ortak",
+   "sirket": "BNY MELLON STRATEGIC MUNICIPALS, INC.",
+   "tarih": "2026-11-16",
+   "tutar": 795683.88
+  },
+  {
+   "hisse": "MPB",
+   "islem": "Alım",
+   "puan": 45,
+   "rol": "%10 ortak",
+   "sirket": "MID PENN BANCORP INC",
+   "tarih": "2026-11-16",
+   "tutar": 667244.2
+  },
+  {
+   "hisse": "CNH",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "Direktör",
+   "sirket": "CNH Industrial N.V.",
+   "tarih": "2026-11-16",
+   "tutar": 566584.56
+  },
+  {
+   "hisse": "HOS",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "CEO",
+   "sirket": "HORNBECK OFFSHORE SERVICES, INC.",
+   "tarih": "2026-11-16",
+   "tutar": 500000.94239089993
+  },
+  {
+   "hisse": "CRMD",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "CorMedix Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 391200.0
+  },
+  {
+   "hisse": "CTEV",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "%10 ortak",
+   "sirket": "Claritev Corp",
+   "tarih": "2026-11-16",
+   "tutar": 390403.42319999996
+  },
+  {
+   "hisse": "FPS",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "CEO",
+   "sirket": "Forgent Power Solutions, Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 334260.9703
+  },
+  {
+   "hisse": "DSM",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "BNY MELLON STRATEGIC MUNICIPAL BOND FUND, INC.",
+   "tarih": "2026-11-16",
+   "tutar": 321227.18
+  },
+  {
+   "hisse": "CTVA",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "CEO",
+   "sirket": "Corteva, Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 300312.3708
+  },
+  {
+   "hisse": "FPS",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "CFO",
+   "sirket": "Forgent Power Solutions, Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 299996.38460000005
+  },
+  {
+   "hisse": "DGICA",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "DONEGAL GROUP INC",
+   "tarih": "2026-11-16",
+   "tutar": 284628.75
+  },
+  {
+   "hisse": "FF",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Direktör",
+   "sirket": "FutureFuel Corp.",
+   "tarih": "2026-11-16",
+   "tutar": 284000.0
+  },
+  {
+   "hisse": "CACC",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "CREDIT ACCEPTANCE CORP",
+   "tarih": "2026-11-16",
+   "tutar": 252500.0
+  },
+  {
+   "hisse": "BRK.B",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Yönetici",
+   "sirket": "BERKSHIRE HATHAWAY INC",
+   "tarih": "2026-11-16",
+   "tutar": 250207.3
+  },
+  {
+   "hisse": "TH",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Yönetici",
+   "sirket": "Target Hospitality Corp.",
+   "tarih": "2026-11-16",
+   "tutar": 250005.56
+  },
+  {
+   "hisse": "YUMC",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "Yum China Holdings, Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 247500.0
+  },
+  {
+   "hisse": "FPS",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Yönetici",
+   "sirket": "Forgent Power Solutions, Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 244956.2
+  },
+  {
+   "hisse": "MX",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "CEO",
+   "sirket": "MAGNACHIP SEMICONDUCTOR Corp",
+   "tarih": "2026-11-16",
+   "tutar": 218483.0
+  },
+  {
+   "hisse": "DOX",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "Direktör",
+   "sirket": "AMDOCS LTD",
+   "tarih": "2026-11-16",
+   "tutar": 215090.49999999997
+  },
+  {
+   "hisse": "KTOS",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "KRATOS DEFENSE & SECURITY SOLUTIONS, INC.",
+   "tarih": "2026-11-16",
+   "tutar": 201091.2
+  },
+  {
+   "hisse": "FPS",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Direktör",
+   "sirket": "Forgent Power Solutions, Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 199121.16
+  },
+  {
+   "hisse": "CTVA",
+   "islem": "Alım",
+   "puan": 95,
+   "rol": "Direktör",
+   "sirket": "Corteva, Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 185400.0
+  },
+  {
+   "hisse": "MXF",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "MEXICO FUND INC",
+   "tarih": "2026-11-16",
+   "tutar": 183623.03999999998
+  },
+  {
+   "hisse": "LEGN",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "Legend Biotech Corp",
+   "tarih": "2026-11-16",
+   "tutar": 183250.0
+  },
+  {
+   "hisse": "BGDE",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "Big Digital Energy, Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 182058.0
+  },
+  {
+   "hisse": "SENS",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "Senseonics Holdings, Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 175860.18602400002
+  },
+  {
+   "hisse": "ECX",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "CEO",
+   "sirket": "ECARX Holdings Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 147650.52
+  },
+  {
+   "hisse": "MP",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "CFO",
+   "sirket": "MP Materials Corp. / DE",
+   "tarih": "2026-11-16",
+   "tutar": 128625.0
+  },
+  {
+   "hisse": "SPCB",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "SuperCom Ltd",
+   "tarih": "2026-11-16",
+   "tutar": 126940.0
+  },
+  {
+   "hisse": "HL",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "HECLA MINING CO/DE/",
+   "tarih": "2026-11-16",
+   "tutar": 125000.0
+  },
+  {
+   "hisse": "TLSI",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "Direktör",
+   "sirket": "TriSalus Life Sciences, Inc.",
+   "tarih": "2026-11-16",
+   "tutar": 112000.00000000001
+  },
+  {
+   "hisse": "PED",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "PEDEVCO CORP",
+   "tarih": "2026-11-16",
+   "tutar": 107942.432
+  },
+  {
+   "hisse": "DOX",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Direktör",
+   "sirket": "AMDOCS LTD",
+   "tarih": "2026-11-16",
+   "tutar": 104300.5
+  },
+  {
+   "hisse": "DOX",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Direktör",
+   "sirket": "AMDOCS LTD",
+   "tarih": "2026-11-16",
+   "tutar": 102227.985
+  },
+  {
+   "hisse": "ADIG",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "ADI GLOBAL DISTRIBUTION INC.",
+   "tarih": "2026-11-16",
+   "tutar": 100024.89
+  },
   {
    "hisse": "LYV",
    "islem": "Satış",
