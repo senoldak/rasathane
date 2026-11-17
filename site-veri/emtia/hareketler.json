@@ -3,7 +3,7 @@
  "baslik": "Hareketler",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-16T23:16:11Z",
+ "guncellendi": "2026-11-17T23:16:11Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -12,17 +12,41 @@
  ],
  "satirlar": [
   {
+   "ad": "Platin",
+   "gunluk": -0.013259634787206487,
+   "kapanis": 1428.800048828125,
+   "seri": "PL=F",
+   "tarih": "2026-11-17",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Pamuk",
+   "gunluk": 0.05584419547737429,
+   "kapanis": 81.30000305175781,
+   "seri": "CT=F",
+   "tarih": "2026-11-17",
+   "tur": "Sert Yükseliş"
+  },
+  {
+   "ad": "Alüminyum",
+   "gunluk": -0.039206273003680625,
+   "kapanis": 3002.0,
+   "seri": "ALI=F",
+   "tarih": "2026-11-17",
+   "tur": "Sert Düşüş"
+  },
+  {
    "ad": "Gümüş",
-   "gunluk": -0.042442486226367926,
-   "kapanis": 46.95000076293945,
+   "gunluk": -0.045807722943625895,
+   "kapanis": 46.78499984741211,
    "seri": "SI=F",
    "tarih": "2026-11-16",
    "tur": "52 Hafta Dibi"
   },
   {
    "ad": "Altın",
-   "gunluk": -0.007384903587289715,
-   "kapanis": 3857.60009765625,
+   "gunluk": -0.008568573813070968,
+   "kapanis": 3853.0,
    "seri": "GC=F",
    "tarih": "2026-11-16",
    "tur": "52 Hafta Dibi"
@@ -858,22 +882,6 @@
    "seri": "ZW=F",
    "tarih": "2026-07-15",
    "tur": "Sert Yükseliş · 52 Hafta Zirvesi"
-  },
-  {
-   "ad": "WTI petrol",
-   "gunluk": 0.09424443890779477,
-   "kapanis": 78.13999938964844,
-   "seri": "CL=F",
-   "tarih": "2026-07-13",
-   "tur": "Sert Yükseliş"
-  },
-  {
-   "ad": "Brent petrol",
-   "gunluk": 0.0959084424502672,
-   "kapanis": 83.30000305175781,
-   "seri": "BZ=F",
-   "tarih": "2026-07-13",
-   "tur": "Sert Yükseliş"
   }
  ],
  "sayfa": "hareketler",
