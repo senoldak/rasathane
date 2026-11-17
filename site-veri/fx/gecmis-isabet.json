@@ -3,7 +3,7 @@
  "baslik": "Geçmiş isabet",
  "bolum": "fx",
  "grafik": "cizgi",
- "guncellendi": "2026-11-16T22:46:18Z",
+ "guncellendi": "2026-11-17T22:46:19Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -13,9 +13,9 @@
  "satirlar": [
   {
    "ad": "Sert Yükseliş",
-   "isabet": 0.8,
-   "ortalama": 0.01369452124852757,
-   "sayi": 5,
+   "isabet": 0.8333333333333334,
+   "ortalama": 0.012287453597394008,
+   "sayi": 6,
    "ufuk": "5 işlem günü"
   },
   {
