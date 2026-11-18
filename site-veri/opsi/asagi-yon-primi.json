@@ -3,7 +3,7 @@
  "baslik": "Aşağı yön primi",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-17T23:31:23Z",
+ "guncellendi": "2026-11-18T23:31:26Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -13,51 +13,51 @@
  "satirlar": [
   {
    "ad": "Ford Motor Company",
-   "fark": 6.331005557864824,
-   "kapanis": 11.34000015258789,
+   "fark": 6.140584535310561,
+   "kapanis": 11.279999732971191,
    "sembol": "F",
    "seri": "iv-F",
-   "skew": 7.379966574924886
+   "skew": 7.197045968555852
   },
   {
    "ad": "State Street SPDR S&P 500 ETF T",
-   "fark": 0.13442240962397767,
-   "kapanis": 732.4400024414062,
+   "fark": 0.1141825798297198,
+   "kapanis": 730.2000122070312,
    "sembol": "SPY",
    "seri": "iv-SPY",
-   "skew": 1.1833834266840393
+   "skew": 1.1706440130750104
   },
   {
-   "ad": "Chubb Limited",
-   "fark": 0.11485734440953221,
-   "kapanis": 375.6400146484375,
-   "sembol": "CB",
-   "seri": "iv-CB",
-   "skew": 1.1638183614695938
+   "ad": "Skyworks Solutions, Inc.",
+   "fark": 0.09145422281203008,
+   "kapanis": 82.43000030517578,
+   "sembol": "SWKS",
+   "seri": "iv-SWKS",
+   "skew": 1.1479156560573207
   },
   {
-   "ad": "Microchip Technology Incorporat",
-   "fark": 0.11467749056750831,
-   "kapanis": 59.43000030517578,
-   "sembol": "MCHP",
-   "seri": "iv-MCHP",
-   "skew": 1.16363850762757
+   "ad": "Edwards Lifesciences Corporatio",
+   "fark": 0.09031380308172587,
+   "kapanis": 105.2300033569336,
+   "sembol": "EW",
+   "seri": "iv-EW",
+   "skew": 1.1467752363270165
   },
   {
-   "ad": "Flex Ltd.",
-   "fark": 0.11265483497713258,
-   "kapanis": 73.08999633789062,
-   "sembol": "FLEX",
-   "seri": "iv-FLEX",
-   "skew": 1.1616158520371942
+   "ad": "American Tower Corporation (REI",
+   "fark": 0.08987350678418538,
+   "kapanis": 184.82000732421875,
+   "sembol": "AMT",
+   "seri": "iv-AMT",
+   "skew": 1.146334940029476
   },
   {
    "ad": "Invesco QQQ Trust, Series 1",
-   "fark": 0.09497044727633663,
-   "kapanis": 656.9500122070312,
+   "fark": 0.08499954814896715,
+   "kapanis": 659.510009765625,
    "sembol": "QQQ",
    "seri": "iv-QQQ",
-   "skew": 1.1439314643363983
+   "skew": 1.1414609813942578
   }
  ],
  "sayfa": "asagi-yon-primi",

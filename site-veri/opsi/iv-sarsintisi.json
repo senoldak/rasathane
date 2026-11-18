@@ -3,7 +3,7 @@
  "baslik": "IV sarsıntısı",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-17T23:31:23Z",
+ "guncellendi": "2026-11-18T23:31:26Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -11,6 +11,102 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "VICI Properties Inc.",
+   "bilanco": "Diğer",
+   "fiyat": -0.004895995027041744,
+   "iv_degisim": 0.07894172666221166,
+   "iv_once": 0.32719828744148327,
+   "iv_simdi": 0.35302788521303263,
+   "kapanis": 24.389999389648438,
+   "sembol": "VICI",
+   "seri": "iv-VICI",
+   "tarih": "2026-11-18"
+  },
+  {
+   "ad": "iShares Silver Trust",
+   "bilanco": "Diğer",
+   "fiyat": -0.045497154185699884,
+   "iv_degisim": 0.07997420124190469,
+   "iv_once": 0.43115421715781227,
+   "iv_simdi": 0.46563543128708706,
+   "kapanis": 40.70000076293945,
+   "sembol": "SLV",
+   "seri": "iv-SLV",
+   "tarih": "2026-11-18"
+  },
+  {
+   "ad": "CVS Health Corporation",
+   "bilanco": "Diğer",
+   "fiyat": -0.05197528506427507,
+   "iv_degisim": 0.09557484530120708,
+   "iv_once": 0.3182790440859478,
+   "iv_simdi": 0.34869851448707834,
+   "kapanis": 81.3499984741211,
+   "sembol": "CVS",
+   "seri": "iv-CVS",
+   "tarih": "2026-11-18"
+  },
+  {
+   "ad": "UnitedHealth Group Incorporated",
+   "bilanco": "Diğer",
+   "fiyat": -0.10205807267801148,
+   "iv_degisim": 0.1472484139571153,
+   "iv_once": 0.38084719454439925,
+   "iv_simdi": 0.436926339901079,
+   "kapanis": 349.9100036621094,
+   "sembol": "UNH",
+   "seri": "iv-UNH",
+   "tarih": "2026-11-18"
+  },
+  {
+   "ad": "NVIDIA Corporation",
+   "bilanco": "Yakın",
+   "fiyat": -0.028946351509443247,
+   "iv_degisim": -0.20786463783665932,
+   "iv_once": 0.6628507917713476,
+   "iv_simdi": 0.5250675520000536,
+   "kapanis": 150.9600067138672,
+   "sembol": "NVDA",
+   "seri": "iv-NVDA",
+   "tarih": "2026-11-18"
+  },
+  {
+   "ad": "Edison International",
+   "bilanco": "Diğer",
+   "fiyat": 0.010261333984427301,
+   "iv_degisim": -0.2295296746509633,
+   "iv_once": 0.43561050605900875,
+   "iv_simdi": 0.335624968328743,
+   "kapanis": 63.0099983215332,
+   "sembol": "EIX",
+   "seri": "iv-EIX",
+   "tarih": "2026-11-18"
+  },
+  {
+   "ad": "O'Reilly Automotive, Inc.",
+   "bilanco": "Diğer",
+   "fiyat": 0.007336285330293846,
+   "iv_degisim": -0.23944709444831191,
+   "iv_once": 0.30156000405010064,
+   "iv_simdi": 0.22935233727848287,
+   "kapanis": 93.37000274658203,
+   "sembol": "ORLY",
+   "seri": "iv-ORLY",
+   "tarih": "2026-11-18"
+  },
+  {
+   "ad": "Omnicom Group Inc.",
+   "bilanco": "Diğer",
+   "fiyat": 0.00650684594466755,
+   "iv_degisim": -0.24276310894802877,
+   "iv_once": 0.34589541998417983,
+   "iv_simdi": 0.2619247724579362,
+   "kapanis": 88.16999816894531,
+   "sembol": "OMC",
+   "seri": "iv-OMC",
+   "tarih": "2026-11-18"
+  },
   {
    "ad": "Microsoft Corporation",
    "bilanco": "Diğer",
