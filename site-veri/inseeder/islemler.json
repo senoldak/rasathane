@@ -3,7 +3,7 @@
  "baslik": "Yönetici işlemleri",
  "bolum": "inseeder",
  "grafik": "yok",
- "guncellendi": "2026-11-17T12:52:18Z",
+ "guncellendi": "2026-11-18T04:04:12Z",
  "kaynaklar": [
   {
    "ad": "SEC EDGAR",
@@ -11,6 +11,330 @@
   }
  ],
  "satirlar": [
+  {
+   "hisse": "PEPG",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "Direktör",
+   "sirket": "PepGen Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 43125000.0
+  },
+  {
+   "hisse": "TYL",
+   "islem": "Satış",
+   "puan": 25,
+   "rol": "CEO",
+   "sirket": "TYLER TECHNOLOGIES INC",
+   "tarih": "2026-11-17",
+   "tutar": 12822048.3578
+  },
+  {
+   "hisse": "NFRX",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "%10 ortak",
+   "sirket": "2023 ETF Series Trust",
+   "tarih": "2026-11-17",
+   "tutar": 10799986.65
+  },
+  {
+   "hisse": "ANGX",
+   "islem": "Alım",
+   "puan": 85,
+   "rol": "Direktör",
+   "sirket": "Angel Studios, Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 4625599.135199999
+  },
+  {
+   "hisse": "STUB",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Direktör",
+   "sirket": "StubHub Holdings, Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 2048600.0
+  },
+  {
+   "hisse": "STUB",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Direktör",
+   "sirket": "StubHub Holdings, Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 1499171.0
+  },
+  {
+   "hisse": "HRNG",
+   "islem": "Alım",
+   "puan": 75,
+   "rol": "Direktör",
+   "sirket": "HALLADOR ENERGY CO",
+   "tarih": "2026-11-17",
+   "tutar": 1069710.0
+  },
+  {
+   "hisse": "DKNG",
+   "islem": "Alım",
+   "puan": 60,
+   "rol": "Direktör",
+   "sirket": "DraftKings Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 1002099.9999999999
+  },
+  {
+   "hisse": "LPG",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "CEO",
+   "sirket": "DORIAN LPG LTD.",
+   "tarih": "2026-11-17",
+   "tutar": 961460.0
+  },
+  {
+   "hisse": "UPST",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "CEO",
+   "sirket": "Upstart Holdings, Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 950000.0
+  },
+  {
+   "hisse": "KTTA",
+   "islem": "Alım",
+   "puan": 60,
+   "rol": "%10 ortak",
+   "sirket": "Pasithea Therapeutics Corp.",
+   "tarih": "2026-11-17",
+   "tutar": 805944.1122999999
+  },
+  {
+   "hisse": "CLRO",
+   "islem": "Alım",
+   "puan": 45,
+   "rol": "%10 ortak",
+   "sirket": "CLEARONE INC",
+   "tarih": "2026-11-17",
+   "tutar": 755540.0
+  },
+  {
+   "hisse": "PAM",
+   "islem": "Alım",
+   "puan": 80,
+   "rol": "Direktör",
+   "sirket": "Pampa Energy Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 541018.88
+  },
+  {
+   "hisse": "ITG",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Direktör",
+   "sirket": "ITG, Inc./DE/",
+   "tarih": "2026-11-17",
+   "tutar": 508500.00000000006
+  },
+  {
+   "hisse": "ITG",
+   "islem": "Alım",
+   "puan": 100,
+   "rol": "Direktör",
+   "sirket": "ITG, Inc./DE/",
+   "tarih": "2026-11-17",
+   "tutar": 505800.0
+  },
+  {
+   "hisse": "CVV",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "CVD EQUIPMENT CORP",
+   "tarih": "2026-11-17",
+   "tutar": 470502.45
+  },
+  {
+   "hisse": "PCT",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "PureCycle Technologies, Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 371800.0
+  },
+  {
+   "hisse": "MXF",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "MEXICO FUND INC",
+   "tarih": "2026-11-17",
+   "tutar": 369357.2
+  },
+  {
+   "hisse": "PLBY",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "Playboy, Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 368463.2732
+  },
+  {
+   "hisse": "ECF",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "ELLSWORTH GROWTH & INCOME FUND LTD",
+   "tarih": "2026-11-17",
+   "tutar": 319055.5
+  },
+  {
+   "hisse": "BOLT",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "Bolt Biotherapeutics, Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 309921.66000000003
+  },
+  {
+   "hisse": "SSII",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "SS Innovations International, Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 300000.0
+  },
+  {
+   "hisse": "PRAA",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "PRA GROUP INC",
+   "tarih": "2026-11-17",
+   "tutar": 295000.0
+  },
+  {
+   "hisse": "LEO",
+   "islem": "Alım",
+   "puan": 35,
+   "rol": "%10 ortak",
+   "sirket": "BNY MELLON STRATEGIC MUNICIPALS, INC.",
+   "tarih": "2026-11-17",
+   "tutar": 272216.85
+  },
+  {
+   "hisse": "OPEN",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "Opendoor Technologies Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 241990.0
+  },
+  {
+   "hisse": "RMIX",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "Suncrete, Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 238000.0
+  },
+  {
+   "hisse": "BW",
+   "islem": "Alım",
+   "puan": 60,
+   "rol": "%10 ortak",
+   "sirket": "Babcock & Wilcox Enterprises, Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 212000.0
+  },
+  {
+   "hisse": "GLXY",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "Galaxy Digital Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 200850.0
+  },
+  {
+   "hisse": "NSPR",
+   "islem": "Alım",
+   "puan": 65,
+   "rol": "Direktör",
+   "sirket": "InspireMD, Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 200000.45
+  },
+  {
+   "hisse": "PAM",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Yönetici",
+   "sirket": "Pampa Energy Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 169316.133
+  },
+  {
+   "hisse": "BLX",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Yönetici",
+   "sirket": "BLADEX, INC.",
+   "tarih": "2026-11-17",
+   "tutar": 124987.5
+  },
+  {
+   "hisse": "ECC",
+   "islem": "Alım",
+   "puan": 50,
+   "rol": "CFO",
+   "sirket": "Eagle Point Credit Co",
+   "tarih": "2026-11-17",
+   "tutar": 103950.0
+  },
+  {
+   "hisse": "ETN",
+   "islem": "Alım",
+   "puan": 40,
+   "rol": "Direktör",
+   "sirket": "Eaton Corp plc",
+   "tarih": "2026-11-17",
+   "tutar": 101645.70000000001
+  },
+  {
+   "hisse": "CWGL",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Direktör",
+   "sirket": "Crimson Wine Group, Ltd",
+   "tarih": "2026-11-17",
+   "tutar": 100680.05
+  },
+  {
+   "hisse": "CWGL",
+   "islem": "Alım",
+   "puan": 70,
+   "rol": "Direktör",
+   "sirket": "Crimson Wine Group, Ltd",
+   "tarih": "2026-11-17",
+   "tutar": 100676.2
+  },
+  {
+   "hisse": "MAIA",
+   "islem": "Alım",
+   "puan": 55,
+   "rol": "CEO",
+   "sirket": "MAIA Biotechnology, Inc.",
+   "tarih": "2026-11-17",
+   "tutar": 100000.0
+  },
   {
    "hisse": "CPRI",
    "islem": "Satış",
