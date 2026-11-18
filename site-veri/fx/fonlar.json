@@ -3,7 +3,7 @@
  "baslik": "Fon pozisyonları",
  "bolum": "fx",
  "grafik": "cizgi",
- "guncellendi": "2026-11-17T22:46:19Z",
+ "guncellendi": "2026-11-18T22:46:20Z",
  "kaynaklar": [
   {
    "ad": "CFTC",
@@ -55,6 +55,15 @@
    "net": -68205,
    "uc": "",
    "yuzdelik": 0.3269230769230769
+  },
+  {
+   "acik": 352859,
+   "ad": "AUD",
+   "degisim": 713,
+   "donem": "2026-11-10",
+   "net": 50819,
+   "uc": "",
+   "yuzdelik": 0.8846153846153846
   },
   {
    "acik": 131926,
