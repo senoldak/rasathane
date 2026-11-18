@@ -3,7 +3,7 @@
  "baslik": "Hareketler",
  "bolum": "emtia",
  "grafik": "cizgi",
- "guncellendi": "2026-11-17T23:16:11Z",
+ "guncellendi": "2026-11-18T23:16:21Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -13,27 +13,51 @@
  "satirlar": [
   {
    "ad": "Platin",
-   "gunluk": -0.013259634787206487,
-   "kapanis": 1428.800048828125,
+   "gunluk": -0.041999652499308815,
+   "kapanis": 1366.300048828125,
    "seri": "PL=F",
-   "tarih": "2026-11-17",
+   "tarih": "2026-11-18",
    "tur": "52 Hafta Dibi"
   },
   {
-   "ad": "Pamuk",
-   "gunluk": 0.05584419547737429,
-   "kapanis": 81.30000305175781,
-   "seri": "CT=F",
-   "tarih": "2026-11-17",
-   "tur": "Sert Yükseliş"
+   "ad": "Gümüş",
+   "gunluk": -0.04574095503766662,
+   "kapanis": 45.125,
+   "seri": "SI=F",
+   "tarih": "2026-11-18",
+   "tur": "52 Hafta Dibi"
+  },
+  {
+   "ad": "Bakır",
+   "gunluk": -0.050619106361180166,
+   "kapanis": 5.673500061035156,
+   "seri": "HG=F",
+   "tarih": "2026-11-18",
+   "tur": "Sert Düşüş"
   },
   {
    "ad": "Alüminyum",
-   "gunluk": -0.039206273003680625,
-   "kapanis": 3002.0,
+   "gunluk": -0.06856860971799716,
+   "kapanis": 2832.25,
    "seri": "ALI=F",
-   "tarih": "2026-11-17",
+   "tarih": "2026-11-18",
    "tur": "Sert Düşüş"
+  },
+  {
+   "ad": "Altın",
+   "gunluk": -0.03428911590349182,
+   "kapanis": 3731.699951171875,
+   "seri": "GC=F",
+   "tarih": "2026-11-18",
+   "tur": "Sert Düşüş · 52 Hafta Dibi"
+  },
+  {
+   "ad": "Platin",
+   "gunluk": -0.015055282339865306,
+   "kapanis": 1426.199951171875,
+   "seri": "PL=F",
+   "tarih": "2026-11-17",
+   "tur": "52 Hafta Dibi"
   },
   {
    "ad": "Gümüş",
