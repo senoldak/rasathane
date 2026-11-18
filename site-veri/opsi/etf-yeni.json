@@ -3,7 +3,7 @@
  "baslik": "Yeni ETF'ler",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-16T23:46:25Z",
+ "guncellendi": "2026-11-17T23:46:26Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -16,22 +16,31 @@
  ],
  "satirlar": [
   {
+   "ad": "BNY Mellon ETF Trust II BNY Mellon Power Ecosystem ETF",
+   "getiri": -0.025165273002279553,
+   "ilk_gorulme": "2026-11-16",
+   "ilk_hacim": 2043436.6235733032,
+   "sembol": "BGRD",
+   "seri": null,
+   "son_hacim": 2042079.6414413452
+  },
+  {
    "ad": "Principal Exchange-Traded Funds Principal Growth ETF",
-   "getiri": null,
+   "getiri": -0.03498230071742203,
    "ilk_gorulme": "2026-11-13",
-   "ilk_hacim": null,
+   "ilk_hacim": 1988774.782295227,
    "sembol": "PGRW",
    "seri": null,
-   "son_hacim": null
+   "son_hacim": 30850.069246673585
   },
   {
    "ad": "The RBB Fund Trust Equity Partners ETF",
-   "getiri": null,
+   "getiri": -0.024838086998738573,
    "ilk_gorulme": "2026-11-13",
-   "ilk_hacim": null,
+   "ilk_hacim": 88154.19986724854,
    "sembol": "LTEQ",
    "seri": null,
-   "son_hacim": null
+   "son_hacim": 194301.62858009338
   },
   {
    "ad": "Invesco Actively Managed Exchange-Traded Fund Trust Invesco U.",
@@ -53,39 +62,39 @@
   },
   {
    "ad": "FMI Funds Inc. FMI Global Equity ETF",
-   "getiri": null,
+   "getiri": -0.02266555646391588,
    "ilk_gorulme": "2026-11-09",
-   "ilk_hacim": null,
+   "ilk_hacim": 584714.5904159546,
    "sembol": "FMIG",
    "seri": null,
-   "son_hacim": null
+   "son_hacim": 436604.86194572446
   },
   {
    "ad": "Mutual Fund Series Trust Eventide Dividend Growth ETF",
-   "getiri": -0.01131801176006153,
+   "getiri": -0.025916955376420803,
    "ilk_gorulme": "2026-11-03",
    "ilk_hacim": 75316.20010375977,
    "sembol": "ETDG",
    "seri": null,
-   "son_hacim": 1866682.5489387512
+   "son_hacim": 1655002.4393875122
   },
   {
    "ad": "Mutual Fund Series Trust Eventide Large Cap Focus ETF",
-   "getiri": -0.024477095843491448,
+   "getiri": -0.03642155522156176,
    "ilk_gorulme": "2026-11-03",
    "ilk_hacim": 107519.99858856201,
    "sembol": "ELCF",
    "seri": null,
-   "son_hacim": 52723.55187683106
+   "son_hacim": 21322.4015789032
   },
   {
    "ad": "Listed Funds Trust Overlay Shares Nasdaq 100 Income ETF",
-   "getiri": -0.08017372842669646,
+   "getiri": -0.09258686195345645,
    "ilk_gorulme": "2026-11-02",
    "ilk_hacim": 5151601.946487427,
    "sembol": "OVQ",
    "seri": null,
-   "son_hacim": 3547465.9597702026
+   "son_hacim": 3398438.8085235595
   }
  ],
  "sayfa": "etf-yeni",

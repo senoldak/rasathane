@@ -3,7 +3,7 @@
  "baslik": "ETF hareketleri",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-16T23:46:25Z",
+ "guncellendi": "2026-11-17T23:46:26Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -15,6 +15,461 @@
   }
  ],
  "satirlar": [
+  {
+   "ad": "ProShares UltraShort S&P500",
+   "sembol": "SDS",
+   "seri": "etf-SDS",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ü Yukarı Kesenler"
+  },
+  {
+   "ad": "Direxion Daily Magnificent 7 Bear 1X ETF",
+   "sembol": "QQQD",
+   "seri": "etf-QQQD",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ü Yukarı Kesenler"
+  },
+  {
+   "ad": "ProShares UltraShort Dow30",
+   "sembol": "DXD",
+   "seri": "etf-DXD",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ü Yukarı Kesenler"
+  },
+  {
+   "ad": "GraniteShares 2x Short COIN Daily ETF",
+   "sembol": "CONI",
+   "seri": "etf-CONI",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ü Yukarı Kesenler"
+  },
+  {
+   "ad": "Invesco S&P SmallCap Value with Momentum ETF",
+   "sembol": "XSVM",
+   "seri": "etf-XSVM",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "State Street Materials Select Sector SPDR ETF",
+   "sembol": "XLB",
+   "seri": "etf-XLB",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Inspire International ETF",
+   "sembol": "WWJD",
+   "seri": "etf-WWJD",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "iShares Inc. iShares MSCI World ETF",
+   "sembol": "URTH",
+   "seri": "etf-URTH",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "iShares Trust iShares Top 20 U.S. Stocks ETF",
+   "sembol": "TOPT",
+   "seri": "etf-TOPT",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "iShares ESG MSCI USA Leaders ETF",
+   "sembol": "SUSL",
+   "seri": "etf-SUSL",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "SP Funds S&P 500 Sharia Industry Exclusions ETF",
+   "sembol": "SPUS",
+   "seri": "etf-SPUS",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "First Trust SMID Cap Rising Dividend Achievers ETF",
+   "sembol": "SDVY",
+   "seri": "etf-SDVY",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Invesco NASDAQ Next Gen 100 ETF",
+   "sembol": "QQQJ",
+   "seri": "etf-QQQJ",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Invesco NASDAQ Internet ETF",
+   "sembol": "PNQI",
+   "seri": "etf-PNQI",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Direxion Daily PANW Bull 2X ETF",
+   "sembol": "PALU",
+   "seri": "etf-PALU",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "MFS Active Exchange Traded Funds Trust MFS Active Internationa",
+   "sembol": "MFSI",
+   "seri": "etf-MFSI",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Roundhill Magnificent Seven ETF",
+   "sembol": "MAGS",
+   "seri": "etf-MAGS",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Principal Exchange-Traded Funds Principal Capital Appreciation",
+   "sembol": "LCAP",
+   "seri": "etf-LCAP",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "First Trust Exchange-Traded Fund VIII First Trust Multi-Strate",
+   "sembol": "LALT",
+   "seri": "etf-LALT",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Inspire Small/Mid Cap ETF",
+   "sembol": "ISMD",
+   "seri": "etf-ISMD",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "iShares Global 100 ETF",
+   "sembol": "IOO",
+   "seri": "etf-IOO",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "iShares Core S&P Small-Cap ETF",
+   "sembol": "IJR",
+   "seri": "etf-IJR",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Pacer Developed Markets International Cash Cows 100 ETF",
+   "sembol": "ICOW",
+   "seri": "etf-ICOW",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "J.P. Morgan Exchange-Traded Fund Trust JPMorgan Hedged Equity",
+   "sembol": "HELO",
+   "seri": "etf-HELO",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Schwab Fundamental International Equity ETF",
+   "sembol": "FNDF",
+   "seri": "etf-FNDF",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "AIM ETF Products Trust AllianzIM U.S. Equity 6 Month Floor5 Ap",
+   "sembol": "FLAO",
+   "seri": "etf-FLAO",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "FT Vest U.S. Equity Buffer ETF - June",
+   "sembol": "FJUN",
+   "seri": "etf-FJUN",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Fidelity Enhanced Small Cap Core ETF",
+   "sembol": "FESM",
+   "seri": "etf-FESM",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Strategy Shares Eventide US Market ETF",
+   "sembol": "ESUM",
+   "seri": "etf-ESUM",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Cambria Endowment Style ETF",
+   "sembol": "ENDW",
+   "seri": "etf-ENDW",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "iShares ESG Advanced MSCI EAFE ETF",
+   "sembol": "DMXF",
+   "seri": "etf-DMXF",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Global X Super Dividend ETF",
+   "sembol": "DIV",
+   "seri": "etf-DIV",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Dimensional ETF Trust Dimensional International Small Cap Valu",
+   "sembol": "DISV",
+   "seri": "etf-DISV",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Dimensional ETF Trust Dimensional World Equity ETF",
+   "sembol": "DFAW",
+   "seri": "etf-DFAW",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "ProShares Ultra Dow30",
+   "sembol": "DDM",
+   "seri": "etf-DDM",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "JPMorgan BetaBuilders Developed Asia Pacific-ex Japan ETF",
+   "sembol": "BBAX",
+   "seri": "etf-BBAX",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Avantis U.S. Small Cap Value ETF",
+   "sembol": "AVUV",
+   "seri": "etf-AVUV",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "American Century ETF Trust Avantis U.S. Mid Cap Equity ETF",
+   "sembol": "AVMC",
+   "seri": "etf-AVMC",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Avantis International Large Cap Value ETF",
+   "sembol": "AVIV",
+   "seri": "etf-AVIV",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "First Trust Active Factor Large Cap ETF",
+   "sembol": "AFLG",
+   "seri": "etf-AFLG",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Aptus Collared Investment Opportunity ETF",
+   "sembol": "ACIO",
+   "seri": "etf-ACIO",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Innovator ETFs Trust Innovator Index Autocallable Income Strat",
+   "sembol": "ACII",
+   "seri": "etf-ACII",
+   "tarih": "2026-11-17",
+   "tur": "SMA 200'ün Altına Düşenler"
+  },
+  {
+   "ad": "Direxion Daily AAPL Bull 2X ETF",
+   "sembol": "AAPU",
+   "seri": "etf-AAPU",
+   "tarih": "2026-11-17",
+   "tur": "SPY'ye Göre Güçte Zirve"
+  },
+  {
+   "ad": "Defiance Space and Connective Tech ETF",
+   "sembol": "UFOX",
+   "seri": "etf-UFOX",
+   "tarih": "2026-11-17",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Northern Lights Fund Trust IV Inspire 500 ETF",
+   "sembol": "PTL",
+   "seri": "etf-PTL",
+   "tarih": "2026-11-17",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "AAM Low Duration Preferred and Income Securities ETF",
+   "sembol": "PFLD",
+   "seri": "etf-PFLD",
+   "tarih": "2026-11-17",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Invesco Dorsey Wright Momentum ETF",
+   "sembol": "PDP",
+   "seri": "etf-PDP",
+   "tarih": "2026-11-17",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "ETF Opportunities Trust T-Rex 2X Long NVIDIA Daily Target ETF",
+   "sembol": "NVDX",
+   "seri": "etf-NVDX",
+   "tarih": "2026-11-17",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "AdvisorShares Trust AdvisorShares Pure US Cannabis ETF",
+   "sembol": "MSOS",
+   "seri": "etf-MSOS",
+   "tarih": "2026-11-17",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "iShares S&P Mid-Cap 400 Growth ETF",
+   "sembol": "IJK",
+   "seri": "etf-IJK",
+   "tarih": "2026-11-17",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "iShares MSCI Eurozone ETF",
+   "sembol": "EZU",
+   "seri": "etf-EZU",
+   "tarih": "2026-11-17",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "First Trust North American Energy Infrastructure Fund",
+   "sembol": "EMLP",
+   "seri": "etf-EMLP",
+   "tarih": "2026-11-17",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Sprott Copper Miners ETF",
+   "sembol": "COPP",
+   "seri": "etf-COPP",
+   "tarih": "2026-11-17",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "Capital Group Short Duration Income ETF",
+   "sembol": "CGSD",
+   "seri": "etf-CGSD",
+   "tarih": "2026-11-17",
+   "tur": "Ölüm Kesişimi"
+  },
+  {
+   "ad": "ProShares Trust VIX Short-Term Futures ETF",
+   "sembol": "VIXY",
+   "seri": "etf-VIXY",
+   "tarih": "2026-11-17",
+   "tur": "Hacim Patlaması"
+  },
+  {
+   "ad": "Defiance Daily Target 2X Long SOFI ETF",
+   "sembol": "SOFX",
+   "seri": "etf-SOFX",
+   "tarih": "2026-11-17",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Global X Variable Rate Preferred ETF",
+   "sembol": "PFFV",
+   "seri": "etf-PFFV",
+   "tarih": "2026-11-17",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "ETF Opportunities Trust T-Rex 2X Long MSTR Daily Target ETF",
+   "sembol": "MSTU",
+   "seri": "etf-MSTU",
+   "tarih": "2026-11-17",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "iShares MSCI China ETF",
+   "sembol": "MCHI",
+   "seri": "etf-MCHI",
+   "tarih": "2026-11-17",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Invesco KBW High Dividend Yield Financial ETF",
+   "sembol": "KBWD",
+   "seri": "etf-KBWD",
+   "tarih": "2026-11-17",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Roundhill ETF Trust Roundhill Humanoid Robotics ETF",
+   "sembol": "HUMN",
+   "seri": "etf-HUMN",
+   "tarih": "2026-11-17",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "ETF Opportunities Trust T-Rex 2X Long Alphabet Daily Target ET",
+   "sembol": "GOOX",
+   "seri": "etf-GOOX",
+   "tarih": "2026-11-17",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "ETF Opportunities Trust T-REX 2X Long BMNR Daily Target ETF",
+   "sembol": "BMNU",
+   "seri": "etf-BMNU",
+   "tarih": "2026-11-17",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "Amplify Blockchain Technology ETF",
+   "sembol": "BLOK",
+   "seri": "etf-BLOK",
+   "tarih": "2026-11-17",
+   "tur": "52 Haftanın Dibi"
+  },
+  {
+   "ad": "AGF U.S. Market Neutral Anti-Beta Fund",
+   "sembol": "BTAL",
+   "seri": "etf-BTAL",
+   "tarih": "2026-11-17",
+   "tur": "Altın Kesişim"
+  },
   {
    "ad": "Invesco S&P 500 Equal Weight Consumer Staples ETF",
    "sembol": "RSPS",

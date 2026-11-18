@@ -3,7 +3,7 @@
  "baslik": "Fon akışı",
  "bolum": "opsi",
  "grafik": "cizgi",
- "guncellendi": "2026-11-16T23:46:25Z",
+ "guncellendi": "2026-11-17T23:46:26Z",
  "kaynaklar": [
   {
    "ad": "Yahoo Finance",
@@ -16,46 +16,25 @@
  ],
  "satirlar": [
   {
+   "ad": "State Street SPDR Portfolio S&P 500 ETF",
+   "akis": 4243497126.779022,
+   "oran": 0.02333535692878899,
+   "sembol": "SPYM",
+   "yon": "Giriş"
+  },
+  {
    "ad": "AB Active ETFs Inc. AB Tax-Aware Intermediate Municipal ETF",
-   "akis": 357854434.8725169,
-   "oran": 0.45593815627336026,
+   "akis": 364841796.04293084,
+   "oran": 0.46484067153879083,
    "sembol": "TAFM",
    "yon": "Giriş"
   },
   {
-   "ad": "Lazard Active ETF Trust Lazard International Dynamic Equity ET",
-   "akis": 220675038.1310401,
-   "oran": 0.11641387638345087,
-   "sembol": "IDEQ",
+   "ad": "Goldman Sachs ActiveBeta International Equity ETF",
+   "akis": 176758944.2448225,
+   "oran": 0.029874530320906444,
+   "sembol": "GSIE",
    "yon": "Giriş"
-  },
-  {
-   "ad": "iShares Trust iShares MSCI Poland ETF",
-   "akis": 198860623.42911065,
-   "oran": 0.23845344943418317,
-   "sembol": "EPOL",
-   "yon": "Giriş"
-  },
-  {
-   "ad": "iShares Intermediate Government/Credit Bond ETF",
-   "akis": 155278052.29451227,
-   "oran": 0.04156457030306762,
-   "sembol": "GVI",
-   "yon": "Giriş"
-  },
-  {
-   "ad": "Invesco S&P 500 Equal Weight Industrials Portfolio",
-   "akis": 120248000.77836895,
-   "oran": 0.16254997508485688,
-   "sembol": "RSPN",
-   "yon": "Giriş"
-  },
-  {
-   "ad": "Vanguard Morningstar Total Stock Market ETF",
-   "akis": -455193493125.50195,
-   "oran": -0.19666872841391714,
-   "sembol": "VTI",
-   "yon": "Çıkış"
   }
  ],
  "sayfa": "etf-akis",
